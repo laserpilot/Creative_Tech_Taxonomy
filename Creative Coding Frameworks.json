@@ -1,0 +1,261 @@
+{
+  "AI/Machine Learning" : {},
+  "Uncategorized Utilities/DevOps" : {},
+  "Asset Creation" : {},
+  "Pro AV Hardware and Related Software" : {},
+  "Optical Tracking" : {},
+  "Sensors" : {},
+  "Physical Computing" : {},
+  "Mobile Technology" : {},
+  "Web/Networking Frameworks" : {},
+  "Real-time 3D/Game Engines" : {
+    "Engine Types" : {
+      "Open Source" : {
+        "babylon.js" : {},
+        "three.js" : {},
+        "Sceneform" : {}
+      },
+      "Commercial" : {
+        "Scenekit" : {},
+        "CryEngine" : {},
+        "Amazon Lumberjack" : {},
+        "Unity" : {},
+        "Unreal" : {}
+      }
+    },
+    "VR" : {
+      "Headsets" : {
+        "Sony PSVR" : {},
+        "HTC Vive" : {},
+        "Valve Index" : {},
+        "Meta Oculus" : {
+          "Rift S" : {},
+          "Quest 2" : {},
+          "Quest" : {}
+        }
+      }
+    },
+    "AR" : {
+      "Headsets" : {
+        "Google Glass" : {},
+        "Magic Leap" : {},
+        "Microsoft Hololens" : {}
+      },
+      "AR Methods" : {
+        "Marker Based" : {
+          "Vuforia" : {}
+        },
+        "Visual Inertial Odometry" : {
+          "ARKit" : {}
+        },
+        "SLAM" : {
+          "iOS Devices with LIDAR" : {},
+          "Google Tango" : {}
+        }
+      }
+    }
+  },
+  "Creative Code Frameworks" : {
+    "License Types" : {
+      "Commercial/Paid" : {
+        "Subscription" : {}
+      },
+      "Open Source" : {
+        "Mozilla Public License" : {},
+        "MIT" : {},
+        "GPL" : {}
+      },
+      "Other" : {}
+    },
+    "Language Type" : {
+      "Node Based/Visual" : {
+        "Isadora" : {
+          "DisplayName" : "Isadora",
+          "InfoLink" : "https://troikatronix.com/",
+          "Tags" : [
+            "Node Based",
+            "Creative Code Framework",
+            "Video",
+            "Commercial",
+            "Mac"
+          ]
+        },
+        "Cables.gl" : {
+          "DisplayName" : "Cables.gl",
+          "InfoLink" : "https://cables.gl/",
+          "Tags" : [
+            "Node Based",
+            "Creative Code Framework",
+            "Free",
+            "Web"
+          ]
+        },
+        "vvvv" : {
+          "DisplayName" : "vvvv",
+          "InfoLink" : "https://vvvv.org",
+          "Tags" : [
+            "Node Based",
+            "Creative Code Framework",
+            "Commercial",
+            "Windows"
+          ]
+        },
+        "Vuo" : {
+          "DisplayName" : "Vuo",
+          "InfoLink" : "https://vuo.org/",
+          "Tags" : [
+            "Node Based",
+            "Creative Code Framework",
+            "Commercial",
+            "Mac"
+          ]
+        },
+        "Nodebox" : {
+          "DisplayName" : "Nodebox",
+          "InfoLink" : "https://www.nodebox.net/",
+          "Tags" : [
+            "Creative Code Framework",
+            "Open Source",
+            "Mac",
+            "Linux",
+            "Windows",
+            "Node Based"
+          ]
+        },
+        "nodes.io" : {
+          "DisplayName" : "nodes.io",
+          "InfoLink" : "www.nodes.io",
+          "Tags" : [
+            "Creative Code Framework",
+            "Commercial",
+            "Windows",
+            "Web",
+            "Node Based"
+          ]
+        },
+        "Pure Data(pd)" : {
+          "DisplayName" : "Pure Data (pd)",
+          "InfoLink" : "https://puredata.info/",
+          "Tags" : [
+            "Creative Code Framework",
+            "Open Source",
+            "Windows",
+            "Mac",
+            "Linux",
+            "Node Based"
+          ]
+        },
+        "Max" : {
+          "DisplayName" : "Max",
+          "InfoLink" : "www.cycling74.com",
+          "Tags" : [
+            "Creative Code Framework",
+            "Commercial",
+            "Windows",
+            "Mac",
+            "Node Based"
+          ]
+        },
+        "Notch" : {
+          "DisplayName" : "Notch",
+          "InfoLink" : "Notch.one",
+          "Tags" : [
+            "Creative Code Framework",
+            "Commercial",
+            "Windows",
+            "Node Based"
+          ]
+        }
+      },
+      "C++" : {
+        "OpenFrameworks" : {
+          "DisplayName" : "OpenFrameworks",
+          "InfoLink" : "https://openFrameworks.cc",
+          "Tags" : [
+            "C++",
+            "Creative Code Framework",
+            "Open Source",
+            "Mac",
+            "Windows",
+            "Linux"
+          ]
+        },
+        "Cinder" : {
+          "DisplayName" : "Cinder",
+          "InfoLink" : "https://libcinder.org",
+          "Tags" : [
+            "C++",
+            "Creative Code Framework",
+            "Open Source",
+            "Mac",
+            "Windows",
+            "Linux"
+          ]
+        },
+        "Nap Framework" : {
+          "DisplayName" : "Nap Framework",
+          "InfoLink" : "https://www.napframework.com/",
+          "Tags" : [
+            "C++",
+            "Creative Code Framework",
+            "Open Source",
+            "Mac",
+            "Windows",
+            "Linux"
+          ]
+        }
+      },
+      "Kotlin" : {
+        "OPENRNDR" : {}
+      },
+      "Ruby" : {
+        "Visor" : {}
+      },
+      "Rust" : {
+        "Nannou" : {}
+      },
+      "Python" : {
+        "Processing.py" : {
+          "DisplayName" : "Processing.py",
+          "InfoLink" : "https://py.processing.org/",
+          "Tags" : [
+            "Python",
+            "Creative Code Framework",
+            "Open Source",
+            "Mac",
+            "Windows",
+            "Linux"
+          ]
+        }
+      },
+      "Javascript" : {
+        "p5.js" : {},
+        "three.js" : {},
+        "paper.js" : {}
+      },
+      "Legacy/Deprecated Tools" : {
+        "Flash" : {},
+        "Macromedia Director" : {},
+        "Quartz Composer" : {}
+      },
+      "Java" : {
+        "Processing" : {}
+      },
+      "Low Level Graphics" : {
+        "Metal" : {},
+        "DirectX" : {},
+        "OpenGL" : {
+          "WebGL" : {}
+        },
+        "Vulkan" : {}
+      }
+    },
+    "Use Cases" : {
+      "Livecoding" : {},
+      "Interactive/Physical sensor integration" : {},
+      "Data Visualization" : {},
+      "Multi Screen Custom Installations" : {},
+      "Generative Visuals" : {}
+    }
+  }
+}
