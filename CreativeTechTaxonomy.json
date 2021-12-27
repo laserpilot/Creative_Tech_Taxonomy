@@ -137,7 +137,76 @@
     },
     "Documentation" : {}
   },
-  "Asset Creation" : {},
+  "Asset Creation" : {
+    "2D Asset Creation" : {
+      "UX/UI Design tools" : {
+        "InVision" : {},
+        "Miro" : {},
+        "Figma" : {}
+      },
+      "Illustration" : {
+        "Procreate" : {}
+      },
+      "Adobe Suite" : {
+        "After Effects" : {},
+        "Premiere" : {},
+        "Illustrator" : {},
+        "Photoshop" : {}
+      },
+      "Open Source/Free" : {
+        "Inkscape" : {},
+        "GIMP" : {}
+      }
+    },
+    "3D Asset Creation" : {
+      "CAD/CAM" : {
+        "Fusion 360" : {},
+        "Sketchup" : {},
+        "Rhino" : {},
+        "AutoCAD" : {}
+      },
+      "Modeling" : {
+        "Cinema 4D" : {},
+        "3D Studio Max" : {},
+        "Maya" : {},
+        "Blender" : {}
+      },
+      "Texturing" : {
+        "ZBrush" : {},
+        "Substance Designer" : {}
+      },
+      "Other Post Production Tools" : {
+        "Houdini" : {},
+        "Nuke" : {}
+      },
+      "Render Engines" : {
+        "Octane" : {},
+        "V-Ray" : {}
+      },
+      "Asset Pipelines/Management" : {
+        "NVIDIA Omniverse" : {},
+        "Perforce" : {}
+      },
+      "Related Concepts" : {
+        "File Formats" : {},
+        "Rigging" : {},
+        "Character Design" : {},
+        "Polygon Reduction" : {}
+      }
+    },
+    "Audio/Music Asset Creation" : {
+      "ProTools" : {},
+      "Reaper" : {},
+      "Ableton Live" : {
+        "Max For Live" : {}
+      },
+      "Cubase" : {},
+      "Logic Pro" : {},
+      "Audacity" : {},
+      "Reason" : {},
+      "Renoise" : {}
+    }
+  },
   "Pro AV Hardware and Related Software" : {},
   "Optical Tracking" : {},
   "Sensors" : {},
