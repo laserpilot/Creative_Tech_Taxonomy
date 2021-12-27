@@ -211,7 +211,62 @@
   "Optical Tracking" : {},
   "Sensors" : {},
   "Physical Computing" : {},
-  "Mobile Technology" : {},
+  "Mobile Technology" : {
+    "Sensors" : {
+      "Compass/Magnetometer" : {},
+      "Location/GPS" : {},
+      "Ambient Light Sensor" : {},
+      "Barometer" : {},
+      "Gyroscope" : {},
+      "Accelerometer" : {},
+      "LIDAR" : {},
+      "Microphone" : {},
+      "Camera" : {}
+    },
+    "Mobile AR" : {
+      "Native Platform Frameworks" : {
+        "Android" : {
+          "ARCore" : {}
+        },
+        "Apple" : {
+          "ARKit" : {}
+        }
+      },
+      "Face Detection/Face Filters" : {
+        "Snapchat Lens Studio" : {},
+        "Meta Spark AR" : {}
+      },
+      "WebAR" : {
+        "AR.js/A Frame" : {},
+        "8th Wall" : {}
+      },
+      "Other" : {
+        "Niantic Lightship" : {}
+      }
+    },
+    "Web Frameworks for Apps" : {
+      "React Native" : {},
+      "Bootstrap" : {}
+    },
+    "Android" : {
+      "Devices" : {
+        "A million options" : {}
+      }
+    },
+    "Apple" : {
+      "Devices" : {
+        "iPhone" : {
+          "iOS" : {}
+        },
+        "iPad" : {
+          "iPadOS" : {}
+        },
+        "Apple Watch" : {
+          "Object" : {}
+        }
+      }
+    }
+  },
   "Web/Networking Frameworks" : {},
   "Real-time 3D/Game Engines" : {
     "Engine Types" : {
