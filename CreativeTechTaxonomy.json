@@ -1,5 +1,59 @@
 {
-  "AI/Machine Learning" : {},
+  "AI/Machine Learning" : {
+    "Content Identification" : {
+      "Object Recognition" : {
+        "Body part tracking" : {
+          "Body Pose Tracking" : {
+            "PoseNET" : {}
+          },
+          "Hand Tracking" : {
+            "Apple Vision Framework" : {}
+          },
+          "Facial Tracking" : {}
+        },
+        "Segmentation" : {},
+        "OpenCV" : {},
+        "YOLO" : {}
+      },
+      "Data Analytics/Classification" : {
+        "t-SNE" : {}
+      },
+      "Text Analysis" : {
+        "Sentiment Analysis" : {}
+      },
+      "Audio Classification" : {},
+      "Voice Recognition" : {
+        "Speech to Text" : {}
+      }
+    },
+    "Content Creation" : {
+      "Image Manipulation" : {
+        "Text To Speech" : {},
+        "Image Animation" : {},
+        "GAN Inversion" : {},
+        "SuperResolution" : {},
+        "Lip Syncing" : {}
+      },
+      "Image Generation" : {
+        "VQGAN" : {},
+        "CLIP" : {},
+        "Style Transfer" : {
+          "Cartoonization" : {}
+        },
+        "Pix2Pix" : {},
+        "StyleGAN2" : {},
+        "GAN/DCGAN" : {},
+        "DeepDream" : {}
+      }
+    },
+    "Tools" : {
+      "Tensorflow" : {},
+      "Jupyter Notebooks" : {},
+      "RunwayML" : {},
+      "Google Collab" : {},
+      "PyTorch" : {}
+    }
+  },
   "Uncategorized Utilities/DevOps" : {},
   "Asset Creation" : {},
   "Pro AV Hardware and Related Software" : {},
@@ -33,7 +87,8 @@
           "Quest 2" : {},
           "Quest" : {}
         }
-      }
+      },
+      "Related Concepts" : {}
     },
     "AR" : {
       "Headsets" : {
@@ -52,7 +107,8 @@
           "iOS Devices with LIDAR" : {},
           "Google Tango" : {}
         }
-      }
+      },
+      "Related Concepts" : {}
     }
   },
   "Creative Code Frameworks" : {
