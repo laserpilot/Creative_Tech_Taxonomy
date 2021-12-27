@@ -54,7 +54,89 @@
       "PyTorch" : {}
     }
   },
-  "Uncategorized Utilities/DevOps" : {},
+  "Uncategorized Utilities/DevOps" : {
+    "Data Tools" : {
+      "Python" : {
+        "Bokeh" : {},
+        "Plotly" : {},
+        "Matplotlib" : {}
+      },
+      "R" : {
+        "ggplot" : {}
+      }
+    },
+    "DevOps" : {
+      "Version Control" : {
+        "git" : {
+          "Github" : {},
+          "Bitbucket" : {}
+        },
+        "Subversion(svn)" : {}
+      },
+      "Continuous Integration and Development (CI/CD)" : {
+        "TravisCI" : {},
+        "Gitlab CI" : {},
+        "Jenkins" : {},
+        "Teamcity" : {},
+        "Bamboo" : {}
+      },
+      "Containers" : {
+        "Kubernetes" : {},
+        "Docker" : {}
+      },
+      "Automation" : {
+        "Ansible" : {},
+        "Puppet" : {},
+        "Chef" : {}
+      },
+      "Monitoring/Logging" : {
+        "Sudosystems" : {},
+        "AM/PM" : {},
+        "ELK Stack" : {},
+        "Splunk" : {}
+      }
+    },
+    "IDE" : {
+      "Vim/Emacs" : {},
+      "Atom" : {},
+      "bbedit" : {},
+      "Sublime Text" : {},
+      "Visual Studio Code" : {},
+      "Visual Studio" : {},
+      "Xcode" : {}
+    },
+    "Terminal/Shell" : {
+      "Unix (Linux/Mac)" : {
+        "bash" : {},
+        "Object" : {}
+      },
+      "Windows" : {
+        "Powershell" : {},
+        "cmd" : {}
+      }
+    },
+    "Scripting" : {
+      "MacOS" : {
+        "launchdaemons" : {},
+        "bash scripts" : {},
+        "Shortcuts" : {},
+        "AppleScript" : {},
+        "Automator" : {},
+        "cronjobs" : {}
+      },
+      "Linux" : {
+        "cronjobs" : {},
+        "bash scripts" : {},
+        "launchdaemons" : {}
+      },
+      "Windows" : {
+        "Powershell scripts" : {},
+        "bat scripts" : {},
+        "Tax Scheduler" : {}
+      }
+    },
+    "Documentation" : {}
+  },
   "Asset Creation" : {},
   "Pro AV Hardware and Related Software" : {},
   "Optical Tracking" : {},
