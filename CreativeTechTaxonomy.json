@@ -267,7 +267,86 @@
       }
     }
   },
-  "Web/Networking Frameworks" : {},
+  "Web/Networking Frameworks" : {
+    "Frontend" : {
+      "Audio" : {
+        "tone.js" : {}
+      },
+      "WebAR/VR" : {
+        "AR.js/A-Frame" : {},
+        "8th Wall" : {}
+      },
+      "Machine Learning" : {
+        "ml5.js" : {}
+      },
+      "WebGL Environments" : {
+        "three.js" : {}
+      },
+      "Data Visualization" : {
+        "D3.js" : {}
+      },
+      "Common Frontend Frameworks" : {
+        "Vue.js" : {},
+        "Angular.js" : {},
+        "React.js" : {}
+      },
+      "Creative/Animation frameworks" : {
+        "paper.js" : {},
+        "p5.js" : {}
+      }
+    },
+    "Backend" : {
+      "Database" : {
+        "MondoDB" : {},
+        "SQL" : {
+          "sqlite" : {}
+        }
+      },
+      "Communication Protocols/Messaging Queues" : {
+        "RabbitMQ" : {},
+        "ZeroMQ" : {},
+        "Websockets" : {},
+        "UDP" : {
+          "Open Sound Control (OSC)" : {}
+        },
+        "TCP/IP" : {
+          "HTTP/HTTPS" : {
+            "REST API" : {}
+          }
+        }
+      },
+      "Related Concepts" : {
+        "nginx" : {},
+        "Microsoft Azure" : {},
+        "Node.js" : {},
+        "Google Firebase" : {},
+        "Video/Image Processing" : {
+          "gstreamer" : {},
+          "imagemagick" : {},
+          "ffmpeg" : {}
+        },
+        "AWS" : {
+          "S3" : {},
+          "EC2" : {}
+        },
+        "Google Cloud" : {},
+        "Content Delivery Network (CDN)" : {},
+        "Apache" : {}
+      },
+      "Content Management System (CMS)" : {
+        "A million others" : {},
+        "Drupal" : {},
+        "Wordpress" : {},
+        "Contentful" : {}
+      }
+    },
+    "Data Serialization" : {
+      "Protobuf" : {},
+      "YAML" : {},
+      "JSON" : {},
+      "XML" : {}
+    }
+  },
   "Real-time 3D/Game Engines" : {
     "Engine Types" : {
       "Open Source" : {
