@@ -208,8 +208,162 @@
     }
   },
   "Pro AV Hardware and Related Software" : {},
-  "Optical Tracking" : {},
-  "Sensors" : {},
+  "Optical Tracking" : {
+    "Related Topics" : {
+      "Antilatency/Low Latency" : {},
+      "Virtual Production/XR" : {
+        "MoCap Rigs/Systems" : {
+          "Camera Based" : {
+            "Mo-Sys" : {},
+            "RedSpy" : {},
+            "VICON" : {}
+          },
+          "IMU Based" : {
+            "Rokoko" : {},
+            "Xsens" : {}
+          }
+        },
+        "Other Tracking Systems" : {
+          "OptiTrack" : {},
+          "Blacktrax" : {}
+        }
+      }
+    },
+    "Computer Vision" : {
+      "For More - See AI/ML Section" : {},
+      "Gesture Control" : {},
+      "Eye Tracking" : {
+        "Tobii Eye Tracker" : {}
+      },
+      "Body Tracking" : {},
+      "OpenCV" : {},
+      "Techniques" : {
+        "Contour Detection" : {},
+        "Optical Flow" : {},
+        "Blob Tracking" : {},
+        "Background Subtraction" : {},
+        "Frame Differencing" : {}
+      }
+    }
+  },
+  "Sensors/Interaction Methods" : {
+    "Cameras" : {
+      "Types" : {
+        "Slow Motion/High Speed Cam" : {},
+        "IP Cameras" : {},
+        "Video Cam" : {
+          "Action Cameras" : {
+            "GoPro Hero" : {}
+          },
+          "Smartphone Camera" : {},
+          "Professional Grade Camcorder" : {},
+          "Broadcast" : {},
+          "Object" : {}
+        },
+        "Webcam" : {},
+        "Infrared" : {
+          "Normal" : {},
+          "Depth Cameras" : {
+            "Realsense" : {},
+            "Kinect" : {},
+            "Orbbec" : {},
+            "Ensenso" : {}
+          },
+          "Thermal Cameras" : {
+            "FLIR" : {}
+          }
+        },
+        "DSLR" : {},
+        "Mirrorless" : {},
+        "Stereo RGB" : {
+          "Stereolab Zed Camera" : {}
+        }
+      }
+    },
+    "Touch/Hands" : {
+      "Leap Motion" : {},
+      "Sensel" : {},
+      "Capacitive" : {},
+      "Touchscreens" : {
+        "Projected Capacitance (PCAP)" : {
+          "Ideum" : {}
+        },
+        "IR" : {},
+        "Shadowsense" : {},
+        "LIDAR (for Large scale or LED)" : {
+          "Velodyne" : {},
+          "Ouster" : {}
+        }
+      }
+    },
+    "Bluetooth" : {
+      "Beacons" : {}
+    },
+    "Position/Motion Sensing" : {},
+    "Other" : {
+      "Unusual or Custom Inputs" : {
+        "Pressure Sensors" : {
+          "Direct Force Pressure" : {
+            "Load Cell" : {},
+            "Force Sensing Resistor (FSR)" : {},
+            "Sensel" : {}
+          },
+          "Object" : {}
+        },
+        "Magnetometer" : {},
+        "Water Detection" : {},
+        "Humidity" : {},
+        "Bend Sensors" : {}
+      },
+      "Biometric" : {
+        "Heart Rate" : {
+          "ECG (Electrical)" : {},
+          "PPG (Optical)" : {}
+        },
+        "Breath" : {
+          "XeThru" : {}
+        },
+        "Object" : {}
+      },
+      "Buttons/Knobs/Sliders" : {
+        "Linear" : {
+          "Potentiometer" : {}
+        },
+        "Magnetic" : {
+          "Hall Effect Sensor" : {},
+          "Reed Switch" : {}
+        },
+        "Rotary" : {
+          "Potentiometer" : {},
+          "Rotary Encoder" : {}
+        },
+        "Momentary" : {
+          "Arcade Button" : {}
+        },
+        "Toggle" : {
+          "Switch" : {}
+        }
+      },
+      "RFID" : {
+        "NFC" : {},
+        "Low Frequency (LF)" : {},
+        "High Frequency (HF)" : {},
+        "Ultra High Frequency (UHF)" : {}
+      },
+      "Capacitive Sensors" : {},
+      "Light Sensors" : {
+        "Photocell" : {}
+      },
+      "Temperature Sensors" : {
+        "Thermistor" : {},
+        "Thermocouple" : {}
+      },
+      "Sound/Vibration" : {
+        "Microphones" : {},
+        "Piezo" : {}
+      }
+    }
+  },
   "Physical Computing" : {},
   "Mobile Technology" : {
     "Sensors" : {
