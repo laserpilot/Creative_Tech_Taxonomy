@@ -207,7 +207,256 @@
       "Renoise" : {}
     }
   },
-  "Pro AV Hardware and Related Software" : {},
+  "Pro AV Hardware and Related Software" : {
+    "Audio" : {
+      "Input" : {
+        "Microphones" : {
+          "Dynamic" : {
+            "Regular Vocal Mic" : {},
+            "Shotgun" : {},
+            "Ambisonic" : {}
+          },
+          "Condensor" : {
+            "Regular Vocal Mic" : {},
+            "Shotgun" : {},
+            "Ambisonic" : {}
+          },
+          "Ribbon" : {}
+        },
+        "Synthesizers" : {},
+        "Pickups" : {
+          "Piezo" : {},
+          "Transducer" : {}
+        },
+        "Music Software" : {
+          "Ableton" : {},
+          "See Asset Creation" : {}
+        }
+      },
+      "Output" : {
+        "Amplifiers" : {},
+        "Spatial" : {
+          "Directional" : {},
+          "Binaural" : {},
+          "Surround" : {},
+          "Wave Field Synthesis" : {}
+        },
+        "PA Systems" : {},
+        "Signal Processors" : {
+          "Compressors" : {},
+          "Limiters" : {},
+          "Equalizers" : {},
+          "Reverb" : {}
+        },
+        "Headphones" : {},
+        "Transducer" : {
+          "Buttkicker Subwoofer" : {},
+          "Dayton Audio" : {}
+        }
+      },
+      "Communication Protocols" : {
+        "Dante" : {},
+        "OSC" : {},
+        "Digital/Analog Conversion" : {
+          "S/PIDF" : {}
+        }
+      },
+      "Related Concepts" : {}
+    },
+    "Video" : {
+      "Hardware" : {
+        "Output" : {
+          "Displays" : {
+            "Consumer Display Tech" : {
+              "Legacy" : {
+                "Vectrex/Oscilloscope" : {},
+                "Cathode Ray Tube TV" : {},
+                "Plasma" : {},
+                "3D TV" : {}
+              },
+              "Flatscreen" : {
+                "Electroluminescent Panel" : {},
+                "OLED" : {},
+                "LCD" : {},
+                "qLED" : {},
+                "microLED" : {}
+              },
+              "Projector" : {
+                "Imaging Method" : {
+                  "DLP" : {},
+                  "LCD" : {}
+                },
+                "Pico Projectors" : {},
+                "Small Scale" : {},
+                "Large Venue Projectors" : {}
+              }
+            },
+            "Commercial Display Tech" : {
+              "LED" : {
+                "Video Walls" : {},
+                "Interactive Floors" : {},
+                "Volumetric Displays" : {},
+                "Indoor Rated" : {},
+                "Transparent" : {},
+                "Outdoor Rated" : {}
+              },
+              "Indoor 24/7" : {
+                "Projectors" : {},
+                "OLED" : {}
+              },
+              "Outdoor Capable/Weatherproof" : {
+                "LCD" : {
+                  "LG-MRI" : {}
+                },
+                "LED" : {}
+              }
+            },
+            "Alternative Displays" : {
+              "Mechanical/Persistence of Vision" : {
+                "Flip-dot" : {},
+                "Split-flap" : {}
+              },
+              "Transparent LCD" : {
+                "Layered/Stacked Display" : {}
+              },
+              "Transparent OLED" : {
+                "Layered/Stacked Displays" : {}
+              },
+              "Flexible Displays (OLED)" : {},
+              "Electronic Ink/E-Ink" : {
+                "Visionect" : {}
+              },
+              "Volumetric Illusion" : {
+                "Lightfield" : {
+                  "Solidlight" : {},
+                  "Looking Glass" : {}
+                },
+                "Layered Screens" : {}
+              },
+              "LCD with modified polarizers" : {
+                "Worldstage Whitespace Displays" : {}
+              },
+              "Techniques" : {
+                "Projection on water" : {},
+                "Projection on fog" : {},
+                "Persistence of Vision" : {},
+                "Pepper's Ghost" : {},
+                "Volumetric Projection" : {},
+                "Diffusion/Distortion" : {}
+              },
+              "Object" : {}
+            },
+            "Touch Screens" : {
+              "Projected Capacitance (PCAP)" : {},
+              "Infrared" : {},
+              "Resistive" : {},
+              "Surface Acoustic Wave" : {},
+              "Surface Capacitive" : {},
+              "Object/Marker Recognition on screens" : {}
+            }
+          }
+        },
+        "Input" : {
+          "Cameras" : {
+            "Broadcast" : {},
+            "PTZ" : {},
+            "DSLR" : {},
+            "Cinema" : {}
+          },
+          "Capture" : {
+            "Capture Card" : {},
+            "Object" : {}
+          }
+        },
+        "Other Concepts" : {
+          "Signal Extenders" : {
+            "Fiber" : {},
+            "Cat5e/Cat6" : {}
+          },
+          "Routers" : {},
+          "Switchers" : {},
+          "Transmission/Streaming" : {},
+          "Video Cables" : {
+            "Legacy" : {
+              "SDI" : {},
+              "VGA" : {},
+              "RCA" : {},
+              "Coax" : {}
+            },
+            "HD" : {
+              "HDMI" : {},
+              "Displayport" : {},
+              "HD-SDI" : {},
+              "3G-SDI" : {},
+              "6G-SDI" : {}
+            }
+          }
+        },
+        "Basic Media Players" : {
+          "Bright Sign" : {}
+        },
+        "Pro Systems" : {
+          "Catalyst" : {},
+          "Disguise/d3" : {},
+          "Dataton Watchout" : {},
+          "Pixera" : {},
+          "Notch" : {},
+          "Green Hippo" : {},
+          "Ventuz" : {}
+        }
+      },
+      "Software" : {
+        "VJ/Mapping Software" : {
+          "Modul8" : {},
+          "Madmapper" : {},
+          "VDMX" : {},
+          "Resolume" : {}
+        },
+        "Streaming" : {
+          "Streaming Protocol" : {
+            "RTMP" : {},
+            "RTSP" : {},
+            "HLS" : {},
+            "RTP" : {},
+            "Newtek NDI" : {}
+          },
+          "OBS" : {},
+          "Wirecast" : {},
+          "vMix" : {}
+        }
+      }
+    },
+    "Lights" : {
+      "Lighting Consoles" : {
+        "Object" : {}
+      },
+      "DMX" : {},
+      "Lasers" : {
+        "Laser Control" : {
+          "Pangolin Quickshow" : {},
+          "ILDA" : {},
+          "DMX" : {}
+        }
+      },
+      "ArtNet" : {}
+    },
+    "Computers" : {
+      "Operating Systems" : {
+        "Mac" : {},
+        "Linux" : {},
+        "Windows" : {}
+      },
+      "Graphics Cards" : {}
+    },
+    "Mobile Devices" : {
+      "iOS" : {},
+      "Android" : {}
+    },
+    "Electrical and Safety" : {},
+    "Utility/Management Systems" : {
+      "Crestron" : {}
+    }
+  },
   "Optical Tracking" : {
     "Related Topics" : {
       "Antilatency/Low Latency" : {},
