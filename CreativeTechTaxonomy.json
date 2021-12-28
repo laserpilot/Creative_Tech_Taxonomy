@@ -299,7 +299,22 @@
     "Bluetooth" : {
       "Beacons" : {}
     },
-    "Position/Motion Sensing" : {},
+    "Position/Motion Sensing" : {
+      "LIDAR" : {},
+      "Rotary Encoder" : {},
+      "GPS" : {},
+      "Infrared" : {
+        "PIR" : {},
+        "Distance Sensor" : {}
+      },
+      "Ultrasonic Distance Sensor" : {},
+      "Ultra Wide Band (UWB)" : {
+        "Apple Airtag" : {},
+        "Object" : {}
+      },
+      "Accelerometer" : {},
+      "Gyroscope" : {}
+    },
     "Other" : {
       "Unusual or Custom Inputs" : {
         "Pressure Sensors" : {
@@ -364,7 +379,57 @@
       }
     }
   },
-  "Physical Computing" : {},
+  "Physical Computing" : {
+    "Embedded AI Devices" : {
+      "Microsoft Azure Percept" : {},
+      "NVIDIA Jetson Nano" : {},
+      "Google Coral" : {}
+    },
+    "Analysis" : {
+      "Multimeter" : {},
+      "Oscilloscope" : {},
+      "Power Profiler" : {},
+      "J-Link Debug Probe" : {}
+    },
+    "Embedded/Multiple Devices" : {
+      "Beaglebone" : {},
+      "Raspberry Pi" : {}
+    },
+    "Motors/Actuators" : {
+      "Types" : {
+        "DC Motor" : {},
+        "Linear Actuator" : {},
+        "Stepper" : {},
+        "Servo" : {}
+      },
+      "Related" : {
+        "Haptics" : {
+          "Ultraleap" : {},
+          "Disney AIREAL" : {},
+          "Novint Falcon" : {}
+        },
+        "Robotics" : {
+          "Soft Robotics" : {},
+          "Kinetic Sculptures" : {}
+        },
+        "Air/Water Movement" : {
+          "Solenoids" : {}
+        }
+      }
+    },
+    "Microcontrollers" : {
+      "Adafruit Feather" : {},
+      "M5Stack" : {},
+      "Arduino" : {},
+      "Custom PCB" : {},
+      "Teensy" : {}
+    },
+    "Lights/LED" : {
+      "Fadecandy" : {},
+      "NeoPixel" : {},
+      "LED Strips" : {}
+    }
+  },
   "Mobile Technology" : {
     "Sensors" : {
       "Compass/Magnetometer" : {},
