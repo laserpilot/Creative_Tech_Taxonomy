@@ -9,6 +9,42 @@
 
  This is currently in an early state, so please submit suggestions for data formats, or feel free to jump in and help with the rote work of filling in things like links/information/tags/etc. 
 
+ Current proposed format is something like this:
+
+ - **Parent Node**
+    -   **Child Node**: Named the same name
+        - **DisplayText**: Name of the Node. Could eventually be an array with different languages
+        - **InfoLink**: If relevant, a link to a website with more info
+        - **Tags**: Array of text that could be useful for creating visualizations that create other connections between points
+            - **Child Node**: other subcategories below this child
+
+
+Example:
+ - Creative Code Frameworks (parent)
+    - C++ (child)
+        - OpenFrameworks (child)
+            - DisplayText: OpenFrameworks
+            - Infolink: www.openframeworks.cc
+            - Tags:
+                - C++
+                - Open Source
+                - Creative Code Framework
+                - Mac
+                - Windows
+                - Linux
+
+
+Other eventual additions:
+ - Might need a different format to better capture parent/child relationships. Also needs a way to assign multiple parents to one child node to eliminate
+ - Unique ID per node or a way to relate the same "node" in multiple locations
+ - Description as part of the node
+ - Parent node as part of the child description
+
+
+ Other category additions for the future?
+  - Organizations/Companies/Collectives/Art Institutes and the tools they use?
+  - Well known works and related tools?
+
 
 
 
