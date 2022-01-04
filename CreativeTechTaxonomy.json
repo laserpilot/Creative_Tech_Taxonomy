@@ -171,13 +171,15 @@
         "Maya" : {},
         "Blender" : {}
       },
-      "Texturing" : {
+      "Sculpting and Texturing" : {
         "ZBrush" : {},
         "Substance Designer" : {}
       },
       "Other Post Production Tools" : {
+        "Mari" : {},
         "Houdini" : {},
-        "Nuke" : {}
+        "Nuke" : {},
+        "Marvelous Designer" : {}
       },
       "Render Engines" : {
         "Octane" : {},
@@ -204,10 +206,16 @@
       "Logic Pro" : {},
       "Audacity" : {},
       "Reason" : {},
-      "Renoise" : {}
+      "Renoise" : {},
+      "Bespoke Synth" : {},
+      "Bitwig" : {}
     }
   },
   "Pro AV Hardware and Related Software" : {
+    "Special FX" : {
+      "Fog Machine" : {},
+      "Haze Machine" : {}
+    },
     "Audio" : {
       "Input" : {
         "Microphones" : {
@@ -549,7 +557,11 @@
       "Beacons" : {}
     },
     "Position/Motion Sensing" : {
-      "LIDAR" : {},
+      "LIDAR" : {
+        "Velodyne Lidar VLP Series" : {},
+        "Ouster" : {},
+        "Hokuyu UST Series" : {}
+      },
       "Rotary Encoder" : {},
       "GPS" : {},
       "Infrared" : {
@@ -561,8 +573,10 @@
         "Apple Airtag" : {},
         "Pozyx" : {}
       },
-      "Accelerometer" : {},
-      "Gyroscope" : {}
+      "Accelerometer/Gyroscope" : {
+        "LP-Research LPMS Series" : {},
+        "Wit Motion" : {}
+      }
     },
     "Other" : {
       "Unusual or Custom Inputs" : {
