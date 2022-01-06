@@ -239,6 +239,9 @@
         "Music Software" : {
           "Ableton" : {},
           "See Asset Creation" : {}
+        },
+        "Timecode" : {
+          "SMTPE LTC" : {}
         }
       },
       "Output" : {
@@ -372,7 +375,9 @@
             "Cinema" : {}
           },
           "Capture" : {
-            "Capture Card" : {},
+            "Capture Cards" : {
+              "Blackmagic" : {}
+            },
             "Object" : {}
           }
         },
@@ -430,23 +435,45 @@
           },
           "OBS" : {},
           "Wirecast" : {},
-          "vMix" : {}
+          "vMix" : {},
+          "Newtek NDI" : {}
         }
       }
     },
     "Lights" : {
       "Lighting Consoles" : {
-        "Object" : {}
+        "GrandMA" : {},
+        "ETC" : {}
       },
-      "DMX" : {},
+      "Lighting Controllers" : {
+        "Pro" : {
+          "Advatek" : {},
+          "Enttec" : {},
+          "Madrix" : {},
+          "Falcon" : {}
+        },
+        "DIY": {
+          "Teensy" : {},
+          "Raspberry Pi" : {}
+        }
+      },
+      "Mapping & Content Software" : {
+        "Madrix" : {},
+        "ELM" : {},
+        "TouchDesigner" : {}
+      },
+      "Communication Protocols" : {
+        "DMX" : {},
+        "ArtNet / sACN" : {},
+        "DDB" : {}
+      },
       "Lasers" : {
         "Laser Control" : {
           "Pangolin Quickshow" : {},
           "ILDA" : {},
-          "DMX" : {}
+          "MadMapper MadLaser" : {}
         }
-      },
-      "ArtNet" : {}
+      }
     },
     "Computers" : {
       "Operating Systems" : {
@@ -462,7 +489,8 @@
     },
     "Electrical and Safety" : {},
     "Utility/Management Systems" : {
-      "Crestron" : {}
+      "Crestron" : {},
+      "Extron" : {}
     }
   },
   "Optical Tracking" : {
@@ -888,6 +916,7 @@
         "MIT" : {},
         "GPL" : {}
       },
+      "Educational/Learning" : {},
       "Other" : {}
     },
     "Language Type" : {
