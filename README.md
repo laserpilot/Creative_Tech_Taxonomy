@@ -1,6 +1,6 @@
 # Creative Tech Taxonomy
 
-![image](Images/Creative_Tech_Taxonomy_v1.4.png)
+Link to Github pages is here
 
  An open taxonomy of software, hardware, and concepts related to creative technology and creative coding. Many relationships and hierarchies between topics are completely subjective and have many flaws, so please don't take these too seriously - if you have a correction or suggestion, please submit a pull request. This is a labor of love and not meant to be too prescriptive, just illustrative.
 
@@ -12,6 +12,15 @@
 
  This is currently in an early state, so please submit suggestions for data formats, or feel free to jump in and help with the rote work of filling in things like links/information/tags/etc. 
 
+The diagram was originally made as a static image, but @HeidiHe made some huge improvements [in this repo](https://github.com/HeidiHe/Experiment_Repo_on_CreativeTech_Taxonomy) and now we can run this on a github pages or locally so that it can be visualized. 
+
+Once you have the repo, you can run the page locally from the root of this directory with any method you choose -here is a starter command if you have `http-server` installed:
+
+`http-server -a localhost -p 8000 -c-1`
+
+## Future Improvements - 
+
+Adding a contextual information system that can display additional info about the clicked node:
  Current proposed format is something like this:
 
  - **Parent Node**
@@ -52,7 +61,7 @@ Other eventual additions:
 For another really great taxonomy document, check out this link: https://github.com/terkelg/awesome-creative-coding
 
 Individual Images:
-
+![image](Images/Creative_Tech_Taxonomy_v1.4.png)
 ![Creative Code Framework](Images/Creative_Code_Frameworks.png)
 ![GameEngines](Images/GameEngines.png)
 ![AVHardware](Images/AV_hardware.png)

@@ -1,0 +1,981 @@
+{
+  "AI/Machine Learning": {
+    "Content Identification": {
+      "Object Recognition": {
+        "Body part tracking": {
+          "Body Pose Tracking": {
+            "PoseNET": {}
+          },
+          "Hand Tracking": {
+            "Apple Vision Framework": {}
+          },
+          "Facial Tracking": {}
+        },
+        "Segmentation": {},
+        "OpenCV": {},
+        "YOLO": {}
+      },
+      "Data Analytics/Classification": {
+        "t-SNE": {}
+      },
+      "Text Analysis": {
+        "Sentiment Analysis": {}
+      },
+      "Audio Classification": {},
+      "Voice Recognition": {
+        "Speech to Text": {}
+      }
+    },
+    "Content Creation": {
+      "Image Manipulation": {
+        "Text To Speech": {},
+        "Image Animation": {},
+        "GAN Inversion": {},
+        "SuperResolution": {},
+        "Lip Syncing": {}
+      },
+      "Image Generation": {
+        "VQGAN": {},
+        "CLIP": {},
+        "Style Transfer": {
+          "Cartoonization": {}
+        },
+        "Pix2Pix": {},
+        "StyleGAN2": {},
+        "GAN/DCGAN": {},
+        "DeepDream": {}
+      }
+    },
+    "Tools": {
+      "Tensorflow": {},
+      "Jupyter Notebooks": {},
+      "RunwayML": {},
+      "Google Collab": {},
+      "PyTorch": {}
+    }
+  },
+  "Uncategorized Utilities/DevOps": {
+    "Data Tools": {
+      "Python": {
+        "Bokeh": {},
+        "Plotly": {},
+        "Matplotlib": {}
+      },
+      "R": {
+        "ggplot": {}
+      }
+    },
+    "DevOps": {
+      "Version Control": {
+        "git": {
+          "Github": {},
+          "Bitbucket": {}
+        },
+        "Subversion(svn)": {}
+      },
+      "Continuous Integration and Development (CI/CD)": {
+        "TravisCI": {},
+        "Gitlab CI": {},
+        "Jenkins": {},
+        "Teamcity": {},
+        "Bamboo": {}
+      },
+      "Containers": {
+        "Kubernetes": {},
+        "Docker": {}
+      },
+      "Automation": {
+        "Ansible": {},
+        "Puppet": {},
+        "Chef": {}
+      },
+      "Monitoring/Logging": {
+        "Sudosystems": {},
+        "AM/PM": {},
+        "ELK Stack": {},
+        "Splunk": {}
+      }
+    },
+    "IDE": {
+      "Vim/Emacs": {},
+      "Atom": {},
+      "bbedit": {},
+      "Sublime Text": {},
+      "Visual Studio Code": {},
+      "Visual Studio": {},
+      "Xcode": {}
+    },
+    "Terminal/Shell": {
+      "Unix (Linux/Mac)": {
+        "bash": {},
+        "Object": {}
+      },
+      "Windows": {
+        "Powershell": {},
+        "cmd": {}
+      }
+    },
+    "Scripting": {
+      "MacOS": {
+        "launchdaemons": {},
+        "bash scripts": {},
+        "Shortcuts": {},
+        "AppleScript": {},
+        "Automator": {},
+        "cronjobs": {}
+      },
+      "Linux": {
+        "cronjobs": {},
+        "bash scripts": {},
+        "launchdaemons": {}
+      },
+      "Windows": {
+        "Powershell scripts": {},
+        "bat scripts": {},
+        "Tax Scheduler": {}
+      }
+    },
+    "Documentation": {}
+  },
+  "Asset Creation": {
+    "2D Asset Creation": {
+      "UX/UI Design tools": {
+        "InVision": {},
+        "Miro": {},
+        "Figma": {}
+      },
+      "Illustration": {
+        "Procreate": {}
+      },
+      "Adobe Suite": {
+        "After Effects": {},
+        "Premiere": {},
+        "Illustrator": {},
+        "Photoshop": {}
+      },
+      "Open Source/Free": {
+        "Inkscape": {},
+        "GIMP": {}
+      }
+    },
+    "3D Asset Creation": {
+      "CAD/CAM": {
+        "Fusion 360": {},
+        "Sketchup": {},
+        "Rhino": {},
+        "AutoCAD": {}
+      },
+      "Modeling": {
+        "Cinema 4D": {},
+        "3D Studio Max": {},
+        "Maya": {},
+        "Blender": {}
+      },
+      "Sculpting and Texturing": {
+        "ZBrush": {},
+        "Substance Designer": {}
+      },
+      "Other Post Production Tools": {
+        "Mari": {},
+        "Houdini": {},
+        "Nuke": {},
+        "Marvelous Designer": {}
+      },
+      "Render Engines": {
+        "Octane": {},
+        "V-Ray": {}
+      },
+      "Asset Pipelines/Management": {
+        "NVIDIA Omniverse": {},
+        "Perforce": {}
+      },
+      "Related Concepts": {
+        "File Formats": {},
+        "Rigging": {},
+        "Character Design": {},
+        "Polygon Reduction": {}
+      }
+    },
+    "Audio/Music Asset Creation": {
+      "ProTools": {},
+      "Reaper": {},
+      "Ableton Live": {
+        "Max For Live": {}
+      },
+      "Cubase": {},
+      "Logic Pro": {},
+      "Audacity": {},
+      "Reason": {},
+      "Renoise": {},
+      "Bespoke Synth": {},
+      "Bitwig": {}
+    }
+  },
+  "Pro AV Hardware and Related Software": {
+    "Special FX": {
+      "Fog Machine": {},
+      "Haze Machine": {}
+    },
+    "Audio": {
+      "Input": {
+        "Microphones": {
+          "Dynamic": {
+            "Regular Vocal Mic": {},
+            "Shotgun": {},
+            "Ambisonic": {}
+          },
+          "Condensor": {
+            "Regular Vocal Mic": {},
+            "Shotgun": {},
+            "Ambisonic": {}
+          },
+          "Ribbon": {}
+        },
+        "Synthesizers": {},
+        "Pickups": {
+          "Piezo": {},
+          "Transducer": {}
+        },
+        "Music Software": {
+          "Ableton": {},
+          "See Asset Creation": {}
+        },
+        "Timecode": {
+          "SMTPE LTC": {}
+        }
+      },
+      "Output": {
+        "Amplifiers": {},
+        "Spatial": {
+          "Directional": {},
+          "Binaural": {},
+          "Surround": {},
+          "Wave Field Synthesis": {}
+        },
+        "PA Systems": {},
+        "Signal Processors": {
+          "Compressors": {},
+          "Limiters": {},
+          "Equalizers": {},
+          "Reverb": {}
+        },
+        "Headphones": {},
+        "Transducer": {
+          "Buttkicker Subwoofer": {},
+          "Dayton Audio": {}
+        }
+      },
+      "Communication Protocols": {
+        "Dante": {},
+        "OSC": {},
+        "Digital/Analog Conversion": {
+          "S/PIDF": {}
+        }
+      },
+      "Related Concepts": {}
+    },
+    "Video": {
+      "Hardware": {
+        "Output": {
+          "Displays": {
+            "Consumer Display Tech": {
+              "Legacy": {
+                "Vectrex/Oscilloscope": {},
+                "Cathode Ray Tube TV": {},
+                "Plasma": {},
+                "3D TV": {}
+              },
+              "Flatscreen": {
+                "Electroluminescent Panel": {},
+                "OLED": {},
+                "LCD": {},
+                "qLED": {},
+                "microLED": {}
+              },
+              "Projector": {
+                "Imaging Method": {
+                  "DLP": {},
+                  "LCD": {}
+                },
+                "Pico Projectors": {},
+                "Small Scale": {},
+                "Large Venue Projectors": {}
+              }
+            },
+            "Commercial Display Tech": {
+              "LED": {
+                "Video Walls": {},
+                "Interactive Floors": {},
+                "Volumetric Displays": {},
+                "Indoor Rated": {},
+                "Transparent": {},
+                "Outdoor Rated": {}
+              },
+              "Indoor 24/7": {
+                "Projectors": {},
+                "OLED": {}
+              },
+              "Outdoor Capable/Weatherproof": {
+                "LCD": {
+                  "LG-MRI": {}
+                },
+                "LED": {}
+              }
+            },
+            "Alternative Displays": {
+              "Mechanical/Persistence of Vision": {
+                "Flip-dot": {},
+                "Split-flap": {}
+              },
+              "Transparent LCD": {
+                "Layered/Stacked Display": {}
+              },
+              "Transparent OLED": {
+                "Layered/Stacked Displays": {}
+              },
+              "Flexible Displays (OLED)": {},
+              "Electronic Ink/E-Ink": {
+                "Visionect": {}
+              },
+              "Volumetric Illusion": {
+                "Lightfield": {
+                  "Solidlight": {},
+                  "Looking Glass": {}
+                },
+                "Layered Screens": {}
+              },
+              "LCD with modified polarizers": {
+                "Worldstage Whitespace Displays": {}
+              },
+              "Techniques": {
+                "Projection on water": {},
+                "Projection on fog": {},
+                "Persistence of Vision": {},
+                "Pepper's Ghost": {},
+                "Volumetric Projection": {},
+                "Diffusion/Distortion": {}
+              },
+              "Object": {}
+            },
+            "Touch Screens": {
+              "Projected Capacitance (PCAP)": {},
+              "Infrared": {},
+              "Resistive": {},
+              "Surface Acoustic Wave": {},
+              "Surface Capacitive": {},
+              "Object/Marker Recognition on screens": {}
+            }
+          }
+        },
+        "Input": {
+          "Cameras": {
+            "Broadcast": {},
+            "PTZ": {},
+            "DSLR": {},
+            "Cinema": {}
+          },
+          "Capture": {
+            "Capture Cards": {
+              "Blackmagic": {}
+            },
+            "Object": {}
+          }
+        },
+        "Other Concepts": {
+          "Signal Extenders": {
+            "Fiber": {},
+            "Cat5e/Cat6": {}
+          },
+          "Routers": {},
+          "Switchers": {},
+          "Transmission/Streaming": {},
+          "Video Cables": {
+            "Legacy": {
+              "SDI": {},
+              "VGA": {},
+              "RCA": {},
+              "Coax": {}
+            },
+            "HD": {
+              "HDMI": {},
+              "Displayport": {},
+              "HD-SDI": {},
+              "3G-SDI": {},
+              "6G-SDI": {}
+            }
+          }
+        },
+        "Basic Media Players": {
+          "Bright Sign": {}
+        },
+        "Pro Systems": {
+          "Catalyst": {},
+          "Disguise/d3": {},
+          "Dataton Watchout": {},
+          "Pixera": {},
+          "Notch": {},
+          "Green Hippo": {},
+          "Ventuz": {}
+        }
+      },
+      "Software": {
+        "VJ/Mapping Software": {
+          "Modul8": {},
+          "Madmapper": {},
+          "VDMX": {},
+          "Resolume": {}
+        },
+        "Streaming": {
+          "Streaming Protocol": {
+            "RTMP": {},
+            "RTSP": {},
+            "HLS": {},
+            "RTP": {},
+            "Newtek NDI": {}
+          },
+          "OBS": {},
+          "Wirecast": {},
+          "vMix": {},
+          "Newtek NDI": {}
+        }
+      }
+    },
+    "Lights": {
+      "Lighting Consoles": {
+        "GrandMA": {},
+        "ETC": {}
+      },
+      "Lighting Controllers": {
+        "Pro": {
+          "Advatek": {},
+          "Enttec": {},
+          "Madrix": {},
+          "Falcon": {}
+        },
+        "DIY": {
+          "Teensy": {},
+          "Raspberry Pi": {}
+        }
+      },
+      "Mapping & Content Software": {
+        "Madrix": {},
+        "ELM": {},
+        "TouchDesigner": {}
+      },
+      "Communication Protocols": {
+        "DMX": {},
+        "ArtNet / sACN": {},
+        "DDB": {}
+      },
+      "Lasers": {
+        "Laser Control": {
+          "Pangolin Quickshow": {},
+          "ILDA": {},
+          "MadMapper MadLaser": {}
+        }
+      }
+    },
+    "Computers": {
+      "Operating Systems": {
+        "Mac": {},
+        "Linux": {},
+        "Windows": {}
+      },
+      "Graphics Cards": {}
+    },
+    "Mobile Devices": {
+      "iOS": {},
+      "Android": {}
+    },
+    "Electrical and Safety": {},
+    "Utility/Management Systems": {
+      "Crestron": {},
+      "Extron": {}
+    }
+  },
+  "Optical Tracking": {
+    "Related Topics": {
+      "Antilatency/Low Latency": {},
+      "Virtual Production/XR": {
+        "MoCap Rigs/Systems": {
+          "Camera Based": {
+            "Mo-Sys": {},
+            "RedSpy": {},
+            "VICON": {}
+          },
+          "IMU Based": {
+            "Rokoko": {},
+            "Xsens": {}
+          }
+        },
+        "Other Tracking Systems": {
+          "OptiTrack": {},
+          "Blacktrax": {}
+        }
+      }
+    },
+    "Computer Vision": {
+      "For More - See AI/ML Section": {},
+      "Gesture Control": {},
+      "Eye Tracking": {
+        "Tobii Eye Tracker": {}
+      },
+      "Body Tracking": {},
+      "OpenCV": {},
+      "Techniques": {
+        "Contour Detection": {},
+        "Optical Flow": {},
+        "Blob Tracking": {},
+        "Background Subtraction": {},
+        "Frame Differencing": {}
+      }
+    }
+  },
+  "Sensors/Interaction Methods": {
+    "Cameras": {
+      "Types": {
+        "Slow Motion/High Speed Cam": {},
+        "IP Cameras": {},
+        "Video Cam": {
+          "Action Cameras": {
+            "GoPro Hero": {}
+          },
+          "Smartphone Camera": {},
+          "Professional Grade Camcorder": {},
+          "Broadcast": {},
+          "Object": {}
+        },
+        "Webcam": {},
+        "Infrared": {
+          "Normal": {},
+          "Depth Cameras": {
+            "Realsense": {},
+            "Kinect": {},
+            "Orbbec": {},
+            "Ensenso": {}
+          },
+          "Thermal Cameras": {
+            "FLIR": {}
+          }
+        },
+        "DSLR": {},
+        "Mirrorless": {},
+        "Stereo RGB": {
+          "Stereolab Zed Camera": {}
+        }
+      }
+    },
+    "Touch/Hands": {
+      "Leap Motion": {},
+      "Sensel": {},
+      "Capacitive": {},
+      "Touchscreens": {
+        "Projected Capacitance (PCAP)": {
+          "Ideum": {}
+        },
+        "IR": {},
+        "Shadowsense": {},
+        "LIDAR (for Large scale or LED)": {
+          "Velodyne": {},
+          "Ouster": {}
+        }
+      }
+    },
+    "Bluetooth": {
+      "Beacons": {}
+    },
+    "Position/Motion Sensing": {
+      "LIDAR": {
+        "Velodyne Lidar VLP Series": {},
+        "Ouster": {},
+        "Hokuyu UST Series": {}
+      },
+      "Rotary Encoder": {},
+      "GPS": {},
+      "Infrared": {
+        "PIR": {},
+        "Distance Sensor": {}
+      },
+      "Ultrasonic Distance Sensor": {},
+      "Ultra Wide Band (UWB)": {
+        "Apple Airtag": {},
+        "Pozyx": {}
+      },
+      "Accelerometer/Gyroscope": {
+        "LP-Research LPMS Series": {},
+        "Wit Motion": {}
+      }
+    },
+    "Other": {
+      "Unusual or Custom Inputs": {
+        "Pressure Sensors": {
+          "Direct Force Pressure": {
+            "Load Cell": {},
+            "Force Sensing Resistor (FSR)": {},
+            "Sensel": {}
+          },
+          "Object": {}
+        },
+        "Magnetometer": {},
+        "Water Detection": {},
+        "Humidity": {},
+        "Bend Sensors": {}
+      },
+      "Biometric": {
+        "Heart Rate": {
+          "ECG (Electrical)": {},
+          "PPG (Optical)": {}
+        },
+        "Breath": {
+          "XeThru": {}
+        },
+        "Object": {}
+      },
+      "Buttons/Knobs/Sliders": {
+        "Linear": {
+          "Potentiometer": {}
+        },
+        "Magnetic": {
+          "Hall Effect Sensor": {},
+          "Reed Switch": {}
+        },
+        "Rotary": {
+          "Potentiometer": {},
+          "Rotary Encoder": {}
+        },
+        "Momentary": {
+          "Arcade Button": {}
+        },
+        "Toggle": {
+          "Switch": {}
+        }
+      },
+      "RFID": {
+        "NFC": {},
+        "Low Frequency (LF)": {},
+        "High Frequency (HF)": {},
+        "Ultra High Frequency (UHF)": {}
+      },
+      "Capacitive Sensors": {},
+      "Light Sensors": {
+        "Photocell": {}
+      },
+      "Temperature Sensors": {
+        "Thermistor": {},
+        "Thermocouple": {}
+      },
+      "Sound/Vibration": {
+        "Microphones": {},
+        "Piezo": {}
+      }
+    }
+  },
+  "Physical Computing": {
+    "Embedded AI Devices": {
+      "Microsoft Azure Percept": {},
+      "NVIDIA Jetson Nano": {},
+      "Google Coral": {}
+    },
+    "Analysis": {
+      "Multimeter": {},
+      "Oscilloscope": {},
+      "Power Profiler": {},
+      "J-Link Debug Probe": {}
+    },
+    "Embedded/Multiple Devices": {
+      "Beaglebone": {},
+      "Raspberry Pi": {}
+    },
+    "Motors/Actuators": {
+      "Types": {
+        "DC Motor": {},
+        "Linear Actuator": {},
+        "Stepper": {},
+        "Servo": {}
+      },
+      "Related": {
+        "Haptics": {
+          "Ultraleap": {},
+          "Disney AIREAL": {},
+          "Novint Falcon": {}
+        },
+        "Robotics": {
+          "Soft Robotics": {},
+          "Kinetic Sculptures": {}
+        },
+        "Air/Water Movement": {
+          "Solenoids": {}
+        }
+      }
+    },
+    "Microcontrollers": {
+      "Adafruit Feather": {},
+      "M5Stack": {},
+      "Arduino": {},
+      "Custom PCB": {},
+      "Teensy": {}
+    },
+    "Lights/LED": {
+      "Fadecandy": {},
+      "NeoPixel": {},
+      "LED Strips": {}
+    }
+  },
+  "Mobile Technology": {
+    "Sensors": {
+      "Compass/Magnetometer": {},
+      "Location/GPS": {},
+      "Ambient Light Sensor": {},
+      "Barometer": {},
+      "Gyroscope": {},
+      "Accelerometer": {},
+      "LIDAR": {},
+      "Microphone": {},
+      "Camera": {}
+    },
+    "Mobile AR": {
+      "Native Platform Frameworks": {
+        "Android": {
+          "ARCore": {}
+        },
+        "Apple": {
+          "ARKit": {}
+        }
+      },
+      "Face Detection/Face Filters": {
+        "Snapchat Lens Studio": {},
+        "Meta Spark AR": {}
+      },
+      "WebAR": {
+        "AR.js/A Frame": {},
+        "8th Wall": {}
+      },
+      "Other": {
+        "Niantic Lightship": {}
+      }
+    },
+    "Web Frameworks for Apps": {
+      "React Native": {},
+      "Bootstrap": {}
+    },
+    "Android": {
+      "Devices": {
+        "A million options": {}
+      }
+    },
+    "Apple": {
+      "Devices": {
+        "iPhone": {
+          "iOS": {}
+        },
+        "iPad": {
+          "iPadOS": {}
+        },
+        "Apple Watch": {
+          "Object": {}
+        }
+      }
+    }
+  },
+  "Web/Networking Frameworks": {
+    "Frontend": {
+      "Audio": {
+        "tone.js": {}
+      },
+      "WebAR/VR": {
+        "AR.js/A-Frame": {},
+        "8th Wall": {}
+      },
+      "Machine Learning": {
+        "ml5.js": {}
+      },
+      "WebGL Environments": {
+        "three.js": {}
+      },
+      "Data Visualization": {
+        "D3.js": {}
+      },
+      "Common Frontend Frameworks": {
+        "Vue.js": {},
+        "Angular.js": {},
+        "React.js": {}
+      },
+      "Creative/Animation frameworks": {
+        "paper.js": {},
+        "p5.js": {}
+      }
+    },
+    "Backend": {
+      "Database": {
+        "MondoDB": {},
+        "SQL": {
+          "sqlite": {}
+        }
+      },
+      "Communication Protocols/Messaging Queues": {
+        "RabbitMQ": {},
+        "ZeroMQ": {},
+        "Websockets": {},
+        "UDP": {
+          "Open Sound Control (OSC)": {}
+        },
+        "TCP/IP": {
+          "HTTP/HTTPS": {
+            "REST API": {}
+          }
+        }
+      },
+      "Related Concepts": {
+        "nginx": {},
+        "Microsoft Azure": {},
+        "Node.js": {},
+        "Google Firebase": {},
+        "Video/Image Processing": {
+          "gstreamer": {},
+          "imagemagick": {},
+          "ffmpeg": {}
+        },
+        "AWS": {
+          "S3": {},
+          "EC2": {}
+        },
+        "Google Cloud": {},
+        "Content Delivery Network (CDN)": {},
+        "Apache": {}
+      },
+      "Content Management System (CMS)": {
+        "A million others": {},
+        "Drupal": {},
+        "Wordpress": {},
+        "Contentful": {}
+      }
+    },
+    "Data Serialization": {
+      "Protobuf": {},
+      "YAML": {},
+      "JSON": {},
+      "XML": {}
+    }
+  },
+  "Real-time 3D/Game Engines": {
+    "Engine Types": {
+      "Open Source": {
+        "babylon.js": {},
+        "three.js": {},
+        "Sceneform": {}
+      },
+      "Commercial": {
+        "Scenekit": {},
+        "CryEngine": {},
+        "Amazon Lumberjack": {},
+        "Unity": {},
+        "Unreal": {}
+      }
+    },
+    "VR": {
+      "Headsets": {
+        "Sony PSVR": {},
+        "HTC Vive": {},
+        "Valve Index": {},
+        "Meta Oculus": {
+          "Rift S": {},
+          "Quest 2": {},
+          "Quest": {}
+        }
+      },
+      "Related Concepts": {}
+    },
+    "AR": {
+      "Headsets": {
+        "Google Glass": {},
+        "Magic Leap": {},
+        "Microsoft Hololens": {}
+      },
+      "AR Methods": {
+        "Marker Based": {
+          "Vuforia": {}
+        },
+        "Visual Inertial Odometry": {
+          "ARKit": {}
+        },
+        "SLAM": {
+          "iOS Devices with LIDAR": {},
+          "Google Tango": {}
+        }
+      },
+      "Related Concepts": {}
+    }
+  },
+  "Creative Code Frameworks": {
+    "License Types": {
+      "Commercial/Paid": {
+        "Subscription": {}
+      },
+      "Open Source": {
+        "Mozilla Public License": {},
+        "MIT": {},
+        "GPL": {}
+      },
+      "Educational/Learning": {},
+      "Other": {}
+    },
+    "Language Type": {
+      "Node Based/Visual": {
+        "Isadora": {},
+        "Cables.gl": {},
+        "vvvv": {},
+        "Vuo": {},
+        "Nodebox": {},
+        "nodes.io": {},
+        "Pure Data(pd)": {},
+        "Max": {},
+        "Notch": {}
+      },
+      "C++": {
+        "OpenFrameworks": {},
+        "Cinder": {},
+        "Nap Framework": {}
+      },
+      "Kotlin": {
+        "OPENRNDR": {}
+      },
+      "Ruby": {
+        "Visor": {}
+      },
+      "Rust": {
+        "Nannou": {}
+      },
+      "Python": {
+        "Processing.py": {}
+      },
+      "Javascript": {
+        "p5.js": {},
+        "three.js": {},
+        "paper.js": {}
+      },
+      "Legacy/Deprecated Tools": {
+        "Flash": {},
+        "Macromedia Director": {},
+        "Quartz Composer": {}
+      },
+      "Java": {
+        "Processing": {}
+      },
+      "Low Level Graphics": {
+        "Metal": {},
+        "DirectX": {},
+        "OpenGL": {
+          "WebGL": {}
+        },
+        "Vulkan": {}
+      }
+    },
+    "Use Cases": {
+      "Livecoding": {},
+      "Interactive/Physical sensor integration": {},
+      "Data Visualization": {},
+      "Multi Screen Custom Installations": {},
+      "Generative Visuals": {}
+    }
+  }
+}
