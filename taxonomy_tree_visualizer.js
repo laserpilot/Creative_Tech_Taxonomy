@@ -63,9 +63,21 @@ function showModal(nodeData) {
   const modalContent = document.getElementById("modalContent");
 
   // Generate content based on the clicked node data
-  const content = `<h2>${nodeData.data.name}</h2>
-                   <p>Add your additional information here</p>`;
-
+  // Generate content based on the clicked node data
+  const content = `
+    <h2>${nodeData.data.name}</h2>
+    <p>${nodeData.data.description || 'No description available.'}</p>
+    <p>Tags: ${nodeData.data.tags ? nodeData.data.tags.join(', ') : 'No tags available.'}</p>
+    <div>
+      Links:
+      <ul>
+        ${nodeData.data.links
+          ? Object.entries(nodeData.data.links).map(([type, url]) => `<li>${type}: <a href="${url}" target="_blank">${url}</a></li>`).join('')
+          : 'No links available.'
+        }
+      </ul>
+    </div>
+  `;
   modalContent.innerHTML = content;
   modal.style.display = "block";
 

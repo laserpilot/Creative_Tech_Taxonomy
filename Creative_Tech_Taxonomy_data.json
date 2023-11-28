@@ -3,21 +3,66 @@
     "children": [
         {
             "name": "AI/Machine Learning",
+            "description": "A category covering artificial intelligence and machine learning.",
+            "tags": [
+                "AI",
+                "machine learning"
+            ],
+            "links": {
+                "wiki": "https://en.wikipedia.org/wiki/AI",
+                "book": "https://example.com/machine-learning-book"
+            },
             "children": [
                 {
                     "name": "Content Identification",
+                    "description": "Identification and recognition of various types of content.",
+                    "tags": [
+                        "content identification"
+                    ],
+                    "links": {
+                        "tutorial": "https://example.com/content-identification-tutorial"
+                    },
                     "children": [
                         {
                             "name": "Object Recognition",
+                            "description": "Recognition of objects within images and videos.",
+                            "tags": [
+                                "object recognition"
+                            ],
+                            "links": {
+                                "blog": "https://example.com/object-recognition-blog"
+                            },
                             "children": [
                                 {
                                     "name": "Body part tracking",
+                                    "description": "Tracking and recognition of body parts in images and videos.",
+                                    "tags": [
+                                        "body part tracking"
+                                    ],
+                                    "links": {
+                                        "research": "https://example.com/body-part-tracking-research"
+                                    },
                                     "children": [
                                         {
                                             "name": "Body Pose Tracking",
+                                            "description": "Tracking the poses and movements of the human body.",
+                                            "tags": [
+                                                "body pose tracking"
+                                            ],
+                                            "links": {
+                                                "demo": "https://example.com/pose-tracking-demo"
+                                            },
                                             "children": [
                                                 {
-                                                    "name": "PoseNET"
+                                                    "name": "PoseNET",
+                                                    "description": "A real-time pose detection model for the web.",
+                                                    "tags": [
+                                                        "PoseNET",
+                                                        "pose detection"
+                                                    ],
+                                                    "links": {
+                                                        "github": "https://github.com/tensorflow/tfjs-models/tree/main/posenet"
+                                                    }
                                                 }
                                             ]
                                         },
