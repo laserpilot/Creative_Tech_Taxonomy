@@ -57,6 +57,29 @@ function color(d) {
   }
 }
 
+// Function to show the modal
+function showModal(nodeData) {
+  const modal = document.getElementById("myModal");
+  const modalContent = document.getElementById("modalContent");
+
+  // Generate content based on the clicked node data
+  const content = `<h2>${nodeData.data.name}</h2>
+                   <p>Add your additional information here</p>`;
+
+  modalContent.innerHTML = content;
+  modal.style.display = "block";
+
+  // Attach the click event listener for the close button dynamically
+  const closeButton = modal.querySelector(".close");
+  closeButton.addEventListener("click", closeModal);
+}
+
+// Function to close the modal
+function closeModal() {
+  const modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
+
 //document.body.style.backgroundColor = "black";
 
 function create_visualization(data){    // Specify the charts’ dimensions. The height is variable, depending on the layout.
@@ -161,6 +184,10 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
           .attr("text-anchor", d => d._children ? "end" : "start")
           //.attr("text-anchor", "middle")
           .text(d => d.data.name)
+          .on("click", (event, d) => {
+            // Show modal with additional information about the clicked node
+            showModal(d);
+          });
 
       nodeEnter.select("text")
           .clone(true).lower()
@@ -168,26 +195,26 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
           .attr("stroke-width", strokeWidth)
           .attr("stroke", "white");
 
-      /*
-      //to implement later - how to add things to nodes
-      nodeEnter.select("circle")
-      .on("click", (event, d) => {
-        const newNodeName = prompt("Enter the name for the new node:");
-        if (newNodeName) {
-          // Create a new node
-          const newNode = { name: newNodeName, children: [] };
-    
-          // Add the new node as a child of the clicked node
-          if (!d.children) d.children = [];
-          d.children.push(newNode);
-    
-          // Update the hierarchy and visualization
-          const newRoot = d3.hierarchy(data);
-          tree(newRoot);
-          update(event, newRoot);
-        }
-      });
-      */
+        
+/*
+          nodeEnter.select("circle")
+          .on("click", (event, d) => {
+            const newNodeName = prompt("Enter the name for the new node:");
+            if (newNodeName) {
+              // Create a new node
+              const newNode = { name: newNodeName, children: [] };
+        
+              // Add the new node as a child of the clicked node
+              if (!d.children) d.children = [];
+              d.children.push(newNode);
+        
+              // Update the hierarchy and visualization
+              const newRoot = d3.hierarchy(data);
+              tree(newRoot);
+              update(event, newRoot);
+            }
+          });
+*/
 
       // Transition nodes to their new position.
       const nodeUpdate = node.merge(nodeEnter).transition(transition)
