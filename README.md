@@ -1,6 +1,6 @@
 # Creative Tech Taxonomy
 
-Link to Github pages is here
+## View the current taxonomy at the link [here](https://laserpilot.github.io/Creative_Tech_Taxonomy/)
 
  An open taxonomy of software, hardware, and concepts related to creative technology and creative coding. Many relationships and hierarchies between topics are completely subjective and have many flaws, so please don't take these too seriously - if you have a correction or suggestion, please submit a pull request. This is a labor of love and not meant to be too prescriptive, just illustrative.
 
