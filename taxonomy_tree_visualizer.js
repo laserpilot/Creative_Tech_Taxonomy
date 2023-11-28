@@ -164,43 +164,43 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
       // Enter any new nodes at the parent's previous position.
       
       const nodeEnter = node.enter().append("g")
-          .attr("transform", d => `translate(${source.y0},${source.x0})`)
-          .attr("fill-opacity", 0)
-          .attr("stroke-opacity", 0)
-          .on("click", (event, d) => {
-            d.children = d.children ? null : d._children;
-            update(event, d);
-          });
-
-      
+      .attr("transform", d => `translate(${source.y0},${source.x0})`)
+      .attr("fill-opacity", 0)
+      .attr("stroke-opacity", 0);
+  
       // add warping box around text node
       nodeEnter.append("rect")
-        .attr("rx", 5) // Adjust the x-radius for rounded corners
-        .attr("ry", 5) // Adjust the y-radius for rounded corners
-        .attr("width", d =>d.data.name.length * (fontSize-5) + 20) // Adjust the width based on text length and font size
-        .attr("height", fontSize + 4) // Adjust the height as needed (font size + padding)
-        .attr("fill", "lightgray") // Adjust the background color
-        .attr("x", d => d._children ? -d.data.name.length * (fontSize-5) -20 : 5) // Center the rect around the text
-        .attr("y", -(fontSize + 4)/2) // Center the rect vertically around the text
-        .attr('fill', color)
-        .attr("opacity", d => d._children ? 0: 0.5)
+          .attr("rx", 5) // Adjust the x-radius for rounded corners
+          .attr("ry", 5) // Adjust the y-radius for rounded corners
+          .attr("width", d => d.data.name.length * (fontSize - 5) + 20) // Adjust the width based on text length and font size
+          .attr("height", fontSize + 4) // Adjust the height as needed (font size + padding)
+          .attr("fill", "lightgray") // Adjust the background color
+          .attr("x", d => d._children ? -d.data.name.length * (fontSize - 5) - 20 : 5) // Center the rect around the text
+          .attr("y", -(fontSize + 4) / 2) // Center the rect vertically around the text
+          .attr('fill', color)
+          .attr("opacity", d => d._children ? 0 : 0.5);
       
       nodeEnter.append("circle")
-        .attr("r", circleRadius)
-        .attr("fill", color)
-        .attr("stroke-width", strokeWidth);
-  
+          .attr("r", circleRadius)
+          .attr("fill", color)
+          .attr("stroke-width", strokeWidth)
+          .on("click", (event, d) => {
+              d.children = d.children ? null : d._children;
+              update(event, d);
+          });
+      
       nodeEnter.append("text")
           .attr("dy", "0.31em")
           .attr("x", d => d._children ? -fontSize : fontSize)
           .attr("text-anchor", d => d._children ? "end" : "start")
-          //.attr("text-anchor", "middle")
           .text(d => d.data.name)
           .on("click", (event, d) => {
-            // Show modal with additional information about the clicked node
-            showModal(d);
+              // Show modal with additional information about the clicked node
+              showModal(d);
+              // Prevent the click event from propagating to the parent (circle) element
+              d3.event.stopPropagation();
           });
-
+      
       nodeEnter.select("text")
           .clone(true).lower()
           .attr("stroke-linejoin", "round")
