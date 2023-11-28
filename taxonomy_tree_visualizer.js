@@ -1,3 +1,4 @@
+// app that creates a collapsible tree visualization using D3
 
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
@@ -14,6 +15,9 @@ fetch('./Creative_Tech_Taxonomy_data.json')
 .catch(error => console.log(error));
 
 function color(d) {
+  const creativeCodeColor = "red";
+  const AimlColor = "blue";
+  const UncategorizedUtilsColor = "purple";
 
   //color all the nodes
   function checkAncestors(node, name) {
@@ -56,42 +60,44 @@ function color(d) {
 //document.body.style.backgroundColor = "black";
 
 function create_visualization(data){    // Specify the charts’ dimensions. The height is variable, depending on the layout.
-    const width = 3000;
+    const width = 2200;
+    
     const marginTop = 100;
     const marginRight = 10;
     const marginBottom = 10;
-    const marginLeft = 200;
-    const fontSize = 30; // Adjust the font size as needed
-    const circleRadius = 7.5; // Adjust the circle radius as needed
-  
+    const marginLeft = 150;  
+    const fontSize = 12; // Adjust the font size as needed
+    const circleRadius = 3; // Adjust the circle radius as needed
+    const strokeWidth = 3; // Adjust the stroke width as needed
+
     // Rows are separated by dx pixels, columns by dy pixels. These names can be counter-intuitive
     // (dx is a height, and dy a width). This because the tree must be viewed with the root at the
     // “bottom”, in the data domain. The width of a column is based on the tree’s height.
     const root = d3.hierarchy(data);
-    const dx = 45;
-    // const dy = (width - marginRight - marginLeft) / (1 + root.height);
-    const dy = 500;
-  
+    const dx = 15;
+    const dy = 200; // Set dy to the screen width minus the left and right margins
+
     // Define the tree layout and the shape for links.
     const tree = d3.tree().nodeSize([dx, dy]);
     const diagonal = d3.linkHorizontal().x(d => d.y).y(d => d.x);
-  
+
     // Create the SVG container, a layer for the links and a layer for the nodes.
     const svg = d3.create("svg")
-        .attr("width", width)
-        .attr("height", dx)
-        .attr("viewBox", [-marginLeft, -marginTop, width, dx])
-        .attr("style", "max-width: 100%; height: auto; font: 30px Source Sans Pro; user-select: none;");
-  
+      .attr("width", "100%") // Set the width to 100% of the container
+      .attr("height", dx)
+      .attr("viewBox", [-marginLeft, -marginTop, window.innerWidth, dx]) // Set the viewBox width to the screen width
+      // .attr("style", "max-width: 100%; height: auto; font: 30px Source Sans Pro; user-select: none;");        // .attr("style", "max-width: 100%; height: auto; font: 10px sans-serif; user-select: none;");
+      .attr("style", `width: auto; height: auto; font: ${fontSize}px sans-serif; overflow-x: scroll;`);
+
     const gLink = svg.append("g")
-        .attr("fill", "none")
-        .attr("stroke", "#555")
-        .attr("stroke-opacity", 0.4)
-        .attr("stroke-width", 1.5);
-  
+      .attr("fill", "none")
+      .attr("stroke", "#555")
+      .attr("stroke-opacity", 0.4)
+      .attr("stroke-width", strokeWidth);
+
     const gNode = svg.append("g")
-        .attr("cursor", "pointer")
-        .attr("pointer-events", "all");
+      .attr("cursor", "pointer")
+      .attr("pointer-events", "all");
   
     function update(event, source) {
       const duration = event?.altKey ? 2500 : 250; // hold the alt key to slow down the transition
@@ -131,25 +137,27 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
             update(event, d);
           });
 
-      /*
-      //this box isnt working yet
+      
+      // add warping box around text node
       nodeEnter.append("rect")
-          .attr("rx", 5) // Adjust the x-radius for rounded corners
-          .attr("ry", 5) // Adjust the y-radius for rounded corners
-          .attr("width", d => d.data.name.length * fontSize) // Adjust the width based on text length and font size
-          .attr("height", fontSize + 4) // Adjust the height as needed (font size + padding)
-          .attr("fill", "lightgray") // Adjust the background color
-          .attr("x", d => (d._children ? -1 : 1) * ((d.data.name.length * fontSize) / 2)) // Center the rect around the text
-          .attr("y", -fontSize / 2); // Center the rect vertically around the text
-      */    
+        .attr("rx", 5) // Adjust the x-radius for rounded corners
+        .attr("ry", 5) // Adjust the y-radius for rounded corners
+        .attr("width", d =>d.data.name.length * (fontSize-5) + 20) // Adjust the width based on text length and font size
+        .attr("height", fontSize + 4) // Adjust the height as needed (font size + padding)
+        .attr("fill", "lightgray") // Adjust the background color
+        .attr("x", d => d._children ? -d.data.name.length * (fontSize-5) -20 : 5) // Center the rect around the text
+        .attr("y", -(fontSize + 4)/2) // Center the rect vertically around the text
+        .attr('fill', color)
+        .attr("opacity", d => d._children ? 0: 0.5)
+      
       nodeEnter.append("circle")
-          .attr("r", circleRadius)
-          .attr("fill", color)
-          .attr("stroke-width", 20);
+        .attr("r", circleRadius)
+        .attr("fill", color)
+        .attr("stroke-width", strokeWidth);
   
       nodeEnter.append("text")
           .attr("dy", "0.31em")
-          .attr("x", d => d._children ? -12 : 12)
+          .attr("x", d => d._children ? -fontSize : fontSize)
           .attr("text-anchor", d => d._children ? "end" : "start")
           //.attr("text-anchor", "middle")
           .text(d => d.data.name)
@@ -157,7 +165,7 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
       nodeEnter.select("text")
           .clone(true).lower()
           .attr("stroke-linejoin", "round")
-          .attr("stroke-width", 20)
+          .attr("stroke-width", strokeWidth)
           .attr("stroke", "white");
 
       /*
@@ -203,7 +211,7 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
             const o = {x: source.x0, y: source.y0};
             return diagonal({source: o, target: o});
           })
-          .attr("stroke-width", 5)
+          .attr("stroke-width", strokeWidth)
           .attr("stroke", d => color(d.source)); // Set link color to the same color as nodes
 
   
