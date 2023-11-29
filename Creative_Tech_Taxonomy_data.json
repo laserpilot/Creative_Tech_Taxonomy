@@ -5,39 +5,6 @@
       "name" : "Creative Code Frameworks",
       "children" : [
         {
-          "name" : "License Types",
-          "children" : [
-            {
-              "name" : "Commercial/Paid",
-              "children" : [
-                {
-                  "name" : "Subscription"
-                }
-              ]
-            },
-            {
-              "name" : "Open Source",
-              "children" : [
-                {
-                  "name" : "Mozilla Public License"
-                },
-                {
-                  "name" : "MIT"
-                },
-                {
-                  "name" : "GPL"
-                }
-              ]
-            },
-            {
-              "name" : "Educational/Learning"
-            },
-            {
-              "name" : "Other"
-            }
-          ]
-        },
-        {
           "name" : "Language Type",
           "children" : [
             {
@@ -195,6 +162,39 @@
             },
             {
               "name" : "Generative Visuals"
+            }
+          ]
+        },
+        {
+          "name" : "License Types",
+          "children" : [
+            {
+              "name" : "Commercial/Paid",
+              "children" : [
+                {
+                  "name" : "Subscription"
+                }
+              ]
+            },
+            {
+              "name" : "Open Source",
+              "children" : [
+                {
+                  "name" : "Mozilla Public License"
+                },
+                {
+                  "name" : "MIT"
+                },
+                {
+                  "name" : "GPL"
+                }
+              ]
+            },
+            {
+              "name" : "Educational"
+            },
+            {
+              "name" : "Other"
             }
           ]
         }
@@ -563,12 +563,6 @@
               "name" : "Types",
               "children" : [
                 {
-                  "name" : "Slow Motion/High Speed Cam"
-                },
-                {
-                  "name" : "IP Cameras"
-                },
-                {
                   "name" : "Video Cam",
                   "children" : [
                     {
@@ -595,6 +589,12 @@
                 },
                 {
                   "name" : "Webcam"
+                },
+                {
+                  "name" : "Slow Motion/High Speed Cam"
+                },
+                {
+                  "name" : "IP Cameras"
                 },
                 {
                   "name" : "Infrared",
@@ -938,6 +938,40 @@
       "name" : "Physical Computing",
       "children" : [
         {
+          "name" : "Microcontrollers",
+          "children" : [
+            {
+              "name" : "Adafruit Feather"
+            },
+            {
+              "name" : "M5Stack"
+            },
+            {
+              "name" : "Arduino"
+            },
+            {
+              "name" : "Custom PCB"
+            },
+            {
+              "name" : "Teensy"
+            }
+          ]
+        },
+        {
+          "name" : "Lights/LED",
+          "children" : [
+            {
+              "name" : "Fadecandy"
+            },
+            {
+              "name" : "NeoPixel"
+            },
+            {
+              "name" : "LED Strips"
+            }
+          ]
+        },
+        {
           "name" : "Embedded AI Devices",
           "children" : [
             {
@@ -1038,46 +1072,57 @@
               ]
             }
           ]
-        },
-        {
-          "name" : "Microcontrollers",
-          "children" : [
-            {
-              "name" : "Adafruit Feather"
-            },
-            {
-              "name" : "M5Stack"
-            },
-            {
-              "name" : "Arduino"
-            },
-            {
-              "name" : "Custom PCB"
-            },
-            {
-              "name" : "Teensy"
-            }
-          ]
-        },
-        {
-          "name" : "Lights/LED",
-          "children" : [
-            {
-              "name" : "Fadecandy"
-            },
-            {
-              "name" : "NeoPixel"
-            },
-            {
-              "name" : "LED Strips"
-            }
-          ]
         }
       ]
     },
     {
       "name" : "Optical Tracking",
       "children" : [
+        {
+          "name" : "Computer Vision",
+          "children" : [
+            {
+              "name" : "For More - See AI/ML Section"
+            },
+            {
+              "name" : "Gesture Control"
+            },
+            {
+              "name" : "Eye Tracking",
+              "children" : [
+                {
+                  "name" : "Tobii Eye Tracker"
+                }
+              ]
+            },
+            {
+              "name" : "Body Tracking"
+            },
+            {
+              "name" : "OpenCV"
+            },
+            {
+              "name" : "Techniques",
+              "children" : [
+                {
+                  "name" : "Contour Detection"
+                },
+                {
+                  "name" : "Optical Flow"
+                },
+                {
+                  "name" : "Blob Tracking"
+                },
+                {
+                  "name" : "Background Subtraction"
+                },
+                {
+                  "name" : "Frame Differencing"
+                }
+              ]
+            }
+          ]
+        },
         {
           "name" : "Related Topics",
           "children" : [
@@ -1131,228 +1176,12 @@
               ]
             }
           ]
-        },
-        {
-          "name" : "Computer Vision",
-          "children" : [
-            {
-              "name" : "For More - See AI/ML Section"
-            },
-            {
-              "name" : "Gesture Control"
-            },
-            {
-              "name" : "Eye Tracking",
-              "children" : [
-                {
-                  "name" : "Tobii Eye Tracker"
-                }
-              ]
-            },
-            {
-              "name" : "Body Tracking"
-            },
-            {
-              "name" : "OpenCV"
-            },
-            {
-              "name" : "Techniques",
-              "children" : [
-                {
-                  "name" : "Contour Detection"
-                },
-                {
-                  "name" : "Optical Flow"
-                },
-                {
-                  "name" : "Blob Tracking"
-                },
-                {
-                  "name" : "Background Subtraction"
-                },
-                {
-                  "name" : "Frame Differencing"
-                }
-              ]
-            }
-          ]
         }
       ]
     },
     {
       "name" : "Pro AV Hardware and Related Software",
       "children" : [
-        {
-          "name" : "Special FX",
-          "children" : [
-            {
-              "name" : "Fog Machine"
-            },
-            {
-              "name" : "Haze Machine"
-            }
-          ]
-        },
-        {
-          "name" : "Audio",
-          "children" : [
-            {
-              "name" : "Input",
-              "children" : [
-                {
-                  "name" : "Microphones",
-                  "children" : [
-                    {
-                      "name" : "Dynamic",
-                      "children" : [
-                        {
-                          "name" : "Regular Vocal Mic"
-                        },
-                        {
-                          "name" : "Shotgun"
-                        },
-                        {
-                          "name" : "Ambisonic"
-                        }
-                      ]
-                    },
-                    {
-                      "name" : "Condensor",
-                      "children" : [
-                        {
-                          "name" : "Regular Vocal Mic"
-                        },
-                        {
-                          "name" : "Shotgun"
-                        },
-                        {
-                          "name" : "Ambisonic"
-                        }
-                      ]
-                    },
-                    {
-                      "name" : "Ribbon"
-                    }
-                  ]
-                },
-                {
-                  "name" : "Synthesizers"
-                },
-                {
-                  "name" : "Pickups",
-                  "children" : [
-                    {
-                      "name" : "Piezo"
-                    },
-                    {
-                      "name" : "Transducer"
-                    }
-                  ]
-                },
-                {
-                  "name" : "Music Software",
-                  "children" : [
-                    {
-                      "name" : "Ableton"
-                    },
-                    {
-                      "name" : "See Asset Creation"
-                    }
-                  ]
-                },
-                {
-                  "name" : "Timecode",
-                  "children" : [
-                    {
-                      "name" : "SMTPE LTC"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name" : "Output",
-              "children" : [
-                {
-                  "name" : "Amplifiers"
-                },
-                {
-                  "name" : "Spatial",
-                  "children" : [
-                    {
-                      "name" : "Directional"
-                    },
-                    {
-                      "name" : "Binaural"
-                    },
-                    {
-                      "name" : "Surround"
-                    },
-                    {
-                      "name" : "Wave Field Synthesis"
-                    }
-                  ]
-                },
-                {
-                  "name" : "PA Systems"
-                },
-                {
-                  "name" : "Signal Processors",
-                  "children" : [
-                    {
-                      "name" : "Compressors"
-                    },
-                    {
-                      "name" : "Limiters"
-                    },
-                    {
-                      "name" : "Equalizers"
-                    },
-                    {
-                      "name" : "Reverb"
-                    }
-                  ]
-                },
-                {
-                  "name" : "Headphones"
-                },
-                {
-                  "name" : "Transducer",
-                  "children" : [
-                    {
-                      "name" : "Buttkicker Subwoofer"
-                    },
-                    {
-                      "name" : "Dayton Audio"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name" : "Communication Protocols",
-              "children" : [
-                {
-                  "name" : "Dante"
-                },
-                {
-                  "name" : "OSC"
-                },
-                {
-                  "name" : "Digital/Analog Conversion",
-                  "children" : [
-                    {
-                      "name" : "S/PIDF"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name" : "Related Concepts"
-            }
-          ]
-        },
         {
           "name" : "Video",
           "children" : [
@@ -1813,6 +1642,166 @@
           ]
         },
         {
+          "name" : "Audio",
+          "children" : [
+            {
+              "name" : "Input",
+              "children" : [
+                {
+                  "name" : "Microphones",
+                  "children" : [
+                    {
+                      "name" : "Dynamic",
+                      "children" : [
+                        {
+                          "name" : "Regular Vocal Mic"
+                        },
+                        {
+                          "name" : "Shotgun"
+                        },
+                        {
+                          "name" : "Ambisonic"
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "Condensor",
+                      "children" : [
+                        {
+                          "name" : "Regular Vocal Mic"
+                        },
+                        {
+                          "name" : "Shotgun"
+                        },
+                        {
+                          "name" : "Ambisonic"
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "Ribbon"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Synthesizers"
+                },
+                {
+                  "name" : "Pickups",
+                  "children" : [
+                    {
+                      "name" : "Piezo"
+                    },
+                    {
+                      "name" : "Transducer"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Music Software",
+                  "children" : [
+                    {
+                      "name" : "Ableton"
+                    },
+                    {
+                      "name" : "See Asset Creation"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Timecode",
+                  "children" : [
+                    {
+                      "name" : "SMTPE LTC"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name" : "Output",
+              "children" : [
+                {
+                  "name" : "Amplifiers"
+                },
+                {
+                  "name" : "Spatial",
+                  "children" : [
+                    {
+                      "name" : "Directional"
+                    },
+                    {
+                      "name" : "Binaural"
+                    },
+                    {
+                      "name" : "Surround"
+                    },
+                    {
+                      "name" : "Wave Field Synthesis"
+                    }
+                  ]
+                },
+                {
+                  "name" : "PA Systems"
+                },
+                {
+                  "name" : "Signal Processors",
+                  "children" : [
+                    {
+                      "name" : "Compressors"
+                    },
+                    {
+                      "name" : "Limiters"
+                    },
+                    {
+                      "name" : "Equalizers"
+                    },
+                    {
+                      "name" : "Reverb"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Headphones"
+                },
+                {
+                  "name" : "Transducer",
+                  "children" : [
+                    {
+                      "name" : "Buttkicker Subwoofer"
+                    },
+                    {
+                      "name" : "Dayton Audio"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name" : "Communication Protocols",
+              "children" : [
+                {
+                  "name" : "Dante"
+                },
+                {
+                  "name" : "OSC"
+                },
+                {
+                  "name" : "Digital/Analog Conversion",
+                  "children" : [
+                    {
+                      "name" : "S/PIDF"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name" : "Related Concepts"
+            }
+          ]
+        },
+        {
           "name" : "Lights",
           "children" : [
             {
@@ -1927,6 +1916,17 @@
             },
             {
               "name" : "Graphics Cards"
+            }
+          ]
+        },
+        {
+          "name" : "Special FX",
+          "children" : [
+            {
+              "name" : "Fog Machine"
+            },
+            {
+              "name" : "Haze Machine"
             }
           ]
         },

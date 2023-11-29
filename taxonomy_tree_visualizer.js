@@ -95,13 +95,13 @@ function closeModal() {
 document.body.style.backgroundColor = "aliceblue";
 
 function create_visualization(data){    // Specify the charts’ dimensions. The height is variable, depending on the layout.
-    const width = 2200;
+    const width = 3000;
     
     const marginTop = 100;
     const marginRight = 10;
     const marginBottom = 10;
     const marginLeft = 150;  
-    const fontSize = 12; // Adjust the font size as needed
+    const fontSize = 18; // Adjust the font size as needed
     const circleRadius = 3; // Adjust the circle radius as needed
     const strokeWidth = 3; // Adjust the stroke width as needed
 
@@ -109,8 +109,8 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
     // (dx is a height, and dy a width). This because the tree must be viewed with the root at the
     // “bottom”, in the data domain. The width of a column is based on the tree’s height.
     const root = d3.hierarchy(data);
-    const dx = fontSize *2 ;
-    const dy = 200; // Set dy to the screen width minus the left and right margins
+    const dx = fontSize *1.8 ;
+    const dy = 250; // Set dy to the screen width minus the left and right margins
 
     // Define the tree layout and the shape for links.
     const tree = d3.tree().nodeSize([dx, dy]);
@@ -172,23 +172,51 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
   
       // add warping box around text node
       nodeEnter.append("rect")
-          .attr("rx", 5) // Adjust the x-radius for rounded corners
-          .attr("ry", 5) // Adjust the y-radius for rounded corners
-          .attr("width", d => d.data.name.length * (fontSize - 5) + 20) // Adjust the width based on text length and font size
-          .attr("height", fontSize+5 ) // Adjust the height as needed (font size + padding)
-          .attr("fill", "lightgray") // Adjust the background color
-          .attr("x", d => d._children ? -d.data.name.length * (fontSize - 5) - 20 : 5) // Center the rect around the text
-          .attr("y", -(fontSize +5 ) / 2) // Center the rect vertically around the text
-          .attr('fill', color)
-          .attr('stroke', "black")
-          .attr('stroke-width', 1)
-          .attr("opacity", d => d._children ? 0 : 0.5)
-          .on("mouseover", function () {
-            d3.select(this).attr("transform", "scale(1.1)").transition().ease(d3.easeElastic); // Scale up by 10%
-          })
-          .on("mouseout", function () {
-            d3.select(this).attr("transform", "scale(1)").transition().ease(d3.easeElastic);; // Reset the scale
-          });
+      .attr("rx", 5) // Adjust the x-radius for rounded corners
+      .attr("ry", 5) // Adjust the y-radius for rounded corners
+      .attr("height", fontSize + 5) // Adjust the height as needed (font size + padding)
+      .attr("width", d => {
+        //this is a kludged way of fixing the fact that getComputedTextLength() doesnt seem to be working but long text entries get a little screwed up
+          const textLength = d.data.name.length;
+          const multiplier = Math.max(0.8, 1 - (textLength - 8) * 0.05); // Adjust the parameters as needed
+          return textLength * (fontSize - 5) * multiplier + 25;
+      })
+      .attr("fill", "lightgray") // Adjust the background color
+      .attr("x", d => d._children ? -d.data.name.length * (fontSize - 5) - 20 : 5) // Center the rect around the text
+      .attr("y", -(fontSize + 5) / 2) // Center the rect vertically around the text
+      .attr('fill', color)
+      .attr('stroke', "black")
+      .attr('stroke-width', 1)
+      .attr("opacity", d => d._children ? 0 : 0.5)
+      .on("mouseover", function () {
+          d3.select(this).attr("transform", "scale(1.1)").transition().ease(d3.easeElastic); // Scale up by 10%
+      })
+      .on("mouseout", function () {
+          d3.select(this).attr("transform", "scale(1)").transition().ease(d3.easeElastic); // Reset the scale
+      });
+      /*
+      //ugh this annoyingly doesnt work because of render timing issues
+      .each(function (d) {
+        const rect = d3.select(this);
+        const tempText = rect.append("text")
+            .attr("class", "temp-text")
+            .text(d.data.name);
+    
+        // Use requestAnimationFrame to wait for the next animation frame
+        window.requestAnimationFrame(() => {
+            // Use getBBox() to get the bounding box of the text
+            const textWidth = tempText.node().getComputedTextLength();
+           
+        console.log (tempText.node())
+            console.log("Text Width:", textWidth); // Log the text width
+    
+            // Set the width of the rectangle
+            rect.attr("width", textWidth + 20); // Adjust for padding
+    
+            // Remove the temporary text element
+            //tempText.remove();
+        });
+    });*/
       
       nodeEnter.append("circle")
           .attr("r", circleRadius)
@@ -213,11 +241,12 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
           .on("mouseover", function (event, d) {
             // Scale up the corresponding rectangle on mouseover
             d3.select(this.parentNode).select("rect").attr("transform", "scale(1.2)").transition().ease(d3.easeElastic);
-        })
-        .on("mouseout", function (event, d) {
+           })
+          .on("mouseout", function (event, d) {
             // Reset the scale of the corresponding rectangle on mouseout
             d3.select(this.parentNode).select("rect").attr("transform", "scale(1)").transition().ease(d3.easeElastic);
-        });
+          });
+
       
       nodeEnter.select("text")
           .clone(true).lower()
