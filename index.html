@@ -3,8 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Creative Technology Taxonomy</title>
     <style>
+        #header-container {
+            max-width: 50%;
+            margin: 0 auto;
+        }
+
+        #header {
+            font-family: 'Avenir', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        p,
+        a {
+            font-family: 'Avenir', sans-serif;
+        }
+
         .modal {
             display: none;
             position: fixed;
@@ -40,9 +57,31 @@
             cursor: pointer;
         }
     </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Avenir:wght@400;700&display=swap">
 </head>
 
 <body>
+    <div id="header-container">
+        <div id="header">
+            <h1>Creative Technology Taxonomy</h1>
+            <p>Original taxonomy from <a href="https://ablairneal.com" target="_blank">Blair Neal</a>. D3 Tree
+                visualization
+                code contributed by <a href="https://heidihe.com" target="_blank">Heidi He</a>.
+
+            <p> Read More about the
+                taxonomy
+                and creative technology
+                <a href="https://ablairneal.com/a-creative-technology-taxonomy" target="_blank"> here</a>.
+            </p>
+            <p>
+                All information is manually entered, except when made up by tools like ChatGPT. I would expect plenty of
+                missing elements and incorrect information, but if you see something, please submit a pull request!
+            </p>
+            </p>
+            <p>Please contribute and add info: <a href="https://github.com/laserpilot/Creative_Tech_Taxonomy"
+                    target="_blank">Github Project Repository</a></p>
+        </div>
+    </div>
     <div id="container">
         <script type="module" src="taxonomy_tree_visualizer.js"> </script>
     </div>

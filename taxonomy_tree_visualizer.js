@@ -92,7 +92,7 @@ function closeModal() {
   modal.style.display = "none";
 }
 
-//document.body.style.backgroundColor = "black";
+document.body.style.backgroundColor = "aliceblue";
 
 function create_visualization(data){    // Specify the charts’ dimensions. The height is variable, depending on the layout.
     const width = 2200;
@@ -109,12 +109,14 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
     // (dx is a height, and dy a width). This because the tree must be viewed with the root at the
     // “bottom”, in the data domain. The width of a column is based on the tree’s height.
     const root = d3.hierarchy(data);
-    const dx = 15;
+    const dx = fontSize *2 ;
     const dy = 200; // Set dy to the screen width minus the left and right margins
 
     // Define the tree layout and the shape for links.
     const tree = d3.tree().nodeSize([dx, dy]);
     const diagonal = d3.linkHorizontal().x(d => d.y).y(d => d.x);
+
+
 
     // Create the SVG container, a layer for the links and a layer for the nodes.
     const svg = d3.create("svg")
@@ -122,8 +124,7 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
       .attr("height", dx)
       .attr("viewBox", [-marginLeft, -marginTop, window.innerWidth, dx]) // Set the viewBox width to the screen width
       // .attr("style", "max-width: 100%; height: auto; font: 30px Source Sans Pro; user-select: none;");        // .attr("style", "max-width: 100%; height: auto; font: 10px sans-serif; user-select: none;");
-      .attr("style", `width: auto; height: auto; font: ${fontSize}px sans-serif; overflow-x: scroll;`);
-
+      .attr("style", `width: auto; height: auto; font: ${fontSize}px 'Avenir', 'Roboto', Helvetica, Arial, sans-serif; overflow-x: scroll;`);
     const gLink = svg.append("g")
       .attr("fill", "none")
       .attr("stroke", "#555")
@@ -133,6 +134,7 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
     const gNode = svg.append("g")
       .attr("cursor", "pointer")
       .attr("pointer-events", "all");
+
   
     function update(event, source) {
       const duration = event?.altKey ? 2500 : 250; // hold the alt key to slow down the transition
@@ -173,12 +175,20 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
           .attr("rx", 5) // Adjust the x-radius for rounded corners
           .attr("ry", 5) // Adjust the y-radius for rounded corners
           .attr("width", d => d.data.name.length * (fontSize - 5) + 20) // Adjust the width based on text length and font size
-          .attr("height", fontSize + 4) // Adjust the height as needed (font size + padding)
+          .attr("height", fontSize+5 ) // Adjust the height as needed (font size + padding)
           .attr("fill", "lightgray") // Adjust the background color
           .attr("x", d => d._children ? -d.data.name.length * (fontSize - 5) - 20 : 5) // Center the rect around the text
-          .attr("y", -(fontSize + 4) / 2) // Center the rect vertically around the text
+          .attr("y", -(fontSize +5 ) / 2) // Center the rect vertically around the text
           .attr('fill', color)
-          .attr("opacity", d => d._children ? 0 : 0.5);
+          .attr('stroke', "black")
+          .attr('stroke-width', 1)
+          .attr("opacity", d => d._children ? 0 : 0.5)
+          .on("mouseover", function () {
+            d3.select(this).attr("transform", "scale(1.1)").transition().ease(d3.easeElastic); // Scale up by 10%
+          })
+          .on("mouseout", function () {
+            d3.select(this).attr("transform", "scale(1)").transition().ease(d3.easeElastic);; // Reset the scale
+          });
       
       nodeEnter.append("circle")
           .attr("r", circleRadius)
@@ -191,7 +201,7 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
       
       nodeEnter.append("text")
           .attr("dy", "0.31em")
-          .attr("x", d => d._children ? -fontSize : fontSize)
+          .attr("x", d => d._children ? -fontSize +5 : fontSize +5)
           .attr("text-anchor", d => d._children ? "end" : "start")
           .text(d => d.data.name)
           .on("click", (event, d) => {
@@ -199,13 +209,22 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
               showModal(d);
               // Prevent the click event from propagating to the parent (circle) element
               d3.event.stopPropagation();
-          });
+          })
+          .on("mouseover", function (event, d) {
+            // Scale up the corresponding rectangle on mouseover
+            d3.select(this.parentNode).select("rect").attr("transform", "scale(1.2)").transition().ease(d3.easeElastic);
+        })
+        .on("mouseout", function (event, d) {
+            // Reset the scale of the corresponding rectangle on mouseout
+            d3.select(this.parentNode).select("rect").attr("transform", "scale(1)").transition().ease(d3.easeElastic);
+        });
       
       nodeEnter.select("text")
           .clone(true).lower()
           .attr("stroke-linejoin", "round")
           .attr("stroke-width", strokeWidth)
           .attr("stroke", "white");
+
 
         
 /*
