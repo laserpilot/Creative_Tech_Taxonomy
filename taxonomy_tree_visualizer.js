@@ -14,6 +14,8 @@ fetch('./Creative_Tech_Taxonomy_data.json')
 .then(data => {console.log(data); create_visualization(data)})
 .catch(error => console.log(error));
 
+const BG_COLOR = "aliceblue";
+
 function color(d) {
   const creativeCodeColor = "red";
   const AimlColor = "blue";
@@ -92,7 +94,7 @@ function closeModal() {
   modal.style.display = "none";
 }
 
-document.body.style.backgroundColor = "aliceblue";
+document.body.style.backgroundColor = BG_COLOR;
 
 function create_visualization(data){    // Specify the charts’ dimensions. The height is variable, depending on the layout.
     const width = 3000;
@@ -100,7 +102,7 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
     const marginTop = 100;
     const marginRight = 10;
     const marginBottom = 10;
-    const marginLeft = 150;  
+    const marginLeft = 220;  
     const fontSize = 18; // Adjust the font size as needed
     const circleRadius = 3; // Adjust the circle radius as needed
     const strokeWidth = 3; // Adjust the stroke width as needed
@@ -182,10 +184,10 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
           return textLength * (fontSize - 5) * multiplier + 25;
       })
       .attr("fill", "lightgray") // Adjust the background color
-      .attr("x", d => d._children ? -d.data.name.length * (fontSize - 5) - 20 : 5) // Center the rect around the text
+      .attr("x", d => d._children ? -d.data.name.length * (fontSize - 5) - 20 : 0) // Center the rect around the text
       .attr("y", -(fontSize + 5) / 2) // Center the rect vertically around the text
       .attr('fill', color)
-      .attr('stroke', "black")
+      .attr('stroke', "lightgray")
       .attr('stroke-width', 1)
       .attr("opacity", d => d._children ? 0 : 0.5)
       .on("mouseover", function () {
@@ -218,13 +220,29 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
         });
     });*/
       
+      // add circleRadius depending on children or not
+      // if children, add circleRadius + 3 and if opened make it hollow 
       nodeEnter.append("circle")
-          .attr("r", circleRadius)
-          .attr("fill", color)
-          .attr("stroke-width", strokeWidth)
+          .attr("r", d => d._children ? circleRadius + 2 : 0)
+          .attr("fill", d => d._children ? BG_COLOR : color)
+          // .attr("fill", color)
+          // .attr("stroke", d => d._children ? color : null)
+          .attr("stroke", color)
+          .attr("stroke-width", strokeWidth-1)
+          .on("mouseover", function () {
+            d3.select(this).attr("transform", "scale(1.5)").transition().ease(d3.easeElastic); // Scale up by 10%
+          })
+          .on("mouseout", function () {
+              d3.select(this).attr("transform", "scale(1)").transition().ease(d3.easeElastic); // Reset the scale
+          })
           .on("click", (event, d) => {
-              d.children = d.children ? null : d._children;
-              update(event, d);
+            // Toggle the children and toggle filled/hollow on click
+            d.children = d.children ? null : d._children;
+            const isFilled = d3.select(event.currentTarget).attr("fill") !== BG_COLOR;
+            d3.select(event.currentTarget)
+                .attr("fill", isFilled ? BG_COLOR : color)
+                .attr("r", isFilled ? circleRadius + 2 : circleRadius + 5);
+            update(event, d);
           });
       
       nodeEnter.append("text")
