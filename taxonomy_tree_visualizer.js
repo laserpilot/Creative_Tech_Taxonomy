@@ -361,7 +361,7 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
 function create_editor(data){
   let changedBounceTimer = null
   const refreshVisualize = () => {
-    visualizer.innerHTML = '';
+    visualizer.innerHTML = "";
     create_visualization(jsonEdit.get());
   }
 
@@ -371,7 +371,7 @@ function create_editor(data){
       // debounce the refresh
       if(changedBounceTimer) clearTimeout(changedBounceTimer)
 
-      console.log('json changed and set refresh timer')
+      console.log("json changed and set refresh timer")
       changedBounceTimer = setTimeout(refreshVisualize, 1000)
     }
   }
@@ -380,49 +380,49 @@ function create_editor(data){
   const jsonEdit = new JSONEditor(editor, options)
   jsonEdit.set(data)
 
-  let button = document.createElement('button');
-  button.id = 'download';
-  button.innerHTML = 'Download Json';
+  let button = document.createElement("button");
+  button.id = "download";
+  button.innerHTML = "Download Json";
   button.onclick = () => {
     // get json data
-    const json = JSON.stringify(jsonEdit.get(), null, '  ');
+    const json = JSON.stringify(jsonEdit.get(), null, "  ");
 
     // create a blob object representing the data as a JSON string
-    const blob = new Blob([json], { type: 'application/json' });
+    const blob = new Blob([json], { type: "application/json" });
 
     // create dummy element
-    let dummyElement = document.createElement('a');
+    let dummyElement = document.createElement("a");
     document.body.appendChild(dummyElement);
     // set its download attribute and href to that of the blob
     dummyElement.href = window.URL.createObjectURL(blob);
     // set its name
-    dummyElement.download = 'Creative_Tech_Taxonomy_data.json';
+    dummyElement.download = "Creative_Tech_Taxonomy_data.json";
     // trigger click on dummy element to initiate download
     dummyElement.click();
     // remove dummy element
     document.body.removeChild(dummyElement);
   }
-  document.querySelector('.control').appendChild(button);
+  document.querySelector(".control").appendChild(button);
 }
 
 // add tabs to switch between editor and visualizer
 const set_tabs = () => {
   // create buttons
-  const buttonTaxonomy = document.createElement('button');
-  buttonTaxonomy.id = 'show_taxonomy';
-  buttonTaxonomy.innerHTML = 'Show Taxonomy';
+  const buttonTaxonomy = document.createElement("button");
+  buttonTaxonomy.id = "show_taxonomy";
+  buttonTaxonomy.innerHTML = "Show Taxonomy";
   buttonTaxonomy.onclick = () => {
-    document.querySelector('#visualizer').style.display = 'block';
-    document.querySelector('#editor').style.display = 'none';
+    document.querySelector("#visualizer").style.display = "block";
+    document.querySelector("#editor").style.display = "none";
   }
-  document.querySelector('.control').appendChild(buttonTaxonomy);
+  document.querySelector(".control").appendChild(buttonTaxonomy);
 
-  const buttonEditor = document.createElement('button');
-  buttonEditor.id = 'show_editor';
-  buttonEditor.innerHTML = 'Show Editor';
+  const buttonEditor = document.createElement("button");
+  buttonEditor.id = "show_editor";
+  buttonEditor.innerHTML = "Show Editor";
   buttonEditor.onclick = () => {
-    document.querySelector('#visualizer').style.display = 'none';
-    document.querySelector('#editor').style.display = 'block';
+    document.querySelector("#visualizer").style.display = "none";
+    document.querySelector("#editor").style.display = "block";
   }
-  document.querySelector('.control').appendChild(buttonEditor);
+  document.querySelector(".control").appendChild(buttonEditor);
 }
