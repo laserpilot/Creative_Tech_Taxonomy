@@ -60,8 +60,23 @@
             text-decoration: none;
             cursor: pointer;
         }
+
+        .control {
+            margin-bottom: 1em;
+        }
+
+        .control button{
+            margin-right: 1em;
+        }
+
+        #editor {
+            display: none;
+            height: 95dvh;
+            width: 98dvw;
+        }
     </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Avenir:wght@400;700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/jsoneditor@9.10.4/dist/jsoneditor.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -87,11 +102,15 @@
         </div>
     </div>
     <div id="container">
+        <div class="control"></div>
+
+        <div id="visualizer" class=""></div>
+        <div id="editor" class=""></div>
         <script type="module" src="taxonomy_tree_visualizer.js"> </script>
     </div>
     <div id="myModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
+            <span class="close">&times;</span>
             <div id="modalContent"></div>
         </div>
     </div>
