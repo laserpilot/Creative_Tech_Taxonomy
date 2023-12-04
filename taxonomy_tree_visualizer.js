@@ -1,6 +1,7 @@
 // app that creates a collapsible tree visualization using D3
 
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+import JSONEditor from "https://cdn.jsdelivr.net/npm/jsoneditor@9.10.4/+esm";
 
 let data;
 
@@ -11,7 +12,12 @@ fetch('./Creative_Tech_Taxonomy_data.json')
   }
   return response.json();
 })
-.then(data => {console.log(data); create_visualization(data)})
+.then(data => {
+  set_tabs();
+  // console.log(data);
+  create_editor(data);
+  create_visualization(data);
+})
 .catch(error => console.log(error));
 
 function color(d) {
@@ -60,7 +66,6 @@ function showModal(nodeData) {
   const modal = document.getElementById("myModal");
   const modalContent = document.getElementById("modalContent");
 
-  // Generate content based on the clicked node data
   // Generate content based on the clicked node data
   const content = `
     <h2>${nodeData.data.name}</h2>
@@ -334,9 +339,90 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
       d._children = d.children;
      // if (d.depth && d.data.name.length !== 12) d.children = null;
     });
-  
-   update(null, root);
-  
-  container.append(svg.node());
+
+  // Collapse the node and all it's children
+  const collapse = (d) => {
+    if(d.children) {
+        d._children = d.children
+        d._children.forEach(collapse)
+        d.children = null
+    }
+  }
+
+  // Collapse after the second level
+  root.children.forEach(collapse);
+
+  update(null, root);
+
+  visualizer.append(svg.node());
 }
-   
+
+// create json editor
+function create_editor(data){
+  let changedBounceTimer = null
+  const refreshVisualize = () => {
+    visualizer.innerHTML = "";
+    create_visualization(jsonEdit.get());
+  }
+
+  // editor options
+  const options = {
+    onChange : () => {
+      // debounce the refresh
+      if(changedBounceTimer) clearTimeout(changedBounceTimer)
+
+      console.log("json changed and set refresh timer")
+      changedBounceTimer = setTimeout(refreshVisualize, 1000)
+    }
+  }
+
+  // add the editor to the page
+  const jsonEdit = new JSONEditor(editor, options)
+  jsonEdit.set(data)
+
+  let button = document.createElement("button");
+  button.id = "download";
+  button.innerHTML = "Download Json";
+  button.onclick = () => {
+    // get json data
+    const json = JSON.stringify(jsonEdit.get(), null, "  ");
+
+    // create a blob object representing the data as a JSON string
+    const blob = new Blob([json], { type: "application/json" });
+
+    // create dummy element
+    let dummyElement = document.createElement("a");
+    document.body.appendChild(dummyElement);
+    // set its download attribute and href to that of the blob
+    dummyElement.href = window.URL.createObjectURL(blob);
+    // set its name
+    dummyElement.download = "Creative_Tech_Taxonomy_data.json";
+    // trigger click on dummy element to initiate download
+    dummyElement.click();
+    // remove dummy element
+    document.body.removeChild(dummyElement);
+  }
+  document.querySelector(".control").appendChild(button);
+}
+
+// add tabs to switch between editor and visualizer
+const set_tabs = () => {
+  // create buttons
+  const buttonTaxonomy = document.createElement("button");
+  buttonTaxonomy.id = "show_taxonomy";
+  buttonTaxonomy.innerHTML = "Show Taxonomy";
+  buttonTaxonomy.onclick = () => {
+    document.querySelector("#visualizer").style.display = "block";
+    document.querySelector("#editor").style.display = "none";
+  }
+  document.querySelector(".control").appendChild(buttonTaxonomy);
+
+  const buttonEditor = document.createElement("button");
+  buttonEditor.id = "show_editor";
+  buttonEditor.innerHTML = "Show Editor";
+  buttonEditor.onclick = () => {
+    document.querySelector("#visualizer").style.display = "none";
+    document.querySelector("#editor").style.display = "block";
+  }
+  document.querySelector(".control").appendChild(buttonEditor);
+}
