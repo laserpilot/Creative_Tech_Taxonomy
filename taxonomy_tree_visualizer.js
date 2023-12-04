@@ -16,9 +16,7 @@ fetch('./Creative_Tech_Taxonomy_data.json')
 const BG_COLOR = "aliceblue";
 
 function color(d) {
-  const creativeCodeColor = "red";
-  const AimlColor = "blue";
-  const UncategorizedUtilsColor = "purple";
+
 
   //color all the nodes
   function checkAncestors(node, name) {
@@ -111,7 +109,7 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
     // “bottom”, in the data domain. The width of a column is based on the tree’s height.
     const root = d3.hierarchy(data);
     const dx = fontSize *1.8 ;
-    const dy = 250; // Set dy to the screen width minus the left and right margins
+    const dy = 225; // Set dy to the screen width minus the left and right margins
 
     // Define the tree layout and the shape for links.
     const tree = d3.tree().nodeSize([dx, dy]);
