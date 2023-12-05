@@ -19,6 +19,24 @@ a {
 
 .container {
     margin: 0 auto;
+    min-height: 100vh;
+    height: auto;
+}
+
+
+#container {
+    margin: 0 auto;
+    transform-origin: top center; 
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    min-height: 100vh;
+    height: auto;
+}
+
+
+.body {
+    min-height: 100vh;
+    height: auto;
 }
 
 .modal {
@@ -62,9 +80,25 @@ a {
     padding: 0;
     cursor: pointer;
     position: fixed; 
-    right: 20px;
+    right: 48px;
 }
 
+:root{
+    --thumbnail-width: 10%;
+}
+
+#interaction-panel{
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.6);
+    top: 20px;
+    right: 40px;
+    width: 30px;
+    height: 120px;
+    border: 1px solid #cccccc6d;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 30;
+}
 
 
 

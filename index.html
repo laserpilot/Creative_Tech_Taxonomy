@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Creative Technology Taxonomy</title>
-    <link rel="stylesheet" href="thumbnail.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Avenir:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" ></script>
+
 </head>
 
 <body>
@@ -37,19 +38,26 @@
         <script type="module" src="taxonomy_tree_visualizer.js"> </script>
     </div>
 
-    <!-- add zoom in and zoom out to the entire container -->
-    <!-- TODO: add icon -->
-    <button id="zoom-in-button" style="bottom: 160px;"><i class="fa-solid fa-magnifying-glass-plus fa-lg"></i> </button> 
-    <button id="reset-button" style="bottom: 130px;"><i class="fa-solid fa-arrows-rotate fa-lg"></i></button>
-    <button id="zoom-out-button" style="bottom: 100px;"><i class="fa-solid fa-magnifying-glass-minus fa-lg"></i></button>
-    <script type="module" src="handle_zoom_actions.js"> </script>
 
-    <div id="thumbnail-container">
-        <canvas id="thumbnailCanvas" width="100" height="75"></canvas>
-        <div id="thumbnailOverlay"></div>
+    <div id ="interaction-panel">
+        <!-- add zoom in and zoom out to the entire container -->
+        <button id="zoom-in-button" style="top: 40px;"><i class="fa-solid fa-magnifying-glass-plus fa-lg"></i> </button> 
+        <button id="reset-button" style="top: 70px;"><i class="fa-solid fa-arrows-rotate fa-lg"></i></button>
+        <button id="zoom-out-button" style="top: 100px;"><i class="fa-solid fa-magnifying-glass-minus fa-lg"></i></button>
+        <script type="module" src="handle_zoom_actions.js"> </script>
     </div>
 
-    <!-- <script src="handle_thumbnail.js"></script> -->
+    <!-- method-2: use iframe to draw a thumbnail -->
+    <!-- <div id="thumbnail-container">
+        <iframe  id="thumbnail-iframe" frameborder="0"></iframe>
+        <div id="thumbnail-canvas"></div>
+    </div> -->
+    <!-- <script type="module" src="handle_thumbnail.js"></script>  -->
+            
+
+
+
+
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>

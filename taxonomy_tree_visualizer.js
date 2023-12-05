@@ -2,7 +2,6 @@
 
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
-let data;
 
 fetch('./Creative_Tech_Taxonomy_data.json')
 .then(response => {
@@ -351,6 +350,8 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
   
    update(null, root);
   
+  // svgToCanvas(svg.node());
   container.append(svg.node());
 }
-   
+
+
