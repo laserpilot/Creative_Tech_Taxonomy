@@ -19,6 +19,7 @@ function zoomOut() {
     // Calculate the new scale factor and apply the zoom-in class
     const newScale = parseFloat(currentScaleValue) * 0.8;
     container.style.transform = `scale(${newScale})`;
+
 }
 
 function resetZoom() {
