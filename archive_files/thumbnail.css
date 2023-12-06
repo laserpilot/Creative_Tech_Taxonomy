@@ -1,0 +1,46 @@
+
+
+#thumbnail-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    /* width: 20%;  */
+    /* Adjust the size of the thumbnail */
+    height: auto;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    pointer-events: none; /* Allow clicks to pass through the overlay to the main canvas */
+    /* -moz-transform: scale(var( --thumbnail-width), var( --thumbnail-width)); 
+    -webkit-transform: scale(var( --thumbnail-width), var( --thumbnail-width)); 
+    transform: scale(var( --thumbnail-width), var( --thumbnail-width)); 
+    -moz-transform-origin: bottom right;
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right; */
+}
+
+#thumbnail-iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    overflow: none;
+
+}
+
+
+/* #thumbnailOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+} */
+
+#viewport {
+    position: fixed;
+    border: 2px solid red; /* Adjust the border style and color */
+    pointer-events: none; /* Allow interaction with iframe content */
+}
+

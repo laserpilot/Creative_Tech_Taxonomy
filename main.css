@@ -1,0 +1,147 @@
+
+/* all main styles here */
+
+#header-container {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+#header {
+    font-family: 'Avenir', sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+    font-family: 'Avenir', sans-serif;
+}
+
+
+#container {
+    margin: 0 auto;
+    transform-origin: top left; 
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    min-height: 100vh;
+    height: auto;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.control {
+    margin-bottom: 1em;
+}
+
+.control button{
+    margin-right: 1em;
+}
+
+#editor {
+    display: none;
+    height: 95dvh;
+    width: 98dvw;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* styles for interaction panel */
+#interaction-panel{
+    position: fixed;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+    top: 20px;
+    right: 33px;
+    width: auto;
+    height: auto;
+    border: 1px solid #cccccc6d;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 30;
+}
+
+.panelButtons {
+    background-color: transparent;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+}
+
+.panelButtons i {
+    margin-right: 5px; /* Adjust the margin as needed */
+}
+
+.interation-text{
+    font-size: 1em;
+    font-weight: 600;
+    color: #333;
+    margin-right: 5px;
+    font-family: 'Avenir', sans-serif;
+}
+
+.interation-text-toggle{
+    font-size: 1em;
+    font-weight: 600;
+    color: #333;
+    margin-right: 5px;
+    font-family: 'Avenir', sans-serif;
+}
+
+.panelButtons:hover {
+    /* background-color: #f1f1f1; */
+    color: var(--secondary-color);
+}
+
+.panelButtons:hover .interation-text{
+    color: var(--secondary-color);
+}
+
+:root{
+    --secondary-color: #2196F3;
+}
+
+
+
+
+
+
+
+
