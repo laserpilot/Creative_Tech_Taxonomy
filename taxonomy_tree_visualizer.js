@@ -4,6 +4,7 @@ import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 import JSONEditor from "https://cdn.jsdelivr.net/npm/jsoneditor@9.10.4/+esm";
 import {downloadJSON, toggleFold} from "./handle_interactions_panel.js";
 
+
 fetch('./Creative_Tech_Taxonomy_data.json')
 .then(response => {
   if (!response.ok) {
@@ -367,7 +368,6 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
 
   // Collapse after the second level
   root.children.forEach(handle_collapse);
-
   update(null, root);
 
   visualizer.append(svg.node());
@@ -430,4 +430,5 @@ function create_editor(data){
     downloadJSON(jsonEdit)});
 
 }
+
 
