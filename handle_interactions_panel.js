@@ -50,6 +50,20 @@ function toggleView() {
 }
 document.getElementById("viewToggle").addEventListener("change", toggleView);
 
+// handle toggle fold actions
+export function toggleFold() {
+    var checkbox = document.getElementById("foldToggle");
+    var toggleText = document.getElementById("toggleFoldText");
+
+    if (checkbox.checked) {
+        toggleText.textContent = "Toggle to Expand All";
+        return true;
+    } else {
+        toggleText.textContent = "Toggle to Fold All";
+        return false;
+    }
+}
+
 // handle download json 
 export function downloadJSON(jsonEdit) {
     // get json data

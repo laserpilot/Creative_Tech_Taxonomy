@@ -2,7 +2,7 @@
 
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 import JSONEditor from "https://cdn.jsdelivr.net/npm/jsoneditor@9.10.4/+esm";
-import {downloadJSON} from "./handle_interactions_panel.js";
+import {downloadJSON, toggleFold} from "./handle_interactions_panel.js";
 
 fetch('./Creative_Tech_Taxonomy_data.json')
 .then(response => {
@@ -356,22 +356,53 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
      // if (d.depth && d.data.name.length !== 12) d.children = null;
     });
 
-  // Collapse the node and all it's children
-  const collapse = (d) => {
-    if(d.children) {
-        d._children = d.children
-        d._children.forEach(collapse)
-        d.children = null
-    }
-  }
+  // // Collapse the node and all it's children
+  // const collapse = (d) => {
+  //   if(d.children) {
+  //       d._children = d.children
+  //       d._children.forEach(collapse)
+  //       d.children = null
+  //   }
+  // }
 
   // Collapse after the second level
-  root.children.forEach(collapse);
+  root.children.forEach(handle_collapse);
 
   update(null, root);
 
   visualizer.append(svg.node());
+
+  document.getElementById("toggleFold").addEventListener("change",function() {
+    let targetFold = toggleFold();
+    console.log(targetFold);
+    targetFold? root.each(handle_collapse) : handle_expand(root);
+    update(null, root);
+
+  });
+  
 }
+
+// TODO: make fold don't fold first layer
+function handle_collapse(d){
+    if(d.children) {
+      d._children = d.children
+      d._children.forEach(handle_collapse)
+      d.children = null
+  }
+}
+
+// TODO: fix expand node look
+function handle_expand(d){   
+  if (d._children) {        
+      d.children = d._children;
+      d._children = null;       
+  }
+  var children = (d.children)?d.children:d._children;
+  if(children)
+    children.forEach(handle_expand);
+}
+  
+
 
 // create json editor
 function create_editor(data){
