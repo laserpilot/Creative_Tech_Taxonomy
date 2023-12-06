@@ -2,7 +2,7 @@
 
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 import JSONEditor from "https://cdn.jsdelivr.net/npm/jsoneditor@9.10.4/+esm";
-
+import {downloadJSON} from "./handle_interactions_panel.js";
 
 fetch('./Creative_Tech_Taxonomy_data.json')
 .then(response => {
@@ -12,12 +12,13 @@ fetch('./Creative_Tech_Taxonomy_data.json')
   return response.json();
 })
 .then(data => {
-  set_tabs();
+  // set_tabs();
   // console.log(data);
   create_editor(data);
   create_visualization(data);
 })
 .catch(error => console.log(error));
+
 
 const BG_COLOR = "aliceblue";
 
@@ -180,13 +181,17 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
       .attr("ry", 5) // Adjust the y-radius for rounded corners
       .attr("height", fontSize + 5) // Adjust the height as needed (font size + padding)
       .attr("width", d => {
+        if(!d._children) {
         //this is a kludged way of fixing the fact that getComputedTextLength() doesnt seem to be working but long text entries get a little screwed up
           const textLength = d.data.name.length;
           const multiplier = Math.max(0.8, 1 - (textLength - 8) * 0.05); // Adjust the parameters as needed
           return textLength * (fontSize - 5) * multiplier + 25;
-      })
+      }else{
+        return 0;
+      }}) // Adjust the width as needed
       .attr("fill", "lightgray") // Adjust the background color
-      .attr("x", d => d._children ? -d.data.name.length * (fontSize - 5) - 20 : 0) // Center the rect around the text
+      // .attr("x", d => d._children ? -d.data.name.length * (fontSize - 5) * Math.max(0.8, 1 - (d.data.name.length - 8) * 0.05) - 20: 0) // Center the rect around the text
+      .attr("x", d => d._children ? 0: 0) // Center the rect around the text
       .attr("y", -(fontSize + 5) / 2) // Center the rect vertically around the text
       .attr('fill', color)
       .attr('stroke', "lightgray")
@@ -238,12 +243,12 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
               d3.select(this).attr("transform", "scale(1)").transition().ease(d3.easeElastic); // Reset the scale
           })
           .on("click", (event, d) => {
-            // Toggle the children and toggle filled/hollow on click
+            // // Toggle the children and toggle filled/hollow on click
             d.children = d.children ? null : d._children;
-            const isFilled = d3.select(event.currentTarget).attr("fill") !== BG_COLOR;
-            d3.select(event.currentTarget)
-                .attr("fill", isFilled ? BG_COLOR : color)
-                .attr("r", isFilled ? circleRadius + 2 : circleRadius + 5);
+            // const isFilled = d3.select(event.currentTarget).attr("fill") !== BG_COLOR;
+            // d3.select(event.currentTarget)
+            //     .attr("fill", isFilled ? BG_COLOR : color)
+            //     .attr("r", isFilled ? circleRadius + 2 : circleRadius + 5);
             update(event, d);
           });
       
@@ -390,30 +395,8 @@ function create_editor(data){
   // add the editor to the page
   const jsonEdit = new JSONEditor(editor, options)
   jsonEdit.set(data)
+  document.getElementById("download-json").addEventListener("click",function() {
+    downloadJSON(jsonEdit)});
 
-  let button = document.createElement("button");
-  button.id = "download";
-  button.innerHTML = "Download Json";
-  button.onclick = () => {
-    // get json data
-    const json = JSON.stringify(jsonEdit.get(), null, "  ");
-
-    // create a blob object representing the data as a JSON string
-    const blob = new Blob([json], { type: "application/json" });
-
-    // create dummy element
-    let dummyElement = document.createElement("a");
-    document.body.appendChild(dummyElement);
-    // set its download attribute and href to that of the blob
-    dummyElement.href = window.URL.createObjectURL(blob);
-    // set its name
-    dummyElement.download = "Creative_Tech_Taxonomy_data.json";
-    // trigger click on dummy element to initiate download
-    dummyElement.click();
-    // remove dummy element
-    document.body.removeChild(dummyElement);
-  }
-  document.querySelector(".control").appendChild(button);
 }
-
 

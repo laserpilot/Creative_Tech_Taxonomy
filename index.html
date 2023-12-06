@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Creative Technology Taxonomy</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="toggle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Avenir:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" ></script>
@@ -46,10 +47,41 @@
 
     <div id ="interaction-panel">
         <!-- add zoom in and zoom out to the entire container -->
-        <button id="zoom-in-button" style="top: 40px;"><i class="fa-solid fa-magnifying-glass-plus fa-lg"></i> </button> 
-        <button id="reset-button" style="top: 70px;"><i class="fa-solid fa-arrows-rotate fa-lg"></i></button>
-        <button id="zoom-out-button" style="top: 100px;"><i class="fa-solid fa-magnifying-glass-minus fa-lg"></i></button>
-        <script type="module" src="handle_zoom_actions.js"> </script>
+        <button class="panelButtons" id="zoom-in-button">
+            <i class="fa-solid fa-magnifying-glass-plus fa-lg"></i>
+            <span class="interation-text">Zoom In</span>
+        </button>
+        <button class="panelButtons" id="reset-button" >
+            <i class="fa-solid fa-arrows-rotate fa-lg"></i>
+            <span class="interation-text">Reset</span>
+        </button>
+        <button class="panelButtons" id="zoom-out-button"  >
+            <i class="fa-solid fa-magnifying-glass-minus fa-lg"></i>
+            <span class="interation-text">Zoom Out</span>
+        </button>
+        <!-- download json -->
+        <button class="panelButtons" id="download-json"> 
+            <i class="fa-solid fa-download fa-lg"></i>
+            <span class="interation-text">Download Json</span>
+        </button>
+        <!-- take screenshot -->
+        <button class="panelButtons" id="take-screenshot"> 
+            <i class="fa-solid fa-camera fa-lg"></i> 
+            <span class="interation-text">Screenshot</span>
+        </button>
+        <script type="module" src="handle_interactions_panel.js"> </script>
+         <!-- toggle taxonomy view vs editor view -->
+        <div class="panelButtons" id="toggleView">
+         <label class="switch" > <input id="viewToggle" type="checkbox" checked> <span class="slider round"></span></label>
+         <span id="toggleText" class="interation-text-toggle">Taxonomy View</span>
+        </div>
+        <!-- TODO: toggle map fold vs all shown -->
+        <div class="panelButtons" id="toggleFold">
+            <label class="switch" > <input id="foldToggle" type="checkbox" checked> <span class="slider round"></span></label>
+            <span id="toggleFold" class="interation-text-toggle">Map Folded</span>
+        </div>
+
+
     </div>
 
     <!-- method-2: use iframe to draw a thumbnail -->
@@ -58,10 +90,6 @@
         <div id="thumbnail-canvas"></div>
     </div> -->
     <!-- <script type="module" src="handle_thumbnail.js"></script>  -->
-            
-
-
-
 
     <div id="myModal" class="modal">
         <div class="modal-content">
