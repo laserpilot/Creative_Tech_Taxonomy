@@ -357,14 +357,6 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
      // if (d.depth && d.data.name.length !== 12) d.children = null;
     });
 
-  // // Collapse the node and all it's children
-  // const collapse = (d) => {
-  //   if(d.children) {
-  //       d._children = d.children
-  //       d._children.forEach(collapse)
-  //       d.children = null
-  //   }
-  // }
 
   // Collapse after the second level
   root.children.forEach(handle_collapse);
@@ -375,7 +367,18 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
   document.getElementById("toggleFold").addEventListener("change",function() {
     let targetFold = toggleFold();
     console.log(targetFold);
-    targetFold? root.each(handle_collapse) : handle_expand(root);
+    if(targetFold){
+      // Do the first update to the initial configuration of the tree — where a number of nodes
+      // are open (arbitrarily selected as the root, plus nodes with 7 letters).
+      root.x0 = dy / 2;
+      root.y0 = 0;
+      root.descendants().forEach((d, i) => {
+        d.id = i;
+        d._children = d.children;
+      // if (d.depth && d.data.name.length !== 12) d.children = null;
+      });
+      root.children.forEach(handle_collapse)
+    } else{ handle_expand(root);}
     update(null, root);
 
   });
@@ -395,7 +398,7 @@ function handle_collapse(d){
 function handle_expand(d){   
   if (d._children) {        
       d.children = d._children;
-      d._children = null;       
+      // d._children = null;       
   }
   var children = (d.children)?d.children:d._children;
   if(children)
