@@ -115,7 +115,7 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
     // (dx is a height, and dy a width). This because the tree must be viewed with the root at the
     // “bottom”, in the data domain. The width of a column is based on the tree’s height.
     const root = d3.hierarchy(data);
-    const dx = fontSize *1.8 ;
+    const dx = fontSize *2 ;
     const dy = 225; // Set dy to the screen width minus the left and right margins
 
     // Define the tree layout and the shape for links.
@@ -157,7 +157,7 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
         if (node.x > right.x) right = node;
       });
   
-      const height = right.x - left.x + marginTop + marginBottom;
+      const height = right.x - left.x + marginTop + marginBottom + 100;
   
       const transition = svg.transition()
           .duration(duration)
@@ -253,11 +253,28 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
             update(event, d);
           });
       
-      nodeEnter.append("text")
-          .attr("dy", "0.31em")
+      const linebreakThreshold = 24;
+      const linebreakFontRelation = 0.9;
+      nodeEnter.append('text')
+          .attr("dy", d=> d.data.name.length > linebreakThreshold && d._children ?  "-0.2em": "0.31em")
+          .style("font-size", d=> d.data.name.length > linebreakThreshold && d._children ?  fontSize*linebreakFontRelation: fontSize)
           .attr("x", d => d._children ? -fontSize +5 : fontSize +5)
           .attr("text-anchor", d => d._children ? "end" : "start")
-          .text(d => d.data.name)
+          .each(function(d) {
+            const text = d.data.name;
+            if (text.length > linebreakThreshold && d._children) {
+              const lines = splitText(text, linebreakThreshold);
+              lines.forEach((line, index) => {
+                d3.select(this).append("tspan")
+                  .attr("dy", index > 0 ? "0.9em" : 0)
+                  .attr("x", d._children ? -fontSize + 5 : fontSize + 5)
+                  .style("font-size", fontSize*linebreakFontRelation)
+                  .text(line);
+              });
+            } else {
+              d3.select(this).text(text);
+            }
+          })
           .on("click", (event, d) => {
               // Show modal with additional information about the clicked node
               showModal(d);
@@ -272,7 +289,24 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
             // Reset the scale of the corresponding rectangle on mouseout
             d3.select(this.parentNode).select("rect").attr("transform", "scale(1)").transition().ease(d3.easeElastic);
           });
-
+          
+          // helper function to split text
+          function splitText(text, maxLength) {
+            const words = text.split(/\s+/); // Split by spaces
+            let lines = [];
+            let currentLine = words[0];
+            for (let i = 1; i < words.length; i++) {
+              const word = words[i];
+              if (currentLine.length + word.length <= maxLength) {
+                currentLine += ' ' + word;
+              } else {
+                lines.push(currentLine);
+                currentLine = word;
+              }
+            }
+            lines.push(currentLine);
+            return lines;
+          }
       
       nodeEnter.select("text")
           .clone(true).lower()
@@ -385,7 +419,7 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
   
 }
 
-// TODO: make fold don't fold first layer
+// DONE: make fold don't fold first layer
 function handle_collapse(d){
     if(d.children) {
       d._children = d.children
@@ -394,7 +428,7 @@ function handle_collapse(d){
   }
 }
 
-// TODO: fix expand node look
+// DONE: fix expand node look
 function handle_expand(d){   
   if (d._children) {        
       d.children = d._children;
@@ -404,7 +438,8 @@ function handle_expand(d){
   if(children)
     children.forEach(handle_expand);
 }
-  
+
+
 
 
 // create json editor
@@ -433,5 +468,6 @@ function create_editor(data){
     downloadJSON(jsonEdit)});
 
 }
+
 
 
