@@ -34,6 +34,35 @@ document.getElementById("zoom-out-button").addEventListener("click", zoomOut);
 document.getElementById("reset-button").addEventListener("click", resetZoom);
 
 
+// take screenshot
+function takeScreenshot() {
+    html2canvas(document.querySelector("#container")).then(canvas => {
+        canvas.style.display = 'none'
+        // document.querySelector("#container").style.display = "none";
+        const context = canvas.getContext('2d');
+        context.resetTransform();
+        // Draw the watermark text
+        context.font = '48px Arial';
+        context.fillStyle = 'rgba(100, 100, 100, 0.5)';
+        context.fillText('Creative Tech Taxonomy by https://github.com/laserpilot/Creative_Tech_Taxonomy', 200, 100);
+        document.body.appendChild(canvas)
+        return canvas
+    })
+    .then(canvas => {
+        const image = canvas.toDataURL('image/png');
+        const a = document.createElement('a');
+        
+        a.setAttribute('download', 'creative-tech-taxonomy-screenshot.png');
+        a.setAttribute('href', image);
+        a.click();
+        // canvas.remove();
+    })
+}
+
+document.getElementById("take-screenshot").addEventListener("click", takeScreenshot);
+
+
+
 // handle toggle actions
 function toggleView() {
     var checkbox = document.getElementById("viewToggle");
