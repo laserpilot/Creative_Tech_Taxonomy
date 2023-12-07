@@ -72,10 +72,10 @@ function showModal(nodeData) {
   // Generate content based on the clicked node data
   const content = `
     <h2>${nodeData.data.name}</h2>
-    <p>${nodeData.data.description || 'No description available.'}</p>
-    <p>Tags: ${nodeData.data.tags ? nodeData.data.tags.join(', ') : 'No tags available.'}</p>
-    <div>
-      Links:
+    <p>${nodeData.data.description || 'No Description available.'}</p>
+    <p>Tags: ${nodeData.data.tags ? nodeData.data.tags.join(', ') : 'No Tags available.'}</p>
+    <div class="links-container">
+      <p>Links:</p>
       <ul>
         ${nodeData.data.links
           ? Object.entries(nodeData.data.links).map(([type, url]) => `<li>${type}: <a href="${url}" target="_blank">${url}</a></li>`).join('')

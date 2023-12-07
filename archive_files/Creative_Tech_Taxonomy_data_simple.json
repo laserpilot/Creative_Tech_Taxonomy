@@ -1,0 +1,2744 @@
+{
+  "name" : "Creative Tech Taxonomy",
+  "children" : [
+    {
+      "name" : "Creative Code Frameworks",
+      "children" : [
+        {
+          "name" : "Language Type",
+          "children" : [
+            {
+              "name" : "Node Based/Visual",
+              "children" : [
+                {
+                  "name" : "Isadora"
+                },
+                {
+                  "name" : "Cables.gl"
+                },
+                {
+                  "name" : "vvvv"
+                },
+                {
+                  "name" : "Vuo"
+                },
+                {
+                  "name" : "Nodebox"
+                },
+                {
+                  "name" : "nodes.io"
+                },
+                {
+                  "name" : "Pure Data(pd)"
+                },
+                {
+                  "name" : "Max"
+                },
+                {
+                  "name" : "Notch"
+                }
+              ]
+            },
+            {
+              "name" : "C++",
+              "children" : [
+                {
+                  "name" : "OpenFrameworks"
+                },
+                {
+                  "name" : "Cinder"
+                },
+                {
+                  "name" : "Nap Framework"
+                }
+              ]
+            },
+            {
+              "name" : "Kotlin",
+              "children" : [
+                {
+                  "name" : "OPENRNDR"
+                }
+              ]
+            },
+            {
+              "name" : "Ruby",
+              "children" : [
+                {
+                  "name" : "Visor"
+                }
+              ]
+            },
+            {
+              "name" : "Rust",
+              "children" : [
+                {
+                  "name" : "Nannou"
+                }
+              ]
+            },
+            {
+              "name" : "Python",
+              "children" : [
+                {
+                  "name" : "Processing.py"
+                }
+              ]
+            },
+            {
+              "name" : "Javascript",
+              "children" : [
+                {
+                  "name" : "p5.js"
+                },
+                {
+                  "name" : "three.js"
+                },
+                {
+                  "name" : "paper.js"
+                }
+              ]
+            },
+            {
+              "name" : "Legacy/Deprecated Tools",
+              "children" : [
+                {
+                  "name" : "Flash"
+                },
+                {
+                  "name" : "Macromedia Director"
+                },
+                {
+                  "name" : "Quartz Composer"
+                }
+              ]
+            },
+            {
+              "name" : "Java",
+              "children" : [
+                {
+                  "name" : "Processing"
+                }
+              ]
+            },
+            {
+              "name" : "Low Level Graphics",
+              "children" : [
+                {
+                  "name" : "Metal"
+                },
+                {
+                  "name" : "DirectX"
+                },
+                {
+                  "name" : "OpenGL",
+                  "children" : [
+                    {
+                      "name" : "WebGL"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Vulkan"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name" : "Use Cases",
+          "children" : [
+            {
+              "name" : "Livecoding"
+            },
+            {
+              "name" : "Interactive/Physical sensor integration"
+            },
+            {
+              "name" : "Data Visualization"
+            },
+            {
+              "name" : "Multi Screen Custom Installations"
+            },
+            {
+              "name" : "Generative Visuals"
+            }
+          ]
+        },
+        {
+          "name" : "License Types",
+          "children" : [
+            {
+              "name" : "Commercial/Paid",
+              "children" : [
+                {
+                  "name" : "Subscription"
+                }
+              ]
+            },
+            {
+              "name" : "Open Source",
+              "children" : [
+                {
+                  "name" : "Mozilla Public License"
+                },
+                {
+                  "name" : "MIT"
+                },
+                {
+                  "name" : "GPL"
+                }
+              ]
+            },
+            {
+              "name" : "Educational"
+            },
+            {
+              "name" : "Other"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "Real-time 3D/Game Engines",
+      "children" : [
+        {
+          "name" : "Engine Types",
+          "children" : [
+            {
+              "name" : "Open Source",
+              "children" : [
+                {
+                  "name" : "babylon.js"
+                },
+                {
+                  "name" : "three.js"
+                },
+                {
+                  "name" : "Sceneform"
+                }
+              ]
+            },
+            {
+              "name" : "Commercial",
+              "children" : [
+                {
+                  "name" : "Scenekit"
+                },
+                {
+                  "name" : "CryEngine"
+                },
+                {
+                  "name" : "Amazon Lumberjack"
+                },
+                {
+                  "name" : "Unity"
+                },
+                {
+                  "name" : "Unreal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name" : "VR",
+          "children" : [
+            {
+              "name" : "Headsets",
+              "children" : [
+                {
+                  "name" : "Sony PSVR"
+                },
+                {
+                  "name" : "HTC Vive"
+                },
+                {
+                  "name" : "Valve Index"
+                },
+                {
+                  "name" : "Meta Oculus",
+                  "children" : [
+                    {
+                      "name" : "Rift S"
+                    },
+                    {
+                      "name" : "Quest 2"
+                    },
+                    {
+                      "name" : "Quest"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name" : "Related Concepts"
+            }
+          ]
+        },
+        {
+          "name" : "AR",
+          "children" : [
+            {
+              "name" : "Headsets",
+              "children" : [
+                {
+                  "name" : "Google Glass"
+                },
+                {
+                  "name" : "Magic Leap"
+                },
+                {
+                  "name" : "Microsoft Hololens"
+                }
+              ]
+            },
+            {
+              "name" : "AR Methods",
+              "children" : [
+                {
+                  "name" : "Marker Based",
+                  "children" : [
+                    {
+                      "name" : "Vuforia"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Visual Inertial Odometry",
+                  "children" : [
+                    {
+                      "name" : "ARKit"
+                    }
+                  ]
+                },
+                {
+                  "name" : "SLAM",
+                  "children" : [
+                    {
+                      "name" : "iOS Devices with LIDAR"
+                    },
+                    {
+                      "name" : "Google Tango"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name" : "Related Concepts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "Web/Networking Frameworks",
+      "children" : [
+        {
+          "name" : "Frontend",
+          "children" : [
+            {
+              "name" : "Audio",
+              "children" : [
+                {
+                  "name" : "tone.js"
+                }
+              ]
+            },
+            {
+              "name" : "WebAR/VR",
+              "children" : [
+                {
+                  "name" : "AR.js/A-Frame"
+                },
+                {
+                  "name" : "8th Wall"
+                }
+              ]
+            },
+            {
+              "name" : "Machine Learning",
+              "children" : [
+                {
+                  "name" : "ml5.js"
+                }
+              ]
+            },
+            {
+              "name" : "WebGL Environments",
+              "children" : [
+                {
+                  "name" : "three.js"
+                }
+              ]
+            },
+            {
+              "name" : "Data Visualization",
+              "children" : [
+                {
+                  "name" : "D3.js"
+                }
+              ]
+            },
+            {
+              "name" : "Common Frontend Frameworks",
+              "children" : [
+                {
+                  "name" : "Vue.js"
+                },
+                {
+                  "name" : "Angular.js"
+                },
+                {
+                  "name" : "React.js"
+                }
+              ]
+            },
+            {
+              "name" : "Creative/Animation frameworks",
+              "children" : [
+                {
+                  "name" : "paper.js"
+                },
+                {
+                  "name" : "p5.js"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name" : "Backend",
+          "children" : [
+            {
+              "name" : "Database",
+              "children" : [
+                {
+                  "name" : "MondoDB"
+                },
+                {
+                  "name" : "SQL",
+                  "children" : [
+                    {
+                      "name" : "sqlite"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name" : "Communication Protocols/Messaging Queues",
+              "children" : [
+                {
+                  "name" : "RabbitMQ"
+                },
+                {
+                  "name" : "ZeroMQ"
+                },
+                {
+                  "name" : "Websockets"
+                },
+                {
+                  "name" : "UDP",
+                  "children" : [
+                    {
+                      "name" : "Open Sound Control (OSC)"
+                    }
+                  ]
+                },
+                {
+                  "name" : "TCP/IP",
+                  "children" : [
+                    {
+                      "name" : "HTTP/HTTPS",
+                      "children" : [
+                        {
+                          "name" : "REST API"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name" : "Related Concepts",
+              "children" : [
+                {
+                  "name" : "nginx"
+                },
+                {
+                  "name" : "Microsoft Azure"
+                },
+                {
+                  "name" : "Node.js"
+                },
+                {
+                  "name" : "Google Firebase"
+                },
+                {
+                  "name" : "Video/Image Processing",
+                  "children" : [
+                    {
+                      "name" : "gstreamer"
+                    },
+                    {
+                      "name" : "imagemagick"
+                    },
+                    {
+                      "name" : "ffmpeg"
+                    }
+                  ]
+                },
+                {
+                  "name" : "AWS",
+                  "children" : [
+                    {
+                      "name" : "S3"
+                    },
+                    {
+                      "name" : "EC2"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Google Cloud"
+                },
+                {
+                  "name" : "Content Delivery Network (CDN)"
+                },
+                {
+                  "name" : "Apache"
+                }
+              ]
+            },
+            {
+              "name" : "Content Management System (CMS)",
+              "children" : [
+                {
+                  "name" : "A million others"
+                },
+                {
+                  "name" : "Drupal"
+                },
+                {
+                  "name" : "Wordpress"
+                },
+                {
+                  "name" : "Contentful"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name" : "Data Serialization",
+          "children" : [
+            {
+              "name" : "Protobuf"
+            },
+            {
+              "name" : "YAML"
+            },
+            {
+              "name" : "JSON"
+            },
+            {
+              "name" : "XML"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "Sensors/Interaction Methods",
+      "children" : [
+        {
+          "name" : "Cameras",
+          "children" : [
+            {
+              "name" : "Types",
+              "children" : [
+                {
+                  "name" : "Video Cam",
+                  "children" : [
+                    {
+                      "name" : "Action Cameras",
+                      "children" : [
+                        {
+                          "name" : "GoPro Hero"
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "Smartphone Camera"
+                    },
+                    {
+                      "name" : "Professional Grade Camcorder"
+                    },
+                    {
+                      "name" : "Broadcast"
+                    },
+                    {
+                      "name" : "Object"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Webcam"
+                },
+                {
+                  "name" : "Slow Motion/High Speed Cam"
+                },
+                {
+                  "name" : "IP Cameras"
+                },
+                {
+                  "name" : "Infrared",
+                  "children" : [
+                    {
+                      "name" : "Normal"
+                    },
+                    {
+                      "name" : "Depth Cameras",
+                      "children" : [
+                        {
+                          "name" : "Realsense"
+                        },
+                        {
+                          "name" : "Kinect"
+                        },
+                        {
+                          "name" : "Orbbec"
+                        },
+                        {
+                          "name" : "Ensenso"
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "Thermal Cameras",
+                      "children" : [
+                        {
+                          "name" : "FLIR"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name" : "DSLR"
+                },
+                {
+                  "name" : "Mirrorless"
+                },
+                {
+                  "name" : "Stereo RGB",
+                  "children" : [
+                    {
+                      "name" : "Stereolab Zed Camera"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name" : "Touch/Hands",
+          "children" : [
+            {
+              "name" : "Leap Motion"
+            },
+            {
+              "name" : "Sensel"
+            },
+            {
+              "name" : "Capacitive"
+            },
+            {
+              "name" : "Touchscreens",
+              "children" : [
+                {
+                  "name" : "Projected Capacitance (PCAP)",
+                  "children" : [
+                    {
+                      "name" : "Ideum"
+                    }
+                  ]
+                },
+                {
+                  "name" : "IR"
+                },
+                {
+                  "name" : "Shadowsense"
+                },
+                {
+                  "name" : "LIDAR (for Large scale or LED)",
+                  "children" : [
+                    {
+                      "name" : "Velodyne"
+                    },
+                    {
+                      "name" : "Ouster"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name" : "Bluetooth",
+          "children" : [
+            {
+              "name" : "Beacons"
+            }
+          ]
+        },
+        {
+          "name" : "Position/Motion Sensing",
+          "children" : [
+            {
+              "name" : "LIDAR",
+              "children" : [
+                {
+                  "name" : "Velodyne Lidar VLP Series"
+                },
+                {
+                  "name" : "Ouster"
+                },
+                {
+                  "name" : "Hokuyu UST Series"
+                }
+              ]
+            },
+            {
+              "name" : "Rotary Encoder"
+            },
+            {
+              "name" : "GPS"
+            },
+            {
+              "name" : "Infrared",
+              "children" : [
+                {
+                  "name" : "PIR"
+                },
+                {
+                  "name" : "Distance Sensor"
+                }
+              ]
+            },
+            {
+              "name" : "Ultrasonic Distance Sensor"
+            },
+            {
+              "name" : "Ultra Wide Band (UWB)",
+              "children" : [
+                {
+                  "name" : "Apple Airtag"
+                },
+                {
+                  "name" : "Pozyx"
+                }
+              ]
+            },
+            {
+              "name" : "Accelerometer/Gyroscope",
+              "children" : [
+                {
+                  "name" : "LP-Research LPMS Series"
+                },
+                {
+                  "name" : "Wit Motion"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name" : "Other",
+          "children" : [
+            {
+              "name" : "Unusual or Custom Inputs",
+              "children" : [
+                {
+                  "name" : "Pressure Sensors",
+                  "children" : [
+                    {
+                      "name" : "Direct Force Pressure",
+                      "children" : [
+                        {
+                          "name" : "Load Cell"
+                        },
+                        {
+                          "name" : "Force Sensing Resistor (FSR)"
+                        },
+                        {
+                          "name" : "Sensel"
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "Object"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Magnetometer"
+                },
+                {
+                  "name" : "Water Detection"
+                },
+                {
+                  "name" : "Humidity"
+                },
+                {
+                  "name" : "Bend Sensors"
+                }
+              ]
+            },
+            {
+              "name" : "Biometric",
+              "children" : [
+                {
+                  "name" : "Heart Rate",
+                  "children" : [
+                    {
+                      "name" : "ECG (Electrical)"
+                    },
+                    {
+                      "name" : "PPG (Optical)"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Breath",
+                  "children" : [
+                    {
+                      "name" : "XeThru"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Object"
+                }
+              ]
+            },
+            {
+              "name" : "Buttons/Knobs/Sliders",
+              "children" : [
+                {
+                  "name" : "Linear",
+                  "children" : [
+                    {
+                      "name" : "Potentiometer"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Magnetic",
+                  "children" : [
+                    {
+                      "name" : "Hall Effect Sensor"
+                    },
+                    {
+                      "name" : "Reed Switch"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Rotary",
+                  "children" : [
+                    {
+                      "name" : "Potentiometer"
+                    },
+                    {
+                      "name" : "Rotary Encoder"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Momentary",
+                  "children" : [
+                    {
+                      "name" : "Arcade Button"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Toggle",
+                  "children" : [
+                    {
+                      "name" : "Switch"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name" : "RFID",
+              "children" : [
+                {
+                  "name" : "NFC"
+                },
+                {
+                  "name" : "Low Frequency (LF)"
+                },
+                {
+                  "name" : "High Frequency (HF)"
+                },
+                {
+                  "name" : "Ultra High Frequency (UHF)"
+                }
+              ]
+            },
+            {
+              "name" : "Capacitive Sensors"
+            },
+            {
+              "name" : "Light Sensors",
+              "children" : [
+                {
+                  "name" : "Photocell"
+                }
+              ]
+            },
+            {
+              "name" : "Temperature Sensors",
+              "children" : [
+                {
+                  "name" : "Thermistor"
+                },
+                {
+                  "name" : "Thermocouple"
+                }
+              ]
+            },
+            {
+              "name" : "Sound/Vibration",
+              "children" : [
+                {
+                  "name" : "Microphones"
+                },
+                {
+                  "name" : "Piezo"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "Physical Computing",
+      "children" : [
+        {
+          "name" : "Microcontrollers",
+          "children" : [
+            {
+              "name" : "Adafruit Feather"
+            },
+            {
+              "name" : "M5Stack"
+            },
+            {
+              "name" : "Arduino"
+            },
+            {
+              "name" : "Custom PCB"
+            },
+            {
+              "name" : "Teensy"
+            }
+          ]
+        },
+        {
+          "name" : "Lights/LED",
+          "children" : [
+            {
+              "name" : "Fadecandy"
+            },
+            {
+              "name" : "NeoPixel"
+            },
+            {
+              "name" : "LED Strips"
+            }
+          ]
+        },
+        {
+          "name" : "Embedded AI Devices",
+          "children" : [
+            {
+              "name" : "Microsoft Azure Percept"
+            },
+            {
+              "name" : "NVIDIA Jetson Nano"
+            },
+            {
+              "name" : "Google Coral"
+            }
+          ]
+        },
+        {
+          "name" : "Analysis",
+          "children" : [
+            {
+              "name" : "Multimeter"
+            },
+            {
+              "name" : "Oscilloscope"
+            },
+            {
+              "name" : "Power Profiler"
+            },
+            {
+              "name" : "J-Link Debug Probe"
+            }
+          ]
+        },
+        {
+          "name" : "Embedded/Multiple Devices",
+          "children" : [
+            {
+              "name" : "Beaglebone"
+            },
+            {
+              "name" : "Raspberry Pi"
+            }
+          ]
+        },
+        {
+          "name" : "Motors/Actuators",
+          "children" : [
+            {
+              "name" : "Types",
+              "children" : [
+                {
+                  "name" : "DC Motor"
+                },
+                {
+                  "name" : "Linear Actuator"
+                },
+                {
+                  "name" : "Stepper"
+                },
+                {
+                  "name" : "Servo"
+                }
+              ]
+            },
+            {
+              "name" : "Related",
+              "children" : [
+                {
+                  "name" : "Haptics",
+                  "children" : [
+                    {
+                      "name" : "Ultraleap"
+                    },
+                    {
+                      "name" : "Disney AIREAL"
+                    },
+                    {
+                      "name" : "Novint Falcon"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Robotics",
+                  "children" : [
+                    {
+                      "name" : "Soft Robotics"
+                    },
+                    {
+                      "name" : "Kinetic Sculptures"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Air/Water Movement",
+                  "children" : [
+                    {
+                      "name" : "Solenoids"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "Optical Tracking",
+      "children" : [
+        {
+          "name" : "Computer Vision",
+          "children" : [
+            {
+              "name" : "For More - See AI/ML Section"
+            },
+            {
+              "name" : "Gesture Control"
+            },
+            {
+              "name" : "Eye Tracking",
+              "children" : [
+                {
+                  "name" : "Tobii Eye Tracker"
+                }
+              ]
+            },
+            {
+              "name" : "Body Tracking"
+            },
+            {
+              "name" : "OpenCV"
+            },
+            {
+              "name" : "Techniques",
+              "children" : [
+                {
+                  "name" : "Contour Detection"
+                },
+                {
+                  "name" : "Optical Flow"
+                },
+                {
+                  "name" : "Blob Tracking"
+                },
+                {
+                  "name" : "Background Subtraction"
+                },
+                {
+                  "name" : "Frame Differencing"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name" : "Related Topics",
+          "children" : [
+            {
+              "name" : "Antilatency/Low Latency"
+            },
+            {
+              "name" : "Virtual Production/XR",
+              "children" : [
+                {
+                  "name" : "MoCap Rigs/Systems",
+                  "children" : [
+                    {
+                      "name" : "Camera Based",
+                      "children" : [
+                        {
+                          "name" : "Mo-Sys"
+                        },
+                        {
+                          "name" : "RedSpy"
+                        },
+                        {
+                          "name" : "VICON"
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "IMU Based",
+                      "children" : [
+                        {
+                          "name" : "Rokoko"
+                        },
+                        {
+                          "name" : "Xsens"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name" : "Other Tracking Systems",
+                  "children" : [
+                    {
+                      "name" : "OptiTrack"
+                    },
+                    {
+                      "name" : "Blacktrax"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "Pro AV Hardware and Related Software",
+      "children" : [
+        {
+          "name" : "Video",
+          "children" : [
+            {
+              "name" : "Hardware",
+              "children" : [
+                {
+                  "name" : "Output",
+                  "children" : [
+                    {
+                      "name" : "Displays",
+                      "children" : [
+                        {
+                          "name" : "Consumer Display Tech",
+                          "children" : [
+                            {
+                              "name" : "Legacy",
+                              "children" : [
+                                {
+                                  "name" : "Vectrex/Oscilloscope"
+                                },
+                                {
+                                  "name" : "Cathode Ray Tube TV"
+                                },
+                                {
+                                  "name" : "Plasma"
+                                },
+                                {
+                                  "name" : "3D TV"
+                                }
+                              ]
+                            },
+                            {
+                              "name" : "Flatscreen",
+                              "children" : [
+                                {
+                                  "name" : "Electroluminescent Panel"
+                                },
+                                {
+                                  "name" : "OLED"
+                                },
+                                {
+                                  "name" : "LCD"
+                                },
+                                {
+                                  "name" : "qLED"
+                                },
+                                {
+                                  "name" : "microLED"
+                                }
+                              ]
+                            },
+                            {
+                              "name" : "Projector",
+                              "children" : [
+                                {
+                                  "name" : "Imaging Method",
+                                  "children" : [
+                                    {
+                                      "name" : "DLP"
+                                    },
+                                    {
+                                      "name" : "LCD"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name" : "Pico Projectors"
+                                },
+                                {
+                                  "name" : "Small Scale"
+                                },
+                                {
+                                  "name" : "Large Venue Projectors"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name" : "Commercial Display Tech",
+                          "children" : [
+                            {
+                              "name" : "LED",
+                              "children" : [
+                                {
+                                  "name" : "Video Walls"
+                                },
+                                {
+                                  "name" : "Interactive Floors"
+                                },
+                                {
+                                  "name" : "Volumetric Displays"
+                                },
+                                {
+                                  "name" : "Indoor Rated"
+                                },
+                                {
+                                  "name" : "Transparent"
+                                },
+                                {
+                                  "name" : "Outdoor Rated"
+                                }
+                              ]
+                            },
+                            {
+                              "name" : "Indoor 24/7",
+                              "children" : [
+                                {
+                                  "name" : "Projectors"
+                                },
+                                {
+                                  "name" : "OLED"
+                                }
+                              ]
+                            },
+                            {
+                              "name" : "Outdoor Capable/Weatherproof",
+                              "children" : [
+                                {
+                                  "name" : "LCD",
+                                  "children" : [
+                                    {
+                                      "name" : "LG-MRI"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name" : "LED"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name" : "Alternative Displays",
+                          "children" : [
+                            {
+                              "name" : "Mechanical/Persistence of Vision",
+                              "children" : [
+                                {
+                                  "name" : "Flip-dot"
+                                },
+                                {
+                                  "name" : "Split-flap"
+                                }
+                              ]
+                            },
+                            {
+                              "name" : "Transparent LCD",
+                              "children" : [
+                                {
+                                  "name" : "Layered/Stacked Display"
+                                }
+                              ]
+                            },
+                            {
+                              "name" : "Transparent OLED",
+                              "children" : [
+                                {
+                                  "name" : "Layered/Stacked Displays"
+                                }
+                              ]
+                            },
+                            {
+                              "name" : "Flexible Displays (OLED)"
+                            },
+                            {
+                              "name" : "Electronic Ink/E-Ink",
+                              "children" : [
+                                {
+                                  "name" : "Visionect"
+                                }
+                              ]
+                            },
+                            {
+                              "name" : "Volumetric Illusion",
+                              "children" : [
+                                {
+                                  "name" : "Lightfield",
+                                  "children" : [
+                                    {
+                                      "name" : "Solidlight"
+                                    },
+                                    {
+                                      "name" : "Looking Glass"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "name" : "Layered Screens"
+                                }
+                              ]
+                            },
+                            {
+                              "name" : "LCD with modified polarizers",
+                              "children" : [
+                                {
+                                  "name" : "Worldstage Whitespace Displays"
+                                }
+                              ]
+                            },
+                            {
+                              "name" : "Techniques",
+                              "children" : [
+                                {
+                                  "name" : "Projection on water"
+                                },
+                                {
+                                  "name" : "Projection on fog"
+                                },
+                                {
+                                  "name" : "Persistence of Vision"
+                                },
+                                {
+                                  "name" : "Pepper's Ghost"
+                                },
+                                {
+                                  "name" : "Volumetric Projection"
+                                },
+                                {
+                                  "name" : "Diffusion/Distortion"
+                                }
+                              ]
+                            },
+                            {
+                              "name" : "Object"
+                            }
+                          ]
+                        },
+                        {
+                          "name" : "Touch Screens",
+                          "children" : [
+                            {
+                              "name" : "Projected Capacitance (PCAP)"
+                            },
+                            {
+                              "name" : "Infrared"
+                            },
+                            {
+                              "name" : "Resistive"
+                            },
+                            {
+                              "name" : "Surface Acoustic Wave"
+                            },
+                            {
+                              "name" : "Surface Capacitive"
+                            },
+                            {
+                              "name" : "Object/Marker Recognition on screens"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name" : "Input",
+                  "children" : [
+                    {
+                      "name" : "Cameras",
+                      "children" : [
+                        {
+                          "name" : "Broadcast"
+                        },
+                        {
+                          "name" : "PTZ"
+                        },
+                        {
+                          "name" : "DSLR"
+                        },
+                        {
+                          "name" : "Cinema"
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "Capture",
+                      "children" : [
+                        {
+                          "name" : "Capture Cards",
+                          "children" : [
+                            {
+                              "name" : "Blackmagic"
+                            }
+                          ]
+                        },
+                        {
+                          "name" : "Object"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name" : "Other Concepts",
+                  "children" : [
+                    {
+                      "name" : "Signal Extenders",
+                      "children" : [
+                        {
+                          "name" : "Fiber"
+                        },
+                        {
+                          "name" : "Cat5e/Cat6"
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "Routers"
+                    },
+                    {
+                      "name" : "Switchers"
+                    },
+                    {
+                      "name" : "Transmission/Streaming"
+                    },
+                    {
+                      "name" : "Video Cables",
+                      "children" : [
+                        {
+                          "name" : "Legacy",
+                          "children" : [
+                            {
+                              "name" : "SDI"
+                            },
+                            {
+                              "name" : "VGA"
+                            },
+                            {
+                              "name" : "RCA"
+                            },
+                            {
+                              "name" : "Coax"
+                            }
+                          ]
+                        },
+                        {
+                          "name" : "HD",
+                          "children" : [
+                            {
+                              "name" : "HDMI"
+                            },
+                            {
+                              "name" : "Displayport"
+                            },
+                            {
+                              "name" : "HD-SDI"
+                            },
+                            {
+                              "name" : "3G-SDI"
+                            },
+                            {
+                              "name" : "6G-SDI"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name" : "Basic Media Players",
+                  "children" : [
+                    {
+                      "name" : "Bright Sign"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Pro Systems",
+                  "children" : [
+                    {
+                      "name" : "Catalyst"
+                    },
+                    {
+                      "name" : "Disguise/d3"
+                    },
+                    {
+                      "name" : "Dataton Watchout"
+                    },
+                    {
+                      "name" : "Pixera"
+                    },
+                    {
+                      "name" : "Notch"
+                    },
+                    {
+                      "name" : "Green Hippo"
+                    },
+                    {
+                      "name" : "Ventuz"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name" : "Software",
+              "children" : [
+                {
+                  "name" : "VJ/Mapping Software",
+                  "children" : [
+                    {
+                      "name" : "Modul8"
+                    },
+                    {
+                      "name" : "Madmapper"
+                    },
+                    {
+                      "name" : "VDMX"
+                    },
+                    {
+                      "name" : "Resolume"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Streaming",
+                  "children" : [
+                    {
+                      "name" : "Streaming Protocol",
+                      "children" : [
+                        {
+                          "name" : "RTMP"
+                        },
+                        {
+                          "name" : "RTSP"
+                        },
+                        {
+                          "name" : "HLS"
+                        },
+                        {
+                          "name" : "RTP"
+                        },
+                        {
+                          "name" : "Newtek NDI"
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "OBS"
+                    },
+                    {
+                      "name" : "Wirecast"
+                    },
+                    {
+                      "name" : "vMix"
+                    },
+                    {
+                      "name" : "Newtek NDI"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name" : "Audio",
+          "children" : [
+            {
+              "name" : "Input",
+              "children" : [
+                {
+                  "name" : "Microphones",
+                  "children" : [
+                    {
+                      "name" : "Dynamic",
+                      "children" : [
+                        {
+                          "name" : "Regular Vocal Mic"
+                        },
+                        {
+                          "name" : "Shotgun"
+                        },
+                        {
+                          "name" : "Ambisonic"
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "Condensor",
+                      "children" : [
+                        {
+                          "name" : "Regular Vocal Mic"
+                        },
+                        {
+                          "name" : "Shotgun"
+                        },
+                        {
+                          "name" : "Ambisonic"
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "Ribbon"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Synthesizers"
+                },
+                {
+                  "name" : "Pickups",
+                  "children" : [
+                    {
+                      "name" : "Piezo"
+                    },
+                    {
+                      "name" : "Transducer"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Music Software",
+                  "children" : [
+                    {
+                      "name" : "Ableton"
+                    },
+                    {
+                      "name" : "See Asset Creation"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Timecode",
+                  "children" : [
+                    {
+                      "name" : "SMTPE LTC"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name" : "Output",
+              "children" : [
+                {
+                  "name" : "Amplifiers"
+                },
+                {
+                  "name" : "Spatial",
+                  "children" : [
+                    {
+                      "name" : "Directional"
+                    },
+                    {
+                      "name" : "Binaural"
+                    },
+                    {
+                      "name" : "Surround"
+                    },
+                    {
+                      "name" : "Wave Field Synthesis"
+                    }
+                  ]
+                },
+                {
+                  "name" : "PA Systems"
+                },
+                {
+                  "name" : "Signal Processors",
+                  "children" : [
+                    {
+                      "name" : "Compressors"
+                    },
+                    {
+                      "name" : "Limiters"
+                    },
+                    {
+                      "name" : "Equalizers"
+                    },
+                    {
+                      "name" : "Reverb"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Headphones"
+                },
+                {
+                  "name" : "Transducer",
+                  "children" : [
+                    {
+                      "name" : "Buttkicker Subwoofer"
+                    },
+                    {
+                      "name" : "Dayton Audio"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name" : "Communication Protocols",
+              "children" : [
+                {
+                  "name" : "Dante"
+                },
+                {
+                  "name" : "OSC"
+                },
+                {
+                  "name" : "Digital/Analog Conversion",
+                  "children" : [
+                    {
+                      "name" : "S/PIDF"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name" : "Related Concepts"
+            }
+          ]
+        },
+        {
+          "name" : "Lights",
+          "children" : [
+            {
+              "name" : "Lighting Consoles",
+              "children" : [
+                {
+                  "name" : "GrandMA"
+                },
+                {
+                  "name" : "ETC"
+                }
+              ]
+            },
+            {
+              "name" : "Lighting Controllers",
+              "children" : [
+                {
+                  "name" : "Pro",
+                  "children" : [
+                    {
+                      "name" : "Advatek"
+                    },
+                    {
+                      "name" : "Enttec"
+                    },
+                    {
+                      "name" : "Madrix"
+                    },
+                    {
+                      "name" : "Falcon"
+                    }
+                  ]
+                },
+                {
+                  "name" : "DIY",
+                  "children" : [
+                    {
+                      "name" : "Teensy"
+                    },
+                    {
+                      "name" : "Raspberry Pi"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name" : "Mapping & Content Software",
+              "children" : [
+                {
+                  "name" : "Madrix"
+                },
+                {
+                  "name" : "ELM"
+                },
+                {
+                  "name" : "TouchDesigner"
+                }
+              ]
+            },
+            {
+              "name" : "Communication Protocols",
+              "children" : [
+                {
+                  "name" : "DMX"
+                },
+                {
+                  "name" : "ArtNet / sACN"
+                },
+                {
+                  "name" : "DDB"
+                }
+              ]
+            },
+            {
+              "name" : "Lasers",
+              "children" : [
+                {
+                  "name" : "Laser Control",
+                  "children" : [
+                    {
+                      "name" : "Pangolin Quickshow"
+                    },
+                    {
+                      "name" : "ILDA"
+                    },
+                    {
+                      "name" : "MadMapper MadLaser"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name" : "Computers",
+          "children" : [
+            {
+              "name" : "Operating Systems",
+              "children" : [
+                {
+                  "name" : "Mac"
+                },
+                {
+                  "name" : "Linux"
+                },
+                {
+                  "name" : "Windows"
+                }
+              ]
+            },
+            {
+              "name" : "Graphics Cards"
+            }
+          ]
+        },
+        {
+          "name" : "Special FX",
+          "children" : [
+            {
+              "name" : "Fog Machine"
+            },
+            {
+              "name" : "Haze Machine"
+            }
+          ]
+        },
+        {
+          "name" : "Mobile Devices",
+          "children" : [
+            {
+              "name" : "iOS"
+            },
+            {
+              "name" : "Android"
+            }
+          ]
+        },
+        {
+          "name" : "Electrical and Safety"
+        },
+        {
+          "name" : "Utility/Management Systems",
+          "children" : [
+            {
+              "name" : "Crestron"
+            },
+            {
+              "name" : "Extron"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "Mobile Technology",
+      "children" : [
+        {
+          "name" : "Sensors",
+          "children" : [
+            {
+              "name" : "Compass/Magnetometer"
+            },
+            {
+              "name" : "Location/GPS"
+            },
+            {
+              "name" : "Ambient Light Sensor"
+            },
+            {
+              "name" : "Barometer"
+            },
+            {
+              "name" : "Gyroscope"
+            },
+            {
+              "name" : "Accelerometer"
+            },
+            {
+              "name" : "LIDAR"
+            },
+            {
+              "name" : "Microphone"
+            },
+            {
+              "name" : "Camera"
+            }
+          ]
+        },
+        {
+          "name" : "Mobile AR",
+          "children" : [
+            {
+              "name" : "Native Platform Frameworks",
+              "children" : [
+                {
+                  "name" : "Android",
+                  "children" : [
+                    {
+                      "name" : "ARCore"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Apple",
+                  "children" : [
+                    {
+                      "name" : "ARKit"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name" : "Face Detection/Face Filters",
+              "children" : [
+                {
+                  "name" : "Snapchat Lens Studio"
+                },
+                {
+                  "name" : "Meta Spark AR"
+                }
+              ]
+            },
+            {
+              "name" : "WebAR",
+              "children" : [
+                {
+                  "name" : "AR.js/A Frame"
+                },
+                {
+                  "name" : "8th Wall"
+                }
+              ]
+            },
+            {
+              "name" : "Other",
+              "children" : [
+                {
+                  "name" : "Niantic Lightship"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name" : "Web Frameworks for Apps",
+          "children" : [
+            {
+              "name" : "React Native"
+            },
+            {
+              "name" : "Bootstrap"
+            }
+          ]
+        },
+        {
+          "name" : "Android",
+          "children" : [
+            {
+              "name" : "Devices",
+              "children" : [
+                {
+                  "name" : "A million options"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name" : "Apple",
+          "children" : [
+            {
+              "name" : "Devices",
+              "children" : [
+                {
+                  "name" : "iPhone",
+                  "children" : [
+                    {
+                      "name" : "iOS"
+                    }
+                  ]
+                },
+                {
+                  "name" : "iPad",
+                  "children" : [
+                    {
+                      "name" : "iPadOS"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Apple Watch",
+                  "children" : [
+                    {
+                      "name" : "Object"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "Asset Creation",
+      "children" : [
+        {
+          "name" : "2D Asset Creation",
+          "children" : [
+            {
+              "name" : "UX/UI Design tools",
+              "children" : [
+                {
+                  "name" : "InVision"
+                },
+                {
+                  "name" : "Miro"
+                },
+                {
+                  "name" : "Figma"
+                }
+              ]
+            },
+            {
+              "name" : "Illustration",
+              "children" : [
+                {
+                  "name" : "Procreate"
+                }
+              ]
+            },
+            {
+              "name" : "Adobe Suite",
+              "children" : [
+                {
+                  "name" : "After Effects"
+                },
+                {
+                  "name" : "Premiere"
+                },
+                {
+                  "name" : "Illustrator"
+                },
+                {
+                  "name" : "Photoshop"
+                }
+              ]
+            },
+            {
+              "name" : "Open Source/Free",
+              "children" : [
+                {
+                  "name" : "Inkscape"
+                },
+                {
+                  "name" : "GIMP"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name" : "3D Asset Creation",
+          "children" : [
+            {
+              "name" : "CAD/CAM",
+              "children" : [
+                {
+                  "name" : "Fusion 360"
+                },
+                {
+                  "name" : "Sketchup"
+                },
+                {
+                  "name" : "Rhino"
+                },
+                {
+                  "name" : "AutoCAD"
+                }
+              ]
+            },
+            {
+              "name" : "Modeling",
+              "children" : [
+                {
+                  "name" : "Cinema 4D"
+                },
+                {
+                  "name" : "3D Studio Max"
+                },
+                {
+                  "name" : "Maya"
+                },
+                {
+                  "name" : "Blender"
+                }
+              ]
+            },
+            {
+              "name" : "Sculpting and Texturing",
+              "children" : [
+                {
+                  "name" : "ZBrush"
+                },
+                {
+                  "name" : "Substance Designer"
+                }
+              ]
+            },
+            {
+              "name" : "Other Post Production Tools",
+              "children" : [
+                {
+                  "name" : "Mari"
+                },
+                {
+                  "name" : "Houdini"
+                },
+                {
+                  "name" : "Nuke"
+                },
+                {
+                  "name" : "Marvelous Designer"
+                }
+              ]
+            },
+            {
+              "name" : "Render Engines",
+              "children" : [
+                {
+                  "name" : "Octane"
+                },
+                {
+                  "name" : "V-Ray"
+                }
+              ]
+            },
+            {
+              "name" : "Asset Pipelines/Management",
+              "children" : [
+                {
+                  "name" : "NVIDIA Omniverse"
+                },
+                {
+                  "name" : "Perforce"
+                }
+              ]
+            },
+            {
+              "name" : "Related Concepts",
+              "children" : [
+                {
+                  "name" : "File Formats"
+                },
+                {
+                  "name" : "Rigging"
+                },
+                {
+                  "name" : "Character Design"
+                },
+                {
+                  "name" : "Polygon Reduction"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name" : "Audio/Music Asset Creation",
+          "children" : [
+            {
+              "name" : "ProTools"
+            },
+            {
+              "name" : "Reaper"
+            },
+            {
+              "name" : "Ableton Live",
+              "children" : [
+                {
+                  "name" : "Max For Live"
+                }
+              ]
+            },
+            {
+              "name" : "Cubase"
+            },
+            {
+              "name" : "Logic Pro"
+            },
+            {
+              "name" : "Audacity"
+            },
+            {
+              "name" : "Reason"
+            },
+            {
+              "name" : "Renoise"
+            },
+            {
+              "name" : "Bespoke Synth"
+            },
+            {
+              "name" : "Bitwig"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "AI/Machine Learning",
+      "description" : "A category covering artificial intelligence and machine learning.",
+      "tags" : [
+        "AI",
+        "machine learning"
+      ],
+      "links" : {
+        "wiki" : "https://en.wikipedia.org/wiki/AI",
+        "book" : "https://example.com/machine-learning-book"
+      },
+      "children" : [
+        {
+          "name" : "Content Identification",
+          "description" : "Identification and recognition of various types of content.",
+          "tags" : [
+            "content identification"
+          ],
+          "links" : {
+            "tutorial" : "https://example.com/content-identification-tutorial"
+          },
+          "children" : [
+            {
+              "name" : "Object Recognition",
+              "description" : "Recognition of objects within images and videos.",
+              "tags" : [
+                "object recognition"
+              ],
+              "links" : {
+                "blog" : "https://example.com/object-recognition-blog"
+              },
+              "children" : [
+                {
+                  "name" : "Body part tracking",
+                  "description" : "Tracking and recognition of body parts in images and videos.",
+                  "tags" : [
+                    "body part tracking"
+                  ],
+                  "links" : {
+                    "research" : "https://example.com/body-part-tracking-research"
+                  },
+                  "children" : [
+                    {
+                      "name" : "Body Pose Tracking",
+                      "description" : "Tracking the poses and movements of the human body.",
+                      "tags" : [
+                        "body pose tracking"
+                      ],
+                      "links" : {
+                        "demo" : "https://example.com/pose-tracking-demo"
+                      },
+                      "children" : [
+                        {
+                          "name" : "PoseNET",
+                          "description" : "A real-time pose detection model for the web.",
+                          "tags" : [
+                            "PoseNET",
+                            "pose detection"
+                          ],
+                          "links" : {
+                            "github" : "https://github.com/tensorflow/tfjs-models/tree/main/posenet"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "Hand Tracking",
+                      "children" : [
+                        {
+                          "name" : "Apple Vision Framework"
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "Facial Tracking"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Segmentation"
+                },
+                {
+                  "name" : "OpenCV"
+                },
+                {
+                  "name" : "YOLO"
+                }
+              ]
+            },
+            {
+              "name" : "Data Analytics/Classification",
+              "children" : [
+                {
+                  "name" : "t-SNE"
+                }
+              ]
+            },
+            {
+              "name" : "Text Analysis",
+              "children" : [
+                {
+                  "name" : "Sentiment Analysis"
+                }
+              ]
+            },
+            {
+              "name" : "Audio Classification"
+            },
+            {
+              "name" : "Voice Recognition",
+              "children" : [
+                {
+                  "name" : "Speech to Text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name" : "Content Creation",
+          "children" : [
+            {
+              "name" : "Image Manipulation",
+              "children" : [
+                {
+                  "name" : "Text To Speech"
+                },
+                {
+                  "name" : "Image Animation"
+                },
+                {
+                  "name" : "GAN Inversion"
+                },
+                {
+                  "name" : "SuperResolution"
+                },
+                {
+                  "name" : "Lip Syncing"
+                }
+              ]
+            },
+            {
+              "name" : "Image Generation",
+              "children" : [
+                {
+                  "name" : "VQGAN"
+                },
+                {
+                  "name" : "CLIP"
+                },
+                {
+                  "name" : "Style Transfer",
+                  "children" : [
+                    {
+                      "name" : "Cartoonization"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Pix2Pix"
+                },
+                {
+                  "name" : "StyleGAN2"
+                },
+                {
+                  "name" : "GAN/DCGAN"
+                },
+                {
+                  "name" : "DeepDream"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name" : "Tools",
+          "children" : [
+            {
+              "name" : "Tensorflow"
+            },
+            {
+              "name" : "Jupyter Notebooks"
+            },
+            {
+              "name" : "RunwayML"
+            },
+            {
+              "name" : "Google Collab"
+            },
+            {
+              "name" : "PyTorch"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "Uncategorized Utilities/DevOps",
+      "children" : [
+        {
+          "name" : "Data Tools",
+          "children" : [
+            {
+              "name" : "Python",
+              "children" : [
+                {
+                  "name" : "Bokeh"
+                },
+                {
+                  "name" : "Plotly"
+                },
+                {
+                  "name" : "Matplotlib"
+                }
+              ]
+            },
+            {
+              "name" : "R",
+              "children" : [
+                {
+                  "name" : "ggplot"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name" : "DevOps",
+          "children" : [
+            {
+              "name" : "Version Control",
+              "children" : [
+                {
+                  "name" : "git",
+                  "children" : [
+                    {
+                      "name" : "Github"
+                    },
+                    {
+                      "name" : "Bitbucket"
+                    }
+                  ]
+                },
+                {
+                  "name" : "Subversion(svn)"
+                }
+              ]
+            },
+            {
+              "name" : "Continuous Integration and Development (CI/CD)",
+              "children" : [
+                {
+                  "name" : "TravisCI"
+                },
+                {
+                  "name" : "Gitlab CI"
+                },
+                {
+                  "name" : "Jenkins"
+                },
+                {
+                  "name" : "Teamcity"
+                },
+                {
+                  "name" : "Bamboo"
+                }
+              ]
+            },
+            {
+              "name" : "Containers",
+              "children" : [
+                {
+                  "name" : "Kubernetes"
+                },
+                {
+                  "name" : "Docker"
+                }
+              ]
+            },
+            {
+              "name" : "Automation",
+              "children" : [
+                {
+                  "name" : "Ansible"
+                },
+                {
+                  "name" : "Puppet"
+                },
+                {
+                  "name" : "Chef"
+                }
+              ]
+            },
+            {
+              "name" : "Monitoring/Logging",
+              "children" : [
+                {
+                  "name" : "Sudosystems"
+                },
+                {
+                  "name" : "AM/PM"
+                },
+                {
+                  "name" : "ELK Stack"
+                },
+                {
+                  "name" : "Splunk"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name" : "IDE",
+          "children" : [
+            {
+              "name" : "Vim/Emacs"
+            },
+            {
+              "name" : "Atom"
+            },
+            {
+              "name" : "bbedit"
+            },
+            {
+              "name" : "Sublime Text"
+            },
+            {
+              "name" : "Visual Studio Code"
+            },
+            {
+              "name" : "Visual Studio"
+            },
+            {
+              "name" : "Xcode"
+            }
+          ]
+        },
+        {
+          "name" : "Terminal/Shell",
+          "children" : [
+            {
+              "name" : "Unix (Linux/Mac)",
+              "children" : [
+                {
+                  "name" : "bash"
+                },
+                {
+                  "name" : "Object"
+                }
+              ]
+            },
+            {
+              "name" : "Windows",
+              "children" : [
+                {
+                  "name" : "Powershell"
+                },
+                {
+                  "name" : "cmd"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name" : "Scripting",
+          "children" : [
+            {
+              "name" : "MacOS",
+              "children" : [
+                {
+                  "name" : "launchdaemons"
+                },
+                {
+                  "name" : "bash scripts"
+                },
+                {
+                  "name" : "Shortcuts"
+                },
+                {
+                  "name" : "AppleScript"
+                },
+                {
+                  "name" : "Automator"
+                },
+                {
+                  "name" : "cronjobs"
+                }
+              ]
+            },
+            {
+              "name" : "Linux",
+              "children" : [
+                {
+                  "name" : "cronjobs"
+                },
+                {
+                  "name" : "bash scripts"
+                },
+                {
+                  "name" : "launchdaemons"
+                }
+              ]
+            },
+            {
+              "name" : "Windows",
+              "children" : [
+                {
+                  "name" : "Powershell scripts"
+                },
+                {
+                  "name" : "bat scripts"
+                },
+                {
+                  "name" : "Tax Scheduler"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name" : "Documentation"
+        }
+      ]
+    }
+  ]
+}
