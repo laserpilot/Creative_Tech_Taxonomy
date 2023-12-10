@@ -59,7 +59,15 @@ function takeScreenshot() {
     })
 }
 
-document.getElementById("take-screenshot").addEventListener("click", takeScreenshot);
+// Add this function to handle the toggle action for the "About this page" box
+function toggleAboutBox() {
+    var aboutBox = document.getElementById("about-page");
+    // Toggle the display property
+    aboutBox.style.display = aboutBox.style.display === "none" ? "block" : "none";
+}
+
+// Add an event listener for the "About this page" button
+document.getElementById("toggleAboutBox").addEventListener("click", toggleAboutBox);
 
 
 

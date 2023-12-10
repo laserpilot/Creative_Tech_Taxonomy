@@ -46,7 +46,6 @@ a {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
@@ -54,6 +53,7 @@ a {
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.7);
+    z-index: 40;
 }
 
 .modal-content {
@@ -61,7 +61,7 @@ a {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 80% auto;
 }
 
 .control {

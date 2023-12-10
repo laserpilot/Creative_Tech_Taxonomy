@@ -14,12 +14,15 @@
 
 <body>
     <div id="header-container">
-        <div id="header">
+        <div id="title-container">
             <h1>Creative Technology Taxonomy</h1>
-            <p>Original taxonomy from <a href="https://ablairneal.com" target="_blank">Blair Neal</a>. D3 Tree
+            <p>Original taxonomy from <a href="https://ablairneal.com" target="_blank">Blair Neal</a>. </p>
+            <p>Tree
                 visualization
-                code contributed by <a href="https://heidihe.com" target="_blank">Heidi He</a>.
-
+                code and design contributed by <a href="https://heidihe.com" target="_blank">Heidi He</a></p>.
+        </div>
+        <div id="about-page" style="display: none;">
+            <!-- TODO: make this a modal popup-->
             <p> Read More about the
                 taxonomy
                 and creative technology
@@ -28,7 +31,8 @@
             <p>
                 All information is manually entered so far. I would expect plenty of
                 missing elements and incorrect information, but if you see something, please submit a pull request!
-                There is a JSON editor on the page for ease of editing - you can go in and update from there, download
+                There is a JSON editor on the page for ease of editing - you can go in and update from there,
+                download
                 the JSON, and then submit it as a pull request on github.
             </p>
             </p>
@@ -38,6 +42,10 @@
     </div>
 
     <div id="interaction-panel">
+        <button class="panelButtons" id="toggleAboutBox">
+            <i class="fa-solid fa-info-circle fa-lg"></i>
+            <span class="interation-text">About this page</span>
+        </button>
         <!-- add zoom in and zoom out to the entire container -->
         <button class="panelButtons" id="zoom-in-button">
             <i class="fa-solid fa-magnifying-glass-plus fa-lg"></i>

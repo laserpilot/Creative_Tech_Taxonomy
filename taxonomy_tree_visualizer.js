@@ -5,7 +5,7 @@ import JSONEditor from "https://cdn.jsdelivr.net/npm/jsoneditor@9.10.4/+esm";
 import {downloadJSON, toggleFold} from "./handle_interactions_panel.js";
 
 
-fetch('./Creative_Tech_Taxonomy_data_updated.json')
+fetch('./Creative_Tech_Taxonomy_data.json')
 .then(response => {
   if (!response.ok) {
     throw new Error('Network response was not ok');
@@ -103,8 +103,6 @@ function closeModal() {
 }
 
 document.body.style.backgroundColor = BG_COLOR;
-
-
 
 export function create_visualization(data){    // Specify the charts’ dimensions. The height is variable, depending on the layout.
     const width = 3000;
@@ -246,7 +244,6 @@ export function create_visualization(data){    // Specify the charts’ dimensio
           .attr("text-anchor", d => d._children ? "end" : "start")
           .each(function(d) {
             const text = getLocalizedDisplayName(d.data, currentLanguage);
-            console.log(`WHAT ${currentLanguage} ::::  ${text}`)
             if (text.length > linebreakThreshold && d._children) {
               const lines = splitText(text, linebreakThreshold);
               lines.forEach((line, index) => {
