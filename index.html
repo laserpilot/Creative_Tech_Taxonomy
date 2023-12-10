@@ -37,15 +37,6 @@
         </div>
     </div>
 
-    <div id="container">
-        <div class="control"></div>
-
-        <div id="visualizer" class=""></div>
-        <div id="editor" class=""></div>
-        <script type="module" src="taxonomy_tree_visualizer.js"> </script>
-    </div>
-
-
     <div id="interaction-panel">
         <!-- add zoom in and zoom out to the entire container -->
         <button class="panelButtons" id="zoom-in-button">
@@ -83,8 +74,24 @@
                     class="slider round"></span></label>
             <span id="toggleFoldText" class="interation-text-toggle">Toggle to Expand All</span>
         </div>
+        <div class="language-dropdown" id="language-dropdown">
+            <label for="language-select">Select Language: </label>
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="ja">Japanese</option>
+                <!-- Add more languages as needed -->
+            </select>
+        </div>
 
 
+    </div>
+
+    <div id="container">
+        <div class="control"></div>
+
+        <div id="visualizer" class=""></div>
+        <div id="editor" class=""></div>
+        <script type="module" src="taxonomy_tree_visualizer.js"> </script>
     </div>
 
     <!-- method-2: use iframe to draw a thumbnail -->

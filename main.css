@@ -33,6 +33,15 @@ a {
     font-family: 'Avenir', sans-serif;
 }
 
+.language-dropdown {
+    margin-top: 10px;
+    /* Adjust the margin as needed */
+    font-family: 'Avenir', sans-serif;
+}
+
+
+
+
 
 .modal {
     display: none;

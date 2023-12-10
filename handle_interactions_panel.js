@@ -112,3 +112,4 @@ export function downloadJSON(jsonEdit) {
     document.body.removeChild(dummyElement);
     console.log("downloaded json")
 }
+

@@ -5,7 +5,7 @@ import JSONEditor from "https://cdn.jsdelivr.net/npm/jsoneditor@9.10.4/+esm";
 import {downloadJSON, toggleFold} from "./handle_interactions_panel.js";
 
 
-fetch('./Creative_Tech_Taxonomy_data.json')
+fetch('./Creative_Tech_Taxonomy_data_updated.json')
 .then(response => {
   if (!response.ok) {
     throw new Error('Network response was not ok');
@@ -26,14 +26,16 @@ const BG_COLOR = "aliceblue";
 function color(d) {
 
 
-  //color all the nodes
+// Check ancestors using localized display name
   function checkAncestors(node, name) {
     if (!node) {
       return false;
     }
-    if (node.data.name === name) {
+
+    if (getLocalizedDisplayName(node.data, "en") === name) {
       return true;
     }
+
     return checkAncestors(node.parent, name);
   }
 
@@ -64,6 +66,8 @@ function color(d) {
   }
 }
 
+let currentLanguage = "en";
+
 // Function to show the modal
 function showModal(nodeData) {
   const modal = document.getElementById("myModal");
@@ -71,7 +75,7 @@ function showModal(nodeData) {
 
   // Generate content based on the clicked node data
   const content = `
-    <h2>${nodeData.data.name}</h2>
+    <h2>${getLocalizedDisplayName(nodeData.data, currentLanguage)}</h2>
     <p>${nodeData.data.description || 'No Description available.'}</p>
     <p>Tags: ${nodeData.data.tags ? nodeData.data.tags.join(', ') : 'No Tags available.'}</p>
     <div class="links-container">
@@ -100,7 +104,9 @@ function closeModal() {
 
 document.body.style.backgroundColor = BG_COLOR;
 
-function create_visualization(data){    // Specify the charts’ dimensions. The height is variable, depending on the layout.
+
+
+export function create_visualization(data){    // Specify the charts’ dimensions. The height is variable, depending on the layout.
     const width = 3000;
     
     const marginTop = 100;
@@ -123,7 +129,6 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
     const diagonal = d3.linkHorizontal().x(d => d.y).y(d => d.x);
 
 
-
     // Create the SVG container, a layer for the links and a layer for the nodes.
     const svg = d3.create("svg")
       .attr("width", "100%") // Set the width to 100% of the container
@@ -140,13 +145,14 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
     const gNode = svg.append("g")
       .attr("cursor", "pointer")
       .attr("pointer-events", "all");
-
-  
+    
     function update(event, source) {
       const duration = event?.altKey ? 2500 : 250; // hold the alt key to slow down the transition
       const nodes = root.descendants().reverse();
       const links = root.links();
   
+      updateNodeNames(root, currentLanguage);
+      console.log (`Updating Tree. The current language is ${currentLanguage}`);
       // Compute the new tree layout.
       tree(root);
   
@@ -184,7 +190,8 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
       .attr("width", d => {
         if(!d._children) {
         //this is a kludged way of fixing the fact that getComputedTextLength() doesnt seem to be working but long text entries get a little screwed up
-          const textLength = d.data.name.length;
+          const displayName = getLocalizedDisplayName(d.data, currentLanguage);
+          const textLength = displayName.length;
           const multiplier = Math.max(0.8, 1 - (textLength - 8) * 0.05); // Adjust the parameters as needed
           return textLength * (fontSize - 5) * multiplier + 25;
       }else{
@@ -204,30 +211,7 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
       .on("mouseout", function () {
           d3.select(this).attr("transform", "scale(1)").transition().ease(d3.easeElastic); // Reset the scale
       });
-      /*
-      //ugh this annoyingly doesnt work because of render timing issues
-      .each(function (d) {
-        const rect = d3.select(this);
-        const tempText = rect.append("text")
-            .attr("class", "temp-text")
-            .text(d.data.name);
-    
-        // Use requestAnimationFrame to wait for the next animation frame
-        window.requestAnimationFrame(() => {
-            // Use getBBox() to get the bounding box of the text
-            const textWidth = tempText.node().getComputedTextLength();
-           
-        console.log (tempText.node())
-            console.log("Text Width:", textWidth); // Log the text width
-    
-            // Set the width of the rectangle
-            rect.attr("width", textWidth + 20); // Adjust for padding
-    
-            // Remove the temporary text element
-            //tempText.remove();
-        });
-    });*/
-      
+
       // add circleRadius depending on children or not
       // if children, add circleRadius + 3 and if opened make it hollow 
       nodeEnter.append("circle")
@@ -256,12 +240,13 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
       const linebreakThreshold = 24;
       const linebreakFontRelation = 0.9;
       nodeEnter.append('text')
-          .attr("dy", d=> d.data.name.length > linebreakThreshold && d._children ?  "-0.2em": "0.31em")
-          .style("font-size", d=> d.data.name.length > linebreakThreshold && d._children ?  fontSize*linebreakFontRelation: fontSize)
+          .attr("dy", d=>getLocalizedDisplayName(d.data, currentLanguage).length > linebreakThreshold && d._children ?  "-0.2em": "0.31em")
+          .style("font-size", d=> getLocalizedDisplayName(d.data, currentLanguage).length > linebreakThreshold && d._children ?  fontSize*linebreakFontRelation: fontSize)
           .attr("x", d => d._children ? -fontSize +5 : fontSize +5)
           .attr("text-anchor", d => d._children ? "end" : "start")
           .each(function(d) {
-            const text = d.data.name;
+            const text = getLocalizedDisplayName(d.data, currentLanguage);
+            console.log(`WHAT ${currentLanguage} ::::  ${text}`)
             if (text.length > linebreakThreshold && d._children) {
               const lines = splitText(text, linebreakThreshold);
               lines.forEach((line, index) => {
@@ -315,27 +300,6 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
           .attr("stroke", "white");
 
 
-        
-/*
-          nodeEnter.select("circle")
-          .on("click", (event, d) => {
-            const newNodeName = prompt("Enter the name for the new node:");
-            if (newNodeName) {
-              // Create a new node
-              const newNode = { name: newNodeName, children: [] };
-        
-              // Add the new node as a child of the clicked node
-              if (!d.children) d.children = [];
-              d.children.push(newNode);
-        
-              // Update the hierarchy and visualization
-              const newRoot = d3.hierarchy(data);
-              tree(newRoot);
-              update(event, newRoot);
-            }
-          });
-*/
-
       // Transition nodes to their new position.
       const nodeUpdate = node.merge(nodeEnter).transition(transition)
           .attr("transform", d => `translate(${d.y},${d.x})`)
@@ -382,15 +346,13 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
     }
   
     // Do the first update to the initial configuration of the tree — where a number of nodes
-    // are open (arbitrarily selected as the root, plus nodes with 7 letters).
+    // are open
     root.x0 = dy / 2;
     root.y0 = 0;
     root.descendants().forEach((d, i) => {
       d.id = i;
       d._children = d.children;
-     // if (d.depth && d.data.name.length !== 12) d.children = null;
     });
-
 
   // Collapse after the second level
   root.children.forEach(handle_collapse);
@@ -398,24 +360,47 @@ function create_visualization(data){    // Specify the charts’ dimensions. The
 
   visualizer.append(svg.node());
 
+
   document.getElementById("toggleFold").addEventListener("change",function() {
     let targetFold = toggleFold();
-    console.log(targetFold);
+    //console.log(targetFold);
     if(targetFold){
-      // Do the first update to the initial configuration of the tree — where a number of nodes
-      // are open (arbitrarily selected as the root, plus nodes with 7 letters).
       root.x0 = dy / 2;
       root.y0 = 0;
       root.descendants().forEach((d, i) => {
         d.id = i;
         d._children = d.children;
-      // if (d.depth && d.data.name.length !== 12) d.children = null;
       });
       root.children.forEach(handle_collapse)
     } else{ handle_expand(root);}
     update(null, root);
 
   });
+
+  document.getElementById("language-select").addEventListener("change", function() {
+      const languageSelect = document.getElementById("language-select");
+      const selectedLanguage = languageSelect.value;
+      currentLanguage=selectedLanguage;
+    
+      console.log(`Language changed to ${currentLanguage}`)
+
+      update(null, root);
+  });
+
+
+  function updateNodeNames(node, selectedLanguage) {
+      node.data.displayName = getLocalizedDisplayName(node.data, selectedLanguage);
+      //console.log(`Current Node Name: ${node.data.displayName} for ${selectedLanguage}`);
+      if (node.children) {
+          node.children.forEach(child => updateNodeNames(child, selectedLanguage));
+      }
+
+      if (node._children) {
+          node._children.forEach(child => updateNodeNames(child, selectedLanguage));
+      }
+    }
+
+
   
 }
 
@@ -469,5 +454,44 @@ function create_editor(data){
 
 }
 
+
+
+function getLocalizedDisplayName(data, selectedLanguage) {
+  if (data.name.hasOwnProperty(selectedLanguage)) {
+    return data.name[selectedLanguage];
+  }
+
+  // Fallback to the default language or any other fallback logic
+  const languagePriority = ["en", "ja"];
+
+  for (const lang of languagePriority) {
+    if (data.name.hasOwnProperty(lang)) {
+      return data.name[lang];
+    }
+  }
+
+  return "No Name Available";
+}
+/*
+export function updateVisualization(selectedLanguage) {
+  // Assuming you have a root node named `root` (modify as needed)
+  // You may need to recursively update the names for each node in your data
+  
+  updateNodeNames(root, selectedLanguage);
+
+  update(null, root);
+}
+
+function updateNodeNames(node, selectedLanguage) {
+  node.data.displayName = getLocalizedDisplayName(node.data, selectedLanguage);
+
+  if (node.children) {
+    node.children.forEach(child => updateNodeNames(child, selectedLanguage));
+  }
+
+  if (node._children) {
+    node._children.forEach(child => updateNodeNames(child, selectedLanguage));
+  }
+}*/
 
 
