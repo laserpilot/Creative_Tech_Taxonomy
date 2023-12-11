@@ -1,7 +1,7 @@
 {
   "name": {
     "en": "Creative Tech Taxonomy",
-    "ja": "ありがとうございます"
+    "ja": "クリエイティブテクノロジーの分類"
   },
   "description": "This is the top level parent node for everything else.",
   "tags": [],
@@ -12,7 +12,7 @@
     {
       "name": {
         "en": "Creative Code Frameworks",
-        "ja": "ありがとうございます"
+        "ja": "プログラム言語とフレームワーク"
       },
       "description": "This is a collection of nodes related to the concept of Creative Code Frameworks, or areas of programming languages that are typically considered related to creative coding. Not all of these are strictly \"Frameworks\" but this umbrella term seems to suffice for now.",
       "tags": [],
@@ -23,7 +23,7 @@
         {
           "name": {
             "en": "Language Type",
-            "ja": "ありがとうございます"
+            "ja": "言語"
           },
           "description": "This is a category that organizes these frameworks",
           "tags": [],
@@ -34,7 +34,7 @@
             {
               "name": {
                 "en": "Node Based/Visual",
-                "ja": "ありがとうございます"
+                "ja": "ノードベース"
               },
               "description": "",
               "tags": [],
@@ -44,8 +44,7 @@
               "children": [
                 {
                   "name": {
-                    "en": "Isadora",
-                    "ja": "ありがとうございます"
+                    "en": "Isadora"
                   },
                   "description": "",
                   "tags": [],
@@ -600,7 +599,7 @@
     {
       "name": {
         "en": "Real-time 3D/Game Engines",
-        "ja": "ありがとうございます"
+        "ja": "ゲームエンジン"
       },
       "description": "",
       "tags": [],
@@ -986,7 +985,8 @@
     },
     {
       "name": {
-        "en": "Web/Networking Frameworks"
+        "en": "Web/Networking Frameworks",
+        "ja": "Web/ネットワーク"
       },
       "description": "",
       "tags": [],
