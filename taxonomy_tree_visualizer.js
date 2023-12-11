@@ -13,20 +13,20 @@ fetch('./Creative_Tech_Taxonomy_data.json')
   return response.json();
 })
 .then(data => {
-  // set_tabs();
-  // console.log(data);
-  create_editor(data);
-  create_visualization(data);
+  currentJson = data;
+  create_editor();
+  create_visualization();
 })
 .catch(error => console.log(error));
 
 
 const BG_COLOR = "aliceblue";
+document.body.style.backgroundColor = BG_COLOR;
+let currentLanguage = "en";
+let currentJson = null;
 
 function color(d) {
-
-
-// Check ancestors using localized display name
+  // Check ancestors using localized display name
   function checkAncestors(node, name) {
     if (!node) {
       return false;
@@ -61,12 +61,11 @@ function color(d) {
     return "gold";
   } else if (checkAncestors(d, "Asset Creation")) {
     return "deeppink";
-  }else {
+  } else {
     return d._children ? "#555" : "#999"; // Default color
   }
 }
 
-let currentLanguage = "en";
 
 // Function to show the modal
 function showModal(nodeData) {
@@ -96,21 +95,23 @@ function showModal(nodeData) {
   closeButton.addEventListener("click", closeModal);
 }
 
+
 // Function to close the modal
 function closeModal() {
   const modal = document.getElementById("myModal");
   modal.style.display = "none";
 }
 
-document.body.style.backgroundColor = BG_COLOR;
 
-export function create_visualization(data){    // Specify the charts’ dimensions. The height is variable, depending on the layout.
+export function create_visualization(){
+    const data = currentJson;
+    // Specify the charts’ dimensions. The height is variable, depending on the layout.
     const width = 3000;
-    
+
     const marginTop = 100;
     const marginRight = 10;
     const marginBottom = 10;
-    const marginLeft = 220;  
+    const marginLeft = 220;
     const fontSize = 18; // Adjust the font size as needed
     const circleRadius = 3; // Adjust the circle radius as needed
     const strokeWidth = 3; // Adjust the stroke width as needed
@@ -149,8 +150,6 @@ export function create_visualization(data){    // Specify the charts’ dimensio
       const nodes = root.descendants().reverse();
       const links = root.links();
   
-      updateNodeNames(root, currentLanguage);
-      console.log (`Updating Tree. The current language is ${currentLanguage}`);
       // Compute the new tree layout.
       tree(root);
   
@@ -371,35 +370,9 @@ export function create_visualization(data){    // Specify the charts’ dimensio
       root.children.forEach(handle_collapse)
     } else{ handle_expand(root);}
     update(null, root);
-
   });
-
-  document.getElementById("language-select").addEventListener("change", function() {
-      const languageSelect = document.getElementById("language-select");
-      const selectedLanguage = languageSelect.value;
-      currentLanguage=selectedLanguage;
-    
-      console.log(`Language changed to ${currentLanguage}`)
-
-      update(null, root);
-  });
-
-
-  function updateNodeNames(node, selectedLanguage) {
-      node.data.displayName = getLocalizedDisplayName(node.data, selectedLanguage);
-      //console.log(`Current Node Name: ${node.data.displayName} for ${selectedLanguage}`);
-      if (node.children) {
-          node.children.forEach(child => updateNodeNames(child, selectedLanguage));
-      }
-
-      if (node._children) {
-          node._children.forEach(child => updateNodeNames(child, selectedLanguage));
-      }
-    }
-
-
-  
 }
+
 
 // DONE: make fold don't fold first layer
 function handle_collapse(d){
@@ -410,11 +383,12 @@ function handle_collapse(d){
   }
 }
 
+
 // DONE: fix expand node look
-function handle_expand(d){   
-  if (d._children) {        
+function handle_expand(d){
+  if (d._children) {
       d.children = d._children;
-      // d._children = null;       
+      // d._children = null;
   }
   var children = (d.children)?d.children:d._children;
   if(children)
@@ -422,16 +396,28 @@ function handle_expand(d){
 }
 
 
+// handle language change
+document.getElementById("language-select").addEventListener("change", function() {
+  const languageSelect = document.getElementById("language-select");
+  const selectedLanguage = languageSelect.value;
+  currentLanguage=selectedLanguage;
+  console.log(`Language changed to ${currentLanguage}`)
+  refresh_visualize();
+});
+
+
+// Refresh the visualization
+const refresh_visualize = () => {
+  visualizer.innerHTML = "";
+  create_visualization();
+}
 
 
 // create json editor
-function create_editor(data){
-  let changedBounceTimer = null
-  const refreshVisualize = () => {
-    visualizer.innerHTML = "";
-    create_visualization(jsonEdit.get());
-  }
+function create_editor(){
+  const data = currentJson;
 
+  let changedBounceTimer = null
   // editor options
   const options = {
     onChange : () => {
@@ -439,18 +425,19 @@ function create_editor(data){
       if(changedBounceTimer) clearTimeout(changedBounceTimer)
 
       console.log("json changed and set refresh timer")
-      changedBounceTimer = setTimeout(refreshVisualize, 1000)
+
+      currentJson = jsonEdit.get()
+      changedBounceTimer = setTimeout(refresh_visualize, 1000)
     }
   }
 
   // add the editor to the page
   const jsonEdit = new JSONEditor(editor, options)
   jsonEdit.set(data)
-  document.getElementById("download-json").addEventListener("click",function() {
-    downloadJSON(jsonEdit)});
-
+  document.getElementById("download-json").addEventListener("click",() => {
+    downloadJSON(jsonEdit)
+  });
 }
-
 
 
 function getLocalizedDisplayName(data, selectedLanguage) {
@@ -469,26 +456,3 @@ function getLocalizedDisplayName(data, selectedLanguage) {
 
   return "No Name Available";
 }
-/*
-export function updateVisualization(selectedLanguage) {
-  // Assuming you have a root node named `root` (modify as needed)
-  // You may need to recursively update the names for each node in your data
-  
-  updateNodeNames(root, selectedLanguage);
-
-  update(null, root);
-}
-
-function updateNodeNames(node, selectedLanguage) {
-  node.data.displayName = getLocalizedDisplayName(node.data, selectedLanguage);
-
-  if (node.children) {
-    node.children.forEach(child => updateNodeNames(child, selectedLanguage));
-  }
-
-  if (node._children) {
-    node._children.forEach(child => updateNodeNames(child, selectedLanguage));
-  }
-}*/
-
-

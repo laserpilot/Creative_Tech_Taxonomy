@@ -80,7 +80,7 @@ function toggleView() {
     document.querySelector("#visualizer").style.display = "block";
     document.querySelector("#editor").style.display = "none";
     } else {
-    toggleText.textContent = "Json View"; 
+    toggleText.textContent = "Json View";
     document.querySelector("#visualizer").style.display = "none";
     document.querySelector("#editor").style.display = "block";
     }
