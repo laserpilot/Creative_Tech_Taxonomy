@@ -1,8 +1,8 @@
 /* all main styles here */
 
 #header-container {
-    max-width: 50%;
-    margin: 0 auto;
+    margin: 10px auto;
+    max-width: 70%;
 }
 
 #header {

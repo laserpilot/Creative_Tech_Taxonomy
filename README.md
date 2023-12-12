@@ -2,7 +2,7 @@
 
 ## View the current taxonomy at the link [here](https://laserpilot.github.io/Creative_Tech_Taxonomy/)
 
- An open taxonomy of software, hardware, and concepts related to creative technology and creative coding. Many relationships and hierarchies between topics are completely subjective and have many flaws, so please don't take these too seriously - if you have a correction or suggestion, please submit a pull request. This is a labor of love and not meant to be too prescriptive, just illustrative.
+ An open taxonomy of software, hardware, and concepts related to creative technology and creative coding. Many relationships and hierarchies between topics are very subjective and have many flaws, so please don't take these too seriously - if you have a correction or suggestion, please submit a pull request. This is a labor of love and not meant to be too prescriptive, just illustrative.
 
  This was created because taxonomies for this undefined space are important tools for developing a common language and grammar to better enable communication and education. Read more of my longwinded thoughts on all that in my post [here](https://ablairneal.com/a-creative-technology-taxonomy).
 
@@ -10,47 +10,53 @@
  
  I later adapted this idea to a JSON structure for easy modification and portability to other environments. 
 
- This is currently in an early state, so please submit suggestions for data formats, or feel free to jump in and help with the rote work of filling in things like links/information/tags/etc. 
+The diagram was originally made as a static image, but [@HeidiHe](https://github.com/HeidiHe) made some huge improvements and now we can run this on a Github pages or locally so that it can be visualized and manipulated. 
 
-The diagram was originally made as a static image, but @HeidiHe made some huge improvements [in this repo](https://github.com/HeidiHe/Experiment_Repo_on_CreativeTech_Taxonomy) and now we can run this on a github pages or locally so that it can be visualized. 
+## Running locally
 
-Once you have the repo, you can run the page locally from the root of this directory with any method you choose -here is a starter command if you have `http-server` installed:
+Clone the repo, you can run the page locally from the root of this directory with any method you choose. For example you can use npm to install `http-server` and then run something like:
 
 `http-server -a localhost -p 8000 -c-1`
 
-## Future Improvements - 
+Then go to `localhost:8000` on your browser to view. When you make changes, reload the page to see them reflected
 
-Adding a contextual information system that can display additional info about the clicked node:
- Current proposed format is something like this:
+## Submitting updates
 
- - **Parent Node**
-    -   **Child Node**: Named the same name
-        - **DisplayText**: Name of the Node. Could eventually be an array with different languages
-        - **InfoLink**: If relevant, a link to a website with more info
-        - **Tags**: Array of text that could be useful for creating visualizations that create other connections between points
-            - **Child Node**: other subcategories below this child
+You are welcome to submit your own changes to this! The easiest method is to use the page either on github pages or built locallt switch to the JSON editor and then make a change to the entry or child node you want to change. If you switch back, you will see the update reflected. 
 
+You can then press the "Download JSON" button on the Interaction panel. You can then clone or fork the repo, replace the existing `Creative_Tech_Taxonomy_data.json` file and submit it as a pull request to have it reflected in the main page.
 
-Example:
- - Creative Code Frameworks (parent)
-    - C++ (child)
-        - OpenFrameworks (child)
-            - DisplayText: OpenFrameworks
-            - Infolink: www.openframeworks.cc
-            - Tags:
-                - C++
-                - Open Source
-                - Creative Code Framework
-                - Mac
-                - Windows
-                - Linux
+## Multiple Language Support
+
+This also now supports multiple languages! In addition to English, we have some preliminary entries for Japanese in a few spots. To add additional languages, you have to make updates in a few key spots:
+
+- Index.html
+    - Add items to the Language Dropdown for your language, and also add an option value for your language like `en` for English: `<option value="en">English</option>` Right now we have `en` for English and `ja` for Japanese, and do not have a system set up for other languages yet.
+- taxonomy_tree_visualizer.js
+    - Here is the switching logic for the languages. If there is no entry found for a language, it will default to showing the English version
+    - You will need to add the language to the `getLocalizedDisplayName` function which sets the priority order
+    - 
+- Creative_Tech_Taxonomy_data.json
+    - Here is where you add new translations per entry. You will need to add a new entry in the `name` object with your language key.
+
+Currently multiple languages are only set up to work for the tree display names but not the actual item descriptions
+
+## Future Improvements
+
+- To Do:
+    - Hotkeys to open all child nodes on a single branch (ie hold alt/option and click to open all child nodes on a parent node)
+    - Add basic info to all nodes (links, descriptions, etc)
+    - Potentially Utilize an LLM tool to do a first draft pass at writing descriptions for all entries?
+    - Implement some way of working with Tags to create other kinds of visualizations and relationships
+    - Implement an easy GUI method of adding and modifying nodes directly to the tree as opposed to changing the JSON. This would still require some kind of moderation step as well.
+    - Clean up and refactor code
 
 
 Other eventual additions:
  - Might need a different format to better capture parent/child relationships. Also needs a way to assign multiple parents to one child node to eliminate confusion
  - Unique ID per node or a way to relate the same "node" in multiple locations
  - Description as part of the node
- - Parent node as part of the child description
+
 
 
  Other category additions for the future?
@@ -60,7 +66,12 @@ Other eventual additions:
 
 For another really great taxonomy document, check out this link: https://github.com/terkelg/awesome-creative-coding
 
-Individual Images:
+## Acknowledgements
+
+Thanks to Heidi He, and Yuma from BASSDRUM for the help with the visualizer and many other elements
+
+## Individual Images 
+(NOTE THESE ARE FOR the 2022 version of the graph and are now out of date!):
 ![image](Images/Creative_Tech_Taxonomy_v1.4.png)
 ![Creative Code Framework](Images/Creative_Code_Frameworks.png)
 ![GameEngines](Images/GameEngines.png)
