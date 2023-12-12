@@ -1,8 +1,9 @@
 /* all main styles here */
 
 #header-container {
-    margin: 10px auto;
-    max-width: 70%;
+    margin-left: 0 auto;
+    padding-left: 50px;
+    max-width: 50%;
 }
 
 #header {
@@ -20,10 +21,11 @@ a {
 
 #container {
     margin: 0 auto;
+    padding: 50px;
     transform-origin: top left;
     transform: scale(1);
     transition: transform 0.3s ease;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     height: auto;
 }
 
