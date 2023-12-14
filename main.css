@@ -128,7 +128,7 @@ a {
 
 .interation-text {
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 300;
     color: #333;
     margin-right: 5px;
     font-family: 'Avenir', sans-serif;
@@ -137,7 +137,7 @@ a {
 .interation-text-toggle {
     padding-left: 5px;
     font-size: 0.9em;
-    font-weight: 600;
+    font-weight: 300;
     color: #333;
     margin-right: 5px;
     font-family: 'Avenir', sans-serif;
