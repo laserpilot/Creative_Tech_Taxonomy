@@ -153,4 +153,6 @@ a {
 
 :root {
     --secondary-color: #2196F3;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
 }
