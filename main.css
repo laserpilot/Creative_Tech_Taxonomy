@@ -21,7 +21,7 @@ a {
 
 #container {
     margin: 0 auto;
-    padding: 50px;
+    padding: 20px;
     transform-origin: top left;
     transform: scale(1);
     transition: transform 0.3s ease;

@@ -19,7 +19,9 @@ fetch('./Creative_Tech_Taxonomy_data.json')
 })
 .catch(error => console.log(error));
 
-
+/* -------------------------------------------------------------------------- */
+/*                                 set colors                                 */
+/* -------------------------------------------------------------------------- */
 const BG_COLOR = "aliceblue";
 document.body.style.backgroundColor = BG_COLOR;
 let currentLanguage = "en";
@@ -66,7 +68,9 @@ function color(d) {
   }
 }
 
-
+/* -------------------------------------------------------------------------- */
+/*                            show and close modal                            */
+/* -------------------------------------------------------------------------- */
 // Function to show the modal
 function showModal(nodeData) {
   const modal = document.getElementById("myModal");
@@ -103,26 +107,50 @@ function closeModal() {
 }
 
 
+/* -------------------------------------------------------------------------- */
+/*                              d3 visualization                              */
+/* -------------------------------------------------------------------------- */
 export function create_visualization(){
     const data = currentJson;
+    /* -------------------------------------------------------------------------- */
+    /*                set all parameters according to screen width                */
+    /* -------------------------------------------------------------------------- */
     // Specify the charts’ dimensions. The height is variable, depending on the layout.
-    const width = 3000;
+    let width, marginTop = 30, marginRight = 10, marginBottom = 10, 
+      marginLeft = 220, fontSize, circleRadius, strokeWidth, 
+      dx, dy, textMargin, linebreakThreshold = 24, linebreakFontRelation = 1;
+    console.log(window.screen.width)
+    if (window.screen.width > 734) {
+      console.log("web")
+        width = 3000;
+        fontSize = 18; // Adjust the font size as needed
+        circleRadius = 3; // Adjust the circle radius as needed
+        strokeWidth = 3; // Adjust the stroke width as needed
+        dx = fontSize *2 ;
+        dy = 225; // Set dy to the screen width minus the left and right margins
+        textMargin = 5;
+    }
+    else {
+      console.log("mobile")
+      document.body.style.zoom = "250%"; // Adjust the zoom level as needed
+        width = 3000;
+        marginTop = 20;
+        marginLeft = 200;
+        fontSize = 21; // Adjust the font size as needed
+        circleRadius = 12; // Adjust the circle radius as needed
+        strokeWidth = 5; // Adjust the stroke width as needed  
+        // Rows are separated by dx pixels, columns by dy pixels. These names can be counter-intuitive
+        // (dx is a height, and dy a width). This because the tree must be viewed with the root at the
+        // “bottom”, in the data domain. The width of a column is based on the tree’s height.      
+        dx = fontSize *2 + 8 ;
+        dy = 225; // Set dy to the screen width minus the left and right margins
+        textMargin = -12;
+        linebreakThreshold = 18;
+        linebreakFontRelation = 1;
+    }
 
-    const marginTop = 100;
-    const marginRight = 10;
-    const marginBottom = 10;
-    const marginLeft = 220;
-    const fontSize = 18; // Adjust the font size as needed
-    const circleRadius = 3; // Adjust the circle radius as needed
-    const strokeWidth = 3; // Adjust the stroke width as needed
 
-    // Rows are separated by dx pixels, columns by dy pixels. These names can be counter-intuitive
-    // (dx is a height, and dy a width). This because the tree must be viewed with the root at the
-    // “bottom”, in the data domain. The width of a column is based on the tree’s height.
     const root = d3.hierarchy(data);
-    const dx = fontSize *2 ;
-    const dy = 225; // Set dy to the screen width minus the left and right margins
-
     // Define the tree layout and the shape for links.
     const tree = d3.tree().nodeSize([dx, dy]);
     const diagonal = d3.linkHorizontal().x(d => d.y).y(d => d.x);
@@ -132,7 +160,7 @@ export function create_visualization(){
     const svg = d3.create("svg")
       .attr("width", "100%") // Set the width to 100% of the container
       .attr("height", dx)
-      .attr("viewBox", [-marginLeft, -marginTop, window.innerWidth, dx]) // Set the viewBox width to the screen width
+      .attr("viewBox", [-marginLeft, -marginTop, window.screen.width, dx]) // Set the viewBox width to the screen width
       // .attr("style", "max-width: 100%; height: auto; font: 30px Source Sans Pro; user-select: none;");        // .attr("style", "max-width: 100%; height: auto; font: 10px sans-serif; user-select: none;");
       .attr("style", `width: auto; height: auto; font: ${fontSize}px 'Avenir', 'Roboto', Helvetica, Arial, sans-serif; overflow-x: scroll;`);
     const gLink = svg.append("g")
@@ -145,14 +173,15 @@ export function create_visualization(){
       .attr("cursor", "pointer")
       .attr("pointer-events", "all");
     
+    /* -------------------------------------------------------------------------- */
+    /*                          draw each node and update                         */
+    /* -------------------------------------------------------------------------- */
     function update(event, source) {
       const duration = event?.altKey ? 2500 : 250; // hold the alt key to slow down the transition
       const nodes = root.descendants().reverse();
       const links = root.links();
-  
       // Compute the new tree layout.
       tree(root);
-  
       let left = root;
       let right = root;
       root.eachBefore(node => {
@@ -161,7 +190,6 @@ export function create_visualization(){
       });
   
       const height = right.x - left.x + marginTop + marginBottom + 100;
-  
       const transition = svg.transition()
           .duration(duration)
           .attr("height", height)
@@ -214,8 +242,6 @@ export function create_visualization(){
       nodeEnter.append("circle")
           .attr("r", d => d._children ? circleRadius + 2 : 0)
           .attr("fill", d => d._children ? BG_COLOR : color)
-          // .attr("fill", color)
-          // .attr("stroke", d => d._children ? color : null)
           .attr("stroke", color)
           .attr("stroke-width", strokeWidth-1)
           .on("mouseover", function () {
@@ -225,21 +251,15 @@ export function create_visualization(){
               d3.select(this).attr("transform", "scale(1)").transition().ease(d3.easeElastic); // Reset the scale
           })
           .on("click", (event, d) => {
-            // // Toggle the children and toggle filled/hollow on click
+            // // Toggle the children
             d.children = d.children ? null : d._children;
-            // const isFilled = d3.select(event.currentTarget).attr("fill") !== BG_COLOR;
-            // d3.select(event.currentTarget)
-            //     .attr("fill", isFilled ? BG_COLOR : color)
-            //     .attr("r", isFilled ? circleRadius + 2 : circleRadius + 5);
             update(event, d);
           });
-      
-      const linebreakThreshold = 24;
-      const linebreakFontRelation = 0.9;
+
       nodeEnter.append('text')
           .attr("dy", d=>getLocalizedDisplayName(d.data, currentLanguage).length > linebreakThreshold && d._children ?  "-0.2em": "0.31em")
           .style("font-size", d=> getLocalizedDisplayName(d.data, currentLanguage).length > linebreakThreshold && d._children ?  fontSize*linebreakFontRelation: fontSize)
-          .attr("x", d => d._children ? -fontSize +5 : fontSize +5)
+          .attr("x", d => d._children ? -fontSize + textMargin : fontSize + textMargin)
           .attr("text-anchor", d => d._children ? "end" : "start")
           .each(function(d) {
             const text = getLocalizedDisplayName(d.data, currentLanguage);
@@ -248,7 +268,7 @@ export function create_visualization(){
               lines.forEach((line, index) => {
                 d3.select(this).append("tspan")
                   .attr("dy", index > 0 ? "0.9em" : 0)
-                  .attr("x", d._children ? -fontSize + 5 : fontSize + 5)
+                  .attr("x", d._children ? -fontSize + textMargin : fontSize + textMargin)
                   .style("font-size", fontSize*linebreakFontRelation)
                   .text(line);
               });
@@ -341,6 +361,10 @@ export function create_visualization(){
       });
     }
   
+
+    /* -------------------------------------------------------------------------- */
+    /*                               initialize tree                              */
+    /* -------------------------------------------------------------------------- */
     // Do the first update to the initial configuration of the tree — where a number of nodes
     // are open
     root.x0 = dy / 2;
@@ -356,7 +380,9 @@ export function create_visualization(){
 
   visualizer.append(svg.node());
 
-
+  /* -------------------------------------------------------------------------- */
+  /*                              handler functions                             */
+  /* -------------------------------------------------------------------------- */
   document.getElementById("toggleFold").addEventListener("change",function() {
     let targetFold = toggleFold();
     //console.log(targetFold);
@@ -412,7 +438,9 @@ const refresh_visualize = () => {
   create_visualization();
 }
 
-
+/* -------------------------------------------------------------------------- */
+/*                             json editor related                            */
+/* -------------------------------------------------------------------------- */
 // create json editor
 function create_editor(){
   const data = currentJson;
