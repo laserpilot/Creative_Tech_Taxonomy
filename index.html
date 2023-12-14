@@ -32,8 +32,6 @@
                 submit a pull request!
                 There is a JSON editor on the page for ease of editing - you can go in and update from there,
                 download the JSON you have edited, and then submit that file as a pull request on Github.
-
-
             </p>
             </p>
             <p>Please contribute and add info: <a href="https://github.com/laserpilot/Creative_Tech_Taxonomy"
@@ -42,19 +40,23 @@
     </div>
 
     <div id="interaction-panel">
+        <!-- toggle about page -->
         <button class="panelButtons" id="toggleAboutBox">
             <i class="fa-solid fa-info-circle fa-lg"></i>
             <span class="interation-text">About this page</span>
         </button>
         <!-- add zoom in and zoom out to the entire container -->
+        <!-- zoom in -->
         <button class="panelButtons" id="zoom-in-button">
             <i class="fa-solid fa-magnifying-glass-plus fa-lg"></i>
             <span class="interation-text">Zoom In</span>
         </button>
+        <!-- reset -->
         <button class="panelButtons" id="reset-button">
             <i class="fa-solid fa-arrows-rotate fa-lg"></i>
             <span class="interation-text">Reset</span>
         </button>
+        <!-- zoom out -->
         <button class="panelButtons" id="zoom-out-button">
             <i class="fa-solid fa-magnifying-glass-minus fa-lg"></i>
             <span class="interation-text">Zoom Out</span>
@@ -76,17 +78,18 @@
                     class="slider round"></span></label>
             <span id="toggleText" class="interation-text-toggle">Taxonomy View</span>
         </div>
-        <!-- TODO: toggle map fold vs all shown -->
+        <!-- toggle map fold vs all shown -->
         <div class="panelButtons" id="toggleFold">
             <label class="switch"> <input id="foldToggle" type="checkbox" checked> <span
                     class="slider round"></span></label>
             <span id="toggleFoldText" class="interation-text-toggle">Toggle to Expand All</span>
         </div>
-        <div class="language-dropdown" id="language-dropdown">
-            <label for="language-select">Select Language: </label>
+        <!-- select language -->
+        <div class="panelButtons" id="language-dropdown">
+            <label for="language-select" class="interation-text-toggle">Select Language: </label>
             <select id="language-select">
-                <option value="en">English</option>
-                <option value="ja">Japanese</option>
+                <option value="en" class="interation-text-toggle">English</option>
+                <option value="ja" class="interation-text-toggle">Japanese</option>
                 <!-- Add more languages as needed -->
             </select>
         </div>
@@ -101,13 +104,6 @@
         <div id="editor" class=""></div>
         <script type="module" src="taxonomy_tree_visualizer.js"> </script>
     </div>
-
-    <!-- method-2: use iframe to draw a thumbnail -->
-    <!-- <div id="thumbnail-container">
-        <iframe  id="thumbnail-iframe" frameborder="0"></iframe>
-        <div id="thumbnail-canvas"></div>
-    </div> -->
-    <!-- <script type="module" src="handle_thumbnail.js"></script>  -->
 
     <div id="myModal" class="modal">
         <div class="modal-content">

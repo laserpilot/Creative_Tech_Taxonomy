@@ -1,5 +1,4 @@
-import JSONEditor from "https://cdn.jsdelivr.net/npm/jsoneditor@9.10.4/+esm";
-
+/* handle functions for interactions panel */
 
 // handle zoom actions
 function zoomIn() {
