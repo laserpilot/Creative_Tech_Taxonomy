@@ -1,5 +1,8 @@
 {
-    "name": "Creative Tech Taxonomy",
+    "name": {
+        "en": "Creative Tech Taxonomy",
+        "ja": "クリエイティブコードフレームワーク",
+    },
     "children": [
         {
             "name": "AI/Machine Learning",
