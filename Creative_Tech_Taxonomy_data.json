@@ -8392,6 +8392,164 @@
           ]
         }
       ]
+    },
+    {
+      "name" : {
+        "en" : "Digital Fabrication"
+      },
+      "description" : "",
+      "tags" : [],
+      "links" : {
+        "Link" : ""
+      },
+      "children" : [
+        {
+          "name" : {
+            "en" : "Pen Plotters"
+          },
+          "description" : "",
+          "tags" : [],
+          "links" : {
+            "Link" : ""
+          },
+          "children" : [
+            {
+              "name" : {
+                "en" : "AxiDraw"
+              },
+              "description" : "",
+              "tags" : [],
+              "links" : {
+                "Link" : ""
+              }
+            }
+          ]
+        },
+        {
+          "name" : {
+            "en" : "CNC"
+          },
+          "description" : "",
+          "tags" : [],
+          "links" : {
+            "Link" : ""
+          }
+        },
+        {
+          "name" : {
+            "en" : "3D Printing"
+          },
+          "description" : "",
+          "tags" : [],
+          "links" : {
+            "Link" : ""
+          },
+          "children" : [
+            {
+              "name" : {
+                "en" : "Fused Deposition Modeling (FDM)"
+              },
+              "description" : "",
+              "tags" : [],
+              "links" : {
+                "Link" : ""
+              }
+            },
+            {
+              "name" : {
+                "en" : "Stereolithography (SLA)"
+              },
+              "description" : "",
+              "tags" : [],
+              "links" : {
+                "Link" : ""
+              }
+            },
+            {
+              "name" : {
+                "en" : "Selective Laser Sintering (SLS)"
+              },
+              "description" : "",
+              "tags" : [],
+              "links" : {
+                "Link" : ""
+              }
+            }
+          ]
+        },
+        {
+          "name" : {
+            "en" : "Laser Cutters"
+          },
+          "description" : "",
+          "tags" : [],
+          "links" : {
+            "Link" : ""
+          }
+        },
+        {
+          "name" : {
+            "en" : "2D Printing"
+          },
+          "description" : "",
+          "tags" : [],
+          "links" : {
+            "Link" : ""
+          },
+          "children" : [
+            {
+              "name" : {
+                "en" : "Inkjet"
+              },
+              "description" : "",
+              "tags" : [],
+              "links" : {
+                "Link" : ""
+              }
+            },
+            {
+              "name" : {
+                "en" : "Thermal Printers"
+              },
+              "description" : "aka Receipt Printers",
+              "tags" : [],
+              "links" : {
+                "Link" : ""
+              }
+            },
+            {
+              "name" : {
+                "en" : "Laser Printer"
+              },
+              "description" : "",
+              "tags" : [],
+              "links" : {
+                "Link" : ""
+              }
+            },
+            {
+              "name" : {
+                "en" : "Dye Sublimation"
+              },
+              "description" : "",
+              "tags" : [],
+              "links" : {
+                "Link" : ""
+              }
+            }
+          ]
+        },
+        {
+          "name" : {
+            "en" : "Vinyl Cutters"
+          },
+          "description" : "",
+          "tags" : [],
+          "links" : {
+            "Link" : ""
+          }
+        }
+      ]
     }
   ]
 }
