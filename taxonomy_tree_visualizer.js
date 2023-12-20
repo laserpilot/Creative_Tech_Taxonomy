@@ -33,7 +33,7 @@ function color(d) {
     if (!node) {
       return false;
     }
-
+    //forced to english for name to color matching here
     if (getLocalizedDisplayName(node.data, "en") === name) {
       return true;
     }
@@ -79,7 +79,7 @@ function showModal(nodeData) {
   // Generate content based on the clicked node data
   const content = `
     <h2>${getLocalizedDisplayName(nodeData.data, currentLanguage)}</h2>
-    <p>${nodeData.data.description || 'No Description available.'}</p>
+    <p>${nodeData.data.description || 'No Description available. Please add one!'}</p>
     <p>Tags: ${nodeData.data.tags ? nodeData.data.tags.join(', ') : 'No Tags available.'}</p>
     <div class="links-container">
       <p>Links:</p>
@@ -251,11 +251,24 @@ export function create_visualization(){
               d3.select(this).attr("transform", "scale(1)").transition().ease(d3.easeElastic); // Reset the scale
           })
           .on("click", (event, d) => {
-            // // Toggle the children
-            d.children = d.children ? null : d._children;
-            update(event, d);
-          });
 
+            // Check if the 'Shift' key is pressed
+            if (event.shiftKey) {
+                // Expand all child nodes
+                if (d._children) {
+                    d.children = d._children; // Set children to _children
+                    d._children.forEach(handle_expand);
+                    update(event, d);
+                }
+            } else {
+                // Toggle the children and toggle filled/hollow on click
+                d.children = d.children ? null : d._children;
+                update(event, d);
+            }
+        });
+      
+      const linebreakThreshold = 24;
+      const linebreakFontRelation = 0.9;
       nodeEnter.append('text')
           .attr("dy", d=>getLocalizedDisplayName(d.data, currentLanguage).length > linebreakThreshold && d._children ?  "-0.2em": "0.31em")
           .style("font-size", d=> getLocalizedDisplayName(d.data, currentLanguage).length > linebreakThreshold && d._children ?  fontSize*linebreakFontRelation: fontSize)
@@ -277,10 +290,13 @@ export function create_visualization(){
             }
           })
           .on("click", (event, d) => {
-              // Show modal with additional information about the clicked node
-              showModal(d);
-              // Prevent the click event from propagating to the parent (circle) element
-              d3.event.stopPropagation();
+              //hide modal clicking on mobile devices...
+              const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+              if (!isMobile) {
+                showModal(d);
+                // Prevent the click event from propagating to the parent (circle) element
+                d3.event.stopPropagation();
+            }
           })
           .on("mouseover", function (event, d) {
             // Scale up the corresponding rectangle on mouseover

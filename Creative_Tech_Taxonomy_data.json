@@ -3,7 +3,7 @@
     "en" : "Creative Tech Taxonomy",
     "ja" : "クリエイティブテクノロジーの分類"
   },
-  "description" : "This is the top level parent node for everything else.",
+  "description" : "This taxonomy is a subjective grouping of various tools and concepts related to creative technology. This is the top level parent node for everything else.",
   "tags" : [],
   "links" : {
     "Link" : ""
@@ -42,6 +42,16 @@
                 "Link" : ""
               },
               "children" : [
+                {
+                  "name" : {
+                    "en" : "TouchDesigner"
+                  },
+                  "description" : "",
+                  "tags" : [],
+                  "links" : {
+                    "Link" : ""
+                  }
+                },
                 {
                   "name" : {
                     "en" : "Isadora"
@@ -601,10 +611,12 @@
         "en" : "Real-time 3D/Game Engines",
         "ja" : "ゲームエンジン"
       },
-      "description" : "",
-      "tags" : [],
+      "description" : "This category covers things like game engines and other 3D rendering concepts. While there may be considerable overlap with Creative Coding Frameworks, I think there is enough distinction in game engines that they can be captured in their own space.",
+      "tags" : [
+        "game engine"
+      ],
       "links" : {
-        "Link" : ""
+        "Link" : "https://en.wikipedia.org/wiki/List_of_game_engines"
       },
       "children" : [
         {
@@ -634,7 +646,7 @@
                   "description" : "",
                   "tags" : [],
                   "links" : {
-                    "Link" : ""
+                    "Link" : "https://en.wikipedia.org/wiki/Babylon.js"
                   }
                 },
                 {
@@ -649,12 +661,12 @@
                 },
                 {
                   "name" : {
-                    "en" : "Sceneform"
+                    "en" : "Godot"
                   },
                   "description" : "",
                   "tags" : [],
                   "links" : {
-                    "Link" : ""
+                    "Link" : "https://en.wikipedia.org/wiki/Godot_(game_engine)"
                   }
                 }
               ]
@@ -669,6 +681,26 @@
                 "Link" : ""
               },
               "children" : [
+                {
+                  "name" : {
+                    "en" : "Unity"
+                  },
+                  "description" : "",
+                  "tags" : [],
+                  "links" : {
+                    "Link" : ""
+                  }
+                },
+                {
+                  "name" : {
+                    "en" : "Unreal"
+                  },
+                  "description" : "",
+                  "tags" : [],
+                  "links" : {
+                    "Link" : ""
+                  }
+                },
                 {
                   "name" : {
                     "en" : "Scenekit"
@@ -691,27 +723,7 @@
                 },
                 {
                   "name" : {
-                    "en" : "Amazon Lumberjack"
-                  },
-                  "description" : "",
-                  "tags" : [],
-                  "links" : {
-                    "Link" : ""
-                  }
-                },
-                {
-                  "name" : {
-                    "en" : "Unity"
-                  },
-                  "description" : "",
-                  "tags" : [],
-                  "links" : {
-                    "Link" : ""
-                  }
-                },
-                {
-                  "name" : {
-                    "en" : "Unreal"
+                    "en" : "Amazon Lumberyard"
                   },
                   "description" : "",
                   "tags" : [],
@@ -727,7 +739,7 @@
           "name" : {
             "en" : "VR"
           },
-          "description" : "",
+          "description" : "Concepts and tools related to Virtual Reality",
           "tags" : [],
           "links" : {
             "Link" : ""
@@ -785,7 +797,17 @@
                   "children" : [
                     {
                       "name" : {
-                        "en" : "Rift S"
+                        "en" : "Meta Quest Pro"
+                      },
+                      "description" : "",
+                      "tags" : [],
+                      "links" : {
+                        "Link" : ""
+                      }
+                    },
+                    {
+                      "name" : {
+                        "en" : "Quest 3"
                       },
                       "description" : "",
                       "tags" : [],
@@ -802,16 +824,6 @@
                       "links" : {
                         "Link" : ""
                       }
-                    },
-                    {
-                      "name" : {
-                        "en" : "Quest"
-                      },
-                      "description" : "",
-                      "tags" : [],
-                      "links" : {
-                        "Link" : ""
-                      }
                     }
                   ]
                 }
@@ -821,19 +833,31 @@
               "name" : {
                 "en" : "Related Concepts"
               },
-              "description" : "",
+              "description" : "Concepts related to AR/VR/Game Engines",
               "tags" : [],
               "links" : {
                 "Link" : ""
-              }
+              },
+              "children" : [
+                {
+                  "name" : {
+                    "en" : "Foveated Rendering"
+                  },
+                  "description" : "",
+                  "tags" : [],
+                  "links" : {
+                    "Link" : "https://en.wikipedia.org/wiki/Foveated_rendering"
+                  }
+                }
+              ]
             }
           ]
         },
         {
           "name" : {
-            "en" : "AR"
+            "en" : "AR/MR"
           },
-          "description" : "",
+          "description" : "Concepts and tools related to Augmented Reality",
           "tags" : [],
           "links" : {
             "Link" : ""
@@ -851,29 +875,39 @@
               "children" : [
                 {
                   "name" : {
+                    "en" : "Apple Vision Pro"
+                  },
+                  "description" : "",
+                  "tags" : [],
+                  "links" : {
+                    "Link" : "https://en.wikipedia.org/wiki/Google_Glass"
+                  }
+                },
+                {
+                  "name" : {
                     "en" : "Google Glass"
                   },
                   "description" : "",
                   "tags" : [],
                   "links" : {
-                    "Link" : ""
+                    "Link" : "https://en.wikipedia.org/wiki/Google_Glass"
                   }
                 },
                 {
                   "name" : {
-                    "en" : "Magic Leap"
+                    "en" : "Magic Leap 2"
                   },
                   "description" : "",
                   "tags" : [],
                   "links" : {
-                    "Link" : ""
+                    "Link" : "https://en.wikipedia.org/wiki/Magic_Leap"
                   }
                 },
                 {
                   "name" : {
-                    "en" : "Microsoft Hololens"
+                    "en" : "Microsoft Hololens 2"
                   },
-                  "description" : "",
+                  "description" : "See also, the original",
                   "tags" : [],
                   "links" : {
                     "Link" : ""
@@ -977,7 +1011,29 @@
               "tags" : [],
               "links" : {
                 "Link" : ""
-              }
+              },
+              "children" : [
+                {
+                  "name" : {
+                    "en" : "Spatial Computing"
+                  },
+                  "description" : "",
+                  "tags" : [],
+                  "links" : {
+                    "Link" : "https://en.wikipedia.org/wiki/Spatial_computing"
+                  }
+                },
+                {
+                  "name" : {
+                    "en" : "Mixed Reality"
+                  },
+                  "description" : "",
+                  "tags" : [],
+                  "links" : {
+                    "Link" : "https://en.wikipedia.org/wiki/Mixed_reality"
+                  }
+                }
+              ]
             }
           ]
         }
@@ -1620,10 +1676,10 @@
       "name" : {
         "en" : "Sensors/Interaction Methods"
       },
-      "description" : "",
+      "description" : "Different methods and categories of sensing people and allowing interactions with digital interfaces and experiences. This is heavily related to the optical tracking and Physical computing categories as well.",
       "tags" : [],
       "links" : {
-        "Link" : ""
+        "Link" : "https://en.wikipedia.org/wiki/Category:Sensors"
       },
       "children" : [
         {
@@ -1710,7 +1766,7 @@
                     },
                     {
                       "name" : {
-                        "en" : "Object"
+                        "en" : "Security Cameras"
                       },
                       "description" : "",
                       "tags" : [],
@@ -2219,6 +2275,16 @@
                   }
                 }
               ]
+            },
+            {
+              "name" : {
+                "en" : "mmWave"
+              },
+              "description" : "",
+              "tags" : [],
+              "links" : {
+                "Link" : "https://en.wikipedia.org/wiki/Mmwave_sensing"
+              }
             }
           ]
         },
@@ -2234,7 +2300,7 @@
           "children" : [
             {
               "name" : {
-                "en" : "Unusual or Custom Inputs"
+                "en" : "Other Input Types"
               },
               "description" : "",
               "tags" : [],
@@ -2296,7 +2362,7 @@
                     },
                     {
                       "name" : {
-                        "en" : "Object"
+                        "en" : "Barometric/Atmospheric"
                       },
                       "description" : "",
                       "tags" : [],
@@ -2414,13 +2480,35 @@
                 },
                 {
                   "name" : {
-                    "en" : "Object"
+                    "en" : "Galvanic Skin Response"
                   },
                   "description" : "",
                   "tags" : [],
                   "links" : {
                     "Link" : ""
                   }
+                },
+                {
+                  "name" : {
+                    "en" : "Electromyography"
+                  },
+                  "description" : "",
+                  "tags" : [],
+                  "links" : {
+                    "Link" : ""
+                  },
+                  "children" : [
+                    {
+                      "name" : {
+                        "en" : "Muscle Activity Sensors (EMG)"
+                      },
+                      "description" : "",
+                      "tags" : [],
+                      "links" : {
+                        "Link" : ""
+                      }
+                    }
+                  ]
                 }
               ]
             },
@@ -2722,7 +2810,7 @@
       "name" : {
         "en" : "Physical Computing"
       },
-      "description" : "",
+      "description" : "Tools and concepts related to physical computing elements that may appear in various creative technology and experiential projects.",
       "tags" : [],
       "links" : {
         "Link" : ""
@@ -3136,7 +3224,7 @@
       "name" : {
         "en" : "Optical Tracking"
       },
-      "description" : "",
+      "description" : "Tools and concepts related to optical tracking elements that may appear in various creative technology and experiential projects. See also the topic of Cameras in the Sensor/Interaction method group",
       "tags" : [],
       "links" : {
         "Link" : ""
@@ -3436,7 +3524,7 @@
       "name" : {
         "en" : "Pro AV Hardware and Related Software"
       },
-      "description" : "",
+      "description" : "A large category that outlines concepts and tools related to professional grade (and some consumer grade) audiovisual hardware and software. Typically things used in large productions, stage shows, and installations",
       "tags" : [],
       "links" : {
         "Link" : ""
@@ -3859,7 +3947,7 @@
                               "description" : "",
                               "tags" : [],
                               "links" : {
-                                "Link" : ""
+                                "Link" : "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/volumetric"
                               },
                               "children" : [
                                 {
@@ -3891,7 +3979,7 @@
                               "description" : "",
                               "tags" : [],
                               "links" : {
-                                "Link" : ""
+                                "Link" : "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/transparent"
                               },
                               "children" : [
                                 {
@@ -3913,7 +4001,7 @@
                               "description" : "",
                               "tags" : [],
                               "links" : {
-                                "Link" : ""
+                                "Link" : "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/transparent"
                               },
                               "children" : [
                                 {
@@ -3935,7 +4023,7 @@
                               "description" : "",
                               "tags" : [],
                               "links" : {
-                                "Link" : ""
+                                "Link" : "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/flexible-displays"
                               }
                             },
                             {
@@ -3945,7 +4033,7 @@
                               "description" : "",
                               "tags" : [],
                               "links" : {
-                                "Link" : ""
+                                "Link" : "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/electronic-paper-e-ink"
                               },
                               "children" : [
                                 {
@@ -3967,17 +4055,17 @@
                               "description" : "",
                               "tags" : [],
                               "links" : {
-                                "Link" : ""
+                                "Link" : "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/volumetric"
                               },
                               "children" : [
                                 {
                                   "name" : {
-                                    "en" : "Lightfield"
+                                    "en" : "Light field"
                                   },
                                   "description" : "",
                                   "tags" : [],
                                   "links" : {
-                                    "Link" : ""
+                                    "Link" : "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/light-field-displays"
                                   },
                                   "children" : [
                                     {
@@ -4021,20 +4109,8 @@
                               "description" : "",
                               "tags" : [],
                               "links" : {
-                                "Link" : ""
-                              },
-                              "children" : [
-                                {
-                                  "name" : {
-                                    "en" : "Worldstage Whitespace Displays"
-                                  },
-                                  "description" : "",
-                                  "tags" : [],
-                                  "links" : {
-                                    "Link" : ""
-                                  }
-                                }
-                              ]
+                                "Link" : "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/modified-polarizers"
+                              }
                             },
                             {
                               "name" : {
@@ -4063,7 +4139,7 @@
                                   "description" : "",
                                   "tags" : [],
                                   "links" : {
-                                    "Link" : ""
+                                    "Link" : "https://blair-neal.gitbook.io/survey-of-alternative-displays/techniques/projection-on-water-or-fog"
                                   }
                                 },
                                 {
@@ -4083,7 +4159,7 @@
                                   "description" : "",
                                   "tags" : [],
                                   "links" : {
-                                    "Link" : ""
+                                    "Link" : "https://blair-neal.gitbook.io/survey-of-alternative-displays/techniques/peppers-ghost"
                                   }
                                 },
                                 {
@@ -4093,7 +4169,7 @@
                                   "description" : "",
                                   "tags" : [],
                                   "links" : {
-                                    "Link" : ""
+                                    "Link" : "https://blair-neal.gitbook.io/survey-of-alternative-displays/techniques/volumetric-projection"
                                   }
                                 },
                                 {
@@ -4103,20 +4179,10 @@
                                   "description" : "",
                                   "tags" : [],
                                   "links" : {
-                                    "Link" : ""
+                                    "Link" : "https://blair-neal.gitbook.io/survey-of-alternative-displays/techniques/diffusion-and-distortion"
                                   }
                                 }
                               ]
-                            },
-                            {
-                              "name" : {
-                                "en" : "Object"
-                              },
-                              "description" : "",
-                              "tags" : [],
-                              "links" : {
-                                "Link" : ""
-                              }
                             }
                           ]
                         },
@@ -5487,7 +5553,7 @@
               "description" : "",
               "tags" : [],
               "links" : {
-                "Link" : ""
+                "Link" : "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/laser-projectors"
               },
               "children" : [
                 {
@@ -5712,7 +5778,7 @@
       "name" : {
         "en" : "Mobile Technology"
       },
-      "description" : "",
+      "description" : "Various concepts and technologies related to mobile devices in the context of creative technology projects.",
       "tags" : [],
       "links" : {
         "Link" : ""
@@ -5976,7 +6042,7 @@
         },
         {
           "name" : {
-            "en" : "Web Frameworks for Apps"
+            "en" : "Web Frameworks for Native Apps"
           },
           "description" : "",
           "tags" : [],
@@ -6116,7 +6182,7 @@
                   "children" : [
                     {
                       "name" : {
-                        "en" : "Object"
+                        "en" : "watchOS"
                       },
                       "description" : "",
                       "tags" : [],
@@ -6136,7 +6202,7 @@
       "name" : {
         "en" : "Asset Creation"
       },
-      "description" : "",
+      "description" : "Tools related to making assets (like images, videos, etc) that might be used by other concepts in this list.",
       "tags" : [],
       "links" : {
         "Link" : ""
@@ -6748,7 +6814,7 @@
       "name" : {
         "en" : "AI/Machine Learning"
       },
-      "description" : "",
+      "description" : "Various topics and tools related to artificial intelligence and machine learning",
       "tags" : [],
       "links" : {
         "Link" : ""
@@ -7611,7 +7677,7 @@
       "name" : {
         "en" : "Uncategorized Utilities/DevOps"
       },
-      "description" : "",
+      "description" : "Various topics that are still tangentially related to working with technology at various professional scales, particularly technology utilites and tools related to Dev Ops (or Developer Operations)",
       "tags" : [],
       "links" : {
         "Link" : ""
@@ -7959,6 +8025,16 @@
           "children" : [
             {
               "name" : {
+                "en" : "Visual Studio Code"
+              },
+              "description" : "",
+              "tags" : [],
+              "links" : {
+                "Link" : ""
+              }
+            },
+            {
+              "name" : {
                 "en" : "Vim/Emacs"
               },
               "description" : "",
@@ -7990,16 +8066,6 @@
             {
               "name" : {
                 "en" : "Sublime Text"
-              },
-              "description" : "",
-              "tags" : [],
-              "links" : {
-                "Link" : ""
-              }
-            },
-            {
-              "name" : {
-                "en" : "Visual Studio Code"
               },
               "description" : "",
               "tags" : [],
