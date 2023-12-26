@@ -14,11 +14,26 @@ The diagram was originally made as a static image, but [@HeidiHe](https://github
 
 ## Running locally
 
-Clone the repo, you can run the page locally from the root of this directory with any method you choose. For example you can use npm to install `http-server` and then run something like:
+Clone the repository.
+We use a build tool called [Vite](https://vitejs.dev/) for local viewing and modification.
+Try the following command.
 
-`http-server -a localhost -p 8000 -c-1`
+### Install
+`npm install`
+Install the necessary packages. Please search how to use nodejs / npm.
 
-Then go to `localhost:8000` on your browser to view. When you make changes, reload the page to see them reflected
+### Run local server
+`npm run dev`
+The local server starts up. The URL to be displayed is displayed at runtime and can be connected to from smartphones and other devices in the local environment.
+If there are any changes to the file, a hot reload is automatically performed, allowing you to concentrate on development.
+
+### Formatting source code
+`npm run format`
+Js, css, scss, html source code will be formatted. It is recommended that you run this before committing.
+
+### Build
+`npm run build`
+All files are output to the `dist` directory.
 
 ## Submitting updates
 
@@ -30,13 +45,11 @@ You can then press the "Download JSON" button on the Interaction panel. You can 
 
 This also now supports multiple languages! In addition to English, we have some preliminary entries for Japanese in a few spots. To add additional languages, you have to make updates in a few key spots:
 
-- Index.html
+- src/ndex.html
     - Add items to the Language Dropdown for your language, and also add an option value for your language like `en` for English: `<option value="en">English</option>` Right now we have `en` for English and `ja` for Japanese, and do not have a system set up for other languages yet.
-- taxonomy_tree_visualizer.js
+- src/js/taxonomy_tree_visualizer.js
     - Here is the switching logic for the languages. If there is no entry found for a language, it will default to showing the English version
-    - You will need to add the language to the `getLocalizedDisplayName` function which sets the priority order
-    - 
-- Creative_Tech_Taxonomy_data.json
+- public/Creative_Tech_Taxonomy_data.json
     - Here is where you add new translations per entry. You will need to add a new entry in the `name` object with your language key.
 
 Currently multiple languages are only set up to work for the tree display names but not the actual item descriptions
