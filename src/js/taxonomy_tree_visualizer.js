@@ -265,12 +265,12 @@ export function createVisualization() {
             d._children.forEach(handleExpand)
             update(event, d)
           }
-          focusNode(d)
+          focusNode(d.parent)
         } else {
           // Toggle the children and toggle filled/hollow on click
           d.children = d.children ? null : d._children
           update(event, d)
-          focusNode(d.parent)
+          focusNode(d)
         }
       })
       .on("mouseover", (event, d) => (d._children ? handlerChangeScale(event.target, 1.5) : null))
