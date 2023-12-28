@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import autoprefixer from "autoprefixer";
 
 export default defineConfig({
+  base: '/<REPO>/',
   root: './src',
   publicDir: '../public',
   plugins: [],
