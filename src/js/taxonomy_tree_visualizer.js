@@ -23,7 +23,7 @@ let windowHeight = window.visualViewport.height
 let isMobile = windowWidth < 768
 
 // json loader
-fetch("/Creative_Tech_Taxonomy_data.json")
+fetch("./Creative_Tech_Taxonomy_data.json")
   .then((response) => {
     if (!response.ok) {
       throw new Error("Network response was not ok")
