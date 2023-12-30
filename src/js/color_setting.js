@@ -29,6 +29,8 @@ export function getColor(name) {
       return "gold"
     case "Asset Creation":
       return "deeppink"
+    case "Digital Fabrication":
+      return "springgreen"
     default:
       return "#ccc"
   }

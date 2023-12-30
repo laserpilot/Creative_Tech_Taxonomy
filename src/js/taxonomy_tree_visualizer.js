@@ -69,8 +69,10 @@ const updateJsonFromLanguage = (json) => {
     // Implement it for the next step
     if (node.description[currentLanguage]) {
       node.description = node.description[currentLanguage]
+    } else if (node.description["en"]) {
+      node.description = node.description["en"]
     } else {
-      node.description = node.description["en"] ? node.description["en"] : "No information"
+      node.description = node.description ? node.description : "No description available yet. Please add one!"
     }
 
     // If there are children, recursion is performed.
