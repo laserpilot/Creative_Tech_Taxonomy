@@ -9,28 +9,28 @@ export function getColor(name) {
   switch (name) {
     case "Creative Code Frameworks":
       return "pink"
-    case "Real-time 3D/Game Engines":
-      return "deepskyblue"
-    case "AI/Machine Learning":
-      return "red"
-    case "Uncategorized Utilities/DevOps":
-      return "firebrick"
-    case "Pro AV Hardware and Related Software":
-      return "darksalmon"
-    case "Optical Tracking":
-      return "darkmagenta"
-    case "Sensors/Interaction Methods":
-      return "darkviolet"
+    case "Game Engines and Real-Time 3D":
+      return "mediumorchid"
+    case "Web and Networking Tools":
+      return "plum"
+    case "Sensors and Interaction Methods":
+      return "tomato"
     case "Physical Computing":
-      return "lightblue"
-    case "Web/Networking Frameworks":
-      return "limegreen"
+      return "khaki"
+    case "Display Tech and Video":
+      return "darkturquoise"
+    case "Professional AV Tools":
+      return "skyblue"
+    case "AI/Machine Learning":
+      return "lightgreen"
+    case "Uncategorized Tools and Utilities":
+      return "firebrick"
     case "Mobile Technology":
-      return "gold"
+      return "goldenrod"
     case "Asset Creation":
       return "deeppink"
     case "Digital Fabrication":
-      return "springgreen"
+      return "lightseagreen"
     default:
       return "#ccc"
   }
