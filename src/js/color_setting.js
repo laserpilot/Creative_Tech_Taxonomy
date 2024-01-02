@@ -29,7 +29,7 @@ export function getColor(name) {
       return "goldenrod"
     case "Asset Creation":
       return "deeppink"
-    case "Digital Fabrication":
+    case "Physical Output and Digital Fabrication":
       return "lightseagreen"
     default:
       return "#ccc"

@@ -7799,7 +7799,7 @@
     },
     {
       "name" : {
-        "en" : "Digital Fabrication"
+        "en" : "Physical Output and Digital Fabrication"
       },
       "description" : "Tools related to making digital creations in the physical realm, from 2D Printers to 3D Printers...",
       "tags" : [],
@@ -7952,6 +7952,28 @@
           "links" : {
             "Link" : ""
           }
+        },
+        {
+          "name" : {
+            "en" : "Robot Arms"
+          },
+          "description" : "",
+          "tags" : [],
+          "links" : {
+            "Link" : ""
+          },
+          "children" : [
+            {
+              "name" : {
+                "en" : "Kuka"
+              },
+              "description" : "",
+              "tags" : [],
+              "links" : {
+                "Link" : ""
+              }
+            }
+          ]
         }
       ]
     },
