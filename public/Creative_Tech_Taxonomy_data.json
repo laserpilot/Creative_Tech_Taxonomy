@@ -4311,6 +4311,16 @@
                       "links" : {
                         "Link" : ""
                       }
+                    },
+                    {
+                      "name" : {
+                        "en" : "See sensor category for more cameras"
+                      },
+                      "description" : "This was primarily meant for professional cameras. See sensor category for more cameras.",
+                      "tags" : [],
+                      "links" : {
+                        "Link" : ""
+                      }
                     }
                   ]
                 },
@@ -4355,6 +4365,28 @@
                       "links" : {
                         "Link" : ""
                       }
+                    },
+                    {
+                      "name" : {
+                        "en" : "HDMI to USB capture devices"
+                      },
+                      "description" : "",
+                      "tags" : [],
+                      "links" : {
+                        "Link" : ""
+                      },
+                      "children" : [
+                        {
+                          "name" : {
+                            "en" : "Blackmagic"
+                          },
+                          "description" : "",
+                          "tags" : [],
+                          "links" : {
+                            "Link" : ""
+                          }
+                        }
+                      ]
                     }
                   ]
                 }
@@ -4586,7 +4618,7 @@
               "name" : {
                 "en" : "Media Servers and Related"
               },
-              "description" : "",
+              "description" : "Some Media servers have dedicated hardware and some are hybrids that have a software component and dedicated hardware platform. This category captures ones that have dedicated hardware ",
               "tags" : [],
               "links" : {
                 "Link" : ""
@@ -4600,16 +4632,6 @@
                   "tags" : [],
                   "links" : {
                     "Link" : "https://pixera.one/en/"
-                  }
-                },
-                {
-                  "name" : {
-                    "en" : "Catalyst"
-                  },
-                  "description" : "",
-                  "tags" : [],
-                  "links" : {
-                    "Link" : ""
                   }
                 },
                 {
@@ -4629,37 +4651,17 @@
                   "description" : "",
                   "tags" : [],
                   "links" : {
-                    "Link" : ""
+                    "Link" : "https://www.dataton.com/"
                   }
                 },
                 {
                   "name" : {
-                    "en" : "Notch"
+                    "en" : "7th Sense"
                   },
                   "description" : "",
                   "tags" : [],
                   "links" : {
-                    "Link" : ""
-                  }
-                },
-                {
-                  "name" : {
-                    "en" : "Green Hippo"
-                  },
-                  "description" : "",
-                  "tags" : [],
-                  "links" : {
-                    "Link" : ""
-                  }
-                },
-                {
-                  "name" : {
-                    "en" : "Ventuz"
-                  },
-                  "description" : "",
-                  "tags" : [],
-                  "links" : {
-                    "Link" : ""
+                    "Link" : "https://7thsense.one/"
                   }
                 }
               ]
@@ -4678,7 +4680,7 @@
           "children" : [
             {
               "name" : {
-                "en" : "VJ/Mapping Software"
+                "en" : "VJ and Mapping Software"
               },
               "description" : "",
               "tags" : [],
@@ -4724,6 +4726,118 @@
                   "tags" : [],
                   "links" : {
                     "Link" : ""
+                  }
+                },
+                {
+                  "name" : {
+                    "en" : "Mapping Matter"
+                  },
+                  "description" : "Cloud-based projection planning tool",
+                  "tags" : [],
+                  "links" : {
+                    "Link" : "https://www.mappingmatter.com/"
+                  }
+                }
+              ]
+            },
+            {
+              "name" : {
+                "en" : "Media Servers or Large Scale Tools"
+              },
+              "description" : "",
+              "tags" : [],
+              "links" : {
+                "Link" : ""
+              },
+              "children" : [
+                {
+                  "name" : {
+                    "en" : "Pixera"
+                  },
+                  "description" : "",
+                  "tags" : [],
+                  "links" : {
+                    "Link" : "https://pixera.one/en/"
+                  }
+                },
+                {
+                  "name" : {
+                    "en" : "Catalyst"
+                  },
+                  "description" : "",
+                  "tags" : [],
+                  "links" : {
+                    "Link" : "http://www.catalyst-v5.com/"
+                  }
+                },
+                {
+                  "name" : {
+                    "en" : "Disguise"
+                  },
+                  "description" : "Formerly known as d3",
+                  "tags" : [],
+                  "links" : {
+                    "Link" : "https://www.disguise.one/en"
+                  }
+                },
+                {
+                  "name" : {
+                    "en" : "Dataton Watchout"
+                  },
+                  "description" : "",
+                  "tags" : [],
+                  "links" : {
+                    "Link" : "https://www.dataton.com/"
+                  }
+                },
+                {
+                  "name" : {
+                    "en" : "Notch"
+                  },
+                  "description" : "",
+                  "tags" : [],
+                  "links" : {
+                    "Link" : ""
+                  }
+                },
+                {
+                  "name" : {
+                    "en" : "Green Hippo"
+                  },
+                  "description" : "",
+                  "tags" : [],
+                  "links" : {
+                    "Link" : ""
+                  }
+                },
+                {
+                  "name" : {
+                    "en" : "Ventuz"
+                  },
+                  "description" : "",
+                  "tags" : [],
+                  "links" : {
+                    "Link" : ""
+                  }
+                },
+                {
+                  "name" : {
+                    "en" : "Stage Precision"
+                  },
+                  "description" : "",
+                  "tags" : [],
+                  "links" : {
+                    "Link" : "https://www.stageprecision.com/"
+                  }
+                },
+                {
+                  "name" : {
+                    "en" : "7th Sense"
+                  },
+                  "description" : "",
+                  "tags" : [],
+                  "links" : {
+                    "Link" : "https://7thsense.one/"
                   }
                 }
               ]
