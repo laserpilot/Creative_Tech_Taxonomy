@@ -206,6 +206,7 @@ export function createVisualization() {
       .append("text")
       .attr("cursor", "help")
       .attr("x", (d) => (d._children ? -fontSize : fontSize))
+      .attr("y", (d) => (d._children ? -fontSize -2: fontSize-2))
       .attr("dominant-baseline", "middle")
       .attr("text-anchor", (d) => (d._children ? "end" : "start"))
       .each(function (d) {
@@ -213,7 +214,8 @@ export function createVisualization() {
           d3.select(this)
             .append("tspan")
             .attr("dy", index > 0 ? `${convertRemToPx(index * lineHeight)}px` : 0)
-            .attr("x", d._children ? -fontSize : fontSize)
+            .attr("x", d._children ? -fontSize -10 : fontSize-10)
+            .attr("y", d._children ? 5 : 5)
             .text(line)
         })
       })
@@ -230,7 +232,7 @@ export function createVisualization() {
       })
 
     // add warping box around text node
-    let rectPadding = 10
+    let rectPadding = 15
     nodeEnter
       .append("rect")
       .attr("cursor", "help")
@@ -279,13 +281,13 @@ export function createVisualization() {
       .on("mouseout", (event, d) => (d._children ? handlerChangeScale(event.target, 1) : null))
 
     // shadow effect node
-    nodeEnter
+    /*nodeEnter
       .select("text")
       .clone(true)
       .lower()
       .attr("stroke-linejoin", "round")
       .attr("stroke-width", 3)
-      .attr("stroke", (d) => d3.color(d.data.color).copy({ opacity: 0.1 }))
+      .attr("stroke", (d) => d3.color(d.data.color).copy({ opacity: 0.1 }))*/
 
     // Transition nodes to their new position.
     const nodeUpdate = node

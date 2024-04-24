@@ -9,7 +9,7 @@
 html,
 body {
   background-color: aliceblue;
-  font-family: "Avenir", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1rem;
   line-height: 1rem;
 }
@@ -21,6 +21,7 @@ body {
 a {
   color: #fff;
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+
   &:hover {
     color: #2196f3;
   }
@@ -42,12 +43,15 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 2;
+
   .title {
     display: flex;
     align-items: center;
+
     h1 {
       letter-spacing: -0.02rem;
     }
+
     .headerButton {
       margin-left: 1rem;
       background-color: transparent;
@@ -59,15 +63,18 @@ header {
       font-size: 0.8rem;
       color: #333;
     }
+
     .tabMenu {
       margin-left: 1rem;
       position: relative;
       width: auto;
       height: 1rem;
       font-size: 0;
+
       input[type="radio"] {
         display: none;
-        & + em {
+
+        &+em {
           display: inline-block;
           position: relative;
           z-index: 100;
@@ -83,9 +90,11 @@ header {
           line-height: 30px;
           cursor: pointer;
         }
-        &:checked + em {
+
+        &:checked+em {
           background: rgb(0, 134, 187);
           color: #fff;
+
           &::after {
             position: absolute;
             left: 50%;
@@ -99,10 +108,12 @@ header {
       }
     }
   }
+
   .languageSelect {
     display: inline-flex;
     align-items: center;
     position: relative;
+
     &::after {
       position: absolute;
       right: 15px;
@@ -113,6 +124,7 @@ header {
       content: "";
       pointer-events: none;
     }
+
     select {
       appearance: none;
       min-width: 120px;
@@ -148,6 +160,7 @@ footer {
   height: 100dvh;
   width: 100dvw;
   position: relative;
+
   #editor {
     display: none;
     z-index: 1000;
@@ -172,6 +185,7 @@ footer {
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 40;
+
   .modal-content {
     position: absolute;
     top: 50%;
@@ -181,25 +195,31 @@ footer {
     width: 80%;
     padding: 20px;
     border: 1px solid #888;
+
     a {
       color: #2196f3;
     }
+
     h2 {
       font-size: 1.4rem;
       line-height: 1.6rem;
     }
+
     p {
       margin-top: 1rem;
     }
+
     ul {
       margin-top: 1rem;
     }
+
     ul,
     li {
       list-style: none;
       word-break: break-all;
     }
   }
+
   .modalClose {
     position: absolute;
     top: 1rem;
@@ -207,6 +227,7 @@ footer {
     color: #aaa;
     font-size: 2rem;
     font-weight: bold;
+
     &:hover,
     &:focus {
       color: black;
@@ -214,6 +235,7 @@ footer {
       cursor: pointer;
     }
   }
+
   .links-container {
     margin-top: 10px;
   }
@@ -235,10 +257,12 @@ menu {
   li {
     list-style: none;
   }
+
   ul {
     padding: 10px;
     margin-bottom: 0.5rem;
   }
+
   li {
     margin-top: 0.5rem;
     font-size: 1rem;
@@ -250,6 +274,7 @@ menu {
     h1 {
       font-size: 1rem;
     }
+
     .languageSelect {
       select {
         min-width: 100px;
