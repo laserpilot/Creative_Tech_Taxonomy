@@ -2,6 +2,8 @@
 
 ## View the current taxonomy at the link [here](https://laserpilot.github.io/Creative_Tech_Taxonomy/)
 
+[<img width="1625" alt="screenshot" src="https://github.com/user-attachments/assets/401501b8-f4ea-4b81-a07e-4ea0a291011a" />](https://laserpilot.github.io/Creative_Tech_Taxonomy/)
+
 An open taxonomy of software, hardware, and concepts related to creative technology and creative coding. Many relationships and hierarchies between topics are very subjective and have many flaws, so please don't take these too seriously - if you have a correction or suggestion, please submit a pull request. This is a labor of love and not meant to be too prescriptive, just illustrative.
 
 This was created because taxonomies for this undefined space are important tools for developing a common language and grammar to better enable communication and education. Read more of my longwinded thoughts on all that in my post [here](https://ablairneal.com/a-creative-technology-taxonomy).
