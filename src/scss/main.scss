@@ -148,6 +148,88 @@ footer {
   height: 100dvh;
   width: 100dvw;
   position: relative;
+  
+  .add-child-icon {
+    cursor: pointer;
+    &:hover {
+      filter: drop-shadow(0 0 3px white);
+      transform: scale(1.2);
+      transition: all 0.2s ease;
+    }
+  }
+  
+  // Edit mode instructions overlay
+  .edit-mode-instructions {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    z-index: 30;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+    p {
+      margin: 5px 0;
+    }
+    
+    .instruction {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px 0;
+      
+      .icon {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: rgba(255, 100, 100, 0.7);
+        margin-right: 10px;
+        position: relative;
+        
+        &::before {
+          content: "+";
+          color: white;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-weight: bold;
+        }
+        
+        &.edit {
+          background-color: #2196f3;
+          
+          &::before {
+            content: "✎";
+            font-size: 14px;
+          }
+        }
+        
+        &.toggle {
+          background-color: rgba(255, 100, 100, 0.7);
+          
+          &::before {
+            content: "↕";
+            font-size: 14px;
+          }
+        }
+        
+        &.shift {
+          background-color: #ff9800;
+          
+          &::before {
+            content: "⇧";
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
   #editor {
     display: none;
     z-index: 1000;
@@ -179,6 +261,8 @@ footer {
     transform: translate(-50%, -50%);
     background-color: #fefefe;
     width: 80%;
+    max-height: 80vh;
+    overflow-y: auto;
     padding: 20px;
     border: 1px solid #888;
     a {
@@ -187,6 +271,7 @@ footer {
     h2 {
       font-size: 1.4rem;
       line-height: 1.6rem;
+      margin-bottom: 1rem;
     }
     p {
       margin-top: 1rem;
@@ -199,7 +284,92 @@ footer {
       list-style: none;
       word-break: break-all;
     }
+    
+    // Form styling
+    .form-group {
+      margin-bottom: 1rem;
+      
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+      }
+      
+      input[type="text"], textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+      
+      textarea {
+        min-height: 100px;
+      }
+    }
+    
+    .link-item {
+      display: flex;
+      margin-bottom: 0.5rem;
+      
+      input {
+        flex: 1;
+        margin-right: 0.5rem;
+      }
+      
+      .remove-link {
+        background: #ff5757;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 0 0.5rem;
+      }
+    }
+    
+    .form-buttons {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 1rem;
+      
+      button {
+        padding: 0.5rem 1rem;
+        background-color: #2196f3;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 0.5rem;
+        
+        &:hover {
+          background-color: #0b7dda;
+        }
+        
+        &#cancelEdit, &#cancelAdd {
+          background-color: #ccc;
+          
+          &:hover {
+            background-color: #999;
+          }
+        }
+      }
+    }
+    
+    button#add-link, button#add-new-link {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      
+      &:hover {
+        background-color: #45a049;
+      }
+    }
   }
+  
   .modalClose {
     position: absolute;
     top: 1rem;
@@ -214,9 +384,38 @@ footer {
       cursor: pointer;
     }
   }
+  
   .links-container {
     margin-top: 10px;
   }
+}
+
+// Notification CSS
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 150, 0, 0.8);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  animation: slide-in 0.3s ease-out;
+  
+  &.fade-out {
+    animation: fade-out 0.5s forwards;
+  }
+}
+
+@keyframes slide-in {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
 }
 
 menu {
@@ -242,6 +441,24 @@ menu {
   li {
     margin-top: 0.5rem;
     font-size: 1rem;
+    
+    button {
+      border: none;
+      background: none;
+      cursor: pointer;
+      padding: 5px 8px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      
+      &.active {
+        background-color: rgba(59, 167, 255, 0.7);
+        color: white;
+      }
+      
+      &:hover {
+        background-color: rgba(59, 167, 255, 0.3);
+      }
+    }
   }
 }
 
