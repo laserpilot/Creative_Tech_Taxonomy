@@ -40,7 +40,7 @@ function updateInteractionJsonFromLanguage(data) {
   // Deep copy the data to avoid modifying the original
   const updatedData = JSON.parse(JSON.stringify(data))
 
-  function processNode(node) {
+  function processNode(node, parentColor = null) {
     // Handle name
     if (node.name && typeof node.name === 'object') {
       node.name = node.name[currentLanguage] || node.name.en || "No Name"
@@ -51,9 +51,9 @@ function updateInteractionJsonFromLanguage(data) {
       node.description = node.description[currentLanguage] || node.description.en || ""
     }
 
-    // Add color if not present
+    // Add color with inheritance from parent
     if (!node.color) {
-      node.color = getColor(node.name) || defaultColor
+      node.color = getColor(node.name) || parentColor || defaultColor
     }
 
     // Add background color
@@ -70,9 +70,9 @@ function updateInteractionJsonFromLanguage(data) {
       node.textWithLineBreaks = node.name || ""
     }
 
-    // Recursively process children
+    // Recursively process children with color inheritance
     if (node.children) {
-      node.children.forEach(processNode)
+      node.children.forEach(child => processNode(child, node.color))
     }
 
     return node
@@ -182,34 +182,57 @@ export function createInteractionVisualization() {
       .attr("fill-opacity", 0)
       .attr("stroke-opacity", 0)
 
+    // Add text background rectangles
+    nodeEnter
+      .append("rect")
+      .attr("stroke-linejoin", "round")
+      .attr("stroke-width", 3)
+      .attr("stroke", (d) => editMode ? "orange" : d.data.color)
+      .attr("stroke-dasharray", (d) => editMode ? "5,5" : "0")
+      .attr("fill", (d) => d.data.backgroundColor || "aliceblue")
+      .attr("fill-opacity", (d) => d._children ? 1 : 0.8)
+      .attr("rx", 5)
+      .attr("ry", 5)
+
     // Add circles for nodes
     nodeEnter
       .append("circle")
       .attr("r", circleRadius)
-      .attr("fill", (d) => (d._children ? d.data.color : "#fff"))
-      .attr("stroke", (d) => d.data.color)
+      .attr("fill", (d) => (d._children ? d.data.color : d.data.backgroundColor || "aliceblue"))
+      .attr("stroke", (d) => editMode ? "orange" : d.data.color)
       .attr("stroke-width", strokeWidth)
+      .attr("stroke-dasharray", (d) => editMode ? "5,5" : "0")
       .on("click", (event, d) => {
         if (editMode) {
           if (d._children || d.children) {
-            // Parent node in edit mode - show add child modal
-            showAddChildModal(d)
+            // Parent node has children - toggle them or show add child modal
+            if (d._children) {
+              // Node is collapsed, expand it
+              d.children = d._children
+              d._children = null
+              update(event, d)
+              focusNode(d)
+            } else {
+              // Node is expanded, show add child modal  
+              showAddChildModal(d)
+            }
           } else {
-            // Leaf node - show add child modal (to add first child)
+            // Node has no children, show add child modal
             showAddChildModal(d)
           }
         } else {
-          // Normal behavior - toggle children
+          // Normal behavior
+          // Check if the 'Shift' key is pressed
           if (event.shiftKey) {
             // Expand all child nodes
             if (d._children) {
-              d.children = d._children
+              d.children = d._children // Set children to _children
               d._children.forEach(handleExpand)
               update(event, d)
             }
             focusNode(d.parent)
           } else {
-            // Toggle the children
+            // Toggle the children and toggle filled/hollow on click
             d.children = d.children ? null : d._children
             update(event, d)
             focusNode(d)
@@ -218,8 +241,38 @@ export function createInteractionVisualization() {
       })
       .on("mouseover", (event, d) => ((d._children || editMode) ? handlerChangeScale(event.target, 1.5) : null))
       .on("mouseout", (event, d) => ((d._children || editMode) ? handlerChangeScale(event.target, 1) : null))
+      
+    // Add plus sign to circles in edit mode
+    nodeEnter
+      .append("text")
+      .attr("class", "add-child-icon")
+      .attr("text-anchor", "middle")
+      .attr("dominant-baseline", "central")
+      .attr("font-size", fontSize)
+      .attr("font-weight", "bold")
+      .attr("fill", "white")
+      .attr("pointer-events", (d) => editMode ? "all" : "none") // Only clickable in edit mode
+      .attr("cursor", "pointer")
+      .attr("opacity", (d) => editMode ? 1 : 0)
+      .text("+")
+      .on("click", (event, d) => {
+        if (editMode) {
+          // Show add child modal
+          event.stopPropagation()
+          showAddChildModal(d)
+        }
+      })
+      .on("mouseover", (event) => editMode ? handlerChangeScale(event.target, 1.5) : null)
+      .on("mouseout", (event) => editMode ? handlerChangeScale(event.target, 1) : null)
 
-    // Add text labels
+    // shadow effect node
+    nodeEnter
+      .append("text")
+      .attr("stroke-linejoin", "round")
+      .attr("stroke-width", 3)
+      .attr("stroke", (d) => d3.color(d.data.color).copy({ opacity: 0.1 }))
+
+    // Add text labels with proper styling
     nodeEnter
       .append("text")
       .attr("dy", "0.31em")
@@ -229,9 +282,27 @@ export function createInteractionVisualization() {
       .attr("paint-order", "stroke")
       .attr("stroke", "white")
       .attr("stroke-width", 5)
-      .attr("fill", d => d.data.color)
+      .attr("fill", (d) => d.data.color)
       .attr("font-weight", "bold")
-      .text((d) => d.data.textWithLineBreaks)
+      .style("font-family", "Inter, system-ui, sans-serif")
+      .each(function(d) {
+        const textElement = d3.select(this)
+        const words = (d.data.textWithLineBreaks || d.data.name || "").split(/\s+/)
+        const lineHeight = 1.1 // ems
+        const x = textElement.attr("x")
+        const y = textElement.attr("y")
+        const dy = parseFloat(textElement.attr("dy"))
+        
+        textElement.text(null)
+        
+        words.forEach((word, i) => {
+          textElement.append("tspan")
+            .attr("x", x)
+            .attr("y", y)
+            .attr("dy", i === 0 ? dy + "em" : lineHeight + "em")
+            .text(word)
+        })
+      })
       .on("click", (event, d) => {
         if (editMode) {
           // In edit mode, show edit modal for the node
@@ -242,6 +313,40 @@ export function createInteractionVisualization() {
         }
       })
 
+    // Calculate and update text background rectangle dimensions
+    nodeEnter.selectAll("text:not(.add-child-icon)").each(function(d) {
+      const textElement = this
+      const bbox = textElement.getBBox()
+      const rect = d3.select(textElement.parentNode).select("rect")
+      
+      const padding = 8
+      const minWidth = 20
+      const minHeight = 20
+      
+      const rectWidth = Math.max(bbox.width + padding * 2, minWidth)
+      const rectHeight = Math.max(bbox.height + padding * 2, minHeight)
+      
+      const textX = parseFloat(d3.select(textElement).attr("x"))
+      const textY = parseFloat(d3.select(textElement).attr("y"))
+      const textAnchor = d3.select(textElement).attr("text-anchor")
+      
+      let rectX, rectY
+      if (textAnchor === "end") {
+        rectX = textX - rectWidth + padding
+      } else if (textAnchor === "middle") {
+        rectX = textX - rectWidth / 2
+      } else {
+        rectX = textX - padding
+      }
+      rectY = textY - rectHeight / 2 + bbox.height / 4
+      
+      rect
+        .attr("x", rectX)
+        .attr("y", rectY)
+        .attr("width", rectWidth)
+        .attr("height", rectHeight)
+    })
+
     // Transition nodes to their new position.
     const nodeUpdate = node
       .merge(nodeEnter)
@@ -249,6 +354,24 @@ export function createInteractionVisualization() {
       .attr("transform", (d) => `translate(${d.y},${d.x})`)
       .attr("fill-opacity", 1)
       .attr("stroke-opacity", 1)
+    
+    // Update plus icons and edit mode styling for existing nodes
+    node.merge(nodeEnter)
+      .select(".add-child-icon")
+      .attr("pointer-events", (d) => editMode ? "all" : "none")
+      .attr("opacity", (d) => editMode ? 1 : 0)
+    
+    // Update circle styling for edit mode
+    node.merge(nodeEnter)
+      .select("circle")
+      .attr("stroke", (d) => editMode ? "orange" : d.data.color)
+      .attr("stroke-dasharray", (d) => editMode ? "5,5" : "0")
+    
+    // Update rect styling for edit mode
+    node.merge(nodeEnter)
+      .select("rect")
+      .attr("stroke", (d) => editMode ? "orange" : d.data.color)
+      .attr("stroke-dasharray", (d) => editMode ? "5,5" : "0")
 
     // Transition exiting nodes to the parent's new position.
     const nodeExit = node

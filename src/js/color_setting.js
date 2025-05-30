@@ -7,6 +7,7 @@ export const defaultBackgroundColor = "aliceblue"
 
 export function getColor(name) {
   switch (name) {
+    // Main Taxonomy Categories
     case "Creative Code Frameworks":
       return "pink"
     case "Game Engines and Real-Time 3D":
@@ -31,6 +32,21 @@ export function getColor(name) {
       return "deeppink"
     case "Physical Output and Digital Fabrication":
       return "lightseagreen"
+    
+    // Interaction Taxonomy Categories
+    case "Interaction Types for Interactive Installations":
+      return "coral"
+    case "Physical Interactions":
+      return "crimson"
+    case "Involuntary/Passive":
+      return "darkorange"
+    case "Intentional/Active/ Voluntary":
+      return "forestgreen"
+    case "Wireless Communication":
+      return "dodgerblue"
+    case "Haptic Feedback Devices":
+      return "mediumvioletred"
+    
     default:
       return "#ccc"
   }
