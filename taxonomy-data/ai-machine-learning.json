@@ -1,0 +1,863 @@
+{
+  "name": {
+    "en": "AI/Machine Learning"
+  },
+  "description": "Various topics and tools related to artificial intelligence and machine learning",
+  "tags": [],
+  "links": {
+    "Link": ""
+  },
+  "children": [
+    {
+      "name": {
+        "en": "Content Identification"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Object Recognition"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Body part tracking"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Body Pose Tracking"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  },
+                  "children": [
+                    {
+                      "name": {
+                        "en": "PoseNET"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      }
+                    },
+                    {
+                      "name": {
+                        "en": "Mediapipe"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": {
+                    "en": "Hand Tracking"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  },
+                  "children": [
+                    {
+                      "name": {
+                        "en": "Apple Vision Framework"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": {
+                    "en": "Facial Tracking"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Segmentation"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "OpenCV"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "YOLO"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Data Analytics/Classification"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "t-SNE"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Text Analysis"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Sentiment Analysis"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Audio Classification"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Voice Recognition"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Speech to Text"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Content Creation"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Lip Syncing"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Wav2Lip"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Synthesia"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": "https://www.synthesia.io/"
+              }
+            },
+            {
+              "name": {
+                "en": "Flawless AI"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": "https://www.flawlessai.com/"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Image Animation"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Text To Speech"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Neural Voice Synthesis"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Image Manipulation"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Style Transfer"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "GAN Inversion"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "SuperResolution"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Image Generation"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Text To Image"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Stable Diffusion"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": "https://en.wikipedia.org/wiki/Stable_Diffusion",
+                    "Link B": "https://github.com/Stability-AI/generative-models"
+                  },
+                  "children": [
+                    {
+                      "name": {
+                        "en": "Static Images"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      },
+                      "children": [
+                        {
+                          "name": {
+                            "en": "MidJourney"
+                          },
+                          "description": "",
+                          "tags": [],
+                          "links": {
+                            "Link": ""
+                          }
+                        },
+                        {
+                          "name": {
+                            "en": "DALL-E"
+                          },
+                          "description": "",
+                          "tags": [],
+                          "links": {
+                            "Link": ""
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": {
+                        "en": "Videos and Animation"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      },
+                      "children": [
+                        {
+                          "name": {
+                            "en": "AnimateDiff"
+                          },
+                          "description": "",
+                          "tags": [],
+                          "links": {
+                            "Link": ""
+                          }
+                        },
+                        {
+                          "name": {
+                            "en": "Runway"
+                          },
+                          "description": "",
+                          "tags": [],
+                          "links": {
+                            "Link": ""
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": {
+                        "en": "GUI Tools"
+                      },
+                      "description": "GUI Wrappers and Utilities for various AI Image creation tools",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      },
+                      "children": [
+                        {
+                          "name": {
+                            "en": "Comfy UI"
+                          },
+                          "description": "",
+                          "tags": [],
+                          "links": {
+                            "Link": "https://github.com/comfyanonymous/ComfyUI"
+                          }
+                        },
+                        {
+                          "name": {
+                            "en": "Automatic1111"
+                          },
+                          "description": "",
+                          "tags": [],
+                          "links": {
+                            "Link": "https://github.com/AUTOMATIC1111/stable-diffusion-webui"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "VQGAN"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "CLIP"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Pix2Pix"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "StyleGAN2"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "GAN/DCGAN"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "DeepDream"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Voice Synthesis and Cloning"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Elevenlabs"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "SpeakUnique"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": "https://www.synthesia.io/"
+              }
+            },
+            {
+              "name": {
+                "en": "iOS Personal Voice"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": "https://www.flawlessai.com/"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Music Synthesis and Generation"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "MusicLM"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Magenta"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": "https://www.synthesia.io/"
+              }
+            },
+            {
+              "name": {
+                "en": "Stable Audio"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": "https://www.flawlessai.com/"
+              }
+            },
+            {
+              "name": {
+                "en": "Meta AI Audiocraft"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": "https://www.flawlessai.com/"
+              }
+            },
+            {
+              "name": {
+                "en": "Jukebox"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": "https://www.flawlessai.com/"
+              }
+            },
+            {
+              "name": {
+                "en": "OpenAI MuseNet"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": "https://www.flawlessai.com/"
+              }
+            },
+            {
+              "name": {
+                "en": "MuBu"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": "https://www.flawlessai.com/"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "3D Asset Generation"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Scene Reconstruction"
+              },
+              "description": "See also: Photogrammetry",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "NeRF"
+                  },
+                  "description": "Neural Radiance Fields",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Gaussian Splatting"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "ReconFusion"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Object Creation"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": "https://www.synthesia.io/"
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Stable 3D"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Tools"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Tensorflow"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Jupyter Notebooks"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Runway"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Google Colab"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "PyTorch"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Large Language Models"
+      },
+      "description": "LLM's",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Claude"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Github Copilot"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "ChatGPT"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Google Bard"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Google PaLM"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        }
+      ]
+    }
+  ]
+}

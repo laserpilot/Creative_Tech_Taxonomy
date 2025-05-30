@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Creative Code Frameworks",
+    "filename": "creative-code-frameworks.json",
+    "order": 0
+  },
+  {
+    "name": "Game Engines and Real-Time 3D",
+    "filename": "game-engines-and-real-time-3d.json",
+    "order": 1
+  },
+  {
+    "name": "Web and Networking Tools",
+    "filename": "web-and-networking-tools.json",
+    "order": 2
+  },
+  {
+    "name": "Sensors and Interaction Methods",
+    "filename": "sensors-and-interaction-methods.json",
+    "order": 3
+  },
+  {
+    "name": "Physical Computing",
+    "filename": "physical-computing.json",
+    "order": 4
+  },
+  {
+    "name": "Display Tech and Video",
+    "filename": "display-tech-and-video.json",
+    "order": 5
+  },
+  {
+    "name": "Professional AV Tools",
+    "filename": "professional-av-tools.json",
+    "order": 6
+  },
+  {
+    "name": "AI/Machine Learning",
+    "filename": "ai-machine-learning.json",
+    "order": 7
+  },
+  {
+    "name": "Mobile Technology",
+    "filename": "mobile-technology.json",
+    "order": 8
+  },
+  {
+    "name": "Asset Creation",
+    "filename": "asset-creation.json",
+    "order": 9
+  },
+  {
+    "name": "Physical Output and Digital Fabrication",
+    "filename": "physical-output-and-digital-fabrication.json",
+    "order": 10
+  },
+  {
+    "name": "Uncategorized Tools and Utilities",
+    "filename": "uncategorized-tools-and-utilities.json",
+    "order": 11
+  }
+]

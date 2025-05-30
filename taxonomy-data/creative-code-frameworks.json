@@ -1,0 +1,554 @@
+{
+  "name": {
+    "en": "Creative Code Frameworks",
+    "ja": "プログラム言語とフレームワーク"
+  },
+  "description": "This is a collection of nodes related to the concept of Creative Code Frameworks, or areas of programming languages that are typically considered related to creative coding. Not all of these are strictly \"Frameworks\" but this umbrella term seems to suffice for now.",
+  "tags": [],
+  "links": {
+    "Link": ""
+  },
+  "children": [
+    {
+      "name": {
+        "en": "Language Type",
+        "ja": "言語"
+      },
+      "description": "This is a category that organizes these frameworks",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Node Based/Visual",
+            "ja": "ノードベース"
+          },
+          "description": "Visual programming environments using node-based interfaces for creative coding and real-time performance.",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "TouchDesigner"
+              },
+              "description": "A visual development platform for creating real-time interactive multimedia content. Widely used for installations, VJing, and projection mapping with powerful GPU-accelerated processing.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://derivative.ca/",
+                "Documentation": "https://docs.derivative.ca/",
+                "Community": "https://forum.derivative.ca/"
+              }
+            },
+            {
+              "name": {
+                "en": "Isadora"
+              },
+              "description": "A graphic programming environment for live performance, video art, and interactive media installations. Features real-time video processing and extensive hardware integration capabilities.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://troikatronix.com/",
+                "Documentation": "https://support.troikatronix.com/",
+                "Community": "https://community.troikatronix.com/"
+              }
+            },
+            {
+              "name": {
+                "en": "Cables.gl"
+              },
+              "description": "A browser-based visual programming tool for creating interactive 3D content and animations. Runs entirely in the browser using WebGL with real-time collaboration features.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://cables.gl/",
+                "Documentation": "https://cables.gl/docs",
+                "GitHub": "https://github.com/cables-gl"
+              }
+            },
+            {
+              "name": {
+                "en": "vvvv"
+              },
+              "description": "A hybrid visual/textual live-programming environment for rapid prototyping and development. Designed for handling large media environments with physical interfaces, real-time motion graphics, and interactive installations.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://vvvv.org/",
+                "Documentation": "https://thegraybook.vvvv.org/",
+                "GitHub": "https://github.com/vvvv"
+              }
+            },
+            {
+              "name": {
+                "en": "Vuo"
+              },
+              "description": "A node-based visual programming language for real-time interactive media. Features live coding capabilities and efficient rendering for installations and performances.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://vuo.org/",
+                "Documentation": "https://doc.vuo.org/",
+                "Community": "https://community.vuo.org/"
+              }
+            },
+            {
+              "name": {
+                "en": "Nodebox"
+              },
+              "description": "A node-based software application for creating 2D visuals and animations using algorithmic design. Combines the power of programming with intuitive visual interfaces.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://www.nodebox.net/",
+                "Documentation": "https://www.nodebox.net/node/documentation/",
+                "GitHub": "https://github.com/nodebox"
+              }
+            },
+            {
+              "name": {
+                "en": "nodes.io"
+              },
+              "description": "A browser-based visual programming environment for creating interactive experiences and generative art. Features WebGL support and real-time collaborative editing.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://nodes.io/",
+                "Documentation": "https://nodes.io/docs/",
+                "Examples": "https://nodes.io/gallery/"
+              }
+            },
+            {
+              "name": {
+                "en": "Pure Data(pd)"
+              },
+              "description": "A visual programming language developed for creating interactive computer music and multimedia works. Open-source with extensive community support and real-time capabilities.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://puredata.info/",
+                "Documentation": "https://puredata.info/docs",
+                "GitHub": "https://github.com/pure-data/pure-data"
+              }
+            },
+            {
+              "name": {
+                "en": "Max"
+              },
+              "description": "A visual programming language for music and multimedia developed by Cycling '74. Industry standard for interactive music, audio processing, and real-time performance systems.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://cycling74.com/products/max",
+                "Documentation": "https://docs.cycling74.com/",
+                "Community": "https://cycling74.com/forums"
+              }
+            },
+            {
+              "name": {
+                "en": "Notch"
+              },
+              "description": "A node-based authoring tool for real-time graphics and effects. Designed for live events, broadcast, and interactive installations with GPU-accelerated rendering.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://www.notch.one/",
+                "Documentation": "https://www.notch.one/learn/",
+                "Community": "https://discord.gg/notch"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "C++"
+          },
+          "description": "High-performance C++ frameworks for creative coding offering direct hardware access and optimal performance for real-time applications.",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "OpenFrameworks"
+              },
+              "description": "An open-source C++ toolkit for creative coding with a focus on simplicity and ease of use. Provides a unified API for graphics, audio, video, and hardware interfacing.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://openframeworks.cc/",
+                "Documentation": "https://openframeworks.cc/documentation/",
+                "GitHub": "https://github.com/openframeworks/openFrameworks"
+              }
+            },
+            {
+              "name": {
+                "en": "Cinder"
+              },
+              "description": "A C++ library for programming graphics, audio, video, networking, image processing and computational geometry. Designed for professional-quality creative and computational projects.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://libcinder.org/",
+                "Documentation": "https://libcinder.org/docs/",
+                "GitHub": "https://github.com/cinder/Cinder"
+              }
+            },
+            {
+              "name": {
+                "en": "Nap Framework"
+              },
+              "description": "A real-time engine built for creative applications including installations, performances, and audio-visual projects. Features high-performance rendering and extensive hardware integration.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://www.napframework.com/",
+                "Documentation": "https://docs.napframework.com/",
+                "GitHub": "https://github.com/napframework/nap"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Javascript"
+          },
+          "description": "Web-based JavaScript libraries and frameworks for creative coding that run in browsers with WebGL support.",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "p5.js"
+              },
+              "description": "A JavaScript library that makes coding accessible for artists, designers, educators, and beginners. Built on the philosophy of Processing with web-first approach.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://p5js.org/",
+                "Documentation": "https://p5js.org/reference/",
+                "GitHub": "https://github.com/processing/p5.js"
+              }
+            },
+            {
+              "name": {
+                "en": "three.js"
+              },
+              "description": "A cross-browser JavaScript library for creating and displaying animated 3D computer graphics in web browsers using WebGL. Industry standard for web-based 3D content.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://threejs.org/",
+                "Documentation": "https://threejs.org/docs/",
+                "GitHub": "https://github.com/mrdoob/three.js"
+              }
+            },
+            {
+              "name": {
+                "en": "paper.js"
+              },
+              "description": "A vector graphics scripting framework that runs on top of HTML5 Canvas. Offers clean Scene Graph/DOM and extensive Path functionality for 2D graphics.",
+              "tags": [],
+              "links": {
+                "Official Website": "http://paperjs.org/",
+                "Documentation": "http://paperjs.org/reference/",
+                "GitHub": "https://github.com/paperjs/paper.js"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Kotlin"
+          },
+          "description": "Modern JVM language frameworks for creative coding with strong type safety and concise syntax.",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "OPENRNDR"
+              },
+              "description": "A Kotlin/JVM library for creative coding, real-time and interactive graphics applications and animations. Features modern APIs and comprehensive documentation.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://openrndr.org/",
+                "Documentation": "https://guide.openrndr.org/",
+                "GitHub": "https://github.com/openrndr/openrndr"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Ruby"
+          },
+          "description": "Ruby-based creative coding frameworks emphasizing simplicity and expressiveness.",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Visor"
+              },
+              "description": "A Ruby library for creative coding and generative art. Provides intuitive APIs for drawing, animation, and interactive graphics with a focus on ease of use.",
+              "tags": [],
+              "links": {
+                "GitHub": "https://github.com/visor-graphics/visor",
+                "Documentation": "https://visor-graphics.github.io/visor/"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Rust"
+          },
+          "description": "Memory-safe system programming language frameworks for high-performance creative applications.",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Nannou"
+              },
+              "description": "A creative coding framework for Rust that aims to make it easy for artists to express themselves with simple, fast, reliable code. Focuses on graphics, audio, and interactive applications.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://nannou.cc/",
+                "Documentation": "https://guide.nannou.cc/",
+                "GitHub": "https://github.com/nannou-org/nannou"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Python"
+          },
+          "description": "Python-based creative coding frameworks leveraging the language's simplicity and extensive ecosystem.",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Processing.py"
+              },
+              "description": "Python mode for Processing that combines the ease of Python with the power of the Processing graphics library. Ideal for teaching and rapid prototyping of visual ideas.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://py.processing.org/",
+                "Documentation": "https://py.processing.org/reference/",
+                "GitHub": "https://github.com/jdf/processing.py"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Java"
+          },
+          "description": "Java-based creative coding environments offering cross-platform compatibility and extensive library support.",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Processing"
+              },
+              "description": "A flexible software sketchbook and language for learning to code within the context of visual arts. The original Processing environment that inspired many other creative coding frameworks.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://processing.org/",
+                "Documentation": "https://processing.org/reference/",
+                "GitHub": "https://github.com/processing/processing"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Low Level Graphics"
+          },
+          "description": "Low-level graphics APIs providing direct hardware access for maximum performance and control in creative applications.",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Metal"
+              },
+              "description": "Apple's low-level, low-overhead hardware-accelerated 3D graphics and compute API. Provides near-direct access to GPU for iOS, macOS, and tvOS applications.",
+              "tags": [],
+              "links": {
+                "Official Documentation": "https://developer.apple.com/metal/",
+                "Programming Guide": "https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/"
+              }
+            },
+            {
+              "name": {
+                "en": "DirectX"
+              },
+              "description": "Microsoft's collection of APIs for handling multimedia tasks, especially game programming and video on Windows platforms. Includes Direct3D for 3D graphics rendering.",
+              "tags": [],
+              "links": {
+                "Official Documentation": "https://docs.microsoft.com/en-us/windows/win32/directx",
+                "DirectX Developer Blog": "https://devblogs.microsoft.com/directx/"
+              }
+            },
+            {
+              "name": {
+                "en": "OpenGL"
+              },
+              "description": "Cross-platform graphics API for rendering 2D and 3D vector graphics. Industry standard for graphics programming across multiple platforms and programming languages.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://www.opengl.org/",
+                "Documentation": "https://docs.gl/",
+                "Registry": "https://registry.khronos.org/OpenGL/"
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "WebGL"
+                  },
+                  "description": "JavaScript API for rendering interactive 2D and 3D graphics within web browsers without plugins. Based on OpenGL ES and enables GPU-accelerated graphics in web applications.",
+                  "tags": [],
+                  "links": {
+                    "Official Specification": "https://www.khronos.org/webgl/",
+                    "MDN Documentation": "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API",
+                    "WebGL Fundamentals": "https://webglfundamentals.org/"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Vulkan"
+              },
+              "description": "Low-overhead, cross-platform 3D graphics and compute API. Provides high-efficiency access to modern GPUs for applications requiring maximum performance and control.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://www.vulkan.org/",
+                "Documentation": "https://docs.vulkan.org/",
+                "Registry": "https://registry.khronos.org/vulkan/"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Legacy/Deprecated Tools"
+          },
+          "description": "Historical tools that shaped creative coding but are no longer actively developed or supported.",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Flash"
+              },
+              "description": "Adobe's multimedia software platform for creating vector graphics, animation, and interactive content. Widely used for web applications and games before being discontinued in 2020.",
+              "tags": [],
+              "links": {
+                "Wikipedia": "https://en.wikipedia.org/wiki/Adobe_Flash",
+                "Flash Archive": "https://flashmuseum.org/"
+              }
+            },
+            {
+              "name": {
+                "en": "Macromedia Director"
+              },
+              "description": "Multimedia authoring platform for creating interactive kiosks, CD-ROMs, and early web content. Pioneer in interactive multimedia development before Flash became dominant.",
+              "tags": [],
+              "links": {
+                "Wikipedia": "https://en.wikipedia.org/wiki/Adobe_Director",
+                "Director Archive": "https://archive.org/details/software?query=macromedia+director"
+              }
+            },
+            {
+              "name": {
+                "en": "Quartz Composer"
+              },
+              "description": "Apple's node-based visual programming language for processing and rendering graphical data. Used for motion graphics, visual effects, and interactive installations before being deprecated.",
+              "tags": [],
+              "links": {
+                "Wikipedia": "https://en.wikipedia.org/wiki/Quartz_Composer",
+                "Archive Documentation": "https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/QuartzComposerUserGuide/"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Use Cases"
+      },
+      "description": "Different application areas and methodologies for creative coding frameworks.",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Livecoding"
+          },
+          "description": "Real-time programming as a performance practice where code is written and modified during live execution. Used in music, visuals, and interactive performances.",
+          "tags": [],
+          "links": {
+            "TOPLAP": "https://toplap.org/",
+            "Awesome Livecoding": "https://github.com/toplap/awesome-livecoding"
+          }
+        },
+        {
+          "name": {
+            "en": "Interactive/Physical sensor integration"
+          },
+          "description": "Connecting physical sensors and input devices to creative coding applications for responsive installations and interactive experiences.",
+          "tags": [],
+          "links": {
+            "Wikipedia": "https://en.wikipedia.org/wiki/Sensor"
+          }
+        },
+        {
+          "name": {
+            "en": "Data Visualization"
+          },
+          "description": "Creating visual representations of data and information using creative coding techniques for analysis, communication, and artistic expression.",
+          "tags": [],
+          "links": {
+            "Wikipedia": "https://en.wikipedia.org/wiki/Data_visualization"
+          }
+        },
+        {
+          "name": {
+            "en": "Multi Screen Custom Installations"
+          },
+          "description": "Large-scale installations using multiple displays or projection surfaces with synchronized content for immersive experiences and architectural integration.",
+          "tags": [],
+          "links": {
+            "Wikipedia": "https://en.wikipedia.org/wiki/Video_wall"
+          }
+        },
+        {
+          "name": {
+            "en": "Generative Visuals"
+          },
+          "description": "Creating visual content through algorithmic processes and rule-based systems for art, animation, and dynamic graphics that evolve over time.",
+          "tags": [],
+          "links": {
+            "Wikipedia": "https://en.wikipedia.org/wiki/Generative_art"
+          }
+        }
+      ]
+    }
+  ]
+}
