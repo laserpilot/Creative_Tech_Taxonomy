@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <script type="module" src="./js/main.js" defer="defer"></script>
     <script type="module" src="./js/taxonomy_tree_visualizer.js" defer="defer"></script>
+    <script type="module" src="./js/interaction_taxonomy_visualizer.js" defer="defer"></script>
   </head>
 
   <!-- Google tag (gtag.js) -->
@@ -27,7 +28,11 @@
         <div class="hideSmallWidth tabMenu">
           <label>
             <input name="tab" type="radio" value="tree" checked />
-            <em>Tree View</em>
+            <em>Main Taxonomy</em>
+          </label>
+          <label>
+            <input name="tab" type="radio" value="interaction" />
+            <em>Interaction Taxonomy</em>
           </label>
           <label>
             <input name="tab" type="radio" value="editor" />
@@ -87,12 +92,44 @@
             <span>Reset positon</span>
           </button>
         </li>
+        <li class="">
+          <button id="toggleEditMode">
+            <i class="fas fa-edit"></i>
+            <span>Edit Mode</span>
+          </button>
+        </li>
+        <li class="" id="save-edits-container" style="display: none;">
+          <button id="saveEdits">
+            <i class="fas fa-save"></i>
+            <span>Save Edits</span>
+          </button>
+        </li>
       </ul>
     </menu>
 
     <div id="container">
       <div id="visualizer" class=""></div>
+      <div id="interaction-visualizer" class="" style="display: none;"></div>
       <div id="editor" class=""></div>
+      <div id="edit-mode-instructions" class="edit-mode-instructions" style="display: none;">
+        <p><strong>Edit Mode Active</strong></p>
+        <div class="instruction">
+          <span class="icon"></span>
+          <span>Click on a <strong>+</strong> to add a new child node</span>
+        </div>
+        <div class="instruction">
+          <span class="icon toggle"></span>
+          <span>Click on a <strong>circle</strong> to toggle children or add a new child if none exist</span>
+        </div>
+        <div class="instruction">
+          <span class="icon edit"></span>
+          <span>Click on a <strong>label</strong> to edit a node</span>
+        </div>
+        <div class="instruction">
+          <span class="icon shift"></span>
+          <span>Hold <strong>Shift+Click</strong> to expand all children of a node</span>
+        </div>
+      </div>
     </div>
 
     <footer>

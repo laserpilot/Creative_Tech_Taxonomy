@@ -1,0 +1,1434 @@
+{
+  "name": {
+    "en": "Sensors and Interaction Methods"
+  },
+  "description": "Different methods and categories of sensing people and allowing interactions with digital interfaces and experiences. This is heavily related to the optical tracking and Physical computing categories as well.",
+  "tags": [],
+  "links": {
+    "Link": "https://en.wikipedia.org/wiki/Category:Sensors"
+  },
+  "children": [
+    {
+      "name": {
+        "en": "Optical Tracking"
+      },
+      "description": "Tools and concepts related to optical tracking elements that may appear in various creative technology and experiential projects. See also the topic of Cameras in the Sensor/Interaction method group",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Cameras"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Types"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Video Cam"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  },
+                  "children": [
+                    {
+                      "name": {
+                        "en": "Action Cameras"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      },
+                      "children": [
+                        {
+                          "name": {
+                            "en": "GoPro Hero"
+                          },
+                          "description": "",
+                          "tags": [],
+                          "links": {
+                            "Link": ""
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": {
+                        "en": "Smartphone Camera"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      }
+                    },
+                    {
+                      "name": {
+                        "en": "Professional Grade Camcorder"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      }
+                    },
+                    {
+                      "name": {
+                        "en": "Broadcast"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      }
+                    },
+                    {
+                      "name": {
+                        "en": "Security Cameras"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": {
+                    "en": "Webcam"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Slow Motion/High Speed Cam"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "IP Cameras"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Infrared"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  },
+                  "children": [
+                    {
+                      "name": {
+                        "en": "Normal"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      }
+                    },
+                    {
+                      "name": {
+                        "en": "Depth Cameras"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      },
+                      "children": [
+                        {
+                          "name": {
+                            "en": "Realsense"
+                          },
+                          "description": "",
+                          "tags": [],
+                          "links": {
+                            "Link": ""
+                          }
+                        },
+                        {
+                          "name": {
+                            "en": "Kinect"
+                          },
+                          "description": "",
+                          "tags": [],
+                          "links": {
+                            "Link": ""
+                          }
+                        },
+                        {
+                          "name": {
+                            "en": "Orbbec"
+                          },
+                          "description": "",
+                          "tags": [],
+                          "links": {
+                            "Link": ""
+                          }
+                        },
+                        {
+                          "name": {
+                            "en": "Ensenso"
+                          },
+                          "description": "",
+                          "tags": [],
+                          "links": {
+                            "Link": ""
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": {
+                        "en": "Thermal Cameras"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      },
+                      "children": [
+                        {
+                          "name": {
+                            "en": "FLIR"
+                          },
+                          "description": "",
+                          "tags": [],
+                          "links": {
+                            "Link": ""
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": {
+                    "en": "DSLR"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Mirrorless"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Stereo RGB"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  },
+                  "children": [
+                    {
+                      "name": {
+                        "en": "Stereolab Zed Camera"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Computer Vision"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "For More - See AI/ML Section"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Gesture Control"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Eye Tracking"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Tobii Eye Tracker"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Body Tracking"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "OpenCV"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Techniques"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Contour Detection"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Optical Flow"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Blob Tracking"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Background Subtraction"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Frame Differencing"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Related Topics"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Antilatency/Low Latency"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Virtual Production/XR"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "MoCap Rigs/Systems"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  },
+                  "children": [
+                    {
+                      "name": {
+                        "en": "Camera Based"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      },
+                      "children": [
+                        {
+                          "name": {
+                            "en": "Mo-Sys"
+                          },
+                          "description": "",
+                          "tags": [],
+                          "links": {
+                            "Link": ""
+                          }
+                        },
+                        {
+                          "name": {
+                            "en": "RedSpy"
+                          },
+                          "description": "",
+                          "tags": [],
+                          "links": {
+                            "Link": ""
+                          }
+                        },
+                        {
+                          "name": {
+                            "en": "VICON"
+                          },
+                          "description": "",
+                          "tags": [],
+                          "links": {
+                            "Link": ""
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": {
+                        "en": "IMU Based"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      },
+                      "children": [
+                        {
+                          "name": {
+                            "en": "Rokoko"
+                          },
+                          "description": "",
+                          "tags": [],
+                          "links": {
+                            "Link": ""
+                          }
+                        },
+                        {
+                          "name": {
+                            "en": "Xsens"
+                          },
+                          "description": "",
+                          "tags": [],
+                          "links": {
+                            "Link": ""
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": {
+                    "en": "Other Tracking Systems"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  },
+                  "children": [
+                    {
+                      "name": {
+                        "en": "OptiTrack"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      }
+                    },
+                    {
+                      "name": {
+                        "en": "Blacktrax"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Touch/Hands"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Leap Motion"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Sensel"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Capacitive"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Touchscreens"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Projected Capacitance (PCAP)"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Ideum"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "IR"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Shadowsense"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "LIDAR (for Large scale or LED)"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Velodyne"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Ouster"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Bluetooth"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Beacons"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Position/Motion Sensing"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "LIDAR"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Velodyne Lidar VLP Series"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Ouster"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Hokuyu UST Series"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Rotary Encoder"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "GPS"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Infrared"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "PIR"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Distance Sensor"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Ultrasonic Distance Sensor"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Ultra Wide Band (UWB)"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Apple Airtag"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Pozyx"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Accelerometer/Gyroscope"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "LP-Research LPMS Series"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Wit Motion"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "mmWave"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": "https://en.wikipedia.org/wiki/Mmwave_sensing"
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Other"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Other Input Types"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Pressure Sensors"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Direct Force Pressure"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  },
+                  "children": [
+                    {
+                      "name": {
+                        "en": "Load Cell"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      }
+                    },
+                    {
+                      "name": {
+                        "en": "Force Sensing Resistor (FSR)"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      }
+                    },
+                    {
+                      "name": {
+                        "en": "Sensel"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": {
+                    "en": "Barometric/Atmospheric"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Magnetometer"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Water Detection"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Humidity"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Bend Sensors"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Biometric"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Heart Rate"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "ECG (Electrical)"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "PPG (Optical)"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Breath"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "XeThru"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Galvanic Skin Response"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Electromyography"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Muscle Activity Sensors (EMG)"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Buttons/Knobs/Sliders"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Linear"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Potentiometer"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Magnetic"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Hall Effect Sensor"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Reed Switch"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Rotary"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Potentiometer"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Rotary Encoder"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Momentary"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Arcade Button"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Toggle"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Switch"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "RFID"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "NFC"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Low Frequency (LF)"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "High Frequency (HF)"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Ultra High Frequency (UHF)"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Capacitive Sensors"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Light Sensors"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Photocell"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Temperature Sensors"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Thermistor"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Thermocouple"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Sound/Vibration"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Microphones"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Piezo"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

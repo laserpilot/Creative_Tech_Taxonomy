@@ -4,10 +4,12 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "npm run build:taxonomy && vite",
+    "build": "npm run build:taxonomy && vite build",
     "preview": "vite preview",
-    "format": "prettier --write \"src/**/*.{js,css,scss,html}\""
+    "format": "prettier --write \"src/**/*.{js,css,scss,html}\"",
+    "build:taxonomy": "python3 build_taxonomy.py",
+    "extract:categories": "python3 extract_categories.py"
   },
   "devDependencies": {
     "prettier": "^3.1.1",

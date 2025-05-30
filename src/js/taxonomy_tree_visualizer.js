@@ -5,7 +5,7 @@ import "jsoneditor/dist/jsoneditor.min.css"
 import { loadDefaultJapaneseParser } from "budoux"
 import { downloadJSON } from "./handle_interactions_panel.js"
 import { getColor, defaultColor, defaultBackgroundColor } from "./color_setting.js"
-import { showModal } from "./modal.js"
+import { showModal, showEditModal, showAddChildModal } from "./modal.js"
 
 // use budoux to parse japanese text
 const textParser = loadDefaultJapaneseParser()
@@ -13,6 +13,7 @@ const textParser = loadDefaultJapaneseParser()
 let currentLanguage = "en"
 let currentJson = null
 let linebreakThreshold = 20
+let editMode = false
 
 // Get window width and height
 // TODO: resize event
@@ -109,10 +110,11 @@ export function createVisualization() {
   let dy = fontSize * linebreakThreshold
 
   // Define the tree layout and the shape for links.
-  const root = d3.hierarchy(data)
-  root.dx = dx
-  root.dy = dy
-  const tree = d3.tree().nodeSize([root.dx, root.dy])
+  // Make root globally accessible for saving/modifying the JSON
+  window.root = d3.hierarchy(data)
+  window.root.dx = dx
+  window.root.dy = dy
+  const tree = d3.tree().nodeSize([window.root.dx, window.root.dy])
 
   const diagonal = d3
     .linkHorizontal()
@@ -185,10 +187,10 @@ export function createVisualization() {
   /*                          draw each node and update                         */
   /* -------------------------------------------------------------------------- */
   function update(event, source) {
-    const nodes = root.descendants().reverse()
-    const links = root.links()
+    const nodes = window.root.descendants().reverse()
+    const links = window.root.links()
     // Compute the new tree layout.
-    tree(root)
+    tree(window.root)
 
     const transition = svg
       .transition()
@@ -216,6 +218,18 @@ export function createVisualization() {
             .attr("x", d._children ? -fontSize : fontSize)
             .text(line)
         })
+        
+        // Add edit icon if in edit mode
+        if (editMode) {
+          d3.select(this)
+            .append("tspan")
+            .attr("dy", 0)
+            .attr("x", (d.data.label.length > 1 ? 
+                  d._children ? -fontSize : fontSize : 
+                  d._children ? -fontSize - 20 : fontSize + d3.select(this).node().getBBox().width + 5))
+            .attr("fill", "#2196f3")
+            .text(" ✎")
+        }
       })
       .attr("y", function (d) {
         if (d.data.label.length === 1) {
@@ -225,12 +239,16 @@ export function createVisualization() {
         }
       })
       .on("click", (event, d) => {
-        showModal(d)
+        if (editMode) {
+          showEditModal(d)
+        } else {
+          showModal(d)
+        }
         event.stopPropagation()
       })
 
     // add warping box around text node
-    let rectPadding = 10
+    let rectPadding = 20
     nodeEnter
       .append("rect")
       .attr("cursor", "help")
@@ -246,37 +264,91 @@ export function createVisualization() {
       .attr("y", function (d) {
         return -(d3.select(this.parentNode).select("text").node().getBBox().height + rectPadding) / 2
       })
-      .attr("fill", (d) => d.data.color)
+      .attr("fill", (d) => editMode ? "#2196f3" : d.data.color)
       .attr("opacity", (d) => (d._children ? 0 : 0.5))
+      .attr("stroke", (d) => editMode ? "#0b7dda" : "none")
+      .attr("stroke-width", (d) => editMode ? 1 : 0)
+      .attr("stroke-dasharray", (d) => editMode ? "3,3" : "none")
       .lower()
 
     nodeEnter
       .append("circle")
-      .attr("cursor", (d) => (d._children ? "pointer" : "default"))
+      .attr("cursor", (d) => ((d._children || editMode) ? "pointer" : "default"))
       .attr("r", (d) => (d._children ? circleRadius : circleRadius / 1.4))
-      .attr("fill", (d) => (d._children ? d.data.color : defaultBackgroundColor))
-      .attr("stroke", (d) => d.data.color)
+      .attr("fill", (d) => {
+        if (editMode) return "rgba(255, 100, 100, 0.5)"
+        return (d._children ? d.data.color : defaultBackgroundColor)
+      })
+      .attr("stroke", (d) => editMode ? "rgba(255, 50, 50, 0.8)" : d.data.color)
       .attr("stroke-width", strokeWidth)
       .on("click", (event, d) => {
         event.stopPropagation()
-        // Check if the 'Shift' key is pressed
-        if (event.shiftKey) {
-          // Expand all child nodes
-          if (d._children) {
-            d.children = d._children // Set children to _children
-            d._children.forEach(handleExpand)
+        
+        if (editMode) {
+          // In edit mode
+          if (event.shiftKey) {
+            // Expand all child nodes with Shift key (same as normal mode)
+            if (d._children) {
+              d.children = d._children
+              d._children.forEach(handleExpand)
+              update(event, d)
+            }
+            focusNode(d.parent)
+          } else if (d._children || d.children) {
+            // If node has children (collapsed or expanded), toggle them
+            d.children = d.children ? null : d._children
             update(event, d)
+            focusNode(d)
+          } else {
+            // Node has no children, show add child modal
+            showAddChildModal(d)
           }
-          focusNode(d.parent)
         } else {
-          // Toggle the children and toggle filled/hollow on click
-          d.children = d.children ? null : d._children
-          update(event, d)
-          focusNode(d)
+          // Normal behavior
+          // Check if the 'Shift' key is pressed
+          if (event.shiftKey) {
+            // Expand all child nodes
+            if (d._children) {
+              d.children = d._children // Set children to _children
+              d._children.forEach(handleExpand)
+              update(event, d)
+            }
+            focusNode(d.parent)
+          } else {
+            // Toggle the children and toggle filled/hollow on click
+            d.children = d.children ? null : d._children
+            update(event, d)
+            focusNode(d)
+          }
         }
       })
-      .on("mouseover", (event, d) => (d._children ? handlerChangeScale(event.target, 1.5) : null))
-      .on("mouseout", (event, d) => (d._children ? handlerChangeScale(event.target, 1) : null))
+      .on("mouseover", (event, d) => ((d._children || editMode) ? handlerChangeScale(event.target, 1.5) : null))
+      .on("mouseout", (event, d) => ((d._children || editMode) ? handlerChangeScale(event.target, 1) : null))
+      
+    // Add plus sign to circles in edit mode
+    nodeEnter
+      .append("text")
+      .attr("class", "add-child-icon")
+      .attr("text-anchor", "middle")
+      .attr("dominant-baseline", "central")
+      .attr("font-size", fontSize)
+      .attr("font-weight", "bold")
+      .attr("fill", "white")
+      .attr("pointer-events", (d) => editMode ? "all" : "none") // Only clickable in edit mode
+      .attr("cursor", "pointer")
+      .attr("opacity", (d) => editMode ? 1 : 0)
+      .text("+")
+      .on("click", (event, d) => {
+        if (editMode) {
+          // Show add child modal
+          event.stopPropagation()
+          import("./modal.js").then(modal => {
+            modal.showAddChildModal(d)
+          })
+        }
+      })
+      .on("mouseover", (event) => editMode ? handlerChangeScale(event.target, 1.5) : null)
+      .on("mouseout", (event) => editMode ? handlerChangeScale(event.target, 1) : null)
 
     // shadow effect node
     nodeEnter
@@ -294,6 +366,12 @@ export function createVisualization() {
       .attr("transform", (d) => `translate(${d.y},${d.x})`)
       .attr("fill-opacity", 1)
       .attr("stroke-opacity", 1)
+    
+    // Update plus icons for edit mode changes
+    node.merge(nodeEnter)
+      .select(".add-child-icon")
+      .attr("pointer-events", (d) => editMode ? "all" : "none")
+      .attr("opacity", (d) => editMode ? 1 : 0)
 
     // Transition exiting nodes to the parent's new position.
     const nodeExit = node
@@ -347,27 +425,27 @@ export function createVisualization() {
   /* -------------------------------------------------------------------------- */
   // Do the first update to the initial configuration of the tree — where a number of nodes
   // are open
-  root.x0 = windowWidth / 2
-  root.y0 = windowHeight / 2
-  root.descendants().forEach((d, i) => {
+  window.root.x0 = windowWidth / 2
+  window.root.y0 = windowHeight / 2
+  window.root.descendants().forEach((d, i) => {
     d.id = i
     d._children = d.children
   })
 
   // close all nodes
-  handleCollapse(root)
-  update(null, root)
+  handleCollapse(window.root)
+  update(null, window.root)
 
   // Append the svg object to container
   visualizer.append(parentSvg.node())
 
   // focus on the root node
-  focusNode(root)
+  focusNode(window.root)
 
   setTimeout(() => {
     // Collapse after the second level
-    root.children = root._children
-    update(null, root)
+    window.root.children = window.root._children
+    update(null, window.root)
   }, 1000)
 
   /* -------------------------------------------------------------------------- */
@@ -375,25 +453,25 @@ export function createVisualization() {
   /* -------------------------------------------------------------------------- */
 
   document.getElementById("reset").addEventListener("click", () => {
-    focusNode(root)
+    focusNode(window.root)
   })
 
   document.getElementById("allExpand").addEventListener("click", () => {
-    handleExpand(root)
-    update(null, root)
-    focusNode(root)
+    handleExpand(window.root)
+    update(null, window.root)
+    focusNode(window.root)
   })
 
   document.getElementById("allCollapse").addEventListener("click", () => {
-    root.x0 = dy / 2
-    root.y0 = 0
-    root.descendants().forEach((d, i) => {
+    window.root.x0 = dy / 2
+    window.root.y0 = 0
+    window.root.descendants().forEach((d, i) => {
       d.id = i
       d._children = d.children
     })
-    root.children.forEach(handleCollapse)
-    update(null, root)
-    focusNode(root)
+    window.root.children.forEach(handleCollapse)
+    update(null, window.root)
+    focusNode(window.root)
   })
 }
 
@@ -421,12 +499,162 @@ document.getElementById("languageSelect").addEventListener("change", function ()
   currentLanguage = selectedLanguage
   console.log(`Language changed to ${currentLanguage}`)
   refreshVisualize()
+  
+  // Also update interaction taxonomy language
+  import("./interaction_taxonomy_visualizer.js").then(module => {
+    module.updateInteractionLanguage(selectedLanguage)
+  })
+})
+
+// handle edit mode toggle
+document.getElementById("toggleEditMode").addEventListener("click", function() {
+  editMode = !editMode
+  const button = document.getElementById("toggleEditMode")
+  const instructions = document.getElementById("edit-mode-instructions")
+  const saveEditsContainer = document.getElementById("save-edits-container")
+  
+  if (editMode) {
+    button.classList.add("active")
+    instructions.style.display = "block"
+    saveEditsContainer.style.display = "block"
+    console.log("Edit mode enabled")
+  } else {
+    button.classList.remove("active")
+    instructions.style.display = "none"
+    saveEditsContainer.style.display = "none"
+    console.log("Edit mode disabled")
+  }
+  refreshVisualize()
+  
+  // Also update interaction taxonomy edit mode
+  import("./interaction_taxonomy_visualizer.js").then(module => {
+    module.updateInteractionEditMode(editMode)
+  })
+})
+
+// handle save edits button
+document.getElementById("saveEdits").addEventListener("click", function() {
+  // Ensure currentJson is updated with the latest tree data
+  updateCurrentJson()
+  
+  // Get the complete JSON structure
+  const exportJson = structuredClone(currentJson)
+  
+  // Create a file name with date stamp
+  const now = new Date()
+  const dateStr = `${now.getFullYear()}-${(now.getMonth()+1).toString().padStart(2, '0')}-${now.getDate().toString().padStart(2, '0')}`
+  const filename = `Creative_Tech_Taxonomy_data_${dateStr}.json`
+  
+  // Convert to pretty JSON string
+  const jsonStr = JSON.stringify(exportJson, null, 2)
+  
+  // Create a download link
+  const blob = new Blob([jsonStr], { type: 'application/json' })
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url
+  a.download = filename
+  document.body.appendChild(a)
+  a.click()
+  
+  // Show feedback notification
+  const notification = document.createElement('div')
+  notification.className = 'notification'
+  notification.textContent = 'JSON file saved with all changes!'
+  document.body.appendChild(notification)
+  
+  // Auto remove notification after 3 seconds
+  setTimeout(() => {
+    notification.classList.add('fade-out')
+    setTimeout(() => notification.remove(), 500)
+  }, 3000)
+  
+  // Clean up
+  setTimeout(() => {
+    document.body.removeChild(a)
+    URL.revokeObjectURL(url)
+  }, 0)
 })
 
 // Refresh the visualization
-const refreshVisualize = () => {
+export const refreshVisualize = () => {
   visualizer.innerHTML = ""
   createVisualization()
+}
+
+// Refresh with hierarchy sync - for cases where we want to sync d3 hierarchy changes back to JSON first
+export const refreshVisualizeWithSync = () => {
+  updateCurrentJson()
+  visualizer.innerHTML = ""
+  createVisualization()
+}
+
+// Update the currentJson from the root hierarchy
+// Get the current JSON data
+export const getCurrentJson = () => {
+  return currentJson
+}
+
+export const updateCurrentJson = () => {
+  if (window.root) {
+    // We need to convert the d3 hierarchy back to plain JSON
+    function restoreOriginalFormat(node) {
+      // Create a new node object with proper multilingual structure
+      const jsonNode = {}
+      
+      // Handle name - restore multilingual format
+      if (typeof node.data.name === 'string') {
+        // If it was converted to a string, restore object format
+        jsonNode.name = {
+          en: node.data.name
+        }
+      } else if (typeof node.data.name === 'object') {
+        // Original multilingual format is preserved
+        jsonNode.name = node.data.name
+      }
+      
+      // Handle description - restore multilingual format
+      if (typeof node.data.description === 'string') {
+        // If it was converted to a string, restore object format
+        jsonNode.description = {
+          en: node.data.description
+        }
+      } else if (typeof node.data.description === 'object') {
+        // Original multilingual format is preserved
+        jsonNode.description = node.data.description
+      }
+      
+      // Copy other properties
+      jsonNode.tags = node.data.tags || []
+      jsonNode.links = node.data.links || {}
+      
+      // Handle children recursively
+      if (node.children || node._children) {
+        jsonNode.children = []
+        
+        // Process visible children
+        if (node.children) {
+          node.children.forEach(child => {
+            jsonNode.children.push(restoreOriginalFormat(child))
+          })
+        }
+        
+        // Process collapsed children
+        if (node._children && !node.children) {
+          node._children.forEach(child => {
+            jsonNode.children.push(restoreOriginalFormat(child))
+          })
+        }
+      }
+      
+      return jsonNode
+    }
+    
+    // Convert the hierarchy back to original JSON format
+    currentJson = restoreOriginalFormat(window.root)
+    console.log("Updated currentJson with properly formatted data")
+    console.log("Current JSON after update:", currentJson)
+  }
 }
 
 /* -------------------------------------------------------------------------- */

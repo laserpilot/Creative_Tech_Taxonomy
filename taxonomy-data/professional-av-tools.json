@@ -1,0 +1,938 @@
+{
+  "name": {
+    "en": "Professional AV Tools"
+  },
+  "description": "A large category that outlines concepts and tools related to professional grade (and some consumer grade) audiovisual hardware and software. Typically things used in large productions, stage shows, and installations",
+  "tags": [],
+  "links": {
+    "Link": ""
+  },
+  "children": [
+    {
+      "name": {
+        "en": "Video"
+      },
+      "description": "See Display Tech and Video Category",
+      "tags": [],
+      "links": {
+        "Link": ""
+      }
+    },
+    {
+      "name": {
+        "en": "Audio"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Input"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Microphones"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Dynamic"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  },
+                  "children": [
+                    {
+                      "name": {
+                        "en": "Regular Vocal Mic"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      }
+                    },
+                    {
+                      "name": {
+                        "en": "Shotgun"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      }
+                    },
+                    {
+                      "name": {
+                        "en": "Ambisonic"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": {
+                    "en": "Condensor"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  },
+                  "children": [
+                    {
+                      "name": {
+                        "en": "Regular Vocal Mic"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      }
+                    },
+                    {
+                      "name": {
+                        "en": "Shotgun"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      }
+                    },
+                    {
+                      "name": {
+                        "en": "Ambisonic"
+                      },
+                      "description": "",
+                      "tags": [],
+                      "links": {
+                        "Link": ""
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": {
+                    "en": "Ribbon"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Synthesizers"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Pickups"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Piezo"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Transducer"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Music Software"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Ableton"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "See Asset Creation"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Timecode"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "SMTPE LTC"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Output"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Amplifiers"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Spatial"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Directional"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Binaural"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Surround"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Wave Field Synthesis"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "PA Systems"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Signal Processors"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Compressors"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Limiters"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Equalizers"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Reverb"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Headphones"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Transducer"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Buttkicker Subwoofer"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Dayton Audio"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Communication Protocols"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Dante"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "OSC"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Digital/Analog Conversion"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "S/PIDF"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Related Concepts"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Lights"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Lighting Consoles"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "GrandMA"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "ETC"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Lighting Controllers"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Pro"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Advatek"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Enttec"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Madrix"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Falcon"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "DIY"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Teensy"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Raspberry Pi"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Mapping & Content Software"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Madrix"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "ELM"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "TouchDesigner"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Communication Protocols"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "DMX"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "ArtNet / sACN"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "DDB"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Lasers"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/laser-projectors"
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Laser Control"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Pangolin Quickshow"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "ILDA"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "MadMapper MadLaser"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Computers"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Operating Systems"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Mac"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Linux"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Windows"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Graphics Cards"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Special FX"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Fog Machine"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Haze Machine"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Mobile Devices"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "iOS"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Android"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Electrical and Safety"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      }
+    },
+    {
+      "name": {
+        "en": "Utility/Management Systems"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Crestron"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Extron"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        }
+      ]
+    }
+  ]
+}

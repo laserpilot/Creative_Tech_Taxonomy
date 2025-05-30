@@ -1,0 +1,464 @@
+{
+  "name": {
+    "en": "Game Engines and Real-Time 3D",
+    "ja": "ゲームエンジン"
+  },
+  "description": "This category covers things like game engines and other 3D rendering concepts. While there may be considerable overlap with Creative Coding Frameworks, I think there is enough distinction in game engines that they can be captured in their own space.",
+  "tags": [
+    "game engine"
+  ],
+  "links": {
+    "Link": "https://en.wikipedia.org/wiki/List_of_game_engines"
+  },
+  "children": [
+    {
+      "name": {
+        "en": "Engine Types"
+      },
+      "description": "Different categories of game engines and 3D frameworks organized by licensing and development model.",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Open Source"
+          },
+          "description": "Free and open-source game engines and 3D frameworks with community-driven development and full source code access.",
+          "tags": [],
+          "links": {
+            "Wikipedia": "https://en.wikipedia.org/wiki/List_of_game_engines#Free_and_open-source"
+          },
+          "children": [
+            {
+              "name": {
+                "en": "babylon.js"
+              },
+              "description": "A powerful 3D engine based on WebGL, WebGPU and Web Audio for building web-based games and applications. Features extensive VR/AR support and advanced rendering capabilities.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://www.babylonjs.com/",
+                "Documentation": "https://doc.babylonjs.com/",
+                "GitHub": "https://github.com/BabylonJS/Babylon.js"
+              }
+            },
+            {
+              "name": {
+                "en": "three.js"
+              },
+              "description": "A cross-browser JavaScript library for creating and displaying animated 3D computer graphics in web browsers using WebGL. Widely used for web-based 3D applications and creative projects.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://threejs.org/",
+                "Documentation": "https://threejs.org/docs/",
+                "GitHub": "https://github.com/mrdoob/three.js"
+              }
+            },
+            {
+              "name": {
+                "en": "Godot"
+              },
+              "description": "A feature-packed, cross-platform game engine for creating 2D and 3D games. Uses its own scripting language (GDScript) and supports C# and C++ for high-performance needs.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://godotengine.org/",
+                "Documentation": "https://docs.godotengine.org/",
+                "GitHub": "https://github.com/godotengine/godot"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Commercial"
+          },
+          "description": "Professional game engines with commercial licensing, offering comprehensive tools and enterprise support for large-scale development.",
+          "tags": [],
+          "links": {
+            "Wikipedia": "https://en.wikipedia.org/wiki/List_of_game_engines#Proprietary"
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Unity"
+              },
+              "description": "A comprehensive cross-platform game engine with visual editor and scripting in C#. Widely used for indie games, mobile apps, AR/VR experiences, and architectural visualization.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://unity.com/",
+                "Documentation": "https://docs.unity3d.com/",
+                "Learn": "https://learn.unity.com/"
+              }
+            },
+            {
+              "name": {
+                "en": "Unreal"
+              },
+              "description": "Epic Games' advanced game engine featuring high-end graphics, Blueprint visual scripting, and C++ programming. Industry standard for AAA games and real-time graphics applications.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://www.unrealengine.com/",
+                "Documentation": "https://docs.unrealengine.com/",
+                "Marketplace": "https://www.unrealengine.com/marketplace/"
+              }
+            },
+            {
+              "name": {
+                "en": "Scenekit"
+              },
+              "description": "Apple's 3D graphics framework for macOS, iOS, tvOS, and visionOS applications. Provides high-level APIs for rendering 3D scenes with easy integration into Apple's ecosystem.",
+              "tags": [],
+              "links": {
+                "Apple Documentation": "https://developer.apple.com/scenekit/",
+                "Developer Guide": "https://developer.apple.com/documentation/scenekit"
+              }
+            },
+            {
+              "name": {
+                "en": "CryEngine"
+              },
+              "description": "A game engine developed by Crytek known for advanced graphics capabilities and large-scale environments. Features real-time global illumination and sophisticated physics systems.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://www.cryengine.com/",
+                "Documentation": "https://docs.cryengine.com/",
+                "Community": "https://www.cryengine.com/community"
+              }
+            },
+            {
+              "name": {
+                "en": "Amazon Lumberyard"
+              },
+              "description": "Amazon's free cross-platform AAA game engine integrated with AWS cloud services and Twitch. Based on CryEngine with added cloud computing and streaming capabilities.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://aws.amazon.com/lumberyard/",
+                "Documentation": "https://docs.aws.amazon.com/lumberyard/",
+                "GitHub": "https://github.com/aws/lumberyard"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "VR"
+      },
+      "description": "Virtual Reality technologies, devices, and concepts for creating immersive 3D experiences.",
+      "tags": [],
+      "links": {
+        "Wikipedia": "https://en.wikipedia.org/wiki/Virtual_reality"
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Headsets"
+          },
+          "description": "Head-mounted displays and VR hardware platforms for immersive virtual reality experiences.",
+          "tags": [],
+          "links": {
+            "Wikipedia": "https://en.wikipedia.org/wiki/Virtual_reality_headset"
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Sony PSVR"
+              },
+              "description": "PlayStation VR headset series designed for console gaming with PlayStation 4 and PlayStation 5. Features inside-out tracking and exclusive VR game library.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://www.playstation.com/en-us/ps-vr/",
+                "PlayStation Store": "https://store.playstation.com/en-us/category/44d8bb20-7c94-4e26-a0a8-02680182bb31"
+              }
+            },
+            {
+              "name": {
+                "en": "HTC Vive"
+              },
+              "description": "High-end VR headset developed by HTC and Valve featuring room-scale tracking and precise motion controllers. Known for professional and enthusiast VR applications.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://www.vive.com/",
+                "Developer Portal": "https://developer.vive.com/"
+              }
+            },
+            {
+              "name": {
+                "en": "Valve Index"
+              },
+              "description": "Premium VR headset by Valve with high refresh rate displays, finger-tracking controllers, and precise lighthouse tracking. Designed for high-fidelity VR experiences.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://www.valvesoftware.com/en/index",
+                "Steam VR": "https://store.steampowered.com/steamvr"
+              }
+            },
+            {
+              "name": {
+                "en": "Meta Oculus"
+              },
+              "description": "Meta's VR platform and ecosystem including Quest headsets and development tools for standalone and PC VR experiences.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://www.meta.com/quest/",
+                "Developer Portal": "https://developer.oculus.com/"
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Meta Quest Pro"
+                  },
+                  "description": "Professional-grade mixed reality headset with advanced features like eye tracking, face tracking, and high-resolution displays. Designed for enterprise and professional use cases.",
+                  "tags": [],
+                  "links": {
+                    "Product Page": "https://www.meta.com/quest/quest-pro/",
+                    "Business Solutions": "https://www.meta.com/work/quest/"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Quest 3"
+                  },
+                  "description": "Latest consumer VR headset from Meta featuring mixed reality capabilities, improved performance, and color passthrough cameras for AR experiences.",
+                  "tags": [],
+                  "links": {
+                    "Product Page": "https://www.meta.com/quest/quest-3/",
+                    "Meta Store": "https://www.meta.com/quest/products/quest-3/"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Quest 2"
+                  },
+                  "description": "Popular standalone VR headset offering wireless VR gaming and applications with optional PC connectivity. Known for accessibility and large content library.",
+                  "tags": [],
+                  "links": {
+                    "Product Page": "https://www.meta.com/quest/products/quest-2/",
+                    "Support": "https://www.meta.com/help/quest/articles/getting-started/getting-started-with-quest-2/"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Related Concepts"
+          },
+          "description": "Technical concepts and rendering techniques specific to VR and AR development.",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Foveated Rendering"
+              },
+              "description": "A rendering technique that reduces computational load by rendering high detail only in the user's focal area. Critical for VR performance optimization and reducing motion sickness.",
+              "tags": [],
+              "links": {
+                "Wikipedia": "https://en.wikipedia.org/wiki/Foveated_rendering"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "AR/MR"
+      },
+      "description": "Augmented Reality and Mixed Reality technologies for blending digital content with the physical world.",
+      "tags": [],
+      "links": {
+        "Wikipedia": "https://en.wikipedia.org/wiki/Augmented_reality"
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Headsets"
+          },
+          "description": "Head-mounted displays and smart glasses designed for augmented and mixed reality applications.",
+          "tags": [],
+          "links": {
+            "Wikipedia": "https://en.wikipedia.org/wiki/Optical_head-mounted_display"
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Apple Vision Pro"
+              },
+              "description": "Apple's spatial computing headset combining VR and AR capabilities with high-resolution displays and advanced hand tracking. Designed for productivity and immersive experiences.",
+              "tags": [],
+              "links": {
+                "Product Page": "https://www.apple.com/apple-vision-pro/",
+                "Developer Portal": "https://developer.apple.com/visionos/"
+              }
+            },
+            {
+              "name": {
+                "en": "Google Glass"
+              },
+              "description": "Early smart glasses featuring a small display, camera, and voice control for hands-free computing. Primarily targeted at enterprise and industrial applications.",
+              "tags": [],
+              "links": {
+                "Wikipedia": "https://en.wikipedia.org/wiki/Google_Glass",
+                "Enterprise Edition": "https://www.google.com/glass/start/"
+              }
+            },
+            {
+              "name": {
+                "en": "Magic Leap 2"
+              },
+              "description": "Mixed reality headset featuring spatial computing capabilities with digital light field technology. Designed for enterprise applications and spatial collaboration.",
+              "tags": [],
+              "links": {
+                "Official Website": "https://www.magicleap.com/magic-leap-2",
+                "Developer Portal": "https://developer.magicleap.com/"
+              }
+            },
+            {
+              "name": {
+                "en": "Microsoft Hololens 2"
+              },
+              "description": "Microsoft's mixed reality headset designed for enterprise applications with advanced hand tracking, eye tracking, and spatial mapping capabilities.",
+              "tags": [],
+              "links": {
+                "Product Page": "https://www.microsoft.com/en-us/hololens",
+                "Developer Documentation": "https://docs.microsoft.com/en-us/hololens/"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "AR Methods"
+          },
+          "description": "Different technical approaches and frameworks for implementing augmented reality tracking and rendering.",
+          "tags": [],
+          "links": {
+            "Wikipedia": "https://en.wikipedia.org/wiki/Augmented_reality#Technology"
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Marker Based"
+              },
+              "description": "AR tracking method using visual markers or targets that are recognized by computer vision algorithms to anchor digital content.",
+              "tags": [],
+              "links": {
+                "Wikipedia": "https://en.wikipedia.org/wiki/Augmented_reality#Marker-based"
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Vuforia"
+                  },
+                  "description": "Computer vision platform for building AR applications with marker tracking, object recognition, and cloud-based target management. Widely used in mobile AR development.",
+                  "tags": [],
+                  "links": {
+                    "Official Website": "https://www.ptc.com/en/products/vuforia",
+                    "Developer Portal": "https://developer.vuforia.com/",
+                    "Documentation": "https://library.vuforia.com/"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Visual Inertial Odometry"
+              },
+              "description": "SLAM technique combining camera data with inertial sensors to track device position and orientation for markerless AR experiences.",
+              "tags": [],
+              "links": {
+                "Wikipedia": "https://en.wikipedia.org/wiki/Visual_odometry"
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "ARKit"
+                  },
+                  "description": "Apple's augmented reality framework for iOS devices providing motion tracking, environmental understanding, and light estimation for AR applications.",
+                  "tags": [],
+                  "links": {
+                    "Developer Documentation": "https://developer.apple.com/arkit/",
+                    "Human Interface Guidelines": "https://developer.apple.com/design/human-interface-guidelines/ar"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "SLAM"
+              },
+              "description": "Simultaneous Localization and Mapping technology for real-time environment mapping and device tracking using various sensors.",
+              "tags": [],
+              "links": {
+                "Wikipedia": "https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping"
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "iOS Devices with LIDAR"
+                  },
+                  "description": "Apple devices equipped with LiDAR sensors for enhanced depth sensing and improved AR tracking performance with instant plane detection.",
+                  "tags": [],
+                  "links": {
+                    "Apple LiDAR": "https://support.apple.com/en-us/102599",
+                    "ARKit LiDAR": "https://developer.apple.com/documentation/arkit/arworldtrackingconfiguration"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Google Tango"
+                  },
+                  "description": "Discontinued Google platform for augmented reality using specialized sensors for motion tracking, area learning, and depth perception on mobile devices.",
+                  "tags": [],
+                  "links": {
+                    "Wikipedia": "https://en.wikipedia.org/wiki/Tango_(platform)",
+                    "Archive": "https://developers.google.com/tango"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Related Concepts"
+          },
+          "description": "Foundational concepts and paradigms in augmented and mixed reality development.",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Spatial Computing"
+              },
+              "description": "Computing paradigm where digital content exists and interacts within physical 3D space, enabling natural interaction with virtual objects in real environments.",
+              "tags": [],
+              "links": {
+                "Wikipedia": "https://en.wikipedia.org/wiki/Spatial_computing"
+              }
+            },
+            {
+              "name": {
+                "en": "Mixed Reality"
+              },
+              "description": "Technology that merges real and virtual worlds to produce new environments where physical and digital objects co-exist and interact in real time.",
+              "tags": [],
+              "links": {
+                "Wikipedia": "https://en.wikipedia.org/wiki/Mixed_reality"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

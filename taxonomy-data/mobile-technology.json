@@ -1,0 +1,424 @@
+{
+  "name": {
+    "en": "Mobile Technology"
+  },
+  "description": "Various concepts and technologies related to mobile devices in the context of creative technology projects.",
+  "tags": [],
+  "links": {
+    "Link": ""
+  },
+  "children": [
+    {
+      "name": {
+        "en": "Sensors"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Compass/Magnetometer"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Location/GPS"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Ambient Light Sensor"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Barometer"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Gyroscope"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Accelerometer"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "LIDAR"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Microphone"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Camera"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Mobile AR"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Native Platform Frameworks"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Android"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "ARCore"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Apple"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "ARKit"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Face Detection/Face Filters"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Snapchat Lens Studio"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Meta Spark AR"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "WebAR"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "AR.js/A Frame"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "8th Wall"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Other"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Niantic Lightship"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Web Frameworks for Native Apps"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "React Native"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Bootstrap"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Android"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Devices"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "A million options"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Apple"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Devices"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "iPhone"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "iOS"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "iPad"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "iPadOS"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Apple Watch"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "watchOS"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

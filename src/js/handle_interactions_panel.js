@@ -41,11 +41,19 @@ function changeTab(event) {
 
   if (checkValue === "tree") {
     document.querySelector("#visualizer").style.display = "block"
+    document.querySelector("#interaction-visualizer").style.display = "none"
+    document.querySelector("#editor").style.display = "none"
+    document.querySelector("footer").style.display = "block"
+    document.querySelector("menu").style.display = "block"
+  } else if (checkValue === "interaction") {
+    document.querySelector("#visualizer").style.display = "none"
+    document.querySelector("#interaction-visualizer").style.display = "block"
     document.querySelector("#editor").style.display = "none"
     document.querySelector("footer").style.display = "block"
     document.querySelector("menu").style.display = "block"
   } else {
     document.querySelector("#visualizer").style.display = "none"
+    document.querySelector("#interaction-visualizer").style.display = "none"
     document.querySelector("#editor").style.display = "block"
     document.querySelector("footer").style.display = "none"
     document.querySelector("menu").style.display = "none"

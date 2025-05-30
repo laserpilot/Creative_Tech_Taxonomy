@@ -1,0 +1,11 @@
+{
+  "name": {
+    "en": "Creative Tech Taxonomy",
+    "ja": "クリエイティブテクノロジーの分類"
+  },
+  "description": "This taxonomy is a subjective grouping of various tools and concepts related to creative technology. This is the top level parent node for everything else.",
+  "tags": [],
+  "links": {
+    "Link": ""
+  }
+}

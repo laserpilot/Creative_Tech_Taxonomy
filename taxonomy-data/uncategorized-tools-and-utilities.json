@@ -1,0 +1,720 @@
+{
+  "name": {
+    "en": "Uncategorized Tools and Utilities"
+  },
+  "description": "Various topics that are still tangentially related to working with technology at various professional scales, particularly technology utilites and tools related to Dev Ops (or Developer Operations)",
+  "tags": [],
+  "links": {
+    "Link": ""
+  },
+  "children": [
+    {
+      "name": {
+        "en": "Data Tools"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Python"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Bokeh"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Plotly"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Matplotlib"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "R"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "ggplot"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "DevOps"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Version Control"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "git"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Github"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Bitbucket"
+                  },
+                  "description": "",
+                  "tags": [],
+                  "links": {
+                    "Link": ""
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Subversion(svn)"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Continuous Integration and Development (CI/CD)"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "TravisCI"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Gitlab CI"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Jenkins"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Teamcity"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Bamboo"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Containers"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Kubernetes"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Docker"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Automation"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Ansible"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Puppet"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Chef"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Monitoring/Logging"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Sudosystems"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "AM/PM"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "ELK Stack"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Splunk"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "IDE"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Visual Studio Code"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Vim/Emacs"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Atom"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "bbedit"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Sublime Text"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Visual Studio"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Xcode"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Terminal/Shell"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Unix (Linux/Mac)"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "bash"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "zsh"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Windows"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Powershell"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "cmd"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Scripting"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "MacOS"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "launchdaemons"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "bash scripts"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Shortcuts"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "AppleScript"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Automator"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "cronjobs"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Linux"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "cronjobs"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "bash scripts"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "launchdaemons"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Windows"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Powershell scripts"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "bat scripts"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            },
+            {
+              "name": {
+                "en": "Tax Scheduler"
+              },
+              "description": "",
+              "tags": [],
+              "links": {
+                "Link": ""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Documentation"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      }
+    },
+    {
+      "name": {
+        "en": "Network Diagnostics"
+      },
+      "description": "",
+      "tags": [],
+      "links": {
+        "Link": ""
+      },
+      "children": [
+        {
+          "name": {
+            "en": "nmap"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Wireshark"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        },
+        {
+          "name": {
+            "en": "Charles"
+          },
+          "description": "",
+          "tags": [],
+          "links": {
+            "Link": ""
+          }
+        }
+      ]
+    }
+  ]
+}
