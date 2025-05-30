@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <script type="module" src="./js/main.js" defer="defer"></script>
     <script type="module" src="./js/taxonomy_tree_visualizer.js" defer="defer"></script>
+    <script type="module" src="./js/interaction_taxonomy_visualizer.js" defer="defer"></script>
   </head>
 
   <!-- Google tag (gtag.js) -->
@@ -27,7 +28,11 @@
         <div class="hideSmallWidth tabMenu">
           <label>
             <input name="tab" type="radio" value="tree" checked />
-            <em>Tree View</em>
+            <em>Main Taxonomy</em>
+          </label>
+          <label>
+            <input name="tab" type="radio" value="interaction" />
+            <em>Interaction Taxonomy</em>
           </label>
           <label>
             <input name="tab" type="radio" value="editor" />
@@ -104,6 +109,7 @@
 
     <div id="container">
       <div id="visualizer" class=""></div>
+      <div id="interaction-visualizer" class="" style="display: none;"></div>
       <div id="editor" class=""></div>
       <div id="edit-mode-instructions" class="edit-mode-instructions" style="display: none;">
         <p><strong>Edit Mode Active</strong></p>

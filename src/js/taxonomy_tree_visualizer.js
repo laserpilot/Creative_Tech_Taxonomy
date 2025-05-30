@@ -334,7 +334,7 @@ export function createVisualization() {
       .attr("font-size", fontSize)
       .attr("font-weight", "bold")
       .attr("fill", "white")
-      .attr("pointer-events", "all") // Make the plus sign clickable
+      .attr("pointer-events", (d) => editMode ? "all" : "none") // Only clickable in edit mode
       .attr("cursor", "pointer")
       .attr("opacity", (d) => editMode ? 1 : 0)
       .text("+")
@@ -366,6 +366,12 @@ export function createVisualization() {
       .attr("transform", (d) => `translate(${d.y},${d.x})`)
       .attr("fill-opacity", 1)
       .attr("stroke-opacity", 1)
+    
+    // Update plus icons for edit mode changes
+    node.merge(nodeEnter)
+      .select(".add-child-icon")
+      .attr("pointer-events", (d) => editMode ? "all" : "none")
+      .attr("opacity", (d) => editMode ? 1 : 0)
 
     // Transition exiting nodes to the parent's new position.
     const nodeExit = node
@@ -493,6 +499,11 @@ document.getElementById("languageSelect").addEventListener("change", function ()
   currentLanguage = selectedLanguage
   console.log(`Language changed to ${currentLanguage}`)
   refreshVisualize()
+  
+  // Also update interaction taxonomy language
+  import("./interaction_taxonomy_visualizer.js").then(module => {
+    module.updateInteractionLanguage(selectedLanguage)
+  })
 })
 
 // handle edit mode toggle
@@ -514,6 +525,11 @@ document.getElementById("toggleEditMode").addEventListener("click", function() {
     console.log("Edit mode disabled")
   }
   refreshVisualize()
+  
+  // Also update interaction taxonomy edit mode
+  import("./interaction_taxonomy_visualizer.js").then(module => {
+    module.updateInteractionEditMode(editMode)
+  })
 })
 
 // handle save edits button
