@@ -51,23 +51,27 @@ function updateInteractionJsonFromLanguage(data) {
       node.description = node.description[currentLanguage] || node.description.en || ""
     }
 
-    // Add color with inheritance from parent
-    if (!node.color) {
-      node.color = getColor(node.name) || parentColor || defaultColor
+    // Add color with proper inheritance logic (matching main taxonomy)
+    if (node.name) {
+      // First, try to get color by name
+      node.color = getColor(node.name) || defaultColor
+    } else {
+      node.color = defaultColor
+    }
+    
+    // Only inherit parent color if this node doesn't have its own defined color
+    if (node.color === defaultColor && parentColor && parentColor !== defaultColor) {
+      node.color = parentColor
     }
 
     // Add background color
     node.backgroundColor = defaultBackgroundColor
 
-    // Process text with line breaks
-    if (node.name && node.name.length > linebreakThreshold) {
-      if (currentLanguage === "ja") {
-        node.textWithLineBreaks = textParser.parse(node.name).join("")
-      } else {
-        node.textWithLineBreaks = node.name.replace(/(.{1,20})(\s+|$)/g, "$1\n").trim()
-      }
+    // Process text with line breaks (matching main taxonomy)
+    if (countUpText(node.name) > linebreakThreshold && node.children) {
+      node.label = splitText(node.name)
     } else {
-      node.textWithLineBreaks = node.name || ""
+      node.label = [node.name]
     }
 
     // Recursively process children with color inheritance
@@ -113,27 +117,11 @@ export function createInteractionVisualization() {
     .x((d) => d.y)
     .y((d) => d.x)
 
-  // Create the SVG container.
-  const parentSvg = d3
-    .create("svg")
-    .attr("width", windowWidth)
-    .attr("height", windowHeight)
-    .attr("viewBox", [-50, -windowHeight / 2, windowWidth, windowHeight])
-    .style("max-width", "100%")
-    .style("height", "auto")
-    .style("font", `${fontSize}px Inter, system-ui, sans-serif`)
+  // Create the SVG container, a layer for the links and a layer for the nodes.
+  // Set the viewBox width to the screen width (matching main taxonomy)
+  const parentSvg = d3.create("svg").attr("id", "interaction-tree").attr("viewBox", [0, 0, windowWidth, windowHeight])
 
-  const svg = parentSvg.append("g")
-
-  // Add zoom behavior
-  const zoom = d3
-    .zoom()
-    .scaleExtent([0.1, 3])
-    .on("zoom", (event) => {
-      svg.attr("transform", event.transform)
-    })
-
-  parentSvg.call(zoom)
+  const svg = parentSvg.append("g").attr("pointer-events", "all")
 
   const gLink = svg
     .append("g")
@@ -142,11 +130,34 @@ export function createInteractionVisualization() {
     .attr("stroke-opacity", 0.4)
     .attr("stroke-width", strokeWidth)
 
-  const gNode = svg
-    .append("g")
-    .attr("cursor", "pointer")
-    .attr("pointer-events", "all")
+  // Prepare a g node to retrieve all events
+  const gNode = svg.append("g").attr("cursor", "pointer")
 
+  /* -------------------------------------------------------------------------- */
+  /*                                d3 functions                                */
+  /* -------------------------------------------------------------------------- */
+  // helper function to zoom event
+  const zoomEvent = ({ transform }) => {
+    if (transform != null) svg.attr("transform", transform)
+  }
+
+  // Set zoom listener to svg
+  const zoomListener = d3
+    .zoom()
+    // .extent([[0, 0], [windowWidth, windowHeight]])
+    .scaleExtent([0.3, 3])
+    .on("zoom", zoomEvent)
+  // and disable double click zoom
+  parentSvg.call(zoomListener).on("dblclick.zoom", null)
+
+  // Set default zoom
+  let defaultZoom = 0.8
+  if (isMobile) defaultZoom = 0.6
+  parentSvg.call(zoomListener.transform, d3.zoomIdentity.scale(defaultZoom))
+
+  /* -------------------------------------------------------------------------- */
+  /*                          draw each node and update                         */
+  /* -------------------------------------------------------------------------- */
   // Update function for the visualization
   function update(event, source) {
     const duration = event?.altKey ? 2500 : 250
@@ -167,8 +178,7 @@ export function createInteractionVisualization() {
 
     const transition = svg
       .transition()
-      .duration(duration)
-      .attr("viewBox", [-window.interactionRoot.dy / 3, left.x - window.interactionRoot.dx, windowWidth, height])
+      .attr("viewBox", [0, 0, windowWidth, windowHeight])
       .tween("resize", window.ResizeObserver ? null : () => () => svg.dispatch("toggle"))
 
     // Update the nodes…
@@ -182,26 +192,86 @@ export function createInteractionVisualization() {
       .attr("fill-opacity", 0)
       .attr("stroke-opacity", 0)
 
-    // Add text background rectangles
+    // generate text node (matching main taxonomy)
+    nodeEnter
+      .append("text")
+      .attr("cursor", "help")
+      .attr("x", (d) => (d._children ? -fontSize : fontSize))
+      .attr("dominant-baseline", "middle")
+      .attr("text-anchor", (d) => (d._children ? "end" : "start"))
+      .attr("fill", "black") // All text black as requested
+      .each(function (d) {
+        d.data.label.forEach((line, index) => {
+          d3.select(this)
+            .append("tspan")
+            .attr("dy", index > 0 ? `${convertRemToPx(index * lineHeight)}px` : 0)
+            .attr("x", d._children ? -fontSize : fontSize)
+            .text(line)
+        })
+        
+        // Add edit icon if in edit mode
+        if (editMode) {
+          d3.select(this)
+            .append("tspan")
+            .attr("dy", 0)
+            .attr("x", (d.data.label.length > 1 ? 
+                  d._children ? -fontSize : fontSize : 
+                  d._children ? -fontSize - 20 : fontSize + d3.select(this).node().getBBox().width + 5))
+            .attr("fill", "#2196f3")
+            .text(" ✎")
+        }
+      })
+      .attr("y", function (d) {
+        if (d.data.label.length === 1) {
+          return 0
+        } else {
+          return -(this.getBBox().height / 4)
+        }
+      })
+      .on("click", (event, d) => {
+        if (editMode) {
+          showEditModal(d)
+        } else {
+          showModal(d)
+        }
+        event.stopPropagation()
+      })
+
+    // add warping box around text node (matching main taxonomy exactly)
+    let rectPadding = 20
     nodeEnter
       .append("rect")
-      .attr("stroke-linejoin", "round")
-      .attr("stroke-width", 3)
-      .attr("stroke", (d) => editMode ? "orange" : d.data.color)
-      .attr("stroke-dasharray", (d) => editMode ? "5,5" : "0")
-      .attr("fill", (d) => d.data.backgroundColor || "aliceblue")
-      .attr("fill-opacity", (d) => d._children ? 1 : 0.8)
-      .attr("rx", 5)
-      .attr("ry", 5)
+      .attr("cursor", "help")
+      .attr("rx", fontSize) // Adjust the x-radius for rounded corners
+      .attr("ry", fontSize) // Adjust the y-radius for rounded corners
+      .attr("height", function (d) {
+        return d3.select(this.parentNode).select("text").node().getBBox().height + rectPadding
+      })
+      .attr("width", function (d) {
+        return d3.select(this.parentNode).select("text").node().getBBox().width + fontSize + fontSize + rectPadding
+      })
+      .attr("x", -(fontSize / 2)) // Center the rect around the text
+      .attr("y", function (d) {
+        return -(d3.select(this.parentNode).select("text").node().getBBox().height + rectPadding) / 2
+      })
+      .attr("fill", (d) => editMode ? "#2196f3" : d.data.color)
+      .attr("opacity", (d) => (d._children ? 0 : 0.5))
+      .attr("stroke", (d) => editMode ? "#0b7dda" : "none")
+      .attr("stroke-width", (d) => editMode ? 1 : 0)
+      .attr("stroke-dasharray", (d) => editMode ? "3,3" : "none")
+      .lower()
 
     // Add circles for nodes
     nodeEnter
       .append("circle")
-      .attr("r", circleRadius)
-      .attr("fill", (d) => (d._children ? d.data.color : d.data.backgroundColor || "aliceblue"))
-      .attr("stroke", (d) => editMode ? "orange" : d.data.color)
+      .attr("cursor", (d) => ((d._children || editMode) ? "pointer" : "default"))
+      .attr("r", (d) => (d._children ? circleRadius : circleRadius / 1.4))
+      .attr("fill", (d) => {
+        if (editMode) return "rgba(255, 100, 100, 0.5)"
+        return (d._children ? d.data.color : defaultBackgroundColor)
+      })
+      .attr("stroke", (d) => editMode ? "rgba(255, 50, 50, 0.8)" : d.data.color)
       .attr("stroke-width", strokeWidth)
-      .attr("stroke-dasharray", (d) => editMode ? "5,5" : "0")
       .on("click", (event, d) => {
         if (editMode) {
           if (d._children || d.children) {
@@ -265,87 +335,6 @@ export function createInteractionVisualization() {
       .on("mouseover", (event) => editMode ? handlerChangeScale(event.target, 1.5) : null)
       .on("mouseout", (event) => editMode ? handlerChangeScale(event.target, 1) : null)
 
-    // shadow effect node
-    nodeEnter
-      .append("text")
-      .attr("stroke-linejoin", "round")
-      .attr("stroke-width", 3)
-      .attr("stroke", (d) => d3.color(d.data.color).copy({ opacity: 0.1 }))
-
-    // Add text labels with proper styling
-    nodeEnter
-      .append("text")
-      .attr("dy", "0.31em")
-      .attr("x", (d) => (d._children ? -6 : 6))
-      .attr("y", (d) => (d._children ? -6 : 6))
-      .attr("text-anchor", (d) => (d._children ? "end" : "start"))
-      .attr("paint-order", "stroke")
-      .attr("stroke", "white")
-      .attr("stroke-width", 5)
-      .attr("fill", (d) => d.data.color)
-      .attr("font-weight", "bold")
-      .style("font-family", "Inter, system-ui, sans-serif")
-      .each(function(d) {
-        const textElement = d3.select(this)
-        const words = (d.data.textWithLineBreaks || d.data.name || "").split(/\s+/)
-        const lineHeight = 1.1 // ems
-        const x = textElement.attr("x")
-        const y = textElement.attr("y")
-        const dy = parseFloat(textElement.attr("dy"))
-        
-        textElement.text(null)
-        
-        words.forEach((word, i) => {
-          textElement.append("tspan")
-            .attr("x", x)
-            .attr("y", y)
-            .attr("dy", i === 0 ? dy + "em" : lineHeight + "em")
-            .text(word)
-        })
-      })
-      .on("click", (event, d) => {
-        if (editMode) {
-          // In edit mode, show edit modal for the node
-          showEditModal(d)
-        } else {
-          // In normal mode, show info modal
-          showModal(d)
-        }
-      })
-
-    // Calculate and update text background rectangle dimensions
-    nodeEnter.selectAll("text:not(.add-child-icon)").each(function(d) {
-      const textElement = this
-      const bbox = textElement.getBBox()
-      const rect = d3.select(textElement.parentNode).select("rect")
-      
-      const padding = 8
-      const minWidth = 20
-      const minHeight = 20
-      
-      const rectWidth = Math.max(bbox.width + padding * 2, minWidth)
-      const rectHeight = Math.max(bbox.height + padding * 2, minHeight)
-      
-      const textX = parseFloat(d3.select(textElement).attr("x"))
-      const textY = parseFloat(d3.select(textElement).attr("y"))
-      const textAnchor = d3.select(textElement).attr("text-anchor")
-      
-      let rectX, rectY
-      if (textAnchor === "end") {
-        rectX = textX - rectWidth + padding
-      } else if (textAnchor === "middle") {
-        rectX = textX - rectWidth / 2
-      } else {
-        rectX = textX - padding
-      }
-      rectY = textY - rectHeight / 2 + bbox.height / 4
-      
-      rect
-        .attr("x", rectX)
-        .attr("y", rectY)
-        .attr("width", rectWidth)
-        .attr("height", rectHeight)
-    })
 
     // Transition nodes to their new position.
     const nodeUpdate = node
@@ -364,14 +353,19 @@ export function createInteractionVisualization() {
     // Update circle styling for edit mode
     node.merge(nodeEnter)
       .select("circle")
-      .attr("stroke", (d) => editMode ? "orange" : d.data.color)
-      .attr("stroke-dasharray", (d) => editMode ? "5,5" : "0")
+      .attr("stroke", (d) => editMode ? "rgba(255, 50, 50, 0.8)" : d.data.color)
+      .attr("fill", (d) => {
+        if (editMode) return "rgba(255, 100, 100, 0.5)"
+        return (d._children ? d.data.color : defaultBackgroundColor)
+      })
     
     // Update rect styling for edit mode
     node.merge(nodeEnter)
       .select("rect")
-      .attr("stroke", (d) => editMode ? "orange" : d.data.color)
-      .attr("stroke-dasharray", (d) => editMode ? "5,5" : "0")
+      .attr("stroke", (d) => editMode ? "#0b7dda" : d.data.color)
+      .attr("fill", (d) => editMode ? "#2196f3" : d.data.color)
+      .attr("stroke-width", (d) => editMode ? 1 : 3)
+      .attr("stroke-dasharray", (d) => editMode ? "3,3" : "0")
 
     // Transition exiting nodes to the parent's new position.
     const nodeExit = node
@@ -420,39 +414,48 @@ export function createInteractionVisualization() {
     })
   }
 
-  // Helper functions
-  function handleExpand(d) {
-    if (d._children) {
-      d.children = d._children
-      d._children = null
-    }
-  }
 
-  function handleCollapse(d) {
+  // Helper functions (matching main taxonomy exactly)
+  const handleCollapse = (d) => {
     if (d.children) {
       d._children = d.children
+      d._children.forEach(handleCollapse)
       d.children = null
     }
   }
 
-  function focusNode(node) {
-    if (!node) return
-    
-    const scale = 1.5
-    const x = -node.y * scale + windowWidth / 2
-    const y = -node.x * scale + windowHeight / 2
-    
-    parentSvg
-      .transition()
-      .duration(750)
-      .call(zoom.transform, d3.zoomIdentity.translate(x, y).scale(scale))
+  const handleExpand = (d) => {
+    if (d._children) {
+      d.children = d._children
+    }
+    var children = d.children ? d.children : d._children
+    if (children) children.forEach(handleExpand)
   }
 
-  function handlerChangeScale(target, scale) {
-    d3.select(target)
+  const focusNode = (node) => {
+    if (!node) return
+    
+    let t = d3.zoomTransform(svg.node())
+    let x = -node.y0
+    let y = -node.x0
+    if (isMobile) {
+      // Mobile
+      x = x * t.k + windowWidth / 4
+    } else {
+      // PC
+      x = x * t.k + windowWidth / 3
+    }
+    y = y * t.k + windowHeight / 2
+    parentSvg
       .transition()
-      .duration(200)
-      .attr("transform", `scale(${scale})`)
+      .duration(500)
+      .ease(d3.easeQuadInOut)
+      .call(zoomListener.transform, d3.zoomIdentity.translate(x, y).scale(t.k))
+  }
+
+  // helper function to change scale
+  const handlerChangeScale = (element, scaleSize) => {
+    d3.select(element).attr("transform", `scale(${scaleSize})`).transition().ease(d3.easeElastic)
   }
 
   // Initialize the tree
@@ -495,4 +498,49 @@ export const updateInteractionEditMode = (mode) => {
 // Refresh the interaction visualization
 export const refreshInteractionVisualize = () => {
   createInteractionVisualization()
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             helper functions                               */
+/* -------------------------------------------------------------------------- */
+// helper function to count up text length
+// japanese characters are counted as 2
+// english characters are counted as 1
+const countUpText = (text) => {
+  let len = 0
+  for (let i = 0; i < text.length; i++) {
+    text[i].match(/[ -~]/) ? (len += 1) : (len += 2)
+  }
+  return len
+}
+
+// helper function to split text
+const splitText = (text) => {
+  const lines = []
+  const splitWords = []
+  const words = text.split(/\s+/)
+  for (let w = 0; w < words.length; w++) {
+    const word = textParser.parse(words[w])
+    splitWords.push(...word)
+  }
+  let currentLine = splitWords[0]
+  for (let i = 1; i < splitWords.length; i++) {
+    const word = splitWords[i]
+    if (countUpText(currentLine) + countUpText(word) <= linebreakThreshold) {
+      currentLine += " " + word
+    } else {
+      lines.push(currentLine)
+      currentLine = word
+    }
+  }
+  lines.push(currentLine)
+  return lines
+}
+
+// bug for iPhone
+// dy is not calculated correctly
+// rem to px converter
+const convertRemToPx = (rem) => {
+  var fontSize = getComputedStyle(document.documentElement).fontSize
+  return rem * parseFloat(fontSize)
 }

@@ -25,23 +25,64 @@ export function showModal(nodeData) {
     displayDescription = nodeData.data.description || "No Description available. Please add one!"
   }
 
+  // Check if this is interaction taxonomy data (has additional fields)
+  const isInteractionTaxonomy = nodeData.data.cost !== undefined || 
+                                nodeData.data.accuracy !== undefined || 
+                                nodeData.data.latency !== undefined
+  
+  // Generate additional fields for interaction taxonomy
+  let additionalFields = ""
+  if (isInteractionTaxonomy) {
+    const technicalDetails = [
+      { key: 'cost', label: 'Cost', value: nodeData.data.cost },
+      { key: 'accuracy', label: 'Accuracy', value: nodeData.data.accuracy },
+      { key: 'latency', label: 'Latency', value: nodeData.data.latency },
+      { key: 'setup_complexity', label: 'Setup Complexity', value: nodeData.data.setup_complexity },
+      { key: 'hardware_requirements', label: 'Hardware Requirements', value: nodeData.data.hardware_requirements },
+      { key: 'limitations', label: 'Limitations', value: nodeData.data.limitations }
+    ].filter(detail => detail.value && detail.value.trim() !== "")
+    
+    const useCases = nodeData.data.use_cases && nodeData.data.use_cases.length > 0 ? 
+      nodeData.data.use_cases.filter(useCase => useCase && useCase.trim() !== "") : []
+    
+    if (technicalDetails.length > 0 || useCases.length > 0) {
+      additionalFields = `
+        <div class="modal-section interaction-details">
+          <p><strong>Technical Details:</strong></p>
+          ${technicalDetails.map(detail => 
+            `<div class="detail-item"><strong>${detail.label}:</strong> ${detail.value}</div>`
+          ).join("")}
+          ${useCases.length > 0 ? 
+            `<div class="detail-item"><strong>Use Cases:</strong> ${useCases.join(", ")}</div>` : ""}
+        </div>
+      `
+    }
+  }
+
+  // Filter out empty links
+  const validLinks = nodeData.data.links ? 
+    Object.entries(nodeData.data.links).filter(([type, url]) => url && url.trim() !== "") : []
+  
   // Generate content based on the clicked node data
   const content = `
     <h2>${displayName}</h2>
-    <p>${displayDescription}</p>
-    <p>Tags: ${nodeData.data.tags ? nodeData.data.tags.join(", ") : "No Tags available."}</p>
-    <div class="links-container">
-      <p>Links:</p>
-      <ul>
-        ${
-          nodeData.data.links
-            ? Object.entries(nodeData.data.links)
-                .map(([type, url]) => `<li>${type}: <a href="${url}" target="_blank">${url}</a></li>`)
-                .join("")
-            : "No links available."
-        }
-      </ul>
+    <div class="modal-section">
+      <p>${displayDescription}</p>
     </div>
+    ${nodeData.data.tags && nodeData.data.tags.length > 0 ? 
+      `<div class="modal-section">
+         <p><strong>Tags:</strong> ${nodeData.data.tags.join(", ")}</p>
+       </div>` : ""}
+    ${additionalFields}
+    ${validLinks.length > 0 ? 
+      `<div class="modal-section">
+         <p><strong>Links:</strong></p>
+         <ul class="links-list">
+           ${validLinks.map(([type, url]) => 
+             `<li><strong>${type}:</strong> <a href="${url}" target="_blank">${url}</a></li>`
+           ).join("")}
+         </ul>
+       </div>` : ""}
   `
   modalContent.innerHTML = content
   modal.style.display = "block"

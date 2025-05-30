@@ -409,6 +409,28 @@ footer {
     }
   }
 
+  .modal-section {
+    margin: 15px 0;
+    padding: 0;
+  }
+
+  .links-list {
+    margin: 8px 0;
+    padding-left: 20px;
+    
+    li {
+      margin: 5px 0;
+      line-height: 1.4;
+    }
+  }
+
+  .interaction-details {
+    .detail-item {
+      margin: 8px 0;
+      line-height: 1.4;
+    }
+  }
+
   .links-container {
     margin-top: 10px;
   }

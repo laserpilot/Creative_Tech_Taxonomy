@@ -248,7 +248,7 @@ export function createVisualization() {
       })
 
     // add warping box around text node
-    let rectPadding = 10
+    let rectPadding = 20
     nodeEnter
       .append("rect")
       .attr("cursor", "help")
