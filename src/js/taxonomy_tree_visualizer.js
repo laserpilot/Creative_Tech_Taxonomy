@@ -452,26 +452,96 @@ export function createVisualization() {
   /*                              handler functions                             */
   /* -------------------------------------------------------------------------- */
 
+  // Helper function to detect active tab and get appropriate taxonomy
+  function getActiveTaxonomy() {
+    const elements = document.getElementsByName("tab")
+    for (let i = 0; i < elements.length; i++) {
+      if (elements.item(i).checked) {
+        if (elements.item(i).value === "interaction") {
+          return {
+            root: window.interactionRoot,
+            isInteraction: true
+          }
+        }
+      }
+    }
+    return {
+      root: window.root,
+      isInteraction: false
+    }
+  }
+
   document.getElementById("reset").addEventListener("click", () => {
-    focusNode(window.root)
+    const { root, isInteraction } = getActiveTaxonomy()
+    if (isInteraction && window.interactionRoot) {
+      // Import and use interaction taxonomy's focusNode
+      import("./interaction_taxonomy_visualizer.js").then(module => {
+        // The focusNode function is internal, so we'll trigger a refresh instead
+        module.refreshInteractionVisualize()
+      })
+    } else {
+      focusNode(root)
+    }
   })
 
   document.getElementById("allExpand").addEventListener("click", () => {
-    handleExpand(window.root)
-    update(null, window.root)
-    focusNode(window.root)
+    const { root, isInteraction } = getActiveTaxonomy()
+    if (isInteraction && window.interactionRoot) {
+      // Import interaction taxonomy functions
+      import("./interaction_taxonomy_visualizer.js").then(module => {
+        // We need to access the internal functions, so let's trigger a manual expand
+        function expandAll(d) {
+          if (d._children) {
+            d.children = d._children
+          }
+          var children = d.children ? d.children : d._children
+          if (children) children.forEach(expandAll)
+        }
+        expandAll(window.interactionRoot)
+        module.refreshInteractionVisualize()
+      })
+    } else {
+      handleExpand(root)
+      update(null, root)
+      focusNode(root)
+    }
   })
 
   document.getElementById("allCollapse").addEventListener("click", () => {
-    window.root.x0 = dy / 2
-    window.root.y0 = 0
-    window.root.descendants().forEach((d, i) => {
-      d.id = i
-      d._children = d.children
-    })
-    window.root.children.forEach(handleCollapse)
-    update(null, window.root)
-    focusNode(window.root)
+    const { root, isInteraction } = getActiveTaxonomy()
+    if (isInteraction && window.interactionRoot) {
+      // Import interaction taxonomy functions
+      import("./interaction_taxonomy_visualizer.js").then(module => {
+        // Reset and collapse interaction taxonomy
+        window.interactionRoot.x0 = dy / 2
+        window.interactionRoot.y0 = 0
+        window.interactionRoot.descendants().forEach((d, i) => {
+          d.id = i
+          d._children = d.children
+        })
+        function collapseAll(d) {
+          if (d.children) {
+            d._children = d.children
+            d._children.forEach(collapseAll)
+            d.children = null
+          }
+        }
+        if (window.interactionRoot.children) {
+          window.interactionRoot.children.forEach(collapseAll)
+        }
+        module.refreshInteractionVisualize()
+      })
+    } else {
+      root.x0 = dy / 2
+      root.y0 = 0
+      root.descendants().forEach((d, i) => {
+        d.id = i
+        d._children = d.children
+      })
+      root.children.forEach(handleCollapse)
+      update(null, root)
+      focusNode(root)
+    }
   })
 }
 
