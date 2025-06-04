@@ -1099,7 +1099,7 @@
                       "name" : {
                         "en" : "Depth Cameras"
                       },
-                      "description" : "Depth cameras and skeletal tracking libraries",
+                      "description" : "Depth cameras and skeletal tracking libraries, such as Kinect, OpenNI, etc",
                       "tags" : [
                         "kinect",
                         "depth-camera",

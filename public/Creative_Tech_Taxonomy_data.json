@@ -4397,27 +4397,49 @@
                       "children": [
                         {
                           "name": {
-                            "en": "Mechanical/Persistence of Vision"
+                            "en": "Light-field"
                           },
                           "description": "",
                           "tags": [],
                           "links": {
-                            "Link": "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/volumetric"
+                            "Link": "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/light-field-displays"
                           },
                           "children": [
                             {
                               "name": {
-                                "en": "Flip-dot"
+                                "en": "Light Field Labs Solidlight"
                               },
-                              "description": "",
+                              "description": "Product from Light Field Labs, not yet released in early 2025",
                               "tags": [],
                               "links": {
-                                "Link": ""
+                                "Link": "https://lightfieldlab.com/"
                               }
                             },
                             {
                               "name": {
-                                "en": "Split-flap"
+                                "en": "Avalon Holographics"
+                              },
+                              "description": "Product that uses hundreds of individual projectors to make an actual light field above the display",
+                              "tags": [],
+                              "links": {
+                                "Link": "https://avalonholographics.com/product/"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "name": {
+                            "en": "Transparent OLED"
+                          },
+                          "description": "",
+                          "tags": [],
+                          "links": {
+                            "Link": "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/transparent"
+                          },
+                          "children": [
+                            {
+                              "name": {
+                                "en": "Layered/Stacked Displays"
                               },
                               "description": "",
                               "tags": [],
@@ -4451,35 +4473,45 @@
                         },
                         {
                           "name": {
-                            "en": "Transparent OLED"
-                          },
-                          "description": "",
-                          "tags": [],
-                          "links": {
-                            "Link": "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/transparent"
-                          },
-                          "children": [
-                            {
-                              "name": {
-                                "en": "Layered/Stacked Displays"
-                              },
-                              "description": "",
-                              "tags": [],
-                              "links": {
-                                "Link": ""
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "name": {
                             "en": "Flexible Displays (OLED)"
                           },
                           "description": "",
                           "tags": [],
                           "links": {
                             "Link": "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/flexible-displays"
-                          }
+                          },
+                          "children": [
+                            {
+                              "name": {
+                                "en": "Royole"
+                              },
+                              "description": "Company may be out of commission as of 2025, but previous had several flexible display kits",
+                              "tags": [],
+                              "links": {
+                                "Link": "http://royole.com"
+                              }
+                            },
+                            {
+                              "name": {
+                                "en": "LG Flexible Displays"
+                              },
+                              "description": "",
+                              "tags": [],
+                              "links": {
+                                "Link": ""
+                              }
+                            },
+                            {
+                              "name": {
+                                "en": "BOE Flexible Displays"
+                              },
+                              "description": "",
+                              "tags": [],
+                              "links": {
+                                "Link": "https://boe.com"
+                              }
+                            }
+                          ]
                         },
                         {
                           "name": {
@@ -4488,7 +4520,8 @@
                           "description": "",
                           "tags": [],
                           "links": {
-                            "Link": "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/electronic-paper-e-ink"
+                            "Link": "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/electronic-paper-e-ink",
+                            "LInk": "https://www.eink.com/"
                           },
                           "children": [
                             {
@@ -4500,12 +4533,22 @@
                               "links": {
                                 "Link": ""
                               }
+                            },
+                            {
+                              "name": {
+                                "en": "Samsung E-Paper"
+                              },
+                              "description": "",
+                              "tags": [],
+                              "links": {
+                                "Link": "https://news.samsung.com/global/samsung-showcases-color-e-paper-and-ai-signage-solutions-at-ise-2025"
+                              }
                             }
                           ]
                         },
                         {
                           "name": {
-                            "en": "Volumetric Illusion"
+                            "en": "Volumetric Displays"
                           },
                           "description": "",
                           "tags": [],
@@ -4515,44 +4558,22 @@
                           "children": [
                             {
                               "name": {
-                                "en": "Light field"
+                                "en": "Layered Screens"
                               },
-                              "description": "",
+                              "description": "Layers of transparent screens",
                               "tags": [],
                               "links": {
-                                "Link": "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/light-field-displays"
-                              },
-                              "children": [
-                                {
-                                  "name": {
-                                    "en": "Solidlight"
-                                  },
-                                  "description": "",
-                                  "tags": [],
-                                  "links": {
-                                    "Link": ""
-                                  }
-                                },
-                                {
-                                  "name": {
-                                    "en": "Looking Glass"
-                                  },
-                                  "description": "",
-                                  "tags": [],
-                                  "links": {
-                                    "Link": ""
-                                  }
-                                }
-                              ]
+                                "Link": "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/volumetric#c28e"
+                              }
                             },
                             {
                               "name": {
-                                "en": "Layered Screens"
+                                "en": "Volumetric LED"
                               },
-                              "description": "",
+                              "description": "Strands of LED pixels arranged in a physical volume",
                               "tags": [],
                               "links": {
-                                "Link": ""
+                                "Link": "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/volumetric#volumetric-led"
                               }
                             }
                           ]
@@ -4566,6 +4587,48 @@
                           "links": {
                             "Link": "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/modified-polarizers"
                           }
+                        },
+                        {
+                          "name": {
+                            "en": "Autostereoscopic"
+                          },
+                          "description": "Various approaches to autostereoscopic displays, both spatial and temporal multiplexing",
+                          "tags": [],
+                          "links": {
+                            "Link": "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/lenticular-and-multiview-displays"
+                          },
+                          "children": [
+                            {
+                              "name": {
+                                "en": "Looking Glass Displays"
+                              },
+                              "description": "Lenticular autostereoscopic displays from small to large",
+                              "tags": [],
+                              "links": {
+                                "Link": "https://lookingglassfactory.com/"
+                              }
+                            },
+                            {
+                              "name": {
+                                "en": "Liminal Space"
+                              },
+                              "description": "Not technically auto-stereoscopic, but seems like it could fall into this category. A tilable high resolution LED wall that uses passive polarized glasses to create a 3D image from a large LED wall",
+                              "tags": [],
+                              "links": {
+                                "Link": "https://liminal.space/"
+                              }
+                            },
+                            {
+                              "name": {
+                                "en": "Realfiction"
+                              },
+                              "description": "Temporally multiplexed image",
+                              "tags": [],
+                              "links": {
+                                "Link": "https://lookingglassfactory.com/"
+                              }
+                            }
+                          ]
                         },
                         {
                           "name": {
@@ -4635,6 +4698,120 @@
                               "tags": [],
                               "links": {
                                 "Link": "https://blair-neal.gitbook.io/survey-of-alternative-displays/techniques/diffusion-and-distortion"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "name": {
+                            "en": "Laser Projectors"
+                          },
+                          "description": "Laser projection as a unique visual approach",
+                          "tags": [],
+                          "links": {
+                            "Link": "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/laser-projectors"
+                          }
+                        },
+                        {
+                          "name": {
+                            "en": "Circular and Non-rectangular"
+                          },
+                          "description": "Displays that are unusual shapes or circular ",
+                          "tags": [],
+                          "links": {
+                            "Link": ""
+                          }
+                        },
+                        {
+                          "name": {
+                            "en": "Experimental or Niche"
+                          },
+                          "description": "",
+                          "tags": [],
+                          "links": {
+                            "Link": "https://blair-neal.gitbook.io/survey-of-alternative-displays/experimental-other/overview"
+                          },
+                          "children": [
+                            {
+                              "name": {
+                                "en": "Switch Glass"
+                              },
+                              "description": "",
+                              "tags": [],
+                              "links": {
+                                "Link": ""
+                              }
+                            },
+                            {
+                              "name": {
+                                "en": "Electrochromic Paint"
+                              },
+                              "description": "",
+                              "tags": [],
+                              "links": {
+                                "Link": ""
+                              }
+                            },
+                            {
+                              "name": {
+                                "en": "Light reactive surfaces"
+                              },
+                              "description": "Thermochromic paint, glow in the dark, etc",
+                              "tags": [],
+                              "links": {
+                                "Link": ""
+                              }
+                            },
+                            {
+                              "name": {
+                                "en": "Plasma Combustion"
+                              },
+                              "description": "",
+                              "tags": [],
+                              "links": {
+                                "Link": ""
+                              }
+                            },
+                            {
+                              "name": {
+                                "en": "Acoustic Levitation"
+                              },
+                              "description": "",
+                              "tags": [],
+                              "links": {
+                                "Link": ""
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "name": {
+                            "en": "Mechanical Displays"
+                          },
+                          "description": "Uses various mechanical methods to display images",
+                          "tags": [],
+                          "links": {
+                            "Link": "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/volumetric"
+                          },
+                          "children": [
+                            {
+                              "name": {
+                                "en": "Flip-dot"
+                              },
+                              "description": "",
+                              "tags": [],
+                              "links": {
+                                "Link": ""
+                              }
+                            },
+                            {
+                              "name": {
+                                "en": "Split-flap"
+                              },
+                              "description": "",
+                              "tags": [],
+                              "links": {
+                                "Link": ""
                               }
                             }
                           ]
