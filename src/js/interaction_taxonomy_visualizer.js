@@ -245,7 +245,7 @@ export function createInteractionVisualization() {
       })
 
     // add warping box around text node (matching main taxonomy exactly)
-    let rectPadding = 20
+    let rectPadding = 10
     nodeEnter
       .append("rect")
       .attr("cursor", "help")
@@ -466,6 +466,9 @@ export function createInteractionVisualization() {
     d3.select(element).attr("transform", `scale(${scaleSize})`).transition().ease(d3.easeElastic)
   }
 
+  // Make update function globally available for expand/collapse functionality
+  window.interactionUpdate = update
+
   // Initialize the tree
   window.interactionRoot.x0 = windowWidth / 2
   window.interactionRoot.y0 = windowHeight / 2
@@ -506,6 +509,42 @@ export const updateInteractionEditMode = (mode) => {
 // Refresh the interaction visualization
 export const refreshInteractionVisualize = () => {
   createInteractionVisualization()
+}
+
+// Export expand and collapse functions for interaction taxonomy
+export const expandAllInteraction = () => {
+  if (!window.interactionRoot || !window.interactionUpdate) return
+
+  const handleExpandAll = (d) => {
+    if (d._children) {
+      d.children = d._children
+      d._children = null
+    }
+    var children = d.children ? d.children : d._children
+    if (children) children.forEach(handleExpandAll)
+  }
+
+  handleExpandAll(window.interactionRoot)
+  window.interactionUpdate(null, window.interactionRoot)
+}
+
+export const collapseAllInteraction = () => {
+  if (!window.interactionRoot || !window.interactionUpdate) return
+
+  const handleCollapseAll = (d) => {
+    if (d.children) {
+      d._children = d.children
+      d._children.forEach(handleCollapseAll)
+      d.children = null
+    }
+  }
+
+  // Collapse all children except root
+  if (window.interactionRoot.children) {
+    window.interactionRoot.children.forEach(handleCollapseAll)
+  }
+
+  window.interactionUpdate(null, window.interactionRoot)
 }
 
 /* -------------------------------------------------------------------------- */

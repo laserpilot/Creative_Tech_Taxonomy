@@ -1097,7 +1097,7 @@
                     },
                     {
                       "name" : {
-                        "en" : "Kinect/Depth Camera/ OpenNI"
+                        "en" : "Depth Cameras"
                       },
                       "description" : "Depth cameras and skeletal tracking libraries",
                       "tags" : [
@@ -1510,7 +1510,7 @@
                             "depth-aware-gestures",
                             "robotics"
                           ],
-                          "limitations" : "indoor use, USB bandwidth requirements"
+                          "limitations" : "discontinued, indoor use, USB bandwidth requirements"
                         }
                       ]
                     },
@@ -3135,7 +3135,7 @@
           "name" : {
             "en" : "Large Scale Environmental"
           },
-          "description" : "Changes in ambient or object temperature - thermocouples, thermistors, infrared thermometers, thermal cameras, temperature sensing arrays",
+          "description" : "These are changes on a large scale such as - Sesimic sensors for earthquake detection, satellite imagery, lidar for topographical maps, Sonar for underwater mapping, Magnetometry for geological surveys",
           "tags" : [
             "Environment"
           ],

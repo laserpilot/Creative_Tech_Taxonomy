@@ -497,16 +497,7 @@ export function createVisualization() {
     if (isInteraction && window.interactionRoot) {
       // Import interaction taxonomy functions
       import("./interaction_taxonomy_visualizer.js").then((module) => {
-        // We need to access the internal functions, so let's trigger a manual expand
-        function expandAll(d) {
-          if (d._children) {
-            d.children = d._children
-          }
-          var children = d.children ? d.children : d._children
-          if (children) children.forEach(expandAll)
-        }
-        expandAll(window.interactionRoot)
-        module.refreshInteractionVisualize()
+        module.expandAllInteraction()
       })
     } else {
       handleExpand(root)
@@ -520,24 +511,7 @@ export function createVisualization() {
     if (isInteraction && window.interactionRoot) {
       // Import interaction taxonomy functions
       import("./interaction_taxonomy_visualizer.js").then((module) => {
-        // Reset and collapse interaction taxonomy
-        window.interactionRoot.x0 = dy / 2
-        window.interactionRoot.y0 = 0
-        window.interactionRoot.descendants().forEach((d, i) => {
-          d.id = i
-          d._children = d.children
-        })
-        function collapseAll(d) {
-          if (d.children) {
-            d._children = d.children
-            d._children.forEach(collapseAll)
-            d.children = null
-          }
-        }
-        if (window.interactionRoot.children) {
-          window.interactionRoot.children.forEach(collapseAll)
-        }
-        module.refreshInteractionVisualize()
+        module.collapseAllInteraction()
       })
     } else {
       root.x0 = dy / 2
