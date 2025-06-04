@@ -4,19 +4,39 @@
     "ja": "Web/ネットワーク"
   },
   "description": "Tools and technologies for web-based creative projects, including frontend frameworks, backend services, communication protocols, and networking technologies commonly used in interactive installations and digital art.",
-  "tags": [],
+  "tags": [
+    "web-development",
+    "networking",
+    "frontend",
+    "backend",
+    "javascript",
+    "web-standards",
+    "real-time",
+    "interactive"
+  ],
   "links": {
-    "Link": ""
+    "Web Standards": "https://en.wikipedia.org/wiki/Web_standards",
+    "MDN Web Docs": "https://developer.mozilla.org/",
+    "Creative Web Development": "https://tympanus.net/codrops/"
   },
   "children": [
     {
       "name": {
         "en": "Frontend"
       },
-      "description": "",
-      "tags": [],
+      "description": "Client-side technologies and frameworks for creating interactive web experiences, user interfaces, and browser-based creative applications",
+      "tags": [
+        "frontend",
+        "client-side",
+        "browser",
+        "ui",
+        "javascript",
+        "css",
+        "html"
+      ],
       "links": {
-        "Link": ""
+        "Frontend Development": "https://en.wikipedia.org/wiki/Front-end_web_development",
+        "Web Platform": "https://developer.mozilla.org/en-US/docs/Web"
       },
       "children": [
         {
@@ -34,7 +54,12 @@
                 "en": "tone.js"
               },
               "description": "A comprehensive framework for creating interactive music in the browser. Built on top of the Web Audio API, it provides high-level abstractions for synthesis, effects, and scheduling, making it ideal for creative audio applications and installations.",
-              "tags": ["audio", "synthesis", "web-audio", "javascript"],
+              "tags": [
+                "audio",
+                "synthesis",
+                "web-audio",
+                "javascript"
+              ],
               "links": {
                 "Official Website": "https://tonejs.github.io/",
                 "Documentation": "https://tonejs.github.io/docs/",
@@ -58,7 +83,12 @@
                 "en": "AR.js/A-Frame"
               },
               "description": "A combination of AR.js (augmented reality) and A-Frame (WebVR framework) that enables marker-based and markerless AR experiences directly in web browsers without requiring app downloads.",
-              "tags": ["augmented-reality", "webxr", "markers", "web-based"],
+              "tags": [
+                "augmented-reality",
+                "webxr",
+                "markers",
+                "web-based"
+              ],
               "links": {
                 "AR.js GitHub": "https://github.com/AR-js-org/AR.js",
                 "A-Frame Official": "https://aframe.io/",
@@ -70,7 +100,12 @@
                 "en": "8th Wall"
               },
               "description": "A commercial platform for building WebAR experiences with advanced features like surface detection, face tracking, and world tracking. Provides more robust AR capabilities than open-source alternatives.",
-              "tags": ["augmented-reality", "commercial", "web-ar", "face-tracking"],
+              "tags": [
+                "augmented-reality",
+                "commercial",
+                "web-ar",
+                "face-tracking"
+              ],
               "links": {
                 "Official Website": "https://www.8thwall.com/",
                 "Documentation": "https://docs.8thwall.com/"
@@ -93,7 +128,12 @@
                 "en": "ml5.js"
               },
               "description": "A friendly machine learning library for creative coding built on top of TensorFlow.js. Makes machine learning accessible to artists and creative coders with simple APIs for image classification, pose detection, and more.",
-              "tags": ["machine-learning", "tensorflow", "creative-coding", "computer-vision"],
+              "tags": [
+                "machine-learning",
+                "tensorflow",
+                "creative-coding",
+                "computer-vision"
+              ],
               "links": {
                 "Official Website": "https://ml5js.org/",
                 "Documentation": "https://docs.ml5js.org/",
@@ -104,12 +144,20 @@
         },
         {
           "name": {
-            "en": "WebGL Environments"
+            "en": "WebGL/WebGPU Graphics"
           },
-          "description": "",
-          "tags": [],
+          "description": "Hardware-accelerated graphics libraries and frameworks for high-performance 3D rendering, visual effects, and computational graphics in web browsers",
+          "tags": [
+            "webgl",
+            "webgpu",
+            "3d-graphics",
+            "gpu",
+            "shaders",
+            "rendering"
+          ],
           "links": {
-            "Link": ""
+            "WebGL Specification": "https://www.khronos.org/webgl/",
+            "WebGPU Specification": "https://www.w3.org/TR/webgpu/"
           },
           "children": [
             {
@@ -117,12 +165,146 @@
                 "en": "three.js"
               },
               "description": "A cross-browser JavaScript library that makes creating 3D graphics on the web accessible. Built on top of WebGL, it provides an easy-to-use API for 3D scenes, animations, and interactive experiences in web browsers.",
-              "tags": ["3d-graphics", "webgl", "animation", "3d-scenes"],
+              "tags": [
+                "3d-graphics",
+                "webgl",
+                "animation",
+                "3d-scenes"
+              ],
               "links": {
                 "Official Website": "https://threejs.org/",
                 "Documentation": "https://threejs.org/docs/",
                 "GitHub": "https://github.com/mrdoob/three.js"
               }
+            },
+            {
+              "name": {
+                "en": "Babylon.js"
+              },
+              "description": "A powerful, simple, and open 3D engine with native WebGPU support, real-time ray tracing, and comprehensive tools for web-based 3D applications",
+              "tags": [
+                "3d-engine",
+                "webgpu",
+                "webgl",
+                "ray-tracing",
+                "real-time"
+              ],
+              "links": {
+                "Official Website": "https://www.babylonjs.com/",
+                "Documentation": "https://doc.babylonjs.com/",
+                "GitHub": "https://github.com/BabylonJS/Babylon.js"
+              }
+            },
+            {
+              "name": {
+                "en": "WebGPU Libraries"
+              },
+              "description": "Next-generation graphics APIs and libraries leveraging WebGPU for advanced rendering and compute shaders",
+              "tags": [
+                "webgpu",
+                "compute-shaders",
+                "next-gen",
+                "performance"
+              ],
+              "links": {
+                "WebGPU Fundamentals": "https://webgpufundamentals.org/"
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "WGPU"
+                  },
+                  "description": "Safe and portable GPU abstraction in Rust, with WebGPU compatibility for high-performance graphics",
+                  "tags": [
+                    "wgpu",
+                    "rust",
+                    "webgpu",
+                    "safe"
+                  ],
+                  "links": {
+                    "WGPU": "https://wgpu.rs/"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "WebGPU-Native"
+                  },
+                  "description": "Native implementation of WebGPU for desktop applications and performance-critical scenarios",
+                  "tags": [
+                    "webgpu",
+                    "native",
+                    "performance"
+                  ],
+                  "links": {
+                    "WebGPU Native": "https://github.com/gfx-rs/wgpu-native"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Specialized Graphics Libraries"
+              },
+              "description": "Purpose-built libraries for specific graphics applications and creative coding",
+              "tags": [
+                "specialized",
+                "creative-coding",
+                "effects",
+                "visualization"
+              ],
+              "links": {
+                "Creative Coding Resources": "https://github.com/terkelg/awesome-creative-coding"
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "regl"
+                  },
+                  "description": "Functional WebGL programming with a declarative API designed for performance and simplicity",
+                  "tags": [
+                    "webgl",
+                    "functional",
+                    "declarative",
+                    "performance"
+                  ],
+                  "links": {
+                    "Regl": "https://regl.party/",
+                    "GitHub": "https://github.com/regl-project/regl"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "OGL"
+                  },
+                  "description": "Minimal WebGL library focused on providing essential tools without abstraction overhead",
+                  "tags": [
+                    "webgl",
+                    "minimal",
+                    "lightweight",
+                    "essential"
+                  ],
+                  "links": {
+                    "OGL": "https://github.com/oframe/ogl"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Pixi.js"
+                  },
+                  "description": "2D WebGL renderer with fast performance for games and interactive graphics applications",
+                  "tags": [
+                    "2d",
+                    "webgl",
+                    "games",
+                    "sprites",
+                    "fast"
+                  ],
+                  "links": {
+                    "Pixi.js": "https://pixijs.com/",
+                    "Documentation": "https://pixijs.download/dev/docs/"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -141,7 +323,12 @@
                 "en": "D3.js"
               },
               "description": "A powerful JavaScript library for creating dynamic, interactive data visualizations using web standards. Provides low-level building blocks for binding data to DOM elements and applying data-driven transformations.",
-              "tags": ["data-visualization", "svg", "dom-manipulation", "interactive"],
+              "tags": [
+                "data-visualization",
+                "svg",
+                "dom-manipulation",
+                "interactive"
+              ],
               "links": {
                 "Official Website": "https://d3js.org/",
                 "Documentation": "https://github.com/d3/d3/wiki",
@@ -154,40 +341,61 @@
           "name": {
             "en": "Common Frontend Frameworks"
           },
-          "description": "",
-          "tags": [],
+          "description": "Popular JavaScript frameworks for building user interfaces and single-page applications",
+          "tags": [
+            "frontend",
+            "frameworks",
+            "javascript",
+            "ui",
+            "spa"
+          ],
           "links": {
-            "Link": ""
+            "Frontend Frameworks": "https://en.wikipedia.org/wiki/Comparison_of_web_frameworks#JavaScript"
           },
           "children": [
             {
               "name": {
                 "en": "Vue.js"
               },
-              "description": "",
-              "tags": [],
+              "description": "Progressive JavaScript framework for building user interfaces with gentle learning curve",
+              "tags": [
+                "vue",
+                "progressive",
+                "reactive",
+                "component-based"
+              ],
               "links": {
-                "Link": ""
+                "Vue.js": "https://vuejs.org/"
               }
             },
             {
               "name": {
                 "en": "Angular.js"
               },
-              "description": "",
-              "tags": [],
+              "description": "Comprehensive framework for building dynamic web applications with TypeScript",
+              "tags": [
+                "angular",
+                "typescript",
+                "comprehensive",
+                "google"
+              ],
               "links": {
-                "Link": ""
+                "Angular": "https://angular.io/"
               }
             },
             {
               "name": {
                 "en": "React.js"
               },
-              "description": "",
-              "tags": [],
+              "description": "Component-based JavaScript library for building user interfaces with virtual DOM",
+              "tags": [
+                "react",
+                "component-based",
+                "virtual-dom",
+                "facebook"
+              ],
               "links": {
-                "Link": ""
+                "React": "https://react.dev/"
               }
             }
           ]
@@ -207,7 +415,12 @@
                 "en": "paper.js"
               },
               "description": "A powerful vector graphics scripting framework that runs on top of the HTML5 Canvas. Offers a clean Scene Graph/Document Object Model and extensive functionality for creating complex graphics and animations.",
-              "tags": ["vector-graphics", "canvas", "animation", "creative-coding"],
+              "tags": [
+                "vector-graphics",
+                "canvas",
+                "animation",
+                "creative-coding"
+              ],
               "links": {
                 "Official Website": "http://paperjs.org/",
                 "Documentation": "http://paperjs.org/reference/",
@@ -219,12 +432,205 @@
                 "en": "p5.js"
               },
               "description": "A JavaScript library that makes coding accessible for artists, designers, educators, and beginners. Based on the core principles of Processing, it provides a full set of drawing functionality and creative coding tools for the web.",
-              "tags": ["creative-coding", "processing", "canvas", "accessibility"],
+              "tags": [
+                "creative-coding",
+                "processing",
+                "canvas",
+                "accessibility"
+              ],
               "links": {
                 "Official Website": "https://p5js.org/",
                 "Documentation": "https://p5js.org/reference/",
                 "GitHub": "https://github.com/processing/p5.js"
               }
+            },
+            {
+              "name": {
+                "en": "Rive"
+              },
+              "description": "User interface tool for building interfaces for web and game engines",
+              "tags": [
+                "user-interface"
+              ],
+              "links": {
+                "Official Website": "https://rive.app/"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Modern Web APIs"
+          },
+          "description": "Native browser APIs that enable advanced creative functionalities without external libraries",
+          "tags": [
+            "web-apis",
+            "native",
+            "browser",
+            "standards",
+            "multimedia"
+          ],
+          "links": {
+            "Web APIs": "https://developer.mozilla.org/en-US/docs/Web/API",
+            "Can I Use": "https://caniuse.com/"
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Media APIs"
+              },
+              "description": "APIs for accessing and manipulating media devices and content",
+              "tags": [
+                "media",
+                "audio",
+                "video",
+                "camera",
+                "microphone"
+              ],
+              "links": {
+                "Media APIs": "https://developer.mozilla.org/en-US/docs/Web/Media"
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Web Audio API"
+                  },
+                  "description": "Low-level audio processing and synthesis capabilities in the browser",
+                  "tags": [
+                    "audio",
+                    "synthesis",
+                    "processing",
+                    "real-time"
+                  ],
+                  "links": {
+                    "Web Audio API": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "MediaDevices API"
+                  },
+                  "description": "Access to connected media input devices like cameras and microphones",
+                  "tags": [
+                    "camera",
+                    "microphone",
+                    "getUserMedia",
+                    "devices"
+                  ],
+                  "links": {
+                    "MediaDevices": "https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Web MIDI API"
+                  },
+                  "description": "Access to MIDI devices for musical instrument control and interaction",
+                  "tags": [
+                    "midi",
+                    "music",
+                    "instruments",
+                    "control"
+                  ],
+                  "links": {
+                    "Web MIDI API": "https://developer.mozilla.org/en-US/docs/Web/API/Web_MIDI_API"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Sensor APIs"
+              },
+              "description": "Access to device sensors for motion-based and environmental interactions",
+              "tags": [
+                "sensors",
+                "motion",
+                "orientation",
+                "accelerometer"
+              ],
+              "links": {
+                "Generic Sensor API": "https://developer.mozilla.org/en-US/docs/Web/API/Sensor_APIs"
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "DeviceMotion API"
+                  },
+                  "description": "Access to device acceleration and rotation data for motion-based interactions",
+                  "tags": [
+                    "motion",
+                    "acceleration",
+                    "gyroscope",
+                    "mobile"
+                  ],
+                  "links": {
+                    "DeviceMotion": "https://developer.mozilla.org/en-US/docs/Web/API/DeviceMotionEvent"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Geolocation API"
+                  },
+                  "description": "Access to device location for location-based creative applications",
+                  "tags": [
+                    "location",
+                    "gps",
+                    "geolocation",
+                    "spatial"
+                  ],
+                  "links": {
+                    "Geolocation API": "https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Performance APIs"
+              },
+              "description": "APIs for precise timing, measurement, and optimization of web applications",
+              "tags": [
+                "performance",
+                "timing",
+                "measurement",
+                "optimization"
+              ],
+              "links": {
+                "Performance API": "https://developer.mozilla.org/en-US/docs/Web/API/Performance_API"
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "requestAnimationFrame"
+                  },
+                  "description": "Synchronized animation loop with the browser's refresh rate for smooth animations",
+                  "tags": [
+                    "animation",
+                    "frame-rate",
+                    "smooth",
+                    "synchronization"
+                  ],
+                  "links": {
+                    "requestAnimationFrame": "https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Web Workers"
+                  },
+                  "description": "Background threads for heavy computations without blocking the main UI thread",
+                  "tags": [
+                    "workers",
+                    "threading",
+                    "background",
+                    "performance"
+                  ],
+                  "links": {
+                    "Web Workers": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API"
+                  }
+                }
+              ]
             }
           ]
         }
@@ -234,10 +640,18 @@
       "name": {
         "en": "Backend"
       },
-      "description": "",
-      "tags": [],
+      "description": "Server-side technologies, databases, and infrastructure for supporting web-based creative applications and installations",
+      "tags": [
+        "backend",
+        "server-side",
+        "database",
+        "infrastructure",
+        "api",
+        "cloud"
+      ],
       "links": {
-        "Link": ""
+        "Backend Development": "https://en.wikipedia.org/wiki/Backend",
+        "API Design": "https://en.wikipedia.org/wiki/API"
       },
       "children": [
         {
@@ -319,7 +733,12 @@
                 "en": "Websockets"
               },
               "description": "A communication protocol that provides full-duplex communication channels over a single TCP connection. Enables real-time, bidirectional communication between web browsers and servers, commonly used in interactive installations.",
-              "tags": ["protocol", "real-time", "bidirectional", "web-standard"],
+              "tags": [
+                "protocol",
+                "real-time",
+                "bidirectional",
+                "web-standard"
+              ],
               "links": {
                 "MDN Documentation": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
                 "Wikipedia": "https://en.wikipedia.org/wiki/WebSocket"
@@ -340,7 +759,12 @@
                     "en": "Open Sound Control (OSC)"
                   },
                   "description": "A protocol for communication among computers, sound synthesizers, and other multimedia devices optimized for modern networking technology. Widely used in interactive installations and live performance systems for real-time control.",
-                  "tags": ["protocol", "real-time", "multimedia", "networking"],
+                  "tags": [
+                    "protocol",
+                    "real-time",
+                    "multimedia",
+                    "networking"
+                  ],
                   "links": {
                     "Official Website": "http://opensoundcontrol.org/",
                     "Wikipedia": "https://en.wikipedia.org/wiki/Open_Sound_Control"
@@ -419,7 +843,12 @@
                 "en": "Node.js"
               },
               "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine that allows JavaScript to run on servers. Enables full-stack JavaScript development and is commonly used for real-time applications, APIs, and creative project backends.",
-              "tags": ["javascript", "runtime", "server", "real-time"],
+              "tags": [
+                "javascript",
+                "runtime",
+                "server",
+                "real-time"
+              ],
               "links": {
                 "Official Website": "https://nodejs.org/",
                 "Documentation": "https://nodejs.org/docs/",
@@ -593,6 +1022,164 @@
               }
             }
           ]
+        },
+        {
+          "name": {
+            "en": "Modern Serverless & Edge"
+          },
+          "description": "Serverless computing and edge technologies for scalable, low-latency creative applications",
+          "tags": [
+            "serverless",
+            "edge-computing",
+            "functions",
+            "cdn",
+            "performance"
+          ],
+          "links": {
+            "Serverless Computing": "https://en.wikipedia.org/wiki/Serverless_computing",
+            "Edge Computing": "https://en.wikipedia.org/wiki/Edge_computing"
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Serverless Platforms"
+              },
+              "description": "Function-as-a-Service platforms for event-driven backend logic",
+              "tags": [
+                "faas",
+                "functions",
+                "event-driven",
+                "auto-scaling"
+              ],
+              "links": {
+                "Serverless Architecture": "https://en.wikipedia.org/wiki/Function_as_a_service"
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Vercel Functions"
+                  },
+                  "description": "Serverless functions optimized for frontend frameworks and edge deployment",
+                  "tags": [
+                    "vercel",
+                    "edge",
+                    "frontend",
+                    "nextjs"
+                  ],
+                  "links": {
+                    "Vercel Functions": "https://vercel.com/docs/functions"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Netlify Functions"
+                  },
+                  "description": "AWS Lambda-powered serverless functions integrated with Netlify hosting",
+                  "tags": [
+                    "netlify",
+                    "aws-lambda",
+                    "jamstack",
+                    "hosting"
+                  ],
+                  "links": {
+                    "Netlify Functions": "https://www.netlify.com/products/functions/"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Cloudflare Workers"
+                  },
+                  "description": "JavaScript runtime at the edge for ultra-low latency applications",
+                  "tags": [
+                    "cloudflare",
+                    "edge",
+                    "low-latency",
+                    "javascript"
+                  ],
+                  "links": {
+                    "Cloudflare Workers": "https://workers.cloudflare.com/"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Supabase Edge Functions"
+                  },
+                  "description": "TypeScript edge functions with built-in database and auth integration",
+                  "tags": [
+                    "supabase",
+                    "typescript",
+                    "database",
+                    "auth"
+                  ],
+                  "links": {
+                    "Supabase Edge Functions": "https://supabase.com/docs/guides/functions"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Real-time Services"
+              },
+              "description": "Managed services for real-time communication and data synchronization",
+              "tags": [
+                "real-time",
+                "websockets",
+                "sync",
+                "messaging"
+              ],
+              "links": {
+                "Real-time Web": "https://en.wikipedia.org/wiki/Real-time_web"
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Pusher"
+                  },
+                  "description": "Hosted WebSocket service for real-time features in web and mobile apps",
+                  "tags": [
+                    "pusher",
+                    "websockets",
+                    "hosted",
+                    "real-time"
+                  ],
+                  "links": {
+                    "Pusher": "https://pusher.com/"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Ably"
+                  },
+                  "description": "Real-time messaging platform with global edge network for low-latency communication",
+                  "tags": [
+                    "ably",
+                    "messaging",
+                    "global",
+                    "low-latency"
+                  ],
+                  "links": {
+                    "Ably": "https://ably.com/"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "Socket.IO"
+                  },
+                  "description": "Real-time bidirectional event-based communication library",
+                  "tags": [
+                    "socket-io",
+                    "bidirectional",
+                    "events",
+                    "node"
+                  ],
+                  "links": {
+                    "Socket.IO": "https://socket.io/"
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -600,30 +1187,49 @@
       "name": {
         "en": "Data Serialization"
       },
-      "description": "",
-      "tags": [],
+      "description": "Data formats and protocols for exchanging information between systems and applications",
+      "tags": [
+        "serialization",
+        "data-formats",
+        "protocols",
+        "interchange"
+      ],
       "links": {
-        "Link": ""
+        "Data Serialization": "https://en.wikipedia.org/wiki/Serialization",
+        "Data Interchange": "https://en.wikipedia.org/wiki/Data_exchange"
       },
       "children": [
         {
           "name": {
             "en": "Protobuf"
           },
-          "description": "",
-          "tags": [],
+          "description": "Google's language-neutral, platform-neutral serialization mechanism for structured data",
+          "tags": [
+            "protobuf",
+            "binary",
+            "efficient",
+            "google",
+            "grpc"
+          ],
           "links": {
-            "Link": ""
+            "Protocol Buffers": "https://protobuf.dev/",
+            "Protobuf GitHub": "https://github.com/protocolbuffers/protobuf"
           }
         },
         {
           "name": {
             "en": "YAML"
           },
-          "description": "",
-          "tags": [],
+          "description": "Human-readable data serialization standard commonly used for configuration files",
+          "tags": [
+            "yaml",
+            "configuration",
+            "human-readable",
+            "markup"
+          ],
           "links": {
-            "Link": ""
+            "YAML": "https://yaml.org/",
+            "YAML Specification": "https://yaml.org/spec/"
           }
         },
         {
@@ -631,7 +1237,11 @@
             "en": "JSON"
           },
           "description": "JavaScript Object Notation - a lightweight, text-based data interchange format that is easy for humans to read and write. Widely used for data transmission between servers and web applications.",
-          "tags": ["data-format", "serialization", "web-standard"],
+          "tags": [
+            "data-format",
+            "serialization",
+            "web-standard"
+          ],
           "links": {
             "Official Website": "https://www.json.org/",
             "Wikipedia": "https://en.wikipedia.org/wiki/JSON"
@@ -641,10 +1251,16 @@
           "name": {
             "en": "XML"
           },
-          "description": "",
-          "tags": [],
+          "description": "Extensible markup language for structured data representation and document exchange",
+          "tags": [
+            "xml",
+            "markup",
+            "structured",
+            "extensible"
+          ],
           "links": {
-            "Link": ""
+            "XML": "https://www.w3.org/XML/",
+            "XML Specification": "https://www.w3.org/TR/xml/"
           }
         }
       ]
