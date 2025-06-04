@@ -2,30 +2,34 @@
   "name": {
     "en": "AI/Machine Learning"
   },
-  "description": "Various topics and tools related to artificial intelligence and machine learning",
-  "tags": [],
+  "description": "Artificial intelligence and machine learning technologies, frameworks, and applications for creative technology projects. Includes generative AI, computer vision, natural language processing, and specialized AI tools.",
+  "tags": ["ai", "machine-learning", "deep-learning", "neural-networks", "generative-ai", "computer-vision", "nlp", "automation"],
   "links": {
-    "Link": ""
+    "AI Overview": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+    "ML Overview": "https://en.wikipedia.org/wiki/Machine_learning",
+    "Creative AI": "https://www.creativeai.net/"
   },
   "children": [
     {
       "name": {
         "en": "Content Identification"
       },
-      "description": "",
-      "tags": [],
+      "description": "AI systems for analyzing, classifying, and understanding content across different media types including text, images, audio, and video",
+      "tags": ["content-analysis", "classification", "recognition", "computer-vision", "nlp"],
       "links": {
-        "Link": ""
+        "Computer Vision": "https://en.wikipedia.org/wiki/Computer_vision",
+        "Pattern Recognition": "https://en.wikipedia.org/wiki/Pattern_recognition"
       },
       "children": [
         {
           "name": {
             "en": "Object Recognition"
           },
-          "description": "",
-          "tags": [],
+          "description": "Computer vision techniques for detecting, classifying, and tracking objects in images and video",
+          "tags": ["object-detection", "classification", "computer-vision", "tracking"],
           "links": {
-            "Link": ""
+            "Object Detection": "https://en.wikipedia.org/wiki/Object_detection",
+            "YOLO": "https://arxiv.org/abs/1506.02640"
           },
           "children": [
             {
@@ -52,20 +56,20 @@
                       "name": {
                         "en": "PoseNET"
                       },
-                      "description": "",
-                      "tags": [],
+                      "description": "Real-time human pose estimation in the browser using TensorFlow.js",
+                      "tags": ["posenet", "pose-estimation", "browser", "tensorflow-js"],
                       "links": {
-                        "Link": ""
+                        "PoseNet": "https://github.com/tensorflow/tfjs-models/tree/master/posenet"
                       }
                     },
                     {
                       "name": {
                         "en": "Mediapipe"
                       },
-                      "description": "",
-                      "tags": [],
+                      "description": "Google's framework for building multimodal applied ML pipelines",
+                      "tags": ["mediapipe", "google", "multimodal", "real-time"],
                       "links": {
-                        "Link": ""
+                        "MediaPipe": "https://mediapipe.dev/"
                       }
                     }
                   ]
@@ -118,20 +122,21 @@
               "name": {
                 "en": "OpenCV"
               },
-              "description": "",
-              "tags": [],
+              "description": "Open source computer vision and machine learning software library",
+              "tags": ["opencv", "computer-vision", "image-processing", "open-source"],
               "links": {
-                "Link": ""
+                "OpenCV": "https://opencv.org/"
               }
             },
             {
               "name": {
                 "en": "YOLO"
               },
-              "description": "",
-              "tags": [],
+              "description": "You Only Look Once - real-time object detection system with multiple versions",
+              "tags": ["yolo", "real-time", "object-detection", "single-shot"],
               "links": {
-                "Link": ""
+                "YOLO": "https://pjreddie.com/darknet/yolo/",
+                "YOLOv8": "https://github.com/ultralytics/ultralytics"
               }
             }
           ]
@@ -407,31 +412,137 @@
                       "name": {
                         "en": "Videos and Animation"
                       },
-                      "description": "",
-                      "tags": [],
+                      "description": "AI-powered video generation and animation tools for creating dynamic visual content",
+                      "tags": ["video-generation", "animation", "text-to-video", "ai-video"],
                       "links": {
-                        "Link": ""
+                        "Video Generation Overview": "https://en.wikipedia.org/wiki/Video_synthesis"
                       },
                       "children": [
                         {
                           "name": {
-                            "en": "AnimateDiff"
+                            "en": "Text-to-Video Models"
                           },
-                          "description": "",
-                          "tags": [],
+                          "description": "AI models that generate videos from text descriptions",
+                          "tags": ["text-to-video", "prompt-based", "generative"],
                           "links": {
-                            "Link": ""
-                          }
+                            "Text-to-Video Research": "https://arxiv.org/abs/2301.00398"
+                          },
+                          "children": [
+                            {
+                              "name": {
+                                "en": "Google Veo 3"
+                              },
+                              "description": "Google's latest video generation model with improved quality and control",
+                              "tags": ["google", "veo", "text-to-video", "high-quality"],
+                              "links": {
+                                "Google Veo": "https://deepmind.google/technologies/veo/"
+                              }
+                            },
+                            {
+                              "name": {
+                                "en": "OpenAI Sora"
+                              },
+                              "description": "OpenAI's advanced video generation model capable of creating realistic scenes",
+                              "tags": ["openai", "sora", "realistic", "long-form"],
+                              "links": {
+                                "Sora Overview": "https://openai.com/sora"
+                              }
+                            },
+                            {
+                              "name": {
+                                "en": "Runway Gen-3"
+                              },
+                              "description": "Runway's latest generation video model with enhanced motion and consistency",
+                              "tags": ["runway", "gen-3", "motion", "commercial"],
+                              "links": {
+                                "Runway Gen-3": "https://runwayml.com/research/gen-3-alpha"
+                              }
+                            },
+                            {
+                              "name": {
+                                "en": "Pika Labs"
+                              },
+                              "description": "AI video generation platform focused on accessibility and ease of use",
+                              "tags": ["pika", "accessible", "user-friendly"],
+                              "links": {
+                                "Pika Labs": "https://pika.art/"
+                              }
+                            },
+                            {
+                              "name": {
+                                "en": "Stable Video Diffusion"
+                              },
+                              "description": "Open-source video generation model from Stability AI",
+                              "tags": ["stability-ai", "open-source", "diffusion"],
+                              "links": {
+                                "Stable Video": "https://stability.ai/news/stable-video-diffusion-open-ai-video-model"
+                              }
+                            }
+                          ]
                         },
                         {
                           "name": {
-                            "en": "Runway"
+                            "en": "Image-to-Video"
                           },
-                          "description": "",
-                          "tags": [],
+                          "description": "AI tools that animate static images into video content",
+                          "tags": ["image-to-video", "animation", "motion"],
                           "links": {
-                            "Link": ""
-                          }
+                            "Image Animation": "https://en.wikipedia.org/wiki/Computer_animation"
+                          },
+                          "children": [
+                            {
+                              "name": {
+                                "en": "AnimateDiff"
+                              },
+                              "description": "Animate images using diffusion models with temporal consistency",
+                              "tags": ["animatediff", "diffusion", "temporal"],
+                              "links": {
+                                "AnimateDiff": "https://github.com/guoyww/AnimateDiff"
+                              }
+                            },
+                            {
+                              "name": {
+                                "en": "LeiaPix"
+                              },
+                              "description": "Convert 2D images into immersive depth animations",
+                              "tags": ["leiapix", "depth", "immersive"],
+                              "links": {
+                                "LeiaPix": "https://convert.leiapix.com/"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "name": {
+                            "en": "Video Editing AI"
+                          },
+                          "description": "AI-powered tools for editing and enhancing existing video content",
+                          "tags": ["video-editing", "enhancement", "post-production"],
+                          "links": {
+                            "AI Video Editing": "https://en.wikipedia.org/wiki/Video_editing#AI-powered_editing"
+                          },
+                          "children": [
+                            {
+                              "name": {
+                                "en": "Runway"
+                              },
+                              "description": "Comprehensive AI video editing and generation platform",
+                              "tags": ["runway", "editing", "generation", "platform"],
+                              "links": {
+                                "Runway": "https://runwayml.com/"
+                              }
+                            },
+                            {
+                              "name": {
+                                "en": "Topaz Video AI"
+                              },
+                              "description": "AI-powered video upscaling and enhancement software",
+                              "tags": ["topaz", "upscaling", "enhancement"],
+                              "links": {
+                                "Topaz Video AI": "https://www.topazlabs.com/topaz-video-ai"
+                              }
+                            }
+                          ]
                         }
                       ]
                     },
@@ -737,63 +848,428 @@
     },
     {
       "name": {
-        "en": "Tools"
+        "en": "Multimodal AI"
       },
-      "description": "",
-      "tags": [],
+      "description": "AI systems that can process and generate multiple types of content including text, images, audio, and video",
+      "tags": ["multimodal", "cross-modal", "vision-language", "audio-visual"],
       "links": {
-        "Link": ""
+        "Multimodal AI": "https://en.wikipedia.org/wiki/Multimodal_interaction",
+        "Vision-Language Models": "https://arxiv.org/abs/2112.04482"
       },
       "children": [
         {
           "name": {
-            "en": "Tensorflow"
+            "en": "Vision-Language Models"
           },
-          "description": "",
-          "tags": [],
+          "description": "AI models that understand and generate both visual and textual content",
+          "tags": ["vision-language", "image-text", "visual-reasoning"],
           "links": {
-            "Link": ""
-          }
+            "CLIP Paper": "https://arxiv.org/abs/2103.00020"
+          },
+          "children": [
+            {
+              "name": {
+                "en": "OpenAI CLIP"
+              },
+              "description": "Contrastive Language-Image Pre-training for zero-shot image classification",
+              "tags": ["clip", "zero-shot", "image-classification"],
+              "links": {
+                "CLIP": "https://openai.com/research/clip"
+              }
+            },
+            {
+              "name": {
+                "en": "DALL-E 3"
+              },
+              "description": "Advanced text-to-image generation with improved prompt following",
+              "tags": ["dalle", "text-to-image", "prompt-following"],
+              "links": {
+                "DALL-E 3": "https://openai.com/dall-e-3"
+              }
+            },
+            {
+              "name": {
+                "en": "GPT-4 Vision"
+              },
+              "description": "GPT-4 with vision capabilities for image understanding and analysis",
+              "tags": ["gpt-4v", "image-understanding", "multimodal"],
+              "links": {
+                "GPT-4 Vision": "https://openai.com/research/gpt-4v-system-card"
+              }
+            },
+            {
+              "name": {
+                "en": "LLaVA"
+              },
+              "description": "Large Language and Vision Assistant for multimodal conversations",
+              "tags": ["llava", "conversation", "open-source"],
+              "links": {
+                "LLaVA": "https://llava-vl.github.io/"
+              }
+            }
+          ]
         },
         {
           "name": {
-            "en": "Jupyter Notebooks"
+            "en": "Audio-Language Models"
           },
-          "description": "",
-          "tags": [],
+          "description": "AI systems that process and generate speech, music, and sound with language understanding",
+          "tags": ["audio-language", "speech", "music", "sound"],
           "links": {
-            "Link": ""
-          }
+            "Speech Processing": "https://en.wikipedia.org/wiki/Speech_processing"
+          },
+          "children": [
+            {
+              "name": {
+                "en": "OpenAI Whisper"
+              },
+              "description": "Robust speech recognition system with multilingual capabilities",
+              "tags": ["whisper", "speech-recognition", "multilingual"],
+              "links": {
+                "Whisper": "https://openai.com/research/whisper"
+              }
+            },
+            {
+              "name": {
+                "en": "Google MusicLM"
+              },
+              "description": "Text-to-music generation model for creating musical compositions",
+              "tags": ["musiclm", "text-to-music", "composition"],
+              "links": {
+                "MusicLM": "https://google-research.github.io/seanet/musiclm/examples/"
+              }
+            },
+            {
+              "name": {
+                "en": "Meta AudioCraft"
+              },
+              "description": "Suite of models for audio generation including music and sound effects",
+              "tags": ["audiocraft", "meta", "music-generation"],
+              "links": {
+                "AudioCraft": "https://audiocraft.metademolab.com/"
+              }
+            }
+          ]
         },
         {
           "name": {
-            "en": "Runway"
+            "en": "Real-time Multimodal"
           },
-          "description": "",
-          "tags": [],
+          "description": "AI systems designed for real-time multimodal interaction and processing",
+          "tags": ["real-time", "interactive", "live", "streaming"],
           "links": {
-            "Link": ""
-          }
+            "Real-time AI": "https://en.wikipedia.org/wiki/Real-time_computing"
+          },
+          "children": [
+            {
+              "name": {
+                "en": "GPT-4o Real-time"
+              },
+              "description": "Real-time voice and vision capabilities in GPT-4o",
+              "tags": ["gpt-4o", "real-time", "voice", "vision"],
+              "links": {
+                "GPT-4o Real-time": "https://openai.com/index/gpt-4o-real-time/"
+              }
+            },
+            {
+              "name": {
+                "en": "Claude Computer Use"
+              },
+              "description": "Claude's ability to interact with computer interfaces in real-time",
+              "tags": ["claude", "computer-use", "interface"],
+              "links": {
+                "Computer Use": "https://www.anthropic.com/news/developing-computer-use"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "AI Agents and Automation"
+      },
+      "description": "Autonomous AI systems that can plan, reason, and execute complex tasks with minimal human intervention",
+      "tags": ["ai-agents", "automation", "autonomous", "planning", "reasoning"],
+      "links": {
+        "AI Agents": "https://en.wikipedia.org/wiki/Intelligent_agent",
+        "Multi-Agent Systems": "https://en.wikipedia.org/wiki/Multi-agent_system"
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Conversational Agents"
+          },
+          "description": "AI agents designed for natural conversation and task assistance",
+          "tags": ["conversational", "assistant", "chat", "dialogue"],
+          "links": {
+            "Conversational AI": "https://en.wikipedia.org/wiki/Conversational_artificial_intelligence"
+          },
+          "children": [
+            {
+              "name": {
+                "en": "OpenAI Assistant API"
+              },
+              "description": "Framework for building custom AI assistants with specific capabilities",
+              "tags": ["openai", "assistant-api", "custom"],
+              "links": {
+                "Assistant API": "https://platform.openai.com/docs/assistants"
+              }
+            },
+            {
+              "name": {
+                "en": "Character.AI"
+              },
+              "description": "Platform for creating and interacting with AI characters",
+              "tags": ["character-ai", "roleplay", "personas"],
+              "links": {
+                "Character.AI": "https://character.ai/"
+              }
+            },
+            {
+              "name": {
+                "en": "Replika"
+              },
+              "description": "AI companion focused on emotional support and personal conversation",
+              "tags": ["replika", "companion", "emotional"],
+              "links": {
+                "Replika": "https://replika.com/"
+              }
+            }
+          ]
         },
         {
           "name": {
-            "en": "Google Colab"
+            "en": "Task Automation Agents"
           },
-          "description": "",
-          "tags": [],
+          "description": "AI agents that automate workflows and complete specific tasks autonomously",
+          "tags": ["automation", "workflow", "task-completion", "productivity"],
           "links": {
-            "Link": ""
-          }
+            "Process Automation": "https://en.wikipedia.org/wiki/Business_process_automation"
+          },
+          "children": [
+            {
+              "name": {
+                "en": "AutoGPT"
+              },
+              "description": "Autonomous GPT-based agent for complex task completion",
+              "tags": ["autogpt", "autonomous", "task-completion"],
+              "links": {
+                "AutoGPT": "https://github.com/Significant-Gravitas/AutoGPT"
+              }
+            },
+            {
+              "name": {
+                "en": "LangChain Agents"
+              },
+              "description": "Framework for building agents with reasoning and tool usage capabilities",
+              "tags": ["langchain", "framework", "tools"],
+              "links": {
+                "LangChain": "https://python.langchain.com/docs/modules/agents/"
+              }
+            },
+            {
+              "name": {
+                "en": "Zapier AI Actions"
+              },
+              "description": "AI-powered automation for connecting and automating apps",
+              "tags": ["zapier", "integration", "workflow"],
+              "links": {
+                "Zapier AI": "https://zapier.com/ai"
+              }
+            }
+          ]
         },
         {
           "name": {
-            "en": "PyTorch"
+            "en": "Creative AI Agents"
           },
-          "description": "",
-          "tags": [],
+          "description": "Specialized agents for creative tasks like design, writing, and content creation",
+          "tags": ["creative", "design", "content-creation", "artistic"],
           "links": {
-            "Link": ""
-          }
+            "Computational Creativity": "https://en.wikipedia.org/wiki/Computational_creativity"
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Adobe Firefly"
+              },
+              "description": "AI-powered creative tools integrated into Adobe's creative suite",
+              "tags": ["adobe", "firefly", "creative-suite"],
+              "links": {
+                "Adobe Firefly": "https://www.adobe.com/products/firefly.html"
+              }
+            },
+            {
+              "name": {
+                "en": "Canva AI"
+              },
+              "description": "AI design assistant for creating graphics and visual content",
+              "tags": ["canva", "design", "graphics"],
+              "links": {
+                "Canva AI": "https://www.canva.com/ai-image-generator/"
+              }
+            },
+            {
+              "name": {
+                "en": "Notion AI"
+              },
+              "description": "AI writing and productivity assistant integrated into Notion workspace",
+              "tags": ["notion", "writing", "productivity"],
+              "links": {
+                "Notion AI": "https://www.notion.so/product/ai"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "AI Development Tools"
+      },
+      "description": "Frameworks, platforms, and development environments for building AI and machine learning applications",
+      "tags": ["development", "frameworks", "platforms", "machine-learning", "deep-learning"],
+      "links": {
+        "ML Frameworks": "https://en.wikipedia.org/wiki/Comparison_of_deep_learning_software",
+        "AI Development": "https://en.wikipedia.org/wiki/Machine_learning#Software"
+      },
+      "children": [
+        {
+          "name": {
+            "en": "Machine Learning Frameworks"
+          },
+          "description": "Core frameworks for building and training machine learning models",
+          "tags": ["frameworks", "training", "models", "neural-networks"],
+          "links": {
+            "ML Frameworks Comparison": "https://en.wikipedia.org/wiki/Comparison_of_deep_learning_software"
+          },
+          "children": [
+            {
+              "name": {
+                "en": "PyTorch"
+              },
+              "description": "Dynamic neural network framework with strong research community support",
+              "tags": ["pytorch", "dynamic", "research", "facebook"],
+              "links": {
+                "PyTorch": "https://pytorch.org/"
+              }
+            },
+            {
+              "name": {
+                "en": "TensorFlow"
+              },
+              "description": "Open-source machine learning platform with comprehensive ecosystem",
+              "tags": ["tensorflow", "google", "production", "keras"],
+              "links": {
+                "TensorFlow": "https://www.tensorflow.org/"
+              }
+            },
+            {
+              "name": {
+                "en": "JAX"
+              },
+              "description": "Composable transformations of Python+NumPy programs for high-performance ML",
+              "tags": ["jax", "google", "functional", "performance"],
+              "links": {
+                "JAX": "https://jax.readthedocs.io/"
+              }
+            },
+            {
+              "name": {
+                "en": "Hugging Face Transformers"
+              },
+              "description": "State-of-the-art pre-trained models for natural language processing",
+              "tags": ["huggingface", "transformers", "nlp", "pre-trained"],
+              "links": {
+                "Hugging Face": "https://huggingface.co/transformers/"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Development Environments"
+          },
+          "description": "Interactive environments for AI experimentation and development",
+          "tags": ["notebooks", "interactive", "experimentation", "prototyping"],
+          "links": {
+            "Jupyter Project": "https://jupyter.org/"
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Jupyter Notebooks"
+              },
+              "description": "Interactive computational environment for data science and AI research",
+              "tags": ["jupyter", "notebooks", "interactive", "data-science"],
+              "links": {
+                "Jupyter": "https://jupyter.org/"
+              }
+            },
+            {
+              "name": {
+                "en": "Google Colab"
+              },
+              "description": "Cloud-based Jupyter notebook environment with free GPU access",
+              "tags": ["colab", "cloud", "gpu", "free"],
+              "links": {
+                "Google Colab": "https://colab.research.google.com/"
+              }
+            },
+            {
+              "name": {
+                "en": "Kaggle Notebooks"
+              },
+              "description": "Data science platform with notebooks and datasets for ML competitions",
+              "tags": ["kaggle", "competitions", "datasets"],
+              "links": {
+                "Kaggle": "https://www.kaggle.com/code"
+              }
+            }
+          ]
+        },
+        {
+          "name": {
+            "en": "Creative AI Platforms"
+          },
+          "description": "No-code and low-code platforms for creative AI applications",
+          "tags": ["no-code", "creative", "platforms", "user-friendly"],
+          "links": {
+            "Creative AI Tools": "https://www.creativeai.net/"
+          },
+          "children": [
+            {
+              "name": {
+                "en": "Runway ML"
+              },
+              "description": "Creative toolkit powered by machine learning for artists and creators",
+              "tags": ["runway", "creative", "artists", "video"],
+              "links": {
+                "Runway": "https://runwayml.com/"
+              }
+            },
+            {
+              "name": {
+                "en": "Teachable Machine"
+              },
+              "description": "Google's tool for training custom machine learning models without coding",
+              "tags": ["teachable-machine", "google", "no-code", "education"],
+              "links": {
+                "Teachable Machine": "https://teachablemachine.withgoogle.com/"
+              }
+            },
+            {
+              "name": {
+                "en": "Lobe"
+              },
+              "description": "Visual tool for building machine learning models without code",
+              "tags": ["lobe", "microsoft", "visual", "no-code"],
+              "links": {
+                "Lobe": "https://www.lobe.ai/"
+              }
+            }
+          ]
         }
       ]
     },
@@ -801,61 +1277,197 @@
       "name": {
         "en": "Large Language Models"
       },
-      "description": "LLM's",
-      "tags": [],
+      "description": "Advanced language models capable of text generation, code completion, reasoning, and multimodal tasks for creative applications",
+      "tags": ["llm", "language-models", "text-generation", "ai-assistants", "nlp"],
       "links": {
-        "Link": ""
+        "LLM Overview": "https://en.wikipedia.org/wiki/Large_language_model",
+        "Transformer Architecture": "https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)"
       },
       "children": [
         {
           "name": {
-            "en": "Claude"
+            "en": "Text Generation Models"
           },
-          "description": "",
-          "tags": [],
+          "description": "Models specialized for text creation, creative writing, and content generation",
+          "tags": ["text-generation", "creative-writing", "content"],
           "links": {
-            "Link": ""
-          }
+            "Text Generation": "https://en.wikipedia.org/wiki/Natural_language_generation"
+          },
+          "children": [
+            {
+              "name": {
+                "en": "OpenAI GPT Family"
+              },
+              "description": "OpenAI's series of generative pre-trained transformer models",
+              "tags": ["openai", "gpt", "chat", "creative"],
+              "links": {
+                "OpenAI": "https://openai.com/",
+                "GPT-4": "https://openai.com/gpt-4"
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "ChatGPT"
+                  },
+                  "description": "Conversational AI based on GPT models for interactive text generation",
+                  "tags": ["chatgpt", "conversation", "assistant"],
+                  "links": {
+                    "ChatGPT": "https://chat.openai.com/"
+                  }
+                },
+                {
+                  "name": {
+                    "en": "GPT-4o"
+                  },
+                  "description": "OpenAI's multimodal model with enhanced reasoning and creativity",
+                  "tags": ["gpt-4o", "multimodal", "reasoning"],
+                  "links": {
+                    "GPT-4o": "https://openai.com/index/hello-gpt-4o/"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Anthropic Claude"
+              },
+              "description": "AI assistant focused on helpful, harmless, and honest interactions",
+              "tags": ["anthropic", "claude", "helpful", "constitutional-ai"],
+              "links": {
+                "Claude": "https://claude.ai/",
+                "Anthropic": "https://www.anthropic.com/"
+              },
+              "children": [
+                {
+                  "name": {
+                    "en": "Claude 3.5 Sonnet"
+                  },
+                  "description": "Advanced model with strong reasoning and creative capabilities",
+                  "tags": ["claude-3.5", "sonnet", "reasoning"],
+                  "links": {
+                    "Claude 3.5 Sonnet": "https://www.anthropic.com/news/claude-3-5-sonnet"
+                  }
+                }
+              ]
+            },
+            {
+              "name": {
+                "en": "Google Gemini"
+              },
+              "description": "Google's multimodal AI model family with text and reasoning capabilities",
+              "tags": ["google", "gemini", "multimodal"],
+              "links": {
+                "Gemini": "https://gemini.google.com/",
+                "Gemini AI": "https://deepmind.google/technologies/gemini/"
+              }
+            },
+            {
+              "name": {
+                "en": "Meta Llama"
+              },
+              "description": "Open-source language models from Meta with strong performance",
+              "tags": ["meta", "llama", "open-source"],
+              "links": {
+                "Llama": "https://llama.meta.com/",
+                "Llama 3": "https://ai.meta.com/blog/meta-llama-3/"
+              }
+            }
+          ]
         },
         {
           "name": {
-            "en": "Github Copilot"
+            "en": "Code Generation Models"
           },
-          "description": "",
-          "tags": [],
+          "description": "AI models specialized for programming, code completion, and software development",
+          "tags": ["code-generation", "programming", "software-development"],
           "links": {
-            "Link": ""
-          }
+            "Code Generation": "https://en.wikipedia.org/wiki/Automatic_programming"
+          },
+          "children": [
+            {
+              "name": {
+                "en": "GitHub Copilot"
+              },
+              "description": "AI pair programmer that suggests code completions and functions",
+              "tags": ["github", "copilot", "code-completion", "vscode"],
+              "links": {
+                "GitHub Copilot": "https://github.com/features/copilot"
+              }
+            },
+            {
+              "name": {
+                "en": "OpenAI Codex"
+              },
+              "description": "Code generation model that powers GitHub Copilot",
+              "tags": ["openai", "codex", "code-generation"],
+              "links": {
+                "Codex": "https://openai.com/blog/openai-codex"
+              }
+            },
+            {
+              "name": {
+                "en": "Google CodeT5"
+              },
+              "description": "Code understanding and generation model from Google",
+              "tags": ["google", "codet5", "code-understanding"],
+              "links": {
+                "CodeT5": "https://github.com/salesforce/CodeT5"
+              }
+            },
+            {
+              "name": {
+                "en": "Anthropic Claude for Coding"
+              },
+              "description": "Claude's specialized capabilities for programming and code analysis",
+              "tags": ["claude", "coding", "analysis"],
+              "links": {
+                "Claude Coding": "https://claude.ai/"
+              }
+            }
+          ]
         },
         {
           "name": {
-            "en": "ChatGPT"
+            "en": "Open Source Models"
           },
-          "description": "",
-          "tags": [],
+          "description": "Community-driven and open-source language models for local deployment",
+          "tags": ["open-source", "local", "community", "self-hosted"],
           "links": {
-            "Link": ""
-          }
-        },
-        {
-          "name": {
-            "en": "Google Bard"
+            "Hugging Face": "https://huggingface.co/models",
+            "Open Source LLMs": "https://github.com/eugeneyan/open-llms"
           },
-          "description": "",
-          "tags": [],
-          "links": {
-            "Link": ""
-          }
-        },
-        {
-          "name": {
-            "en": "Google PaLM"
-          },
-          "description": "",
-          "tags": [],
-          "links": {
-            "Link": ""
-          }
+          "children": [
+            {
+              "name": {
+                "en": "Mistral AI"
+              },
+              "description": "Open-source models with strong performance and efficiency",
+              "tags": ["mistral", "efficient", "european"],
+              "links": {
+                "Mistral AI": "https://mistral.ai/"
+              }
+            },
+            {
+              "name": {
+                "en": "Ollama"
+              },
+              "description": "Tool for running language models locally on personal computers",
+              "tags": ["ollama", "local", "deployment"],
+              "links": {
+                "Ollama": "https://ollama.ai/"
+              }
+            },
+            {
+              "name": {
+                "en": "Alpaca/Vicuna"
+              },
+              "description": "Community-fine-tuned models based on LLaMA for instruction following",
+              "tags": ["alpaca", "vicuna", "fine-tuned", "instruction"],
+              "links": {
+                "Stanford Alpaca": "https://github.com/tatsu-lab/stanford_alpaca"
+              }
+            }
+          ]
         }
       ]
     }

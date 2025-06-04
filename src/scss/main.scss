@@ -74,7 +74,7 @@ header {
       input[type="radio"] {
         display: none;
 
-        &+em {
+        & + em {
           display: inline-block;
           position: relative;
           z-index: 100;
@@ -91,7 +91,7 @@ header {
           cursor: pointer;
         }
 
-        &:checked+em {
+        &:checked + em {
           background: rgb(0, 134, 187);
           color: #fff;
 
