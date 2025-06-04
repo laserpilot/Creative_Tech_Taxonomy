@@ -32,21 +32,25 @@ export function getColor(name) {
       return "deeppink"
     case "Physical Output and Digital Fabrication":
       return "lightseagreen"
-    
+
     // Interaction Taxonomy Categories
-    case "Interaction Types for Interactive Installations":
-      return "coral"
+    case "Interaction Categories":
+      return "lightgray"
+    case "Observed Body Action":
+      return "lightblue"
     case "Physical Interactions":
-      return "crimson"
-    case "Involuntary/Passive":
-      return "darkorange"
-    case "Intentional/Active/ Voluntary":
+      return "lightgreen"
+    case "Sensor Types":
+      return "plum"
+    case "Interaction Types":
+      return "pink"
+    case "Intentional/Active":
       return "forestgreen"
-    case "Wireless Communication":
+    case "Involuntary/Passive":
       return "dodgerblue"
-    case "Haptic Feedback Devices":
-      return "mediumvioletred"
-    
+    case "Inanimate or Environmental Sensing":
+      return "teal"
+
     default:
       return "#ccc"
   }

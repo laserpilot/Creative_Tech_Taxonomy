@@ -1032,7 +1032,7 @@
         "en": "Web and Networking Tools",
         "ja": "Web/ネットワーク"
       },
-      "description": "A category with various tools and software related to projects that use web technologies and closely related network and communication concepts.",
+      "description": "Tools and technologies for web-based creative projects, including frontend frameworks, backend services, communication protocols, and networking technologies commonly used in interactive installations and digital art.",
       "tags": [],
       "links": {
         "Link": ""
@@ -1062,10 +1062,17 @@
                   "name": {
                     "en": "tone.js"
                   },
-                  "description": "",
-                  "tags": [],
+                  "description": "A comprehensive framework for creating interactive music in the browser. Built on top of the Web Audio API, it provides high-level abstractions for synthesis, effects, and scheduling, making it ideal for creative audio applications and installations.",
+                  "tags": [
+                    "audio",
+                    "synthesis",
+                    "web-audio",
+                    "javascript"
+                  ],
                   "links": {
-                    "Link": ""
+                    "Official Website": "https://tonejs.github.io/",
+                    "Documentation": "https://tonejs.github.io/docs/",
+                    "GitHub": "https://github.com/Tonejs/Tone.js"
                   }
                 }
               ]
@@ -1084,20 +1091,33 @@
                   "name": {
                     "en": "AR.js/A-Frame"
                   },
-                  "description": "",
-                  "tags": [],
+                  "description": "A combination of AR.js (augmented reality) and A-Frame (WebVR framework) that enables marker-based and markerless AR experiences directly in web browsers without requiring app downloads.",
+                  "tags": [
+                    "augmented-reality",
+                    "webxr",
+                    "markers",
+                    "web-based"
+                  ],
                   "links": {
-                    "Link": ""
+                    "AR.js GitHub": "https://github.com/AR-js-org/AR.js",
+                    "A-Frame Official": "https://aframe.io/",
+                    "A-Frame Documentation": "https://aframe.io/docs/"
                   }
                 },
                 {
                   "name": {
                     "en": "8th Wall"
                   },
-                  "description": "",
-                  "tags": [],
+                  "description": "A commercial platform for building WebAR experiences with advanced features like surface detection, face tracking, and world tracking. Provides more robust AR capabilities than open-source alternatives.",
+                  "tags": [
+                    "augmented-reality",
+                    "commercial",
+                    "web-ar",
+                    "face-tracking"
+                  ],
                   "links": {
-                    "Link": ""
+                    "Official Website": "https://www.8thwall.com/",
+                    "Documentation": "https://docs.8thwall.com/"
                   }
                 }
               ]
@@ -1116,10 +1136,17 @@
                   "name": {
                     "en": "ml5.js"
                   },
-                  "description": "",
-                  "tags": [],
+                  "description": "A friendly machine learning library for creative coding built on top of TensorFlow.js. Makes machine learning accessible to artists and creative coders with simple APIs for image classification, pose detection, and more.",
+                  "tags": [
+                    "machine-learning",
+                    "tensorflow",
+                    "creative-coding",
+                    "computer-vision"
+                  ],
                   "links": {
-                    "Link": ""
+                    "Official Website": "https://ml5js.org/",
+                    "Documentation": "https://docs.ml5js.org/",
+                    "GitHub": "https://github.com/ml5js/ml5-library"
                   }
                 }
               ]
@@ -1138,10 +1165,17 @@
                   "name": {
                     "en": "three.js"
                   },
-                  "description": "",
-                  "tags": [],
+                  "description": "A cross-browser JavaScript library that makes creating 3D graphics on the web accessible. Built on top of WebGL, it provides an easy-to-use API for 3D scenes, animations, and interactive experiences in web browsers.",
+                  "tags": [
+                    "3d-graphics",
+                    "webgl",
+                    "animation",
+                    "3d-scenes"
+                  ],
                   "links": {
-                    "Link": ""
+                    "Official Website": "https://threejs.org/",
+                    "Documentation": "https://threejs.org/docs/",
+                    "GitHub": "https://github.com/mrdoob/three.js"
                   }
                 }
               ]
@@ -1160,10 +1194,17 @@
                   "name": {
                     "en": "D3.js"
                   },
-                  "description": "",
-                  "tags": [],
+                  "description": "A powerful JavaScript library for creating dynamic, interactive data visualizations using web standards. Provides low-level building blocks for binding data to DOM elements and applying data-driven transformations.",
+                  "tags": [
+                    "data-visualization",
+                    "svg",
+                    "dom-manipulation",
+                    "interactive"
+                  ],
                   "links": {
-                    "Link": ""
+                    "Official Website": "https://d3js.org/",
+                    "Documentation": "https://github.com/d3/d3/wiki",
+                    "GitHub": "https://github.com/d3/d3"
                   }
                 }
               ]
@@ -1224,20 +1265,34 @@
                   "name": {
                     "en": "paper.js"
                   },
-                  "description": "",
-                  "tags": [],
+                  "description": "A powerful vector graphics scripting framework that runs on top of the HTML5 Canvas. Offers a clean Scene Graph/Document Object Model and extensive functionality for creating complex graphics and animations.",
+                  "tags": [
+                    "vector-graphics",
+                    "canvas",
+                    "animation",
+                    "creative-coding"
+                  ],
                   "links": {
-                    "Link": ""
+                    "Official Website": "http://paperjs.org/",
+                    "Documentation": "http://paperjs.org/reference/",
+                    "GitHub": "https://github.com/paperjs/paper.js"
                   }
                 },
                 {
                   "name": {
                     "en": "p5.js"
                   },
-                  "description": "",
-                  "tags": [],
+                  "description": "A JavaScript library that makes coding accessible for artists, designers, educators, and beginners. Based on the core principles of Processing, it provides a full set of drawing functionality and creative coding tools for the web.",
+                  "tags": [
+                    "creative-coding",
+                    "processing",
+                    "canvas",
+                    "accessibility"
+                  ],
                   "links": {
-                    "Link": ""
+                    "Official Website": "https://p5js.org/",
+                    "Documentation": "https://p5js.org/reference/",
+                    "GitHub": "https://github.com/processing/p5.js"
                   }
                 }
               ]
@@ -1332,10 +1387,16 @@
                   "name": {
                     "en": "Websockets"
                   },
-                  "description": "",
-                  "tags": [],
+                  "description": "A communication protocol that provides full-duplex communication channels over a single TCP connection. Enables real-time, bidirectional communication between web browsers and servers, commonly used in interactive installations.",
+                  "tags": [
+                    "protocol",
+                    "real-time",
+                    "bidirectional",
+                    "web-standard"
+                  ],
                   "links": {
-                    "Link": ""
+                    "MDN Documentation": "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API",
+                    "Wikipedia": "https://en.wikipedia.org/wiki/WebSocket"
                   }
                 },
                 {
@@ -1352,10 +1413,16 @@
                       "name": {
                         "en": "Open Sound Control (OSC)"
                       },
-                      "description": "",
-                      "tags": [],
+                      "description": "A protocol for communication among computers, sound synthesizers, and other multimedia devices optimized for modern networking technology. Widely used in interactive installations and live performance systems for real-time control.",
+                      "tags": [
+                        "protocol",
+                        "real-time",
+                        "multimedia",
+                        "networking"
+                      ],
                       "links": {
-                        "Link": ""
+                        "Official Website": "http://opensoundcontrol.org/",
+                        "Wikipedia": "https://en.wikipedia.org/wiki/Open_Sound_Control"
                       }
                     }
                   ]
@@ -1430,10 +1497,17 @@
                   "name": {
                     "en": "Node.js"
                   },
-                  "description": "",
-                  "tags": [],
+                  "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine that allows JavaScript to run on servers. Enables full-stack JavaScript development and is commonly used for real-time applications, APIs, and creative project backends.",
+                  "tags": [
+                    "javascript",
+                    "runtime",
+                    "server",
+                    "real-time"
+                  ],
                   "links": {
-                    "Link": ""
+                    "Official Website": "https://nodejs.org/",
+                    "Documentation": "https://nodejs.org/docs/",
+                    "GitHub": "https://github.com/nodejs/node"
                   }
                 },
                 {
@@ -1640,10 +1714,15 @@
               "name": {
                 "en": "JSON"
               },
-              "description": "",
-              "tags": [],
+              "description": "JavaScript Object Notation - a lightweight, text-based data interchange format that is easy for humans to read and write. Widely used for data transmission between servers and web applications.",
+              "tags": [
+                "data-format",
+                "serialization",
+                "web-standard"
+              ],
               "links": {
-                "Link": ""
+                "Official Website": "https://www.json.org/",
+                "Wikipedia": "https://en.wikipedia.org/wiki/JSON"
               }
             },
             {
@@ -1665,7 +1744,16 @@
         "en": "Sensors and Interaction Methods"
       },
       "description": "Different methods and categories of sensing people and allowing interactions with digital interfaces and experiences. This is heavily related to the optical tracking and Physical computing categories as well.",
-      "tags": [],
+      "tags": [
+        "sensing",
+        "interaction",
+        "input",
+        "tracking",
+        "biometric",
+        "motion",
+        "touch",
+        "optical"
+      ],
       "links": {
         "Link": "https://en.wikipedia.org/wiki/Category:Sensors"
       },
@@ -1675,59 +1763,95 @@
             "en": "Optical Tracking"
           },
           "description": "Tools and concepts related to optical tracking elements that may appear in various creative technology and experiential projects. See also the topic of Cameras in the Sensor/Interaction method group",
-          "tags": [],
+          "tags": [
+            "optical",
+            "tracking",
+            "computer-vision",
+            "cameras",
+            "infrared",
+            "depth-sensing"
+          ],
           "links": {
-            "Link": ""
+            "Wikipedia": "https://en.wikipedia.org/wiki/Motion_capture",
+            "OpenCV": "https://opencv.org/"
           },
           "children": [
             {
               "name": {
                 "en": "Cameras"
               },
-              "description": "",
-              "tags": [],
+              "description": "Various camera technologies used for computer vision, motion capture, and interactive installations in creative projects",
+              "tags": [
+                "cameras",
+                "video",
+                "photography",
+                "computer-vision",
+                "capture"
+              ],
               "links": {
-                "Link": ""
+                "Digital Cameras": "https://en.wikipedia.org/wiki/Digital_camera",
+                "Camera Types": "https://en.wikipedia.org/wiki/Camera"
               },
               "children": [
                 {
                   "name": {
                     "en": "Types"
                   },
-                  "description": "",
-                  "tags": [],
+                  "description": "Different categories of cameras suitable for various creative technology applications",
+                  "tags": [
+                    "camera-types",
+                    "video",
+                    "photography",
+                    "capture"
+                  ],
                   "links": {
-                    "Link": ""
+                    "Camera Types": "https://en.wikipedia.org/wiki/Camera"
                   },
                   "children": [
                     {
                       "name": {
                         "en": "Video Cam"
                       },
-                      "description": "",
-                      "tags": [],
+                      "description": "Video cameras for real-time capture and streaming in interactive installations and live performances",
+                      "tags": [
+                        "video",
+                        "real-time",
+                        "streaming",
+                        "live"
+                      ],
                       "links": {
-                        "Link": ""
+                        "Video Camera": "https://en.wikipedia.org/wiki/Video_camera"
                       },
                       "children": [
                         {
                           "name": {
                             "en": "Action Cameras"
                           },
-                          "description": "",
-                          "tags": [],
+                          "description": "Compact, rugged cameras for capturing movement and action in extreme environments",
+                          "tags": [
+                            "action",
+                            "rugged",
+                            "compact",
+                            "sports",
+                            "movement"
+                          ],
                           "links": {
-                            "Link": ""
+                            "Action Camera": "https://en.wikipedia.org/wiki/Action_camera"
                           },
                           "children": [
                             {
                               "name": {
                                 "en": "GoPro Hero"
                               },
-                              "description": "",
-                              "tags": [],
+                              "description": "Popular action camera series with high-quality video capture and rugged design",
+                              "tags": [
+                                "gopro",
+                                "action",
+                                "4k",
+                                "waterproof"
+                              ],
                               "links": {
-                                "Link": ""
+                                "GoPro": "https://gopro.com/"
                               }
                             }
                           ]
@@ -1736,40 +1860,60 @@
                           "name": {
                             "en": "Smartphone Camera"
                           },
-                          "description": "",
-                          "tags": [],
+                          "description": "Built-in cameras in mobile devices, increasingly powerful for computer vision applications",
+                          "tags": [
+                            "smartphone",
+                            "mobile",
+                            "portable",
+                            "accessible"
+                          ],
                           "links": {
-                            "Link": ""
+                            "Phone Camera": "https://en.wikipedia.org/wiki/Camera_phone"
                           }
                         },
                         {
                           "name": {
                             "en": "Professional Grade Camcorder"
                           },
-                          "description": "",
-                          "tags": [],
+                          "description": "High-end video cameras for professional video production and broadcast quality capture",
+                          "tags": [
+                            "professional",
+                            "broadcast",
+                            "high-quality",
+                            "production"
+                          ],
                           "links": {
-                            "Link": ""
+                            "Camcorder": "https://en.wikipedia.org/wiki/Camcorder"
                           }
                         },
                         {
                           "name": {
                             "en": "Broadcast"
                           },
-                          "description": "",
-                          "tags": [],
+                          "description": "Television and live streaming cameras with high-end optics and real-time output",
+                          "tags": [
+                            "broadcast",
+                            "television",
+                            "live",
+                            "streaming"
+                          ],
                           "links": {
-                            "Link": ""
+                            "Broadcast Camera": "https://en.wikipedia.org/wiki/Professional_video_camera"
                           }
                         },
                         {
                           "name": {
                             "en": "Security Cameras"
                           },
-                          "description": "",
-                          "tags": [],
+                          "description": "Surveillance cameras that can be repurposed for creative installations and monitoring",
+                          "tags": [
+                            "security",
+                            "surveillance",
+                            "monitoring",
+                            "cctv"
+                          ],
                           "links": {
-                            "Link": ""
+                            "Security Camera": "https://en.wikipedia.org/wiki/Closed-circuit_television"
                           }
                         }
                       ]
@@ -1778,30 +1922,46 @@
                       "name": {
                         "en": "Webcam"
                       },
-                      "description": "",
-                      "tags": [],
+                      "description": "Computer-connected cameras for video conferencing and basic computer vision applications",
+                      "tags": [
+                        "webcam",
+                        "usb",
+                        "computer",
+                        "streaming"
+                      ],
                       "links": {
-                        "Link": ""
+                        "Webcam": "https://en.wikipedia.org/wiki/Webcam"
                       }
                     },
                     {
                       "name": {
                         "en": "Slow Motion/High Speed Cam"
                       },
-                      "description": "",
-                      "tags": [],
+                      "description": "Cameras capable of extremely high frame rates for slow motion analysis and artistic effects",
+                      "tags": [
+                        "high-speed",
+                        "slow-motion",
+                        "fps",
+                        "analysis"
+                      ],
                       "links": {
-                        "Link": ""
+                        "High Speed Camera": "https://en.wikipedia.org/wiki/High-speed_camera"
                       }
                     },
                     {
                       "name": {
                         "en": "IP Cameras"
                       },
-                      "description": "",
-                      "tags": [],
+                      "description": "Network-connected cameras that transmit video data over IP networks for remote access",
+                      "tags": [
+                        "ip",
+                        "network",
+                        "remote",
+                        "ethernet",
+                        "wifi"
+                      ],
                       "links": {
-                        "Link": ""
+                        "IP Camera": "https://en.wikipedia.org/wiki/IP_camera"
                       }
                     },
                     {
@@ -1904,20 +2064,30 @@
                       "name": {
                         "en": "DSLR"
                       },
-                      "description": "",
-                      "tags": [],
+                      "description": "Digital Single Lens Reflex cameras with interchangeable lenses and manual controls",
+                      "tags": [
+                        "dslr",
+                        "photography",
+                        "interchangeable-lens",
+                        "manual"
+                      ],
                       "links": {
-                        "Link": ""
+                        "DSLR": "https://en.wikipedia.org/wiki/Digital_single-lens_reflex_camera"
                       }
                     },
                     {
                       "name": {
                         "en": "Mirrorless"
                       },
-                      "description": "",
-                      "tags": [],
+                      "description": "Compact interchangeable lens cameras without the mirror mechanism of DSLRs",
+                      "tags": [
+                        "mirrorless",
+                        "compact",
+                        "interchangeable-lens",
+                        "electronic-viewfinder"
+                      ],
                       "links": {
-                        "Link": ""
+                        "Mirrorless Camera": "https://en.wikipedia.org/wiki/Mirrorless_interchangeable-lens_camera"
                       }
                     },
                     {
@@ -2240,10 +2410,18 @@
           "name": {
             "en": "Touch/Hands"
           },
-          "description": "",
-          "tags": [],
+          "description": "Touch-based interaction technologies including hand tracking, pressure sensing, and multi-touch interfaces for creative applications",
+          "tags": [
+            "touch",
+            "haptic",
+            "pressure",
+            "capacitive",
+            "hand-tracking",
+            "multitouch"
+          ],
           "links": {
-            "Link": ""
+            "Touch Technologies": "https://en.wikipedia.org/wiki/Touchscreen",
+            "Capacitive Sensing": "https://en.wikipedia.org/wiki/Capacitive_sensing"
           },
           "children": [
             {
@@ -2368,10 +2546,18 @@
           "name": {
             "en": "Bluetooth"
           },
-          "description": "",
-          "tags": [],
+          "description": "Bluetooth-based proximity and location sensing technologies for interactive experiences and IoT applications",
+          "tags": [
+            "bluetooth",
+            "wireless",
+            "proximity",
+            "beacons",
+            "ble",
+            "location"
+          ],
           "links": {
-            "Link": ""
+            "Bluetooth LE": "https://en.wikipedia.org/wiki/Bluetooth_Low_Energy",
+            "iBeacon": "https://en.wikipedia.org/wiki/IBeacon"
           },
           "children": [
             {
@@ -2390,10 +2576,20 @@
           "name": {
             "en": "Position/Motion Sensing"
           },
-          "description": "",
-          "tags": [],
+          "description": "Technologies for detecting position, movement, and spatial relationships in physical environments for interactive installations",
+          "tags": [
+            "position",
+            "motion",
+            "lidar",
+            "gps",
+            "imu",
+            "accelerometer",
+            "ultrasonic",
+            "infrared"
+          ],
           "links": {
-            "Link": ""
+            "Motion Sensing": "https://en.wikipedia.org/wiki/Motion_detection",
+            "LIDAR": "https://en.wikipedia.org/wiki/Lidar"
           },
           "children": [
             {
@@ -2580,10 +2776,19 @@
           "name": {
             "en": "Other"
           },
-          "description": "",
-          "tags": [],
+          "description": "Additional sensing technologies including biometric sensors, environmental sensors, and specialized input devices for creative applications",
+          "tags": [
+            "biometric",
+            "environmental",
+            "pressure",
+            "temperature",
+            "humidity",
+            "rfid",
+            "magnetic"
+          ],
           "links": {
-            "Link": ""
+            "Sensor Types": "https://en.wikipedia.org/wiki/List_of_sensors",
+            "Biometric Sensors": "https://en.wikipedia.org/wiki/Biometrics"
           },
           "children": [
             {

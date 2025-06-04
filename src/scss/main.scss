@@ -74,7 +74,7 @@ header {
       input[type="radio"] {
         display: none;
 
-        &+em {
+        & + em {
           display: inline-block;
           position: relative;
           z-index: 100;
@@ -91,7 +91,7 @@ header {
           cursor: pointer;
         }
 
-        &:checked+em {
+        &:checked + em {
           background: rgb(0, 134, 187);
           color: #fff;
 
@@ -379,7 +379,7 @@ footer {
 
     button#add-link,
     button#add-new-link {
-      background-color: #4CAF50;
+      background-color: #4caf50;
       color: white;
       border: none;
       padding: 0.5rem 1rem;
@@ -417,7 +417,7 @@ footer {
   .links-list {
     margin: 8px 0;
     padding-left: 20px;
-    
+
     li {
       margin: 5px 0;
       line-height: 1.4;

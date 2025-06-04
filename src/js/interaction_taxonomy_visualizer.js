@@ -42,12 +42,12 @@ function updateInteractionJsonFromLanguage(data) {
 
   function processNode(node, parentColor = null) {
     // Handle name
-    if (node.name && typeof node.name === 'object') {
+    if (node.name && typeof node.name === "object") {
       node.name = node.name[currentLanguage] || node.name.en || "No Name"
     }
 
     // Handle description
-    if (node.description && typeof node.description === 'object') {
+    if (node.description && typeof node.description === "object") {
       node.description = node.description[currentLanguage] || node.description.en || ""
     }
 
@@ -58,7 +58,7 @@ function updateInteractionJsonFromLanguage(data) {
     } else {
       node.color = defaultColor
     }
-    
+
     // Only inherit parent color if this node doesn't have its own defined color
     if (node.color === defaultColor && parentColor && parentColor !== defaultColor) {
       node.color = parentColor
@@ -76,7 +76,7 @@ function updateInteractionJsonFromLanguage(data) {
 
     // Recursively process children with color inheritance
     if (node.children) {
-      node.children.forEach(child => processNode(child, node.color))
+      node.children.forEach((child) => processNode(child, node.color))
     }
 
     return node
@@ -88,11 +88,11 @@ function updateInteractionJsonFromLanguage(data) {
 export function createInteractionVisualization() {
   // Deep copy and then pass it on.
   const data = updateInteractionJsonFromLanguage(structuredClone(currentInteractionJson))
-  
+
   // Clear any existing visualization
   const interactionVisualizer = document.getElementById("interaction-visualizer")
   interactionVisualizer.innerHTML = ""
-  
+
   /* -------------------------------------------------------------------------- */
   /*                set all parameters according to screen width                */
   /* -------------------------------------------------------------------------- */
@@ -208,15 +208,22 @@ export function createInteractionVisualization() {
             .attr("x", d._children ? -fontSize : fontSize)
             .text(line)
         })
-        
+
         // Add edit icon if in edit mode
         if (editMode) {
           d3.select(this)
             .append("tspan")
             .attr("dy", 0)
-            .attr("x", (d.data.label.length > 1 ? 
-                  d._children ? -fontSize : fontSize : 
-                  d._children ? -fontSize - 20 : fontSize + d3.select(this).node().getBBox().width + 5))
+            .attr(
+              "x",
+              d.data.label.length > 1
+                ? d._children
+                  ? -fontSize
+                  : fontSize
+                : d._children
+                  ? -fontSize - 20
+                  : fontSize + d3.select(this).node().getBBox().width + 5
+            )
             .attr("fill", "#2196f3")
             .text(" ✎")
         }
@@ -254,23 +261,23 @@ export function createInteractionVisualization() {
       .attr("y", function (d) {
         return -(d3.select(this.parentNode).select("text").node().getBBox().height + rectPadding) / 2
       })
-      .attr("fill", (d) => editMode ? "#2196f3" : d.data.color)
+      .attr("fill", (d) => (editMode ? "#2196f3" : d.data.color))
       .attr("opacity", (d) => (d._children ? 0 : 0.5))
-      .attr("stroke", (d) => editMode ? "#0b7dda" : "none")
-      .attr("stroke-width", (d) => editMode ? 1 : 0)
-      .attr("stroke-dasharray", (d) => editMode ? "3,3" : "none")
+      .attr("stroke", (d) => (editMode ? "#0b7dda" : "none"))
+      .attr("stroke-width", (d) => (editMode ? 1 : 0))
+      .attr("stroke-dasharray", (d) => (editMode ? "3,3" : "none"))
       .lower()
 
     // Add circles for nodes
     nodeEnter
       .append("circle")
-      .attr("cursor", (d) => ((d._children || editMode) ? "pointer" : "default"))
+      .attr("cursor", (d) => (d._children || editMode ? "pointer" : "default"))
       .attr("r", (d) => (d._children ? circleRadius : circleRadius / 1.4))
       .attr("fill", (d) => {
         if (editMode) return "rgba(255, 100, 100, 0.5)"
-        return (d._children ? d.data.color : defaultBackgroundColor)
+        return d._children ? d.data.color : defaultBackgroundColor
       })
-      .attr("stroke", (d) => editMode ? "rgba(255, 50, 50, 0.8)" : d.data.color)
+      .attr("stroke", (d) => (editMode ? "rgba(255, 50, 50, 0.8)" : d.data.color))
       .attr("stroke-width", strokeWidth)
       .on("click", (event, d) => {
         if (editMode) {
@@ -283,7 +290,7 @@ export function createInteractionVisualization() {
               update(event, d)
               focusNode(d)
             } else {
-              // Node is expanded, show add child modal  
+              // Node is expanded, show add child modal
               showAddChildModal(d)
             }
           } else {
@@ -309,9 +316,9 @@ export function createInteractionVisualization() {
           }
         }
       })
-      .on("mouseover", (event, d) => ((d._children || editMode) ? handlerChangeScale(event.target, 1.5) : null))
-      .on("mouseout", (event, d) => ((d._children || editMode) ? handlerChangeScale(event.target, 1) : null))
-      
+      .on("mouseover", (event, d) => (d._children || editMode ? handlerChangeScale(event.target, 1.5) : null))
+      .on("mouseout", (event, d) => (d._children || editMode ? handlerChangeScale(event.target, 1) : null))
+
     // Add plus sign to circles in edit mode
     nodeEnter
       .append("text")
@@ -321,9 +328,9 @@ export function createInteractionVisualization() {
       .attr("font-size", fontSize)
       .attr("font-weight", "bold")
       .attr("fill", "white")
-      .attr("pointer-events", (d) => editMode ? "all" : "none") // Only clickable in edit mode
+      .attr("pointer-events", (d) => (editMode ? "all" : "none")) // Only clickable in edit mode
       .attr("cursor", "pointer")
-      .attr("opacity", (d) => editMode ? 1 : 0)
+      .attr("opacity", (d) => (editMode ? 1 : 0))
       .text("+")
       .on("click", (event, d) => {
         if (editMode) {
@@ -332,9 +339,8 @@ export function createInteractionVisualization() {
           showAddChildModal(d)
         }
       })
-      .on("mouseover", (event) => editMode ? handlerChangeScale(event.target, 1.5) : null)
-      .on("mouseout", (event) => editMode ? handlerChangeScale(event.target, 1) : null)
-
+      .on("mouseover", (event) => (editMode ? handlerChangeScale(event.target, 1.5) : null))
+      .on("mouseout", (event) => (editMode ? handlerChangeScale(event.target, 1) : null))
 
     // Transition nodes to their new position.
     const nodeUpdate = node
@@ -343,29 +349,32 @@ export function createInteractionVisualization() {
       .attr("transform", (d) => `translate(${d.y},${d.x})`)
       .attr("fill-opacity", 1)
       .attr("stroke-opacity", 1)
-    
+
     // Update plus icons and edit mode styling for existing nodes
-    node.merge(nodeEnter)
+    node
+      .merge(nodeEnter)
       .select(".add-child-icon")
-      .attr("pointer-events", (d) => editMode ? "all" : "none")
-      .attr("opacity", (d) => editMode ? 1 : 0)
-    
+      .attr("pointer-events", (d) => (editMode ? "all" : "none"))
+      .attr("opacity", (d) => (editMode ? 1 : 0))
+
     // Update circle styling for edit mode
-    node.merge(nodeEnter)
+    node
+      .merge(nodeEnter)
       .select("circle")
-      .attr("stroke", (d) => editMode ? "rgba(255, 50, 50, 0.8)" : d.data.color)
+      .attr("stroke", (d) => (editMode ? "rgba(255, 50, 50, 0.8)" : d.data.color))
       .attr("fill", (d) => {
         if (editMode) return "rgba(255, 100, 100, 0.5)"
-        return (d._children ? d.data.color : defaultBackgroundColor)
+        return d._children ? d.data.color : defaultBackgroundColor
       })
-    
+
     // Update rect styling for edit mode
-    node.merge(nodeEnter)
+    node
+      .merge(nodeEnter)
       .select("rect")
-      .attr("stroke", (d) => editMode ? "#0b7dda" : d.data.color)
-      .attr("fill", (d) => editMode ? "#2196f3" : d.data.color)
-      .attr("stroke-width", (d) => editMode ? 1 : 3)
-      .attr("stroke-dasharray", (d) => editMode ? "3,3" : "0")
+      .attr("stroke", (d) => (editMode ? "#0b7dda" : d.data.color))
+      .attr("fill", (d) => (editMode ? "#2196f3" : d.data.color))
+      .attr("stroke-width", (d) => (editMode ? 1 : 3))
+      .attr("stroke-dasharray", (d) => (editMode ? "3,3" : "0"))
 
     // Transition exiting nodes to the parent's new position.
     const nodeExit = node
@@ -414,7 +423,6 @@ export function createInteractionVisualization() {
     })
   }
 
-
   // Helper functions (matching main taxonomy exactly)
   const handleCollapse = (d) => {
     if (d.children) {
@@ -434,7 +442,7 @@ export function createInteractionVisualization() {
 
   const focusNode = (node) => {
     if (!node) return
-    
+
     let t = d3.zoomTransform(svg.node())
     let x = -node.y0
     let y = -node.x0
