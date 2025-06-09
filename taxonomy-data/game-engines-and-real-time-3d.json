@@ -18,7 +18,8 @@
       "description": "Different categories of game engines and 3D frameworks organized by licensing and development model.",
       "tags": [],
       "links": {
-        "Link": ""
+        "Official": "https://en.wikipedia.org/wiki/List_of_game_engines",
+        "Docs": "https://www.gamedev.net/articles/programming/engines-and-middleware/comparison-of-game-engines-r3526/"
       },
       "children": [
         {

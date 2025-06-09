@@ -39,9 +39,48 @@ All files are output to the `dist` directory.
 
 ## Submitting updates
 
-You are welcome to submit your own changes to this! The easiest method is to use the page either on github pages or built locally switch to the JSON editor and then make a change to the entry or child node you want to change. If you switch back, you will see the update reflected. 
+You are welcome to submit your own changes to this! There are several ways to contribute:
+
+### Manual Editing
+The easiest method is to use the page either on github pages or built locally switch to the JSON editor and then make a change to the entry or child node you want to change. If you switch back, you will see the update reflected. 
 
 You can then press the "Download JSON" button on the Interaction panel. You can then clone or fork the repo, replace the existing `Creative_Tech_Taxonomy_data.json` file and submit it as a pull request to have it reflected in the main page.
+
+### AI-Assisted Content Enhancement
+For bulk content improvements, we have an AI-powered enhancement system that can efficiently add descriptions and links to nodes that need them:
+
+#### Prerequisites
+1. Install Python dependencies: `pip install anthropic`
+2. Set your Claude API key: `export ANTHROPIC_API_KEY="your-api-key"`
+
+#### Enhancement Workflow
+```bash
+# 1. Analyze current state and identify nodes needing improvement
+python enhance.py analyze
+
+# 2. Generate an efficient processing plan 
+python enhance.py plan
+
+# 3. Process multiple batches automatically (recommended)
+python enhance.py batch 5
+
+# OR process individual batches manually
+python enhance.py single sample_batch_for_api.json
+
+# Clean up backup files if needed
+python enhance.py cleanup
+```
+
+#### Key Features
+- **10x efficiency**: Processes batches of related nodes instead of individual API calls
+- **Source file updates**: Modifies the individual taxonomy files (not just the compiled version)
+- **Smart backup system**: Creates single backup files (not timestamped duplicates)
+- **Auto-rebuild**: Automatically rebuilds the main taxonomy file after changes
+- **Progress tracking**: Shows exactly what was enhanced and which files were modified
+
+The enhancement system only updates nodes that actually need improvement (missing descriptions or links) and preserves existing quality content.
+
+**Note**: All enhancement utility scripts are organized in the `utilities/` directory. The main `enhance.py` script provides a convenient interface to access them.
 
 ## Multiple Language Support
 

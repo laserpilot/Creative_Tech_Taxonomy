@@ -12,7 +12,7 @@
       "name": {
         "en": "Data Tools"
       },
-      "description": "",
+      "description": "Software and frameworks for collecting, analyzing, visualizing, and extracting insights from complex data, enabling data-driven decision making.",
       "tags": [],
       "links": {
         "Link": ""
@@ -22,7 +22,7 @@
           "name": {
             "en": "Python"
           },
-          "description": "",
+          "description": "Versatile, high-level programming language known for its simplicity, readability, and wide range of applications in data analysis, automation, and creative coding.",
           "tags": [],
           "links": {
             "Link": ""
@@ -32,7 +32,7 @@
               "name": {
                 "en": "Bokeh"
               },
-              "description": "",
+              "description": "Python library for creating interactive, web-based visualizations and dashboards, allowing users to explore and interact with data.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -42,7 +42,7 @@
               "name": {
                 "en": "Plotly"
               },
-              "description": "",
+              "description": "Python library for creating highly customizable, interactive data visualizations and dashboards, with support for a wide range of chart types.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -52,7 +52,7 @@
               "name": {
                 "en": "Matplotlib"
               },
-              "description": "",
+              "description": "Powerful Python 2D plotting library for creating publication-quality figures, from simple line plots to complex, multi-panel figures.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -172,7 +172,7 @@
               "name": {
                 "en": "Gitlab CI"
               },
-              "description": "",
+              "description": "Continuous Integration and Deployment tool integrated with GitLab for automating software builds, tests, and deployments.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -182,7 +182,7 @@
               "name": {
                 "en": "Jenkins"
               },
-              "description": "",
+              "description": "Open-source automation server for building, testing, and deploying software projects. Supports a wide range of plugins and integrations.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -192,7 +192,7 @@
               "name": {
                 "en": "Teamcity"
               },
-              "description": "",
+              "description": "Continuous Integration and Deployment server from JetBrains for automating the build, test, and deployment of software projects.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -202,7 +202,7 @@
               "name": {
                 "en": "Bamboo"
               },
-              "description": "",
+              "description": "Continuous Integration and Deployment server from Atlassian for automating the build, test, and deployment of software projects.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -214,7 +214,7 @@
           "name": {
             "en": "Containers"
           },
-          "description": "",
+          "description": "Lightweight, standalone, executable software packages that include everything needed to run an application, including the code, runtime, system tools, and libraries.",
           "tags": [],
           "links": {
             "Link": ""
@@ -224,7 +224,7 @@
               "name": {
                 "en": "Kubernetes"
               },
-              "description": "",
+              "description": "Open-source container orchestration system for automating deployment, scaling, and management of containerized applications.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -234,7 +234,7 @@
               "name": {
                 "en": "Docker"
               },
-              "description": "",
+              "description": "Open-source platform for building, deploying, and managing containerized applications. Provides tools and a runtime environment for containers.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -246,7 +246,7 @@
           "name": {
             "en": "Automation"
           },
-          "description": "",
+          "description": "The use of technology to perform tasks and processes without manual intervention, improving efficiency and reducing errors.",
           "tags": [],
           "links": {
             "Link": ""
@@ -256,7 +256,7 @@
               "name": {
                 "en": "Ansible"
               },
-              "description": "",
+              "description": "Open-source automation tool for provisioning, configuring, and managing computers and cloud infrastructure. Uses a simple, human-readable language.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -266,7 +266,7 @@
               "name": {
                 "en": "Puppet"
               },
-              "description": "",
+              "description": "Open-source configuration management tool for automating the deployment and management of software and infrastructure. Uses a declarative language.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -276,7 +276,7 @@
               "name": {
                 "en": "Chef"
               },
-              "description": "",
+              "description": "Infrastructure as code tool for automating software provisioning, configuration, and management.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -288,7 +288,7 @@
           "name": {
             "en": "Monitoring/Logging"
           },
-          "description": "",
+          "description": "Tools to track, analyze, and visualize system performance, errors, and events for troubleshooting and optimization.",
           "tags": [],
           "links": {
             "Link": ""
@@ -298,7 +298,7 @@
               "name": {
                 "en": "Sudosystems"
               },
-              "description": "",
+              "description": "Open-source platform for building and deploying serverless applications and functions.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -308,7 +308,7 @@
               "name": {
                 "en": "AM/PM"
               },
-              "description": "",
+              "description": "Scheduling and time management tools to optimize productivity and workflow.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -318,7 +318,7 @@
               "name": {
                 "en": "ELK Stack"
               },
-              "description": "",
+              "description": "Open-source suite of tools (Elasticsearch, Logstash, Kibana) for log management and data analysis.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -328,7 +328,7 @@
               "name": {
                 "en": "Splunk"
               },
-              "description": "",
+              "description": "Enterprise-grade platform for searching, analyzing, and visualizing machine data from various sources.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -342,7 +342,7 @@
       "name": {
         "en": "IDE"
       },
-      "description": "",
+      "description": "Integrated Development Environment, a software application that provides a comprehensive coding workspace.",
       "tags": [],
       "links": {
         "Link": ""
@@ -352,7 +352,7 @@
           "name": {
             "en": "Visual Studio Code"
           },
-          "description": "",
+          "description": "Free, open-source, and highly customizable code editor developed by Microsoft for cross-platform development.",
           "tags": [],
           "links": {
             "Link": ""
@@ -362,7 +362,7 @@
           "name": {
             "en": "Vim/Emacs"
           },
-          "description": "",
+          "description": "Powerful, highly customizable text editors with advanced features for programmers and power users.",
           "tags": [],
           "links": {
             "Link": ""
@@ -372,7 +372,7 @@
           "name": {
             "en": "Atom"
           },
-          "description": "",
+          "description": "Free and open-source text editor developed by GitHub, with a focus on customization and community plugins.",
           "tags": [],
           "links": {
             "Link": ""
@@ -392,7 +392,7 @@
           "name": {
             "en": "Sublime Text"
           },
-          "description": "",
+          "description": "Lightweight, cross-platform code editor with a focus on productivity and customization.",
           "tags": [],
           "links": {
             "Link": ""
@@ -402,7 +402,7 @@
           "name": {
             "en": "Visual Studio"
           },
-          "description": "",
+          "description": "Integrated development environment (IDE) by Microsoft, supporting a wide range of programming languages.",
           "tags": [],
           "links": {
             "Link": ""
@@ -412,7 +412,7 @@
           "name": {
             "en": "Xcode"
           },
-          "description": "",
+          "description": "Integrated development environment (IDE) by Apple for developing software for macOS, iOS, and other Apple platforms.",
           "tags": [],
           "links": {
             "Link": ""
@@ -424,7 +424,7 @@
       "name": {
         "en": "Terminal/Shell"
       },
-      "description": "",
+      "description": "Command-line interface for interacting with the operating system, automating tasks, and running scripts.",
       "tags": [],
       "links": {
         "Link": ""
@@ -434,7 +434,7 @@
           "name": {
             "en": "Unix (Linux/Mac)"
           },
-          "description": "",
+          "description": "Family of open-source, multi-tasking operating systems based on the original Unix design.",
           "tags": [],
           "links": {
             "Link": ""
@@ -466,7 +466,7 @@
           "name": {
             "en": "Windows"
           },
-          "description": "",
+          "description": "Dominant desktop operating system developed and marketed by Microsoft, used worldwide.",
           "tags": [],
           "links": {
             "Link": ""
@@ -476,7 +476,7 @@
               "name": {
                 "en": "Powershell"
               },
-              "description": "",
+              "description": "Task automation and configuration management framework from Microsoft, built on .NET.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -486,7 +486,7 @@
               "name": {
                 "en": "cmd"
               },
-              "description": "",
+              "description": "Command line interface for executing system commands and scripts on Windows, macOS, and Linux.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -500,7 +500,7 @@
       "name": {
         "en": "Scripting"
       },
-      "description": "",
+      "description": "Automating tasks and workflows by writing and executing scripts in various programming languages.",
       "tags": [],
       "links": {
         "Link": ""
@@ -520,7 +520,7 @@
               "name": {
                 "en": "launchdaemons"
               },
-              "description": "",
+              "description": "macOS service management system for automatically running background processes and scripts.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -530,7 +530,7 @@
               "name": {
                 "en": "bash scripts"
               },
-              "description": "",
+              "description": "Automating tasks and workflows on Unix-based systems like macOS and Linux using the Bash shell scripting language.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -540,7 +540,7 @@
               "name": {
                 "en": "Shortcuts"
               },
-              "description": "",
+              "description": "Automating tasks and workflows on iOS and macOS using the Shortcuts app and Siri Shortcuts.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -550,7 +550,7 @@
               "name": {
                 "en": "AppleScript"
               },
-              "description": "",
+              "description": "Scripting language for automating tasks and workflows on macOS, with deep integration with system and app functionality.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -560,7 +560,7 @@
               "name": {
                 "en": "Automator"
               },
-              "description": "",
+              "description": "macOS app for creating automated workflows and actions using a visual interface, without writing code.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -570,7 +570,7 @@
               "name": {
                 "en": "cronjobs"
               },
-              "description": "",
+              "description": "Scheduling and automating recurring tasks and scripts on Unix-based systems like macOS and Linux.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -582,7 +582,7 @@
           "name": {
             "en": "Linux"
           },
-          "description": "",
+          "description": "Open-source operating system with a wide range of tools and frameworks for creative technology workflows.",
           "tags": [],
           "links": {
             "Link": ""
@@ -592,7 +592,7 @@
               "name": {
                 "en": "cronjobs"
               },
-              "description": "",
+              "description": "Scheduled tasks that automatically run commands or scripts on a set schedule.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -602,7 +602,7 @@
               "name": {
                 "en": "bash scripts"
               },
-              "description": "",
+              "description": "Automate tasks and workflows using the Bash shell scripting language on Unix-like systems.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -612,7 +612,7 @@
               "name": {
                 "en": "launchdaemons"
               },
-              "description": "",
+              "description": "macOS service management system that automatically runs background processes and applications.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -624,7 +624,7 @@
           "name": {
             "en": "Windows"
           },
-          "description": "",
+          "description": "The popular desktop operating system from Microsoft, used for personal and business computing.",
           "tags": [],
           "links": {
             "Link": ""
@@ -634,7 +634,7 @@
               "name": {
                 "en": "Powershell scripts"
               },
-              "description": "",
+              "description": "Automate tasks and manage systems using the PowerShell scripting language on Windows and other platforms.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -644,7 +644,7 @@
               "name": {
                 "en": "bat scripts"
               },
-              "description": "",
+              "description": "Batch files that automate tasks and workflows on the Windows command line.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -654,7 +654,7 @@
               "name": {
                 "en": "Tax Scheduler"
               },
-              "description": "",
+              "description": "Tool to manage and automate tax-related tasks, filings, and payments for businesses and individuals.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -668,7 +668,7 @@
       "name": {
         "en": "Documentation"
       },
-      "description": "",
+      "description": "Well-written, comprehensive documentation that explains how to use a tool, framework, or system.",
       "tags": [],
       "links": {
         "Link": ""
@@ -678,7 +678,7 @@
       "name": {
         "en": "Network Diagnostics"
       },
-      "description": "",
+      "description": "Tools and utilities to analyze, troubleshoot, and monitor network connectivity and performance.",
       "tags": [],
       "links": {
         "Link": ""
@@ -688,7 +688,7 @@
           "name": {
             "en": "nmap"
           },
-          "description": "",
+          "description": "Open-source network scanning and discovery tool used to map networks, detect vulnerabilities, and more.",
           "tags": [],
           "links": {
             "Link": ""
@@ -698,7 +698,7 @@
           "name": {
             "en": "Wireshark"
           },
-          "description": "",
+          "description": "Network protocol analyzer that captures and inspects network traffic for troubleshooting and analysis.",
           "tags": [],
           "links": {
             "Link": ""
@@ -708,7 +708,7 @@
           "name": {
             "en": "Charles"
           },
-          "description": "",
+          "description": "Web debugging proxy that allows inspecting HTTP/HTTPS traffic, modifying requests/responses, and more.",
           "tags": [],
           "links": {
             "Link": ""

@@ -12,7 +12,7 @@
       "name": {
         "en": "Sensors"
       },
-      "description": "",
+      "description": "Hardware and software components that detect and measure physical phenomena, enabling interactive experiences.",
       "tags": [],
       "links": {
         "Link": ""
@@ -22,7 +22,7 @@
           "name": {
             "en": "Compass/Magnetometer"
           },
-          "description": "",
+          "description": "Sensor that measures the Earth's magnetic field, enabling orientation and navigation in digital experiences.",
           "tags": [],
           "links": {
             "Link": ""
@@ -32,7 +32,7 @@
           "name": {
             "en": "Location/GPS"
           },
-          "description": "",
+          "description": "Sensor that provides geographic location data, enabling location-based experiences and augmented reality.",
           "tags": [],
           "links": {
             "Link": ""
@@ -42,7 +42,7 @@
           "name": {
             "en": "Ambient Light Sensor"
           },
-          "description": "",
+          "description": "Sensor that measures the ambient light levels, enabling adaptive user interfaces and energy-saving features.",
           "tags": [],
           "links": {
             "Link": ""
@@ -52,7 +52,7 @@
           "name": {
             "en": "Barometer"
           },
-          "description": "",
+          "description": "Sensor that measures atmospheric pressure, enabling weather-related features and altitude tracking.",
           "tags": [],
           "links": {
             "Link": ""
@@ -62,7 +62,7 @@
           "name": {
             "en": "Gyroscope"
           },
-          "description": "",
+          "description": "Sensor that measures angular velocity, enabling motion tracking and device orientation in digital experiences.",
           "tags": [],
           "links": {
             "Link": ""
@@ -180,7 +180,7 @@
           "name": {
             "en": "Face Detection/Face Filters"
           },
-          "description": "",
+          "description": "Detect and manipulate faces in images/videos for creative effects and AR experiences.",
           "tags": [],
           "links": {
             "Link": ""
@@ -190,7 +190,7 @@
               "name": {
                 "en": "Snapchat Lens Studio"
               },
-              "description": "",
+              "description": "Create custom AR lenses and effects for Snapchat using a visual scripting interface.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -200,7 +200,7 @@
               "name": {
                 "en": "Meta Spark AR"
               },
-              "description": "",
+              "description": "Develop augmented reality experiences for Instagram, Facebook, and the Metaverse using a visual editor.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -212,7 +212,7 @@
           "name": {
             "en": "WebAR"
           },
-          "description": "",
+          "description": "Create AR experiences that run directly in web browsers, without the need for a dedicated app.",
           "tags": [],
           "links": {
             "Link": ""
@@ -232,7 +232,7 @@
               "name": {
                 "en": "8th Wall"
               },
-              "description": "",
+              "description": "Platform for creating web-based AR experiences that work across mobile devices and browsers.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -254,7 +254,7 @@
               "name": {
                 "en": "Niantic Lightship"
               },
-              "description": "",
+              "description": "SDK and tools for building location-based AR experiences, leveraging Niantic's expertise in AR gaming.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -268,7 +268,7 @@
       "name": {
         "en": "Web Frameworks for Native Apps"
       },
-      "description": "",
+      "description": "Frameworks like React Native and NativeScript that allow building native mobile apps using web technologies.",
       "tags": [],
       "links": {
         "Link": ""
@@ -278,7 +278,7 @@
           "name": {
             "en": "React Native"
           },
-          "description": "",
+          "description": "A framework for building native mobile apps using React, a popular JavaScript library for building user interfaces.",
           "tags": [],
           "links": {
             "Link": ""
@@ -288,7 +288,7 @@
           "name": {
             "en": "Bootstrap"
           },
-          "description": "",
+          "description": "Open-source CSS framework for building responsive, mobile-first websites and web apps.",
           "tags": [],
           "links": {
             "Link": ""
@@ -300,7 +300,7 @@
       "name": {
         "en": "Android"
       },
-      "description": "",
+      "description": "Open-source mobile operating system developed by Google, used on a wide range of smartphones and tablets.",
       "tags": [],
       "links": {
         "Link": ""
@@ -310,7 +310,7 @@
           "name": {
             "en": "Devices"
           },
-          "description": "",
+          "description": "Hardware products like smartphones, tablets, laptops, desktops, and other computing devices used for creative work.",
           "tags": [],
           "links": {
             "Link": ""
@@ -320,7 +320,7 @@
               "name": {
                 "en": "A million options"
               },
-              "description": "",
+              "description": "The vast array of creative technology tools, frameworks, and platforms available for creative professionals to choose from.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -334,7 +334,7 @@
       "name": {
         "en": "Apple"
       },
-      "description": "",
+      "description": "Technology company known for its innovative hardware and software products, including iPhones, iPads, and Macs.",
       "tags": [],
       "links": {
         "Link": ""
@@ -354,7 +354,7 @@
               "name": {
                 "en": "iPhone"
               },
-              "description": "",
+              "description": "Apple's flagship smartphone, known for its advanced features, design, and integration with the iOS ecosystem.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -364,7 +364,7 @@
                   "name": {
                     "en": "iOS"
                   },
-                  "description": "",
+                  "description": "Apple's mobile operating system used on iPhones and iPads, offering a user-friendly interface and a wide range of apps.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -376,7 +376,7 @@
               "name": {
                 "en": "iPad"
               },
-              "description": "",
+              "description": "Apple's line of tablet computers, known for their versatility, portability, and integration with the iOS ecosystem.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -386,7 +386,7 @@
                   "name": {
                     "en": "iPadOS"
                   },
-                  "description": "",
+                  "description": "Apple's tablet-optimized operating system, designed to provide a more powerful and versatile experience on the iPad.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -398,7 +398,7 @@
               "name": {
                 "en": "Apple Watch"
               },
-              "description": "",
+              "description": "Wearable device by Apple that enables mobile computing and connectivity on the go.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -408,7 +408,7 @@
                   "name": {
                     "en": "watchOS"
                   },
-                  "description": "",
+                  "description": "Operating system powering the Apple Watch, enabling apps, connectivity, and wearable computing.",
                   "tags": [],
                   "links": {
                     "Link": ""

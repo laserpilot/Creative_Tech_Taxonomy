@@ -12,7 +12,7 @@
       "name": {
         "en": "Pen Plotters"
       },
-      "description": "",
+      "description": "Computer-controlled drawing machines that use pens, markers, or other tools to create physical artwork.",
       "tags": [],
       "links": {
         "Link": ""
@@ -22,7 +22,7 @@
           "name": {
             "en": "AxiDraw"
           },
-          "description": "",
+          "description": "Pen plotter for creating precise vector drawings, illustrations, and calligraphy on paper.",
           "tags": [],
           "links": {
             "Link": ""
@@ -34,7 +34,7 @@
       "name": {
         "en": "CNC"
       },
-      "description": "",
+      "description": "Computer Numerical Control machines that automate the manufacturing of physical objects from digital designs.",
       "tags": [],
       "links": {
         "Link": ""
@@ -44,7 +44,7 @@
       "name": {
         "en": "3D Printing"
       },
-      "description": "",
+      "description": "Additive manufacturing process that creates three-dimensional objects from digital files, used for prototyping and production.",
       "tags": [],
       "links": {
         "Link": ""
@@ -54,7 +54,7 @@
           "name": {
             "en": "Fused Deposition Modeling (FDM)"
           },
-          "description": "",
+          "description": "Common 3D printing technique that builds objects by extruding thermoplastic filament layer by layer.",
           "tags": [],
           "links": {
             "Link": ""
@@ -64,7 +64,7 @@
           "name": {
             "en": "Stereolithography (SLA)"
           },
-          "description": "",
+          "description": "3D printing process that uses a laser to cure and solidify photosensitive resin layer by layer.",
           "tags": [],
           "links": {
             "Link": ""
@@ -74,7 +74,7 @@
           "name": {
             "en": "Selective Laser Sintering (SLS)"
           },
-          "description": "",
+          "description": "3D printing technique that uses a high-powered laser to fuse small particles of plastic, metal, or ceramic into a solid structure.",
           "tags": [],
           "links": {
             "Link": ""
@@ -86,7 +86,7 @@
       "name": {
         "en": "Laser Cutters"
       },
-      "description": "",
+      "description": "Computer-controlled machines that use a laser to cut and engrave a variety of materials, including wood, acrylic, and metal.",
       "tags": [],
       "links": {
         "Link": ""
@@ -96,7 +96,7 @@
       "name": {
         "en": "2D Printing"
       },
-      "description": "",
+      "description": "Conventional printing techniques that produce two-dimensional images and text on paper or other flat surfaces.",
       "tags": [],
       "links": {
         "Link": ""
@@ -106,7 +106,7 @@
           "name": {
             "en": "Inkjet"
           },
-          "description": "",
+          "description": "2D printing technology that sprays tiny droplets of ink onto paper or other media to create images and text.",
           "tags": [],
           "links": {
             "Link": ""
@@ -116,7 +116,7 @@
           "name": {
             "en": "Thermal Printers"
           },
-          "description": "aka Receipt Printers",
+          "description": "Also known as receipt printers, these use heat to transfer ink or toner onto paper, often used for point-of-sale and labeling.",
           "tags": [],
           "links": {
             "Link": ""
@@ -126,7 +126,7 @@
           "name": {
             "en": "Laser Printer"
           },
-          "description": "",
+          "description": "High-quality digital printing device that uses laser technology to produce crisp, detailed images on paper.",
           "tags": [],
           "links": {
             "Link": ""
@@ -136,7 +136,7 @@
           "name": {
             "en": "Dye Sublimation"
           },
-          "description": "",
+          "description": "Printing process that uses heat to transfer dye onto materials like fabric, plastic, or metal, creating vibrant, long-lasting images.",
           "tags": [],
           "links": {
             "Link": ""
@@ -148,7 +148,7 @@
       "name": {
         "en": "Vinyl Cutters"
       },
-      "description": "",
+      "description": "Computer-controlled cutting devices that precisely cut designs from adhesive-backed vinyl sheets for signage, decals, and custom graphics.",
       "tags": [],
       "links": {
         "Link": ""
@@ -158,7 +158,7 @@
       "name": {
         "en": "Robot Arms"
       },
-      "description": "",
+      "description": "Programmable, articulated mechanical devices used for automation, material handling, and precision tasks in manufacturing, research, and creative applications.",
       "tags": [],
       "links": {
         "Link": ""
@@ -168,7 +168,7 @@
           "name": {
             "en": "Kuka"
           },
-          "description": "",
+          "description": "Leading manufacturer of industrial robot arms and automation systems used in manufacturing, logistics, and creative applications.",
           "tags": [],
           "links": {
             "Link": ""

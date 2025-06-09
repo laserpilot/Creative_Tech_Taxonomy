@@ -3,7 +3,16 @@
     "en": "Sensors and Interaction Methods"
   },
   "description": "Different methods and categories of sensing people and allowing interactions with digital interfaces and experiences. This is heavily related to the optical tracking and Physical computing categories as well.",
-  "tags": ["sensing", "interaction", "input", "tracking", "biometric", "motion", "touch", "optical"],
+  "tags": [
+    "sensing",
+    "interaction",
+    "input",
+    "tracking",
+    "biometric",
+    "motion",
+    "touch",
+    "optical"
+  ],
   "links": {
     "Link": "https://en.wikipedia.org/wiki/Category:Sensors"
   },
@@ -13,7 +22,14 @@
         "en": "Optical Tracking"
       },
       "description": "Tools and concepts related to optical tracking elements that may appear in various creative technology and experiential projects. See also the topic of Cameras in the Sensor/Interaction method group",
-      "tags": ["optical", "tracking", "computer-vision", "cameras", "infrared", "depth-sensing"],
+      "tags": [
+        "optical",
+        "tracking",
+        "computer-vision",
+        "cameras",
+        "infrared",
+        "depth-sensing"
+      ],
       "links": {
         "Wikipedia": "https://en.wikipedia.org/wiki/Motion_capture",
         "OpenCV": "https://opencv.org/"
@@ -24,7 +40,13 @@
             "en": "Cameras"
           },
           "description": "Various camera technologies used for computer vision, motion capture, and interactive installations in creative projects",
-          "tags": ["cameras", "video", "photography", "computer-vision", "capture"],
+          "tags": [
+            "cameras",
+            "video",
+            "photography",
+            "computer-vision",
+            "capture"
+          ],
           "links": {
             "Digital Cameras": "https://en.wikipedia.org/wiki/Digital_camera",
             "Camera Types": "https://en.wikipedia.org/wiki/Camera"
@@ -35,7 +57,12 @@
                 "en": "Types"
               },
               "description": "Different categories of cameras suitable for various creative technology applications",
-              "tags": ["camera-types", "video", "photography", "capture"],
+              "tags": [
+                "camera-types",
+                "video",
+                "photography",
+                "capture"
+              ],
               "links": {
                 "Camera Types": "https://en.wikipedia.org/wiki/Camera"
               },
@@ -45,7 +72,12 @@
                     "en": "Video Cam"
                   },
                   "description": "Video cameras for real-time capture and streaming in interactive installations and live performances",
-                  "tags": ["video", "real-time", "streaming", "live"],
+                  "tags": [
+                    "video",
+                    "real-time",
+                    "streaming",
+                    "live"
+                  ],
                   "links": {
                     "Video Camera": "https://en.wikipedia.org/wiki/Video_camera"
                   },
@@ -55,7 +87,13 @@
                         "en": "Action Cameras"
                       },
                       "description": "Compact, rugged cameras for capturing movement and action in extreme environments",
-                      "tags": ["action", "rugged", "compact", "sports", "movement"],
+                      "tags": [
+                        "action",
+                        "rugged",
+                        "compact",
+                        "sports",
+                        "movement"
+                      ],
                       "links": {
                         "Action Camera": "https://en.wikipedia.org/wiki/Action_camera"
                       },
@@ -65,7 +103,12 @@
                             "en": "GoPro Hero"
                           },
                           "description": "Popular action camera series with high-quality video capture and rugged design",
-                          "tags": ["gopro", "action", "4k", "waterproof"],
+                          "tags": [
+                            "gopro",
+                            "action",
+                            "4k",
+                            "waterproof"
+                          ],
                           "links": {
                             "GoPro": "https://gopro.com/"
                           }
@@ -77,7 +120,12 @@
                         "en": "Smartphone Camera"
                       },
                       "description": "Built-in cameras in mobile devices, increasingly powerful for computer vision applications",
-                      "tags": ["smartphone", "mobile", "portable", "accessible"],
+                      "tags": [
+                        "smartphone",
+                        "mobile",
+                        "portable",
+                        "accessible"
+                      ],
                       "links": {
                         "Phone Camera": "https://en.wikipedia.org/wiki/Camera_phone"
                       }
@@ -87,7 +135,12 @@
                         "en": "Professional Grade Camcorder"
                       },
                       "description": "High-end video cameras for professional video production and broadcast quality capture",
-                      "tags": ["professional", "broadcast", "high-quality", "production"],
+                      "tags": [
+                        "professional",
+                        "broadcast",
+                        "high-quality",
+                        "production"
+                      ],
                       "links": {
                         "Camcorder": "https://en.wikipedia.org/wiki/Camcorder"
                       }
@@ -97,7 +150,12 @@
                         "en": "Broadcast"
                       },
                       "description": "Television and live streaming cameras with high-end optics and real-time output",
-                      "tags": ["broadcast", "television", "live", "streaming"],
+                      "tags": [
+                        "broadcast",
+                        "television",
+                        "live",
+                        "streaming"
+                      ],
                       "links": {
                         "Broadcast Camera": "https://en.wikipedia.org/wiki/Professional_video_camera"
                       }
@@ -107,7 +165,12 @@
                         "en": "Security Cameras"
                       },
                       "description": "Surveillance cameras that can be repurposed for creative installations and monitoring",
-                      "tags": ["security", "surveillance", "monitoring", "cctv"],
+                      "tags": [
+                        "security",
+                        "surveillance",
+                        "monitoring",
+                        "cctv"
+                      ],
                       "links": {
                         "Security Camera": "https://en.wikipedia.org/wiki/Closed-circuit_television"
                       }
@@ -119,7 +182,12 @@
                     "en": "Webcam"
                   },
                   "description": "Computer-connected cameras for video conferencing and basic computer vision applications",
-                  "tags": ["webcam", "usb", "computer", "streaming"],
+                  "tags": [
+                    "webcam",
+                    "usb",
+                    "computer",
+                    "streaming"
+                  ],
                   "links": {
                     "Webcam": "https://en.wikipedia.org/wiki/Webcam"
                   }
@@ -129,7 +197,12 @@
                     "en": "Slow Motion/High Speed Cam"
                   },
                   "description": "Cameras capable of extremely high frame rates for slow motion analysis and artistic effects",
-                  "tags": ["high-speed", "slow-motion", "fps", "analysis"],
+                  "tags": [
+                    "high-speed",
+                    "slow-motion",
+                    "fps",
+                    "analysis"
+                  ],
                   "links": {
                     "High Speed Camera": "https://en.wikipedia.org/wiki/High-speed_camera"
                   }
@@ -139,7 +212,13 @@
                     "en": "IP Cameras"
                   },
                   "description": "Network-connected cameras that transmit video data over IP networks for remote access",
-                  "tags": ["ip", "network", "remote", "ethernet", "wifi"],
+                  "tags": [
+                    "ip",
+                    "network",
+                    "remote",
+                    "ethernet",
+                    "wifi"
+                  ],
                   "links": {
                     "IP Camera": "https://en.wikipedia.org/wiki/IP_camera"
                   }
@@ -149,7 +228,13 @@
                     "en": "Infrared"
                   },
                   "description": "Cameras that capture infrared light for depth sensing, thermal imaging, and night vision",
-                  "tags": ["infrared", "ir", "depth", "thermal", "night-vision"],
+                  "tags": [
+                    "infrared",
+                    "ir",
+                    "depth",
+                    "thermal",
+                    "night-vision"
+                  ],
                   "links": {
                     "Infrared Camera": "https://en.wikipedia.org/wiki/Thermographic_camera"
                   },
@@ -159,7 +244,11 @@
                         "en": "Normal"
                       },
                       "description": "Standard infrared cameras for basic IR imaging and night vision applications",
-                      "tags": ["infrared", "night-vision", "basic"],
+                      "tags": [
+                        "infrared",
+                        "night-vision",
+                        "basic"
+                      ],
                       "links": {
                         "Infrared Imaging": "https://en.wikipedia.org/wiki/Infrared_imaging"
                       }
@@ -169,7 +258,13 @@
                         "en": "Depth Cameras"
                       },
                       "description": "Cameras that measure distance to objects using infrared structured light or time-of-flight",
-                      "tags": ["depth", "3d", "structured-light", "tof", "distance"],
+                      "tags": [
+                        "depth",
+                        "3d",
+                        "structured-light",
+                        "tof",
+                        "distance"
+                      ],
                       "links": {
                         "Depth Camera": "https://en.wikipedia.org/wiki/Depth_camera"
                       },
@@ -179,7 +274,12 @@
                             "en": "Realsense"
                           },
                           "description": "Intel's depth sensing cameras using structured light and stereo vision technology",
-                          "tags": ["intel", "realsense", "structured-light", "stereo"],
+                          "tags": [
+                            "intel",
+                            "realsense",
+                            "structured-light",
+                            "stereo"
+                          ],
                           "links": {
                             "Intel RealSense": "https://www.intel.com/content/www/us/en/architecture-and-technology/realsense-overview.html"
                           }
@@ -189,7 +289,12 @@
                             "en": "Kinect"
                           },
                           "description": "Microsoft's depth sensing camera originally for Xbox, popular in creative coding",
-                          "tags": ["microsoft", "kinect", "motion-tracking", "gaming"],
+                          "tags": [
+                            "microsoft",
+                            "kinect",
+                            "motion-tracking",
+                            "gaming"
+                          ],
                           "links": {
                             "Kinect": "https://en.wikipedia.org/wiki/Kinect"
                           }
@@ -199,7 +304,12 @@
                             "en": "Orbbec"
                           },
                           "description": "3D depth sensing cameras with structured light technology for computer vision",
-                          "tags": ["orbbec", "3d", "structured-light", "computer-vision"],
+                          "tags": [
+                            "orbbec",
+                            "3d",
+                            "structured-light",
+                            "computer-vision"
+                          ],
                           "links": {
                             "Orbbec": "https://www.orbbec.com/"
                           }
@@ -209,7 +319,12 @@
                             "en": "Ensenso"
                           },
                           "description": "Industrial 3D cameras using stereo vision for precise depth measurement",
-                          "tags": ["ensenso", "industrial", "stereo-vision", "precision"],
+                          "tags": [
+                            "ensenso",
+                            "industrial",
+                            "stereo-vision",
+                            "precision"
+                          ],
                           "links": {
                             "Ensenso": "https://en.ids-imaging.com/ensenso-stereo-3d-camera.html"
                           }
@@ -221,7 +336,12 @@
                         "en": "Thermal Cameras"
                       },
                       "description": "Cameras that detect thermal radiation for temperature mapping and heat-based interaction",
-                      "tags": ["thermal", "temperature", "heat", "flir"],
+                      "tags": [
+                        "thermal",
+                        "temperature",
+                        "heat",
+                        "flir"
+                      ],
                       "links": {
                         "Thermal Camera": "https://en.wikipedia.org/wiki/Thermographic_camera"
                       },
@@ -231,7 +351,12 @@
                             "en": "FLIR"
                           },
                           "description": "Leading manufacturer of thermal imaging cameras for various applications",
-                          "tags": ["flir", "thermal", "temperature", "infrared"],
+                          "tags": [
+                            "flir",
+                            "thermal",
+                            "temperature",
+                            "infrared"
+                          ],
                           "links": {
                             "FLIR": "https://www.flir.com/"
                           }
@@ -245,7 +370,12 @@
                     "en": "DSLR"
                   },
                   "description": "Digital Single Lens Reflex cameras with interchangeable lenses and manual controls",
-                  "tags": ["dslr", "photography", "interchangeable-lens", "manual"],
+                  "tags": [
+                    "dslr",
+                    "photography",
+                    "interchangeable-lens",
+                    "manual"
+                  ],
                   "links": {
                     "DSLR": "https://en.wikipedia.org/wiki/Digital_single-lens_reflex_camera"
                   }
@@ -255,7 +385,12 @@
                     "en": "Mirrorless"
                   },
                   "description": "Compact interchangeable lens cameras without the mirror mechanism of DSLRs",
-                  "tags": ["mirrorless", "compact", "interchangeable-lens", "electronic-viewfinder"],
+                  "tags": [
+                    "mirrorless",
+                    "compact",
+                    "interchangeable-lens",
+                    "electronic-viewfinder"
+                  ],
                   "links": {
                     "Mirrorless Camera": "https://en.wikipedia.org/wiki/Mirrorless_interchangeable-lens_camera"
                   }
@@ -265,7 +400,13 @@
                     "en": "Stereo RGB"
                   },
                   "description": "Dual camera systems that capture depth information using stereo vision principles",
-                  "tags": ["stereo", "rgb", "depth", "dual-camera", "stereo-vision"],
+                  "tags": [
+                    "stereo",
+                    "rgb",
+                    "depth",
+                    "dual-camera",
+                    "stereo-vision"
+                  ],
                   "links": {
                     "Stereo Vision": "https://en.wikipedia.org/wiki/Computer_stereo_vision"
                   },
@@ -275,7 +416,13 @@
                         "en": "Stereolab Zed Camera"
                       },
                       "description": "High-performance stereo camera with AI-powered depth sensing and tracking",
-                      "tags": ["stereolab", "zed", "ai", "tracking", "slam"],
+                      "tags": [
+                        "stereolab",
+                        "zed",
+                        "ai",
+                        "tracking",
+                        "slam"
+                      ],
                       "links": {
                         "Stereolabs": "https://www.stereolabs.com/"
                       }
@@ -291,7 +438,13 @@
             "en": "Computer Vision"
           },
           "description": "Algorithms and techniques for analyzing and understanding visual information from cameras and images",
-          "tags": ["computer-vision", "opencv", "tracking", "detection", "machine-learning"],
+          "tags": [
+            "computer-vision",
+            "opencv",
+            "tracking",
+            "detection",
+            "machine-learning"
+          ],
           "links": {
             "Computer Vision": "https://en.wikipedia.org/wiki/Computer_vision",
             "OpenCV": "https://opencv.org/"
@@ -302,7 +455,12 @@
                 "en": "For More - See AI/ML Section"
               },
               "description": "Advanced computer vision techniques using artificial intelligence and machine learning",
-              "tags": ["ai", "ml", "deep-learning", "neural-networks"],
+              "tags": [
+                "ai",
+                "ml",
+                "deep-learning",
+                "neural-networks"
+              ],
               "links": {
                 "AI/ML in Computer Vision": "https://en.wikipedia.org/wiki/Computer_vision#Artificial_intelligence"
               }
@@ -312,7 +470,12 @@
                 "en": "Gesture Control"
               },
               "description": "Recognition and interpretation of hand and body gestures for natural user interfaces",
-              "tags": ["gesture", "hand-tracking", "natural-ui", "interaction"],
+              "tags": [
+                "gesture",
+                "hand-tracking",
+                "natural-ui",
+                "interaction"
+              ],
               "links": {
                 "Gesture Recognition": "https://en.wikipedia.org/wiki/Gesture_recognition"
               }
@@ -322,7 +485,12 @@
                 "en": "Eye Tracking"
               },
               "description": "Technology that detects and follows eye movements for interaction and attention analysis",
-              "tags": ["eye-tracking", "gaze", "attention", "hci"],
+              "tags": [
+                "eye-tracking",
+                "gaze",
+                "attention",
+                "hci"
+              ],
               "links": {
                 "Eye Tracking": "https://en.wikipedia.org/wiki/Eye_tracking"
               },
@@ -332,7 +500,12 @@
                     "en": "Tobii Eye Tracker"
                   },
                   "description": "Professional eye tracking devices for research and interactive applications",
-                  "tags": ["tobii", "professional", "research", "precision"],
+                  "tags": [
+                    "tobii",
+                    "professional",
+                    "research",
+                    "precision"
+                  ],
                   "links": {
                     "Tobii": "https://www.tobii.com/"
                   }
@@ -344,7 +517,12 @@
                 "en": "Body Tracking"
               },
               "description": "Full body pose estimation and tracking for motion analysis and interactive installations",
-              "tags": ["body-tracking", "pose-estimation", "skeleton", "motion"],
+              "tags": [
+                "body-tracking",
+                "pose-estimation",
+                "skeleton",
+                "motion"
+              ],
               "links": {
                 "Pose Estimation": "https://en.wikipedia.org/wiki/Pose_(computer_vision)"
               }
@@ -354,7 +532,12 @@
                 "en": "OpenCV"
               },
               "description": "Open source computer vision library with comprehensive tools for image processing",
-              "tags": ["opencv", "library", "image-processing", "open-source"],
+              "tags": [
+                "opencv",
+                "library",
+                "image-processing",
+                "open-source"
+              ],
               "links": {
                 "OpenCV": "https://opencv.org/",
                 "OpenCV Documentation": "https://docs.opencv.org/"
@@ -365,7 +548,12 @@
                 "en": "Techniques"
               },
               "description": "Fundamental computer vision algorithms and methods for image analysis",
-              "tags": ["algorithms", "image-processing", "analysis", "techniques"],
+              "tags": [
+                "algorithms",
+                "image-processing",
+                "analysis",
+                "techniques"
+              ],
               "links": {
                 "Computer Vision Techniques": "https://en.wikipedia.org/wiki/Computer_vision#Methods"
               },
@@ -375,7 +563,12 @@
                     "en": "Contour Detection"
                   },
                   "description": "Finding and tracing the boundaries of objects in images",
-                  "tags": ["contour", "edge-detection", "boundaries", "shapes"],
+                  "tags": [
+                    "contour",
+                    "edge-detection",
+                    "boundaries",
+                    "shapes"
+                  ],
                   "links": {
                     "Edge Detection": "https://en.wikipedia.org/wiki/Edge_detection"
                   }
@@ -385,7 +578,12 @@
                     "en": "Optical Flow"
                   },
                   "description": "Tracking motion of objects between consecutive frames in video sequences",
-                  "tags": ["optical-flow", "motion", "tracking", "video"],
+                  "tags": [
+                    "optical-flow",
+                    "motion",
+                    "tracking",
+                    "video"
+                  ],
                   "links": {
                     "Optical Flow": "https://en.wikipedia.org/wiki/Optical_flow"
                   }
@@ -395,7 +593,12 @@
                     "en": "Blob Tracking"
                   },
                   "description": "Detecting and following connected regions of similar pixels in images",
-                  "tags": ["blob", "region", "tracking", "detection"],
+                  "tags": [
+                    "blob",
+                    "region",
+                    "tracking",
+                    "detection"
+                  ],
                   "links": {
                     "Blob Detection": "https://en.wikipedia.org/wiki/Blob_detection"
                   }
@@ -405,7 +608,11 @@
                     "en": "Background Subtraction"
                   },
                   "description": "Isolating moving objects by removing the static background from video frames",
-                  "tags": ["background-subtraction", "foreground", "motion-detection"],
+                  "tags": [
+                    "background-subtraction",
+                    "foreground",
+                    "motion-detection"
+                  ],
                   "links": {
                     "Background Subtraction": "https://en.wikipedia.org/wiki/Background_subtraction"
                   }
@@ -415,7 +622,12 @@
                     "en": "Frame Differencing"
                   },
                   "description": "Detecting motion by comparing consecutive frames to find pixel changes",
-                  "tags": ["frame-differencing", "temporal", "motion-detection", "change"],
+                  "tags": [
+                    "frame-differencing",
+                    "temporal",
+                    "motion-detection",
+                    "change"
+                  ],
                   "links": {
                     "Motion Detection": "https://en.wikipedia.org/wiki/Motion_detection"
                   }
@@ -429,7 +641,12 @@
             "en": "Related Topics"
           },
           "description": "Advanced tracking technologies and specialized systems for professional motion capture and virtual production",
-          "tags": ["motion-capture", "tracking", "virtual-production", "professional"],
+          "tags": [
+            "motion-capture",
+            "tracking",
+            "virtual-production",
+            "professional"
+          ],
           "links": {
             "Motion Capture": "https://en.wikipedia.org/wiki/Motion_capture",
             "Virtual Production": "https://en.wikipedia.org/wiki/Virtual_production"
@@ -440,7 +657,12 @@
                 "en": "Antilatency/Low Latency"
               },
               "description": "Ultra-low latency tracking systems for real-time applications and responsive interactions",
-              "tags": ["antilatency", "low-latency", "real-time", "responsive"],
+              "tags": [
+                "antilatency",
+                "low-latency",
+                "real-time",
+                "responsive"
+              ],
               "links": {
                 "Antilatency": "https://antilatency.com/"
               }
@@ -450,7 +672,13 @@
                 "en": "Virtual Production/XR"
               },
               "description": "Extended reality and virtual production technologies combining physical and digital environments",
-              "tags": ["xr", "virtual-production", "mixed-reality", "film", "broadcast"],
+              "tags": [
+                "xr",
+                "virtual-production",
+                "mixed-reality",
+                "film",
+                "broadcast"
+              ],
               "links": {
                 "Virtual Production": "https://en.wikipedia.org/wiki/Virtual_production",
                 "Extended Reality": "https://en.wikipedia.org/wiki/Extended_reality"
@@ -461,7 +689,12 @@
                     "en": "MoCap Rigs/Systems"
                   },
                   "description": "Professional motion capture systems for character animation and performance capture",
-                  "tags": ["mocap", "motion-capture", "animation", "performance"],
+                  "tags": [
+                    "mocap",
+                    "motion-capture",
+                    "animation",
+                    "performance"
+                  ],
                   "links": {
                     "Motion Capture Systems": "https://en.wikipedia.org/wiki/Motion_capture#Systems"
                   },
@@ -471,7 +704,13 @@
                         "en": "Camera Based"
                       },
                       "description": "Optical motion capture systems using multiple cameras to track markers or markerless movement",
-                      "tags": ["optical", "cameras", "markers", "markerless", "3d-tracking"],
+                      "tags": [
+                        "optical",
+                        "cameras",
+                        "markers",
+                        "markerless",
+                        "3d-tracking"
+                      ],
                       "links": {
                         "Optical Motion Capture": "https://en.wikipedia.org/wiki/Motion_capture#Optical_systems"
                       },
@@ -481,7 +720,12 @@
                             "en": "Mo-Sys"
                           },
                           "description": "Camera tracking systems for virtual production and broadcast environments",
-                          "tags": ["mo-sys", "camera-tracking", "virtual-production", "broadcast"],
+                          "tags": [
+                            "mo-sys",
+                            "camera-tracking",
+                            "virtual-production",
+                            "broadcast"
+                          ],
                           "links": {
                             "Mo-Sys": "https://www.mo-sys.com/"
                           }
@@ -491,7 +735,12 @@
                             "en": "RedSpy"
                           },
                           "description": "Camera tracking technology for film and virtual production workflows",
-                          "tags": ["redspy", "camera-tracking", "film", "virtual-production"],
+                          "tags": [
+                            "redspy",
+                            "camera-tracking",
+                            "film",
+                            "virtual-production"
+                          ],
                           "links": {
                             "RED Digital Cinema": "https://www.red.com/"
                           }
@@ -501,7 +750,12 @@
                             "en": "VICON"
                           },
                           "description": "Professional optical motion capture systems used in film, games, and research",
-                          "tags": ["vicon", "optical", "professional", "motion-capture"],
+                          "tags": [
+                            "vicon",
+                            "optical",
+                            "professional",
+                            "motion-capture"
+                          ],
                           "links": {
                             "Vicon": "https://www.vicon.com/"
                           }
@@ -513,7 +767,13 @@
                         "en": "IMU Based"
                       },
                       "description": "Inertial measurement unit systems using accelerometers and gyroscopes for wireless motion tracking",
-                      "tags": ["imu", "inertial", "wireless", "accelerometer", "gyroscope"],
+                      "tags": [
+                        "imu",
+                        "inertial",
+                        "wireless",
+                        "accelerometer",
+                        "gyroscope"
+                      ],
                       "links": {
                         "IMU Motion Capture": "https://en.wikipedia.org/wiki/Motion_capture#Inertial_systems"
                       },
@@ -523,7 +783,13 @@
                             "en": "Rokoko"
                           },
                           "description": "Affordable motion capture suits using IMU sensors for indie creators",
-                          "tags": ["rokoko", "imu", "affordable", "indie", "suit"],
+                          "tags": [
+                            "rokoko",
+                            "imu",
+                            "affordable",
+                            "indie",
+                            "suit"
+                          ],
                           "links": {
                             "Rokoko": "https://www.rokoko.com/"
                           }
@@ -533,7 +799,12 @@
                             "en": "Xsens"
                           },
                           "description": "Professional inertial motion capture systems for entertainment and biomechanics",
-                          "tags": ["xsens", "inertial", "professional", "biomechanics"],
+                          "tags": [
+                            "xsens",
+                            "inertial",
+                            "professional",
+                            "biomechanics"
+                          ],
                           "links": {
                             "Xsens": "https://www.xsens.com/"
                           }
@@ -547,7 +818,12 @@
                     "en": "Other Tracking Systems"
                   },
                   "description": "Additional professional tracking technologies for specialized applications",
-                  "tags": ["tracking", "professional", "specialized", "real-time"],
+                  "tags": [
+                    "tracking",
+                    "professional",
+                    "specialized",
+                    "real-time"
+                  ],
                   "links": {
                     "Tracking Technologies": "https://en.wikipedia.org/wiki/Motion_capture#Technologies"
                   },
@@ -557,7 +833,13 @@
                         "en": "OptiTrack"
                       },
                       "description": "Precision optical tracking systems for motion capture, VR, and robotics applications",
-                      "tags": ["optitrack", "optical", "precision", "vr", "robotics"],
+                      "tags": [
+                        "optitrack",
+                        "optical",
+                        "precision",
+                        "vr",
+                        "robotics"
+                      ],
                       "links": {
                         "OptiTrack": "https://optitrack.com/"
                       }
@@ -567,7 +849,13 @@
                         "en": "Blacktrax"
                       },
                       "description": "Real-time tracking system for live entertainment and interactive installations",
-                      "tags": ["blacktrax", "real-time", "entertainment", "interactive", "live"],
+                      "tags": [
+                        "blacktrax",
+                        "real-time",
+                        "entertainment",
+                        "interactive",
+                        "live"
+                      ],
                       "links": {
                         "BlackTrax": "https://blacktrax.cast-soft.com/"
                       }
@@ -585,7 +873,14 @@
         "en": "Touch/Hands"
       },
       "description": "Touch-based interaction technologies including hand tracking, pressure sensing, and multi-touch interfaces for creative applications",
-      "tags": ["touch", "haptic", "pressure", "capacitive", "hand-tracking", "multitouch"],
+      "tags": [
+        "touch",
+        "haptic",
+        "pressure",
+        "capacitive",
+        "hand-tracking",
+        "multitouch"
+      ],
       "links": {
         "Touch Technologies": "https://en.wikipedia.org/wiki/Touchscreen",
         "Capacitive Sensing": "https://en.wikipedia.org/wiki/Capacitive_sensing"
@@ -596,7 +891,12 @@
             "en": "Leap Motion"
           },
           "description": "Hand tracking sensor that detects finger and hand movements for gesture-based interaction",
-          "tags": ["leap-motion", "hand-tracking", "gesture", "contactless"],
+          "tags": [
+            "leap-motion",
+            "hand-tracking",
+            "gesture",
+            "contactless"
+          ],
           "links": {
             "Leap Motion": "https://en.wikipedia.org/wiki/Leap_Motion"
           }
@@ -606,7 +906,13 @@
             "en": "Sensel"
           },
           "description": "Pressure-sensitive touchpad technology for precise force and multi-touch detection",
-          "tags": ["sensel", "pressure", "force", "multi-touch", "precision"],
+          "tags": [
+            "sensel",
+            "pressure",
+            "force",
+            "multi-touch",
+            "precision"
+          ],
           "links": {
             "Sensel": "https://sensel.com/"
           }
@@ -616,7 +922,12 @@
             "en": "Capacitive"
           },
           "description": "Touch sensing technology that detects changes in electrical capacitance from finger contact",
-          "tags": ["capacitive", "touch", "electrical", "finger"],
+          "tags": [
+            "capacitive",
+            "touch",
+            "electrical",
+            "finger"
+          ],
           "links": {
             "Capacitive Sensing": "https://en.wikipedia.org/wiki/Capacitive_sensing"
           }
@@ -626,7 +937,12 @@
             "en": "Touchscreens"
           },
           "description": "Interactive display surfaces that respond to touch input for direct manipulation interfaces",
-          "tags": ["touchscreen", "display", "interactive", "multi-touch"],
+          "tags": [
+            "touchscreen",
+            "display",
+            "interactive",
+            "multi-touch"
+          ],
           "links": {
             "Touchscreen": "https://en.wikipedia.org/wiki/Touchscreen"
           },
@@ -636,7 +952,13 @@
                 "en": "Projected Capacitance (PCAP)"
               },
               "description": "Advanced capacitive touch technology supporting multi-touch and gesture recognition",
-              "tags": ["pcap", "multi-touch", "gesture", "capacitive", "glass"],
+              "tags": [
+                "pcap",
+                "multi-touch",
+                "gesture",
+                "capacitive",
+                "glass"
+              ],
               "links": {
                 "PCAP Technology": "https://en.wikipedia.org/wiki/Touchscreen#Projected_capacitive"
               },
@@ -646,7 +968,13 @@
                     "en": "Ideum"
                   },
                   "description": "Large-format multi-touch tables and displays for interactive installations",
-                  "tags": ["ideum", "large-format", "multi-touch", "interactive", "table"],
+                  "tags": [
+                    "ideum",
+                    "large-format",
+                    "multi-touch",
+                    "interactive",
+                    "table"
+                  ],
                   "links": {
                     "Ideum": "https://ideum.com/"
                   }
@@ -658,7 +986,13 @@
                 "en": "IR"
               },
               "description": "Infrared touch technology using light beams to detect finger interruption",
-              "tags": ["infrared", "ir", "optical", "beams", "interruption"],
+              "tags": [
+                "infrared",
+                "ir",
+                "optical",
+                "beams",
+                "interruption"
+              ],
               "links": {
                 "Infrared Touchscreen": "https://en.wikipedia.org/wiki/Touchscreen#Infrared"
               }
@@ -668,7 +1002,12 @@
                 "en": "Shadowsense"
               },
               "description": "Optical touch technology that detects shadows cast by objects on the screen surface",
-              "tags": ["shadowsense", "optical", "shadow", "detection"],
+              "tags": [
+                "shadowsense",
+                "optical",
+                "shadow",
+                "detection"
+              ],
               "links": {
                 "Shadow Sensing": "https://en.wikipedia.org/wiki/Touchscreen#Optical_imaging"
               }
@@ -678,7 +1017,13 @@
                 "en": "LIDAR (for Large scale or LED)"
               },
               "description": "Light detection and ranging technology for large-scale interactive surfaces and LED walls",
-              "tags": ["lidar", "large-scale", "led", "distance", "interactive"],
+              "tags": [
+                "lidar",
+                "large-scale",
+                "led",
+                "distance",
+                "interactive"
+              ],
               "links": {
                 "LIDAR Applications": "https://en.wikipedia.org/wiki/Lidar#Applications"
               },
@@ -688,7 +1033,12 @@
                     "en": "Velodyne"
                   },
                   "description": "Professional LIDAR sensors for accurate 3D mapping and distance measurement",
-                  "tags": ["velodyne", "lidar", "3d-mapping", "professional"],
+                  "tags": [
+                    "velodyne",
+                    "lidar",
+                    "3d-mapping",
+                    "professional"
+                  ],
                   "links": {
                     "Velodyne Lidar": "https://velodynelidar.com/"
                   }
@@ -698,7 +1048,13 @@
                     "en": "Ouster"
                   },
                   "description": "High-performance digital LIDAR sensors for mapping and autonomous systems",
-                  "tags": ["ouster", "digital", "lidar", "mapping", "autonomous"],
+                  "tags": [
+                    "ouster",
+                    "digital",
+                    "lidar",
+                    "mapping",
+                    "autonomous"
+                  ],
                   "links": {
                     "Ouster": "https://ouster.com/"
                   }
@@ -714,7 +1070,14 @@
         "en": "Bluetooth"
       },
       "description": "Bluetooth-based proximity and location sensing technologies for interactive experiences and IoT applications",
-      "tags": ["bluetooth", "wireless", "proximity", "beacons", "ble", "location"],
+      "tags": [
+        "bluetooth",
+        "wireless",
+        "proximity",
+        "beacons",
+        "ble",
+        "location"
+      ],
       "links": {
         "Bluetooth LE": "https://en.wikipedia.org/wiki/Bluetooth_Low_Energy",
         "iBeacon": "https://en.wikipedia.org/wiki/IBeacon"
@@ -725,7 +1088,14 @@
             "en": "Beacons"
           },
           "description": "Small wireless transmitters that broadcast signals for proximity-based interactions and location services",
-          "tags": ["beacons", "proximity", "bluetooth", "location", "ibeacon", "eddystone"],
+          "tags": [
+            "beacons",
+            "proximity",
+            "bluetooth",
+            "location",
+            "ibeacon",
+            "eddystone"
+          ],
           "links": {
             "Bluetooth Beacons": "https://en.wikipedia.org/wiki/Bluetooth_beacons",
             "iBeacon": "https://en.wikipedia.org/wiki/IBeacon"
@@ -738,7 +1108,16 @@
         "en": "Position/Motion Sensing"
       },
       "description": "Technologies for detecting position, movement, and spatial relationships in physical environments for interactive installations",
-      "tags": ["position", "motion", "lidar", "gps", "imu", "accelerometer", "ultrasonic", "infrared"],
+      "tags": [
+        "position",
+        "motion",
+        "lidar",
+        "gps",
+        "imu",
+        "accelerometer",
+        "ultrasonic",
+        "infrared"
+      ],
       "links": {
         "Motion Sensing": "https://en.wikipedia.org/wiki/Motion_detection",
         "LIDAR": "https://en.wikipedia.org/wiki/Lidar"
@@ -768,7 +1147,7 @@
               "name": {
                 "en": "Ouster"
               },
-              "description": "",
+              "description": "High-resolution, long-range LiDAR sensors for autonomous vehicles, robotics, and mapping.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -778,7 +1157,7 @@
               "name": {
                 "en": "Hokuyu UST Series"
               },
-              "description": "",
+              "description": "Compact, high-performance 2D LiDAR sensors for industrial automation, robotics, and security.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -790,7 +1169,7 @@
           "name": {
             "en": "Rotary Encoder"
           },
-          "description": "",
+          "description": "Electromechanical device that converts the angular position or motion of a shaft into digital signals.",
           "tags": [],
           "links": {
             "Link": ""
@@ -800,7 +1179,7 @@
           "name": {
             "en": "GPS"
           },
-          "description": "",
+          "description": "Global Positioning System that provides location and time information to GPS receivers.",
           "tags": [],
           "links": {
             "Link": ""
@@ -810,7 +1189,7 @@
           "name": {
             "en": "Infrared"
           },
-          "description": "",
+          "description": "Electromagnetic radiation with wavelengths longer than visible light, used in remote controls, night vision, and more.",
           "tags": [],
           "links": {
             "Link": ""
@@ -820,7 +1199,7 @@
               "name": {
                 "en": "PIR"
               },
-              "description": "",
+              "description": "Passive Infrared sensor that detects motion by sensing changes in infrared levels, used in security and automation.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -830,7 +1209,7 @@
               "name": {
                 "en": "Distance Sensor"
               },
-              "description": "",
+              "description": "Electronic device that measures the distance to an object using various technologies like ultrasonic, laser, or infrared.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -842,7 +1221,7 @@
           "name": {
             "en": "Ultrasonic Distance Sensor"
           },
-          "description": "",
+          "description": "Measures distance by emitting high-frequency sound waves and detecting the reflected echoes, used in robotics and automation.",
           "tags": [],
           "links": {
             "Link": ""
@@ -852,7 +1231,7 @@
           "name": {
             "en": "Ultra Wide Band (UWB)"
           },
-          "description": "",
+          "description": "Short-range, high-bandwidth wireless technology used for precise indoor positioning, tracking, and communication.",
           "tags": [],
           "links": {
             "Link": ""
@@ -862,7 +1241,7 @@
               "name": {
                 "en": "Apple Airtag"
               },
-              "description": "",
+              "description": "A small Bluetooth and UWB-enabled device that can be attached to items to help locate them using an Apple device.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -872,7 +1251,7 @@
               "name": {
                 "en": "Pozyx"
               },
-              "description": "",
+              "description": "Ultra-wideband (UWB) positioning system for indoor location tracking and motion capture.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -884,7 +1263,7 @@
           "name": {
             "en": "Accelerometer/Gyroscope"
           },
-          "description": "",
+          "description": "Sensors that measure acceleration and angular velocity, enabling motion detection and tracking.",
           "tags": [],
           "links": {
             "Link": ""
@@ -894,7 +1273,7 @@
               "name": {
                 "en": "LP-Research LPMS Series"
               },
-              "description": "",
+              "description": "High-performance inertial measurement units (IMUs) for motion capture and tracking applications.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -904,7 +1283,7 @@
               "name": {
                 "en": "Wit Motion"
               },
-              "description": "",
+              "description": "Compact, low-power IMU modules for wearable and IoT applications, with integrated sensors.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -916,7 +1295,7 @@
           "name": {
             "en": "mmWave"
           },
-          "description": "",
+          "description": "Millimeter-wave radar technology for high-resolution motion detection, tracking, and gesture recognition.",
           "tags": [],
           "links": {
             "Link": "https://en.wikipedia.org/wiki/Mmwave_sensing"
@@ -929,7 +1308,15 @@
         "en": "Other"
       },
       "description": "Additional sensing technologies including biometric sensors, environmental sensors, and specialized input devices for creative applications",
-      "tags": ["biometric", "environmental", "pressure", "temperature", "humidity", "rfid", "magnetic"],
+      "tags": [
+        "biometric",
+        "environmental",
+        "pressure",
+        "temperature",
+        "humidity",
+        "rfid",
+        "magnetic"
+      ],
       "links": {
         "Sensor Types": "https://en.wikipedia.org/wiki/List_of_sensors",
         "Biometric Sensors": "https://en.wikipedia.org/wiki/Biometrics"
@@ -939,7 +1326,7 @@
           "name": {
             "en": "Other Input Types"
           },
-          "description": "",
+          "description": "Alternative input methods like touch, voice, eye-tracking, and brain-computer interfaces for creative applications.",
           "tags": [],
           "links": {
             "Link": ""
@@ -949,7 +1336,7 @@
               "name": {
                 "en": "Pressure Sensors"
               },
-              "description": "",
+              "description": "Sensors that measure applied force or pressure, enabling touch-sensitive and force-based interactions.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -959,7 +1346,7 @@
                   "name": {
                     "en": "Direct Force Pressure"
                   },
-                  "description": "",
+                  "description": "Pressure sensors that directly measure the force applied to a surface, used for touch and force input.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -969,7 +1356,7 @@
                       "name": {
                         "en": "Load Cell"
                       },
-                      "description": "",
+                      "description": "Force transducer that converts a force or weight into an electrical signal, enabling weight and force sensing.",
                       "tags": [],
                       "links": {
                         "Link": ""
@@ -979,7 +1366,7 @@
                       "name": {
                         "en": "Force Sensing Resistor (FSR)"
                       },
-                      "description": "",
+                      "description": "Pressure-sensitive resistor that changes resistance when force is applied, enabling touch and pressure input.",
                       "tags": [],
                       "links": {
                         "Link": ""
@@ -1097,7 +1484,7 @@
               "name": {
                 "en": "Breath"
               },
-              "description": "",
+              "description": "Measures user's breathing patterns to detect emotional states and enable breath-based interactions.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -1107,7 +1494,7 @@
                   "name": {
                     "en": "XeThru"
                   },
-                  "description": "",
+                  "description": "Radar-based sensor technology that can detect human presence, breathing, and movement without cameras.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -1119,7 +1506,7 @@
               "name": {
                 "en": "Galvanic Skin Response"
               },
-              "description": "",
+              "description": "Measures electrical conductivity of the skin to detect emotional arousal and stress levels.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -1129,7 +1516,7 @@
               "name": {
                 "en": "Electromyography"
               },
-              "description": "",
+              "description": "Records electrical activity produced by skeletal muscles to enable gesture and motion control.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -1139,7 +1526,7 @@
                   "name": {
                     "en": "Muscle Activity Sensors (EMG)"
                   },
-                  "description": "",
+                  "description": "Detects electrical signals generated by muscle contractions to enable gesture and motion control.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -1153,7 +1540,7 @@
           "name": {
             "en": "Buttons/Knobs/Sliders"
           },
-          "description": "",
+          "description": "Physical input controls that allow users to adjust values, make selections, and trigger actions.",
           "tags": [],
           "links": {
             "Link": ""
@@ -1163,7 +1550,7 @@
               "name": {
                 "en": "Linear"
               },
-              "description": "",
+              "description": "Input device that measures position along a straight line, often used for sliders and faders.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -1173,7 +1560,7 @@
                   "name": {
                     "en": "Potentiometer"
                   },
-                  "description": "",
+                  "description": "Variable resistor that allows for analog control of parameters, often used for volume, brightness, etc.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -1185,7 +1572,7 @@
               "name": {
                 "en": "Magnetic"
               },
-              "description": "",
+              "description": "Sensors that detect changes in magnetic fields, enabling position, motion, and proximity tracking.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -1195,7 +1582,7 @@
                   "name": {
                     "en": "Hall Effect Sensor"
                   },
-                  "description": "",
+                  "description": "Detects changes in magnetic fields to measure position, motion, and proximity, often used in joysticks.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -1315,7 +1702,7 @@
               "name": {
                 "en": "Low Frequency (LF)"
               },
-              "description": "",
+              "description": "Radio frequencies below 300 kHz, used for long-range wireless communication and RFID.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -1325,7 +1712,7 @@
               "name": {
                 "en": "High Frequency (HF)"
               },
-              "description": "",
+              "description": "Radio frequencies from 3-30 MHz, used for shortwave radio, amateur radio, and some RFID.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -1335,7 +1722,7 @@
               "name": {
                 "en": "Ultra High Frequency (UHF)"
               },
-              "description": "",
+              "description": "Radio frequencies from 300 MHz to 3 GHz, used for TV, mobile phones, and many wireless devices.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -1347,7 +1734,7 @@
           "name": {
             "en": "Capacitive Sensors"
           },
-          "description": "",
+          "description": "Detect touch or proximity by measuring changes in electrical capacitance, used in touchscreens.",
           "tags": [],
           "links": {
             "Link": ""
@@ -1357,7 +1744,7 @@
           "name": {
             "en": "Light Sensors"
           },
-          "description": "",
+          "description": "Detect the presence and intensity of light, used in ambient light sensing, proximity detection.",
           "tags": [],
           "links": {
             "Link": ""
@@ -1367,7 +1754,7 @@
               "name": {
                 "en": "Photocell"
               },
-              "description": "",
+              "description": "Light-sensitive resistor that changes resistance based on light intensity, used in light-activated circuits.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -1379,7 +1766,7 @@
           "name": {
             "en": "Temperature Sensors"
           },
-          "description": "",
+          "description": "Measure temperature using various principles, used in environmental monitoring and control.",
           "tags": [],
           "links": {
             "Link": ""
@@ -1389,7 +1776,7 @@
               "name": {
                 "en": "Thermistor"
               },
-              "description": "",
+              "description": "Temperature-sensitive resistor that changes resistance based on temperature, used in temperature sensing.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -1399,7 +1786,7 @@
               "name": {
                 "en": "Thermocouple"
               },
-              "description": "",
+              "description": "Generates a small voltage based on temperature difference, used for precise temperature measurement.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -1411,7 +1798,7 @@
           "name": {
             "en": "Sound/Vibration"
           },
-          "description": "",
+          "description": "Detect and measure acoustic waves and vibrations, used in audio input, motion sensing, and more.",
           "tags": [],
           "links": {
             "Link": ""
@@ -1421,7 +1808,7 @@
               "name": {
                 "en": "Microphones"
               },
-              "description": "",
+              "description": "Audio input devices that convert sound waves into electrical signals for recording or processing.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -1431,7 +1818,7 @@
               "name": {
                 "en": "Piezo"
               },
-              "description": "",
+              "description": "Piezoelectric sensors that convert mechanical stress into electrical signals, used for touch, vibration, and pressure detection.",
               "tags": [],
               "links": {
                 "Link": ""

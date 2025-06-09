@@ -5,7 +5,8 @@
   "description": "Tools related to making assets (like images, videos, etc) that might be used by other concepts in this list.",
   "tags": [],
   "links": {
-    "Link": ""
+    "Official": "https://example.com/asset-creation",
+    "Docs": "https://docs.example.com/asset-creation"
   },
   "children": [
     {
@@ -96,7 +97,7 @@
               "name": {
                 "en": "After Effects"
               },
-              "description": "",
+              "description": "Powerful video editing and motion graphics software for creating dynamic visual effects and animations.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -106,7 +107,7 @@
               "name": {
                 "en": "Premiere"
               },
-              "description": "",
+              "description": "Professional video editing software for creating, editing, and enhancing high-quality video content.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -116,7 +117,7 @@
               "name": {
                 "en": "Illustrator"
               },
-              "description": "",
+              "description": "Vector graphics editor for creating scalable, high-quality illustrations, logos, and design elements.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -126,7 +127,7 @@
               "name": {
                 "en": "Photoshop"
               },
-              "description": "",
+              "description": "Powerful image editing software for manipulating, enhancing, and compositing digital images and photos.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -138,7 +139,7 @@
           "name": {
             "en": "Open Source/Free"
           },
-          "description": "",
+          "description": "High-quality, cost-effective alternatives to commercial creative software, often with active communities and robust features.",
           "tags": [],
           "links": {
             "Link": ""
@@ -148,7 +149,7 @@
               "name": {
                 "en": "Inkscape"
               },
-              "description": "",
+              "description": "Free and open-source vector graphics editor for creating and editing scalable illustrations and designs.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -158,7 +159,7 @@
               "name": {
                 "en": "GIMP"
               },
-              "description": "",
+              "description": "Free and open-source raster graphics editor for photo manipulation, image creation, and digital art.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -172,7 +173,7 @@
       "name": {
         "en": "3D Asset Creation"
       },
-      "description": "",
+      "description": "Tools and software for modeling, sculpting, and creating 3D assets, textures, and animations for various applications.",
       "tags": [],
       "links": {
         "Link": ""
@@ -182,7 +183,7 @@
           "name": {
             "en": "CAD/CAM"
           },
-          "description": "",
+          "description": "Computer-aided design (CAD) and computer-aided manufacturing (CAM) tools for creating and optimizing 3D models and designs.",
           "tags": [],
           "links": {
             "Link": ""
@@ -192,7 +193,7 @@
               "name": {
                 "en": "Fusion 360"
               },
-              "description": "",
+              "description": "Integrated CAD, CAM, and CAE software for product design, engineering, and manufacturing.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -202,7 +203,7 @@
               "name": {
                 "en": "Sketchup"
               },
-              "description": "",
+              "description": "3D modeling software for architecture, engineering, and construction design.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -212,7 +213,7 @@
               "name": {
                 "en": "Rhino"
               },
-              "description": "",
+              "description": "Powerful NURBS-based 3D modeling tool for designers, architects, and engineers.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -222,7 +223,7 @@
               "name": {
                 "en": "AutoCAD"
               },
-              "description": "",
+              "description": "Industry-leading 2D and 3D CAD software for architecture, engineering, and construction.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -234,7 +235,7 @@
           "name": {
             "en": "Modeling"
           },
-          "description": "",
+          "description": "The process of creating 3D digital representations of objects, environments, or characters.",
           "tags": [],
           "links": {
             "Link": ""
@@ -244,7 +245,7 @@
               "name": {
                 "en": "Cinema 4D"
               },
-              "description": "",
+              "description": "Powerful 3D modeling, animation, and rendering software for motion graphics and VFX.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -254,7 +255,7 @@
               "name": {
                 "en": "3D Studio Max"
               },
-              "description": "",
+              "description": "Comprehensive 3D modeling, animation, and rendering software for game development and VFX.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -264,7 +265,7 @@
               "name": {
                 "en": "Maya"
               },
-              "description": "",
+              "description": "Industry-standard 3D animation, modeling, simulation, and rendering software for film, TV, and games.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -274,7 +275,7 @@
               "name": {
                 "en": "Blender"
               },
-              "description": "",
+              "description": "Free and open-source 3D creation suite for modeling, animation, simulation, and rendering.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -286,7 +287,7 @@
           "name": {
             "en": "Sculpting and Texturing"
           },
-          "description": "",
+          "description": "The process of creating 3D digital sculptures and applying realistic textures and materials.",
           "tags": [],
           "links": {
             "Link": ""
@@ -296,7 +297,7 @@
               "name": {
                 "en": "ZBrush"
               },
-              "description": "",
+              "description": "Digital sculpting and painting software for creating high-resolution 3D models and textures.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -306,7 +307,7 @@
               "name": {
                 "en": "Substance Designer"
               },
-              "description": "",
+              "description": "Procedural texture and material creation tool for 3D artists and designers.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -318,7 +319,7 @@
           "name": {
             "en": "Other Post Production Tools"
           },
-          "description": "",
+          "description": "Software like Photoshop, After Effects, Premiere Pro for photo/video editing and compositing.",
           "tags": [],
           "links": {
             "Link": ""
@@ -328,7 +329,7 @@
               "name": {
                 "en": "Mari"
               },
-              "description": "",
+              "description": "3D painting software for creating high-quality textures and materials for visual effects.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -338,7 +339,7 @@
               "name": {
                 "en": "Houdini"
               },
-              "description": "",
+              "description": "Procedural 3D creation software for visual effects, motion graphics, and game development.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -348,7 +349,7 @@
               "name": {
                 "en": "Nuke"
               },
-              "description": "",
+              "description": "Powerful node-based compositing software for visual effects, motion graphics, and film.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -358,7 +359,7 @@
               "name": {
                 "en": "Marvelous Designer"
               },
-              "description": "",
+              "description": "3D clothing and textile design software for fashion, games, and film industries.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -370,7 +371,7 @@
           "name": {
             "en": "Render Engines"
           },
-          "description": "",
+          "description": "Software like Arnold, Redshift, and Octane that provide advanced rendering capabilities.",
           "tags": [],
           "links": {
             "Link": ""
@@ -380,7 +381,7 @@
               "name": {
                 "en": "Octane"
               },
-              "description": "",
+              "description": "GPU-accelerated, physically-based render engine for real-time 3D visualization and animation.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -390,7 +391,7 @@
               "name": {
                 "en": "V-Ray"
               },
-              "description": "",
+              "description": "Powerful, production-proven render engine for 3D visualization, animation, and visual effects.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -402,7 +403,7 @@
           "name": {
             "en": "Asset Pipelines/Management"
           },
-          "description": "",
+          "description": "Tools like Shotgun, Perforce, and Unreal Engine's Datasmith for managing 3D assets and workflows.",
           "tags": [],
           "links": {
             "Link": ""
@@ -412,7 +413,7 @@
               "name": {
                 "en": "NVIDIA Omniverse"
               },
-              "description": "",
+              "description": "Real-time 3D simulation and collaboration platform for creating virtual worlds and experiences.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -422,7 +423,7 @@
               "name": {
                 "en": "Perforce"
               },
-              "description": "",
+              "description": "Powerful version control and collaboration tool for managing digital assets and code across teams.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -434,7 +435,7 @@
           "name": {
             "en": "Related Concepts"
           },
-          "description": "",
+          "description": "Key principles, techniques, and methodologies that inform creative technology workflows and solutions.",
           "tags": [],
           "links": {
             "Link": ""
@@ -444,7 +445,7 @@
               "name": {
                 "en": "File Formats"
               },
-              "description": "",
+              "description": "Standard digital file types used for storing and exchanging creative assets, data, and project files.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -454,7 +455,7 @@
               "name": {
                 "en": "Rigging"
               },
-              "description": "",
+              "description": "The process of creating a digital skeleton and control system to animate 3D models and characters.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -464,7 +465,7 @@
               "name": {
                 "en": "Character Design"
               },
-              "description": "",
+              "description": "The art of creating compelling, visually distinct characters for use in games, films, and other media.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -474,7 +475,7 @@
               "name": {
                 "en": "Polygon Reduction"
               },
-              "description": "",
+              "description": "Techniques for optimizing 3D models by reducing the number of polygons while preserving visual fidelity.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -488,7 +489,7 @@
       "name": {
         "en": "Audio/Music Asset Creation"
       },
-      "description": "",
+      "description": "Tools and processes for designing, recording, and editing audio and musical elements for media projects.",
       "tags": [],
       "links": {
         "Link": ""
@@ -498,7 +499,7 @@
           "name": {
             "en": "ProTools"
           },
-          "description": "",
+          "description": "Industry-leading digital audio workstation (DAW) software for recording, editing, and mixing audio.",
           "tags": [],
           "links": {
             "Link": ""
@@ -508,7 +509,7 @@
           "name": {
             "en": "Reaper"
           },
-          "description": "",
+          "description": "Powerful, flexible, and affordable digital audio workstation (DAW) software for audio production.",
           "tags": [],
           "links": {
             "Link": ""
@@ -518,7 +519,7 @@
           "name": {
             "en": "Ableton Live"
           },
-          "description": "",
+          "description": "A powerful digital audio workstation for music production, live performance, and sound design.",
           "tags": [],
           "links": {
             "Link": ""
@@ -528,7 +529,7 @@
               "name": {
                 "en": "Max For Live"
               },
-              "description": "",
+              "description": "An extension for Ableton Live that allows users to create custom devices and automate complex processes.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -540,7 +541,7 @@
           "name": {
             "en": "Cubase"
           },
-          "description": "",
+          "description": "A comprehensive digital audio workstation for music production, recording, and post-production.",
           "tags": [],
           "links": {
             "Link": ""
@@ -550,7 +551,7 @@
           "name": {
             "en": "Logic Pro"
           },
-          "description": "",
+          "description": "Apple's professional-grade digital audio workstation for music creation, recording, and post-production.",
           "tags": [],
           "links": {
             "Link": ""
@@ -560,7 +561,7 @@
           "name": {
             "en": "Audacity"
           },
-          "description": "",
+          "description": "A free, open-source, cross-platform digital audio editor and recording application.",
           "tags": [],
           "links": {
             "Link": ""
@@ -570,7 +571,7 @@
           "name": {
             "en": "Reason"
           },
-          "description": "",
+          "description": "A digital audio workstation focused on virtual instruments, effects, and music production tools.",
           "tags": [],
           "links": {
             "Link": ""
@@ -580,7 +581,7 @@
           "name": {
             "en": "Renoise"
           },
-          "description": "",
+          "description": "A powerful digital audio workstation that combines the workflow of a tracker with modern features.",
           "tags": [],
           "links": {
             "Link": ""
@@ -590,7 +591,7 @@
           "name": {
             "en": "Bespoke Synth"
           },
-          "description": "",
+          "description": "Custom-built electronic musical instruments, often using modular synthesis or unique hardware designs.",
           "tags": [],
           "links": {
             "Link": ""
@@ -600,7 +601,7 @@
           "name": {
             "en": "Bitwig"
           },
-          "description": "",
+          "description": "A modern, flexible digital audio workstation for music production, live performance, and sound design.",
           "tags": [],
           "links": {
             "Link": ""

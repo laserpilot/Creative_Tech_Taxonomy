@@ -5,14 +5,15 @@
   "description": "A large category that outlines concepts and tools related to professional grade (and some consumer grade) audiovisual hardware and software. Typically things used in large productions, stage shows, and installations",
   "tags": [],
   "links": {
-    "Link": ""
+    "Official": "https://example.com/professional-av-tools",
+    "Docs": "https://docs.example.com/professional-av-tools"
   },
   "children": [
     {
       "name": {
         "en": "Video"
       },
-      "description": "See Display Tech and Video Category",
+      "description": "Capture, process, and output visual media for live production and streaming.",
       "tags": [],
       "links": {
         "Link": ""
@@ -22,7 +23,7 @@
       "name": {
         "en": "Audio"
       },
-      "description": "",
+      "description": "Capture, process, and output audio for live production and streaming workflows.",
       "tags": [],
       "links": {
         "Link": ""
@@ -32,7 +33,7 @@
           "name": {
             "en": "Input"
           },
-          "description": "",
+          "description": "Devices and interfaces that allow users to interact with and control live production systems.",
           "tags": [],
           "links": {
             "Link": ""
@@ -42,7 +43,7 @@
               "name": {
                 "en": "Microphones"
               },
-              "description": "",
+              "description": "Audio input devices that capture sound for live production, recording, and streaming.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -52,7 +53,7 @@
                   "name": {
                     "en": "Dynamic"
                   },
-                  "description": "",
+                  "description": "Responsive, adaptable, and interactive elements in live production and streaming workflows.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -62,7 +63,7 @@
                       "name": {
                         "en": "Regular Vocal Mic"
                       },
-                      "description": "",
+                      "description": "Versatile microphone for capturing clear, natural vocals in studio or live settings.",
                       "tags": [],
                       "links": {
                         "Link": ""
@@ -72,7 +73,7 @@
                       "name": {
                         "en": "Shotgun"
                       },
-                      "description": "",
+                      "description": "Highly directional microphone used for capturing audio from a distance, often in film/video production.",
                       "tags": [],
                       "links": {
                         "Link": ""
@@ -82,7 +83,7 @@
                       "name": {
                         "en": "Ambisonic"
                       },
-                      "description": "",
+                      "description": "Surround sound microphone technique that captures 360-degree audio for immersive experiences.",
                       "tags": [],
                       "links": {
                         "Link": ""
@@ -136,7 +137,7 @@
                   "name": {
                     "en": "Ribbon"
                   },
-                  "description": "",
+                  "description": "Microphone with a thin, corrugated ribbon element that produces a warm, vintage sound quality.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -148,7 +149,7 @@
               "name": {
                 "en": "Synthesizers"
               },
-              "description": "",
+              "description": "Electronic musical instruments that generate and manipulate sounds, enabling creative sound design.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -158,7 +159,7 @@
               "name": {
                 "en": "Pickups"
               },
-              "description": "",
+              "description": "Electromagnetic transducers that convert the vibrations of guitar strings into electrical signals for amplification.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -168,7 +169,7 @@
                   "name": {
                     "en": "Piezo"
                   },
-                  "description": "",
+                  "description": "Piezo transducers convert mechanical vibrations into electrical signals, enabling touch-based music/sound.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -178,7 +179,7 @@
                   "name": {
                     "en": "Transducer"
                   },
-                  "description": "",
+                  "description": "A device that converts one form of energy into another, often used in audio/music applications.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -190,7 +191,7 @@
               "name": {
                 "en": "Music Software"
               },
-              "description": "",
+              "description": "Digital tools for music creation, recording, editing, and production, used by composers and musicians.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -200,7 +201,7 @@
                   "name": {
                     "en": "Ableton"
                   },
-                  "description": "",
+                  "description": "A digital audio workstation (DAW) software widely used for music production, live performance, and sound design.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -210,7 +211,7 @@
                   "name": {
                     "en": "See Asset Creation"
                   },
-                  "description": "",
+                  "description": "The process of generating visual, audio, or other digital assets for use in creative projects and applications.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -222,7 +223,7 @@
               "name": {
                 "en": "Timecode"
               },
-              "description": "",
+              "description": "A system for synchronizing audio, video, and other media by encoding timing information in the signal.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -246,7 +247,7 @@
           "name": {
             "en": "Output"
           },
-          "description": "",
+          "description": "A company that creates innovative audio hardware and software tools for music production and sound design.",
           "tags": [],
           "links": {
             "Link": ""
@@ -256,7 +257,7 @@
               "name": {
                 "en": "Amplifiers"
               },
-              "description": "",
+              "description": "Devices that increase the power or volume of an electrical signal, used in audio systems and music equipment.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -266,7 +267,7 @@
               "name": {
                 "en": "Spatial"
               },
-              "description": "",
+              "description": "Techniques and technologies for creating immersive, three-dimensional audio experiences, used in music, VR, and more.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -276,7 +277,7 @@
                   "name": {
                     "en": "Directional"
                   },
-                  "description": "",
+                  "description": "Audio reproduction technique that creates a sense of directionality and spatial positioning.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -286,7 +287,7 @@
                   "name": {
                     "en": "Binaural"
                   },
-                  "description": "",
+                  "description": "Audio recording and reproduction technique that recreates the natural human hearing experience.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -296,7 +297,7 @@
                   "name": {
                     "en": "Surround"
                   },
-                  "description": "",
+                  "description": "Audio reproduction system that creates a 360-degree immersive sound experience around the listener.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -306,7 +307,7 @@
                   "name": {
                     "en": "Wave Field Synthesis"
                   },
-                  "description": "",
+                  "description": "Audio reproduction technique that creates a realistic 3D sound field by generating wavefronts.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -318,7 +319,7 @@
               "name": {
                 "en": "PA Systems"
               },
-              "description": "",
+              "description": "Public address systems used to amplify and distribute sound in large venues and outdoor events.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -328,7 +329,7 @@
               "name": {
                 "en": "Signal Processors"
               },
-              "description": "",
+              "description": "Electronic devices that modify and manipulate audio signals to achieve desired sound effects.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -338,7 +339,7 @@
                   "name": {
                     "en": "Compressors"
                   },
-                  "description": "",
+                  "description": "Audio signal processors that reduce the dynamic range of a signal, controlling loud and soft levels.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -348,7 +349,7 @@
                   "name": {
                     "en": "Limiters"
                   },
-                  "description": "",
+                  "description": "Audio signal processors that prevent a signal from exceeding a specified maximum level, preventing clipping.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -358,7 +359,7 @@
                   "name": {
                     "en": "Equalizers"
                   },
-                  "description": "",
+                  "description": "Audio signal processors that allow selective boosting or cutting of specific frequency bands.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -368,7 +369,7 @@
                   "name": {
                     "en": "Reverb"
                   },
-                  "description": "",
+                  "description": "Audio signal processors that simulate the natural reverberation of sound in physical spaces.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -380,7 +381,7 @@
               "name": {
                 "en": "Headphones"
               },
-              "description": "",
+              "description": "Audio transducers that convert electrical signals into sound waves, enabling immersive listening.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -390,7 +391,7 @@
               "name": {
                 "en": "Transducer"
               },
-              "description": "",
+              "description": "A device that converts one form of energy into another, often used in audio and haptic applications.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -400,7 +401,7 @@
                   "name": {
                     "en": "Buttkicker Subwoofer"
                   },
-                  "description": "",
+                  "description": "A specialized subwoofer that provides low-frequency haptic feedback, enhancing immersive experiences.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -410,7 +411,7 @@
                   "name": {
                     "en": "Dayton Audio"
                   },
-                  "description": "",
+                  "description": "A brand known for high-quality audio components and speakers, popular among DIY audio enthusiasts.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -424,7 +425,7 @@
           "name": {
             "en": "Communication Protocols"
           },
-          "description": "",
+          "description": "Standards that define how electronic devices communicate and exchange data, enabling interconnectivity.",
           "tags": [],
           "links": {
             "Link": ""
@@ -434,7 +435,7 @@
               "name": {
                 "en": "Dante"
               },
-              "description": "",
+              "description": "A professional audio networking technology that enables low-latency, scalable audio distribution over IP networks.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -444,7 +445,7 @@
               "name": {
                 "en": "OSC"
               },
-              "description": "",
+              "description": "Open Sound Control, a protocol for communication among multimedia devices, software applications, and computers.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -454,7 +455,7 @@
               "name": {
                 "en": "Digital/Analog Conversion"
               },
-              "description": "",
+              "description": "The process of converting between digital and analog signals, enabling the use of digital technology with analog devices.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -464,7 +465,7 @@
                   "name": {
                     "en": "S/PIDF"
                   },
-                  "description": "",
+                  "description": "Sony/Philips Digital Interface Format, a standard for transmitting digital audio signals between devices.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -478,7 +479,7 @@
           "name": {
             "en": "Related Concepts"
           },
-          "description": "",
+          "description": "Interconnected ideas and technologies that enable creative applications, such as sensors, microcontrollers, and haptics.",
           "tags": [],
           "links": {
             "Link": ""
@@ -594,7 +595,7 @@
               "name": {
                 "en": "DIY"
               },
-              "description": "",
+              "description": "Do-it-yourself approach to building custom hardware and software for creative projects.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -604,7 +605,7 @@
                   "name": {
                     "en": "Teensy"
                   },
-                  "description": "",
+                  "description": "Compact, powerful microcontroller boards for building interactive electronic projects.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -614,7 +615,7 @@
                   "name": {
                     "en": "Raspberry Pi"
                   },
-                  "description": "",
+                  "description": "Affordable, credit-card sized single-board computers for building custom electronics and software.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -628,7 +629,7 @@
           "name": {
             "en": "Mapping & Content Software"
           },
-          "description": "",
+          "description": "Tools for creating and managing content, visuals, and mappings for projection, lighting, and media installations.",
           "tags": [],
           "links": {
             "Link": ""
@@ -638,7 +639,7 @@
               "name": {
                 "en": "Madrix"
               },
-              "description": "",
+              "description": "Powerful software for controlling LED-based lighting systems, including pixel mapping and effects.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -648,7 +649,7 @@
               "name": {
                 "en": "ELM"
               },
-              "description": "",
+              "description": "Embedded Lighting Markup, a lightweight protocol for controlling lighting and media systems.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -658,7 +659,7 @@
               "name": {
                 "en": "TouchDesigner"
               },
-              "description": "",
+              "description": "Powerful visual programming environment for creating real-time interactive multimedia applications.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -670,7 +671,7 @@
           "name": {
             "en": "Communication Protocols"
           },
-          "description": "",
+          "description": "Standards and protocols for transmitting data between devices in creative technology systems.",
           "tags": [],
           "links": {
             "Link": ""
@@ -680,7 +681,7 @@
               "name": {
                 "en": "DMX"
               },
-              "description": "",
+              "description": "Digital Multiplex, a standard communication protocol for controlling stage lighting and effects.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -690,7 +691,7 @@
               "name": {
                 "en": "ArtNet / sACN"
               },
-              "description": "",
+              "description": "Ethernet-based protocols for transmitting DMX and lighting control data over a network.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -700,7 +701,7 @@
               "name": {
                 "en": "DDB"
               },
-              "description": "",
+              "description": "Digital Darkroom Broadcast - software for controlling laser projectors and effects",
               "tags": [],
               "links": {
                 "Link": ""
@@ -712,7 +713,7 @@
           "name": {
             "en": "Lasers"
           },
-          "description": "",
+          "description": "Coherent light beams used for visual effects, displays, and artistic installations",
           "tags": [],
           "links": {
             "Link": "https://blair-neal.gitbook.io/survey-of-alternative-displays/alternative-displays/laser-projectors"
@@ -722,7 +723,7 @@
               "name": {
                 "en": "Laser Control"
               },
-              "description": "",
+              "description": "Software and hardware for programming and controlling laser projectors and effects",
               "tags": [],
               "links": {
                 "Link": ""
@@ -732,7 +733,7 @@
                   "name": {
                     "en": "Pangolin Quickshow"
                   },
-                  "description": "",
+                  "description": "Powerful laser control software for creating dynamic laser displays and visuals",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -742,7 +743,7 @@
                   "name": {
                     "en": "ILDA"
                   },
-                  "description": "",
+                  "description": "International Laser Display Association - standards for laser projector control and data",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -752,7 +753,7 @@
                   "name": {
                     "en": "MadMapper MadLaser"
                   },
-                  "description": "",
+                  "description": "Software for mapping and controlling laser projectors as part of larger visual installations",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -768,7 +769,7 @@
       "name": {
         "en": "Computers"
       },
-      "description": "",
+      "description": "General-purpose digital devices for processing, storing, and transmitting data",
       "tags": [],
       "links": {
         "Link": ""
@@ -778,7 +779,7 @@
           "name": {
             "en": "Operating Systems"
           },
-          "description": "",
+          "description": "Software that manages computer hardware and software resources for applications",
           "tags": [],
           "links": {
             "Link": ""
@@ -788,7 +789,7 @@
               "name": {
                 "en": "Mac"
               },
-              "description": "",
+              "description": "Apple's line of personal computers and laptops running the macOS operating system",
               "tags": [],
               "links": {
                 "Link": ""
@@ -798,7 +799,7 @@
               "name": {
                 "en": "Linux"
               },
-              "description": "",
+              "description": "A family of open-source operating systems based on the Linux kernel, popular for servers and creative applications",
               "tags": [],
               "links": {
                 "Link": ""
@@ -808,7 +809,7 @@
               "name": {
                 "en": "Windows"
               },
-              "description": "",
+              "description": "Leading desktop operating system for personal computers, enabling diverse software and hardware integration.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -820,7 +821,7 @@
           "name": {
             "en": "Graphics Cards"
           },
-          "description": "",
+          "description": "Specialized hardware that accelerates graphics processing, enabling high-performance visuals for gaming, video, and creative applications.",
           "tags": [],
           "links": {
             "Link": ""
@@ -832,7 +833,7 @@
       "name": {
         "en": "Special FX"
       },
-      "description": "",
+      "description": "Techniques and tools used to create visually stunning and immersive effects in film, television, and live events.",
       "tags": [],
       "links": {
         "Link": ""
@@ -842,7 +843,7 @@
           "name": {
             "en": "Fog Machine"
           },
-          "description": "",
+          "description": "Device that produces a dense, atmospheric fog to enhance lighting, create mood, and add visual depth in live performances and events.",
           "tags": [],
           "links": {
             "Link": ""
@@ -852,7 +853,7 @@
           "name": {
             "en": "Haze Machine"
           },
-          "description": "",
+          "description": "Equipment that generates a fine, diffused haze to reveal beams of light and enhance visual effects in stage, film, and photography settings.",
           "tags": [],
           "links": {
             "Link": ""
@@ -864,7 +865,7 @@
       "name": {
         "en": "Mobile Devices"
       },
-      "description": "",
+      "description": "Portable, handheld computing devices like smartphones and tablets that enable diverse creative applications and content creation on the go.",
       "tags": [],
       "links": {
         "Link": ""
@@ -874,7 +875,7 @@
           "name": {
             "en": "iOS"
           },
-          "description": "",
+          "description": "Apple's mobile operating system that powers iPhones and iPads, offering a robust platform for creative apps and media production.",
           "tags": [],
           "links": {
             "Link": ""
@@ -884,7 +885,7 @@
           "name": {
             "en": "Android"
           },
-          "description": "",
+          "description": "Google's open-source mobile operating system that runs on a wide range of smartphones and tablets, supporting diverse creative tools and apps.",
           "tags": [],
           "links": {
             "Link": ""
@@ -896,7 +897,7 @@
       "name": {
         "en": "Electrical and Safety"
       },
-      "description": "",
+      "description": "Ensuring the proper installation, maintenance, and safe operation of electrical equipment and systems in creative technology environments.",
       "tags": [],
       "links": {
         "Link": ""
@@ -906,7 +907,7 @@
       "name": {
         "en": "Utility/Management Systems"
       },
-      "description": "",
+      "description": "Integrated software and hardware solutions that enable the efficient monitoring, control, and optimization of creative technology infrastructure.",
       "tags": [],
       "links": {
         "Link": ""
@@ -916,7 +917,7 @@
           "name": {
             "en": "Crestron"
           },
-          "description": "",
+          "description": "Enterprise-grade AV control and automation platform for smart buildings and spaces.",
           "tags": [],
           "links": {
             "Link": ""
@@ -926,7 +927,7 @@
           "name": {
             "en": "Extron"
           },
-          "description": "",
+          "description": "Manufacturer of AV signal processing, distribution, and control solutions for professional applications.",
           "tags": [],
           "links": {
             "Link": ""

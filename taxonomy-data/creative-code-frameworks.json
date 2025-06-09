@@ -6,7 +6,8 @@
   "description": "This is a collection of nodes related to the concept of Creative Code Frameworks, or areas of programming languages that are typically considered related to creative coding. Not all of these are strictly \"Frameworks\" but this umbrella term seems to suffice for now.",
   "tags": [],
   "links": {
-    "Link": ""
+    "Official": "https://en.wikipedia.org/wiki/Creative_coding",
+    "Docs": "https://github.com/terkelg/awesome-creative-coding"
   },
   "children": [
     {
@@ -17,7 +18,8 @@
       "description": "This is a category that organizes these frameworks",
       "tags": [],
       "links": {
-        "Link": ""
+        "Official": "https://en.wikipedia.org/wiki/Programming_language",
+        "Docs": "https://en.wikipedia.org/wiki/List_of_programming_languages"
       },
       "children": [
         {
@@ -28,7 +30,8 @@
           "description": "Visual programming environments using node-based interfaces for creative coding and real-time performance.",
           "tags": [],
           "links": {
-            "Link": ""
+            "Official": "https://en.wikipedia.org/wiki/Visual_programming_language",
+            "Docs": "https://en.wikipedia.org/wiki/Dataflow_programming"
           },
           "children": [
             {
@@ -160,7 +163,8 @@
           "description": "High-performance C++ frameworks for creative coding offering direct hardware access and optimal performance for real-time applications.",
           "tags": [],
           "links": {
-            "Link": ""
+            "Official": "https://www.cplusplus.com/",
+            "Docs": "https://en.cppreference.com/w/"
           },
           "children": [
             {
@@ -208,7 +212,8 @@
           "description": "Web-based JavaScript libraries and frameworks for creative coding that run in browsers with WebGL support.",
           "tags": [],
           "links": {
-            "Link": ""
+            "Official": "https://www.javascript.com/",
+            "Docs": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
           },
           "children": [
             {
@@ -256,7 +261,8 @@
           "description": "Modern JVM language frameworks for creative coding with strong type safety and concise syntax.",
           "tags": [],
           "links": {
-            "Link": ""
+            "Official": "https://kotlinlang.org/",
+            "Docs": "https://kotlinlang.org/docs/home.html"
           },
           "children": [
             {
@@ -280,7 +286,8 @@
           "description": "Ruby-based creative coding frameworks emphasizing simplicity and expressiveness.",
           "tags": [],
           "links": {
-            "Link": ""
+            "Official": "https://www.ruby-lang.org/en/",
+            "Docs": "https://ruby-doc.org/"
           },
           "children": [
             {
@@ -303,7 +310,8 @@
           "description": "Memory-safe system programming language frameworks for high-performance creative applications.",
           "tags": [],
           "links": {
-            "Link": ""
+            "Official": "https://www.rust-lang.org/",
+            "Docs": "https://doc.rust-lang.org/book/"
           },
           "children": [
             {
@@ -327,7 +335,8 @@
           "description": "Python-based creative coding frameworks leveraging the language's simplicity and extensive ecosystem.",
           "tags": [],
           "links": {
-            "Link": ""
+            "Official": "https://www.python.org/",
+            "Docs": "https://docs.python.org/3/"
           },
           "children": [
             {
@@ -351,7 +360,8 @@
           "description": "Java-based creative coding environments offering cross-platform compatibility and extensive library support.",
           "tags": [],
           "links": {
-            "Link": ""
+            "Official": "https://www.java.com/",
+            "Docs": "https://docs.oracle.com/en/java/"
           },
           "children": [
             {
@@ -375,7 +385,8 @@
           "description": "Low-level graphics APIs providing direct hardware access for maximum performance and control in creative applications.",
           "tags": [],
           "links": {
-            "Link": ""
+            "Official": "https://en.wikipedia.org/wiki/Graphics_API",
+            "Docs": "https://www.khronos.org/graphics/"
           },
           "children": [
             {
@@ -447,7 +458,8 @@
           "description": "Historical tools that shaped creative coding but are no longer actively developed or supported.",
           "tags": [],
           "links": {
-            "Link": ""
+            "Official": "https://en.wikipedia.org/wiki/Creative_coding",
+            "Docs": "https://www.creativeapplications.net/category/tools/"
           },
           "children": [
             {
@@ -494,7 +506,8 @@
       "description": "Different application areas and methodologies for creative coding frameworks.",
       "tags": [],
       "links": {
-        "Link": ""
+        "Official": "https://www.creativeapplications.net/category/tutorials/",
+        "Docs": "https://www.creativecodingclub.com/use-cases/"
       },
       "children": [
         {

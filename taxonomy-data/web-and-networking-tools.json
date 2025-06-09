@@ -43,10 +43,11 @@
           "name": {
             "en": "Audio"
           },
-          "description": "",
+          "description": "Tools and frameworks for creating and manipulating audio in creative applications.",
           "tags": [],
           "links": {
-            "Link": ""
+            "Official": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API",
+            "Docs": "https://www.w3.org/TR/webaudio/"
           },
           "children": [
             {
@@ -72,10 +73,11 @@
           "name": {
             "en": "WebAR/VR"
           },
-          "description": "",
+          "description": "Standards and APIs for building augmented and virtual reality experiences on the web.",
           "tags": [],
           "links": {
-            "Link": ""
+            "Official": "https://www.w3.org/TR/webxr/",
+            "Docs": "https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API"
           },
           "children": [
             {
@@ -117,10 +119,11 @@
           "name": {
             "en": "Machine Learning"
           },
-          "description": "",
+          "description": "Tools and frameworks for integrating machine learning into creative applications.",
           "tags": [],
           "links": {
-            "Link": ""
+            "Official": "https://www.tensorflow.org/js",
+            "Docs": "https://developers.google.com/machine-learning/crash-course"
           },
           "children": [
             {
@@ -312,10 +315,11 @@
           "name": {
             "en": "Data Visualization"
           },
-          "description": "",
+          "description": "Libraries and frameworks for creating interactive data visualizations.",
           "tags": [],
           "links": {
-            "Link": ""
+            "Official": "https://d3js.org/",
+            "Docs": "https://observablehq.com/@d3/learn-d3"
           },
           "children": [
             {
@@ -658,7 +662,7 @@
           "name": {
             "en": "Database"
           },
-          "description": "",
+          "description": "Databases and storage solutions for creative coding projects.",
           "tags": [],
           "links": {
             "Link": ""
@@ -705,7 +709,8 @@
           "description": "Ways of communicating between two devices or computers",
           "tags": [],
           "links": {
-            "Link": ""
+            "Official": "https://en.wikipedia.org/wiki/Message_queue",
+            "Docs": "https://www.rabbitmq.com/protocols.html"
           },
           "children": [
             {
@@ -943,7 +948,7 @@
               "name": {
                 "en": "Google Cloud"
               },
-              "description": "",
+              "description": "Cloud computing platform offering infrastructure, platform, and serverless services.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -953,7 +958,7 @@
               "name": {
                 "en": "Content Delivery Network (CDN)"
               },
-              "description": "",
+              "description": "Distributed network of servers that deliver web content to users based on their geographic location.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -963,7 +968,7 @@
               "name": {
                 "en": "Apache"
               },
-              "description": "",
+              "description": "Open-source web server software that powers a large portion of the internet.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -975,7 +980,7 @@
           "name": {
             "en": "Content Management System (CMS)"
           },
-          "description": "",
+          "description": "Software that allows users to create, manage, and publish digital content without technical expertise.",
           "tags": [],
           "links": {
             "Link": ""
@@ -995,7 +1000,7 @@
               "name": {
                 "en": "Drupal"
               },
-              "description": "",
+              "description": "Flexible, open-source CMS used to build complex websites and web applications.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -1015,7 +1020,7 @@
               "name": {
                 "en": "Contentful"
               },
-              "description": "",
+              "description": "Headless CMS that provides a content infrastructure for building digital experiences.",
               "tags": [],
               "links": {
                 "Link": ""

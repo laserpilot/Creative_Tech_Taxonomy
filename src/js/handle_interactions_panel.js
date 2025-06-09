@@ -39,19 +39,28 @@ function changeTab(event) {
     }
   }
 
-  if (checkValue === "tree") {
+  // Update URL hash when tab changes
+  if (checkValue) {
+    window.location.hash = checkValue
+  }
+
+  switchToTab(checkValue)
+}
+
+function switchToTab(tabValue) {
+  if (tabValue === "tree") {
     document.querySelector("#visualizer").style.display = "block"
     document.querySelector("#interaction-visualizer").style.display = "none"
     document.querySelector("#editor").style.display = "none"
     document.querySelector("footer").style.display = "block"
     document.querySelector("menu").style.display = "block"
-  } else if (checkValue === "interaction") {
+  } else if (tabValue === "interaction") {
     document.querySelector("#visualizer").style.display = "none"
     document.querySelector("#interaction-visualizer").style.display = "block"
     document.querySelector("#editor").style.display = "none"
     document.querySelector("footer").style.display = "block"
     document.querySelector("menu").style.display = "block"
-  } else {
+  } else if (tabValue === "editor") {
     document.querySelector("#visualizer").style.display = "none"
     document.querySelector("#interaction-visualizer").style.display = "none"
     document.querySelector("#editor").style.display = "block"
@@ -59,6 +68,26 @@ function changeTab(event) {
     document.querySelector("menu").style.display = "none"
   }
 }
+
+// Handle URL hash on page load
+function handleHashChange() {
+  const hash = window.location.hash.substring(1)
+  const validTabs = ["tree", "interaction", "editor"]
+  
+  if (validTabs.includes(hash)) {
+    // Set the appropriate radio button
+    const targetRadio = document.querySelector(`input[name="tab"][value="${hash}"]`)
+    if (targetRadio) {
+      targetRadio.checked = true
+      switchToTab(hash)
+    }
+  }
+}
+
+// Initialize tab based on URL hash
+document.addEventListener("DOMContentLoaded", handleHashChange)
+window.addEventListener("hashchange", handleHashChange)
+
 document.querySelectorAll('input[name="tab"]').forEach((elem) => {
   elem.addEventListener("change", changeTab)
 })

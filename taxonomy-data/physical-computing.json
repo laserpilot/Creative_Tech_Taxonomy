@@ -5,7 +5,8 @@
   "description": "Tools and concepts related to physical computing elements that may appear in various creative technology and experiential projects.",
   "tags": [],
   "links": {
-    "Link": ""
+    "Official": "https://example.com/physical-computing",
+    "Docs": "https://docs.example.com/physical-computing"
   },
   "children": [
     {
@@ -94,7 +95,7 @@
           "name": {
             "en": "NeoPixel"
           },
-          "description": "",
+          "description": "Programmable RGB LED strips for creating dynamic lighting effects",
           "tags": [],
           "links": {
             "Link": ""
@@ -104,7 +105,7 @@
           "name": {
             "en": "LED Strips"
           },
-          "description": "",
+          "description": "Flexible strips of individually addressable LEDs for ambient and accent lighting",
           "tags": [],
           "links": {
             "Link": ""
@@ -116,7 +117,7 @@
       "name": {
         "en": "Embedded AI Devices"
       },
-      "description": "",
+      "description": "Compact, low-power devices that integrate AI/ML capabilities for edge computing",
       "tags": [],
       "links": {
         "Link": ""
@@ -126,7 +127,7 @@
           "name": {
             "en": "Microsoft Azure Percept"
           },
-          "description": "",
+          "description": "End-to-end platform for building, deploying, and managing AI solutions at the edge",
           "tags": [],
           "links": {
             "Link": ""
@@ -136,7 +137,7 @@
           "name": {
             "en": "NVIDIA Jetson Nano"
           },
-          "description": "",
+          "description": "Compact, low-power AI computing platform for embedded and edge devices",
           "tags": [],
           "links": {
             "Link": ""
@@ -146,7 +147,7 @@
           "name": {
             "en": "Google Coral"
           },
-          "description": "",
+          "description": "Edge TPU-based devices and tools for deploying on-device machine learning",
           "tags": [],
           "links": {
             "Link": ""
@@ -158,7 +159,7 @@
       "name": {
         "en": "Analysis"
       },
-      "description": "",
+      "description": "The process of examining and interpreting data to gain insights and inform decisions",
       "tags": [],
       "links": {
         "Link": ""
@@ -168,7 +169,7 @@
           "name": {
             "en": "Multimeter"
           },
-          "description": "",
+          "description": "An essential tool for measuring voltage, current, and resistance in electronic circuits",
           "tags": [],
           "links": {
             "Link": ""
@@ -178,7 +179,7 @@
           "name": {
             "en": "Oscilloscope"
           },
-          "description": "",
+          "description": "A test instrument that displays and measures electrical signals over time",
           "tags": [],
           "links": {
             "Link": ""
@@ -188,7 +189,7 @@
           "name": {
             "en": "Power Profiler"
           },
-          "description": "",
+          "description": "A tool that measures and analyzes the power consumption of electronic devices",
           "tags": [],
           "links": {
             "Link": ""
@@ -198,7 +199,7 @@
           "name": {
             "en": "J-Link Debug Probe"
           },
-          "description": "",
+          "description": "Hardware debugger for embedded systems, enabling debugging and programming of microcontrollers.",
           "tags": [],
           "links": {
             "Link": ""
@@ -210,7 +211,7 @@
       "name": {
         "en": "Embedded/Multiple Devices"
       },
-      "description": "",
+      "description": "Techniques for integrating and controlling multiple embedded systems, sensors, and actuators in creative projects.",
       "tags": [],
       "links": {
         "Link": ""
@@ -220,7 +221,7 @@
           "name": {
             "en": "Beaglebone"
           },
-          "description": "",
+          "description": "Open-source hardware development board for creating embedded Linux systems and prototypes.",
           "tags": [],
           "links": {
             "Link": ""
@@ -230,7 +231,7 @@
           "name": {
             "en": "Raspberry Pi"
           },
-          "description": "",
+          "description": "Affordable, credit card-sized single-board computer for learning, prototyping, and building creative projects.",
           "tags": [],
           "links": {
             "Link": ""
@@ -242,7 +243,7 @@
       "name": {
         "en": "Motors/Actuators"
       },
-      "description": "",
+      "description": "Electromechanical devices that convert electrical energy into mechanical motion for controlling movement in creative projects.",
       "tags": [],
       "links": {
         "Link": ""
@@ -252,7 +253,7 @@
           "name": {
             "en": "Types"
           },
-          "description": "",
+          "description": "Different categories of motors and actuators, including DC, linear, stepper, and servo, each with unique characteristics and applications.",
           "tags": [],
           "links": {
             "Link": ""
@@ -262,7 +263,7 @@
               "name": {
                 "en": "DC Motor"
               },
-              "description": "",
+              "description": "Rotary electric motor that converts direct current electrical energy into mechanical energy, commonly used in creative projects.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -272,7 +273,7 @@
               "name": {
                 "en": "Linear Actuator"
               },
-              "description": "",
+              "description": "Electromechanical device that converts rotational motion into linear motion, enabling precise control of linear movement in creative projects.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -282,7 +283,7 @@
               "name": {
                 "en": "Stepper"
               },
-              "description": "",
+              "description": "Electric motor that can be precisely controlled to rotate in small incremental steps, enabling accurate positioning in creative projects.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -292,7 +293,7 @@
               "name": {
                 "en": "Servo"
               },
-              "description": "",
+              "description": "Rotary actuator that allows for precise control of angular position, velocity, and acceleration, commonly used in robotics and creative projects.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -304,7 +305,7 @@
           "name": {
             "en": "Related"
           },
-          "description": "",
+          "description": "Connections and relationships between creative technology concepts and tools.",
           "tags": [],
           "links": {
             "Link": ""
@@ -314,7 +315,7 @@
               "name": {
                 "en": "Haptics"
               },
-              "description": "",
+              "description": "Technology that recreates the sense of touch by applying forces, vibrations, or motions to the user.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -324,7 +325,7 @@
                   "name": {
                     "en": "Ultraleap"
                   },
-                  "description": "",
+                  "description": "A company that develops hand tracking and mid-air haptic technology for immersive experiences.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -334,7 +335,7 @@
                   "name": {
                     "en": "Disney AIREAL"
                   },
-                  "description": "",
+                  "description": "A mid-air haptic device that uses air vortex rings to provide tactile feedback in interactive experiences.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -344,7 +345,7 @@
                   "name": {
                     "en": "Novint Falcon"
                   },
-                  "description": "",
+                  "description": "A 3D haptic interface device that allows users to feel the shape and texture of virtual objects.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -356,7 +357,7 @@
               "name": {
                 "en": "Robotics"
               },
-              "description": "",
+              "description": "The design, construction, operation, and use of robots in various applications, including creative technology.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -366,7 +367,7 @@
                   "name": {
                     "en": "Soft Robotics"
                   },
-                  "description": "",
+                  "description": "A field of robotics focused on the development of robots made from flexible, deformable materials.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -376,7 +377,7 @@
                   "name": {
                     "en": "Kinetic Sculptures"
                   },
-                  "description": "",
+                  "description": "Artworks that incorporate movement, often powered by motors, servos, or other mechanical systems.",
                   "tags": [],
                   "links": {
                     "Link": ""
@@ -388,7 +389,7 @@
               "name": {
                 "en": "Air/Water Movement"
               },
-              "description": "",
+              "description": "The use of air or water flow to create dynamic, interactive experiences in creative technology.",
               "tags": [],
               "links": {
                 "Link": ""
@@ -398,7 +399,7 @@
                   "name": {
                     "en": "Solenoids"
                   },
-                  "description": "",
+                  "description": "Electromagnetic actuators that convert electrical energy into linear motion, used in various creative tech applications.",
                   "tags": [],
                   "links": {
                     "Link": ""
